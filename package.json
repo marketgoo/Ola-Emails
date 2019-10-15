@@ -1,0 +1,22 @@
+{
+  "name": "@marketgoo/ola-emails",
+  "description": "Ola design system implemented for emails, using MJML",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp build",
+    "compile": "gulp compile"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0"
+  },
+  "dependencies": {
+    "mjml": "^4.5.1"
+  }
+}
