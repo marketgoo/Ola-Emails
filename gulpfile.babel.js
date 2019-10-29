@@ -20,10 +20,10 @@ gulp.task('build', done => {
     registerComponent(require(fullPath))
   })
 
-  fs.readFile(path.normalize('./index.mjml'), 'utf8', (err, data) => {
+  fs.readFile(path.normalize('./demo/index.mjml'), 'utf8', (err, data) => {
     if (err) throw err
     const result = mjml2html(data);
-    fs.writeFileSync(path.normalize('./index.html'), result.html);
+    fs.writeFileSync(path.normalize('./demo/index.html'), result.html);
     done();
   })
 })
