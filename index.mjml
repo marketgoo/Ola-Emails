@@ -4,19 +4,23 @@
       <mj-all font-family="Arial" />
     </mj-attributes>
   </mj-head>
-  <mj-body>
-    <mj-section>
-      <mj-column>
-        <ola-button>Ola</ola-button>
-        <ola-button variant="primary">Ola</ola-button>
-        <ola-text>Que pasa</ola-text>
-        <ola-text variant="display">This is a display</ola-text>
-        <ola-text variant="title">This is the title</ola-text>
-        <ola-text variant="headline">This is the headline</ola-text>
-        <ola-text variant="body">This is the body</ola-text>
-        <ola-text variant="callout">This is the callout</ola-text>
-        <ola-text variant="caption">This is the caption</ola-text>
-      </mj-column>
-    </mj-section>
+  <mj-body background-color="#F0F2F4">
+    <ola-panel>
+      <ola-panel-section>
+        <mj-column>
+          <ola-button>Ola</ola-button>
+          <ola-button variant="primary">Ola</ola-button>
+          <ola-text>Que pasa</ola-text>
+          <ola-text variant="display">This is a display</ola-text>
+          <ola-text variant="title">This is the title</ola-text>
+        </ola-panel-section>
+        <ola-panel-section variant="highlight">
+          <ola-text variant="headline">This is the headline</ola-text>
+          <ola-text variant="body">This is the body</ola-text>
+          <ola-text variant="callout">This is the callout</ola-text>
+          <ola-text variant="caption">This is the caption</ola-text>
+        </mj-column>
+      </ola-panel-section>
+    </ola-panel>
   </mj-body>
 </mjml>
