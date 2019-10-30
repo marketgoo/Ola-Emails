@@ -5,6 +5,7 @@
     </mj-attributes>
   </mj-head>
   <mj-body background-color="#F0F2F4">
+    <ola-header></ola-header>
     <ola-panel>
       <ola-panel-section>
         <mj-column>
@@ -21,6 +22,19 @@
           <ola-text variant="caption">This is the caption</ola-text>
         </mj-column>
       </ola-panel-section>
+      <ola-panel-section>
+        <mj-column>
+          <ola-text variant="callout" color="gray">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et erat ullamcorper, tincidunt elit non, varius ligula. Phasellus pretium risus in metus accumsan, at ultricies elit sodales. Nunc at ligula quis ligula aliquam tincidunt. Maecenas condimentum tincidunt quam, eu viverra dolor pharetra egestas. In vitae erat nunc. Vivamus tincidunt augue ipsum, ac ornare quam viverra sed. Proin pretium est a congue fermentum. Nam rhoncus eros vitae libero varius, ut vehicula diam fermentum. </p>
+          </ola-text>
+        </mj-column>
+      </ola-panel-section>
     </ola-panel>
+
+    <ola-menu>
+      <ola-menu-item href="https://marketgoo.com/">Contact Us</ola-menu-item>
+      <ola-menu-item href="https://marketgoo.com/">Privacy Policy</ola-menu-item>
+      <ola-menu-item href="https://marketgoo.com/">Open in Browser</ola-menu-item>
+    </ola-menu>
   </mj-body>
 </mjml>

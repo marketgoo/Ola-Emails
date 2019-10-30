@@ -32,8 +32,8 @@ gulp.task('watch', gulp.series('compile', 'build', () =>
   gulp.watch(
     [
       'components/**/*.js',
-      'index.mjml'
-    ], 
+      'demo/*.mjml'
+    ],
     gulp.series('compile', 'build')
   )
 ))

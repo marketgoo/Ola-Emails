@@ -39,7 +39,10 @@ module.exports = class OlaPanelSection extends BodyComponent {
     }
 
     return this.renderMJML(`
-      <mj-section ${this.htmlAttributes({...attributes})} css-class="ola_panel-section">
+      <mj-section ${this.htmlAttributes({
+        'css-class': 'ola_panel-section',
+        ...attributes
+      })}>
         ${this.getContent()}
       </mj-section>
 		`)
