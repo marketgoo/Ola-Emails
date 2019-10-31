@@ -3,6 +3,11 @@
     <mj-attributes>
       <mj-all font-family="Arial" />
     </mj-attributes>
+    <mj-style>
+      a {
+        color: #0090DA;
+      }
+    </mj-style>
   </mj-head>
   <mj-body background-color="#F0F2F4">
     <ola-header></ola-header>
@@ -14,8 +19,10 @@
           <ola-text>Que pasa</ola-text>
           <ola-text variant="display">This is a display</ola-text>
           <ola-text variant="title">This is the title</ola-text>
-        </ola-panel-section>
-        <ola-panel-section variant="highlight">
+        </mj-column>
+      </ola-panel-section>
+      <ola-panel-section variant="highlight">
+        <mj-column>
           <ola-text variant="headline">This is the headline</ola-text>
           <ola-text variant="body">This is the body</ola-text>
           <ola-text variant="callout">This is the callout</ola-text>
@@ -27,14 +34,20 @@
           <ola-text variant="callout" color="gray">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et erat ullamcorper, tincidunt elit non, varius ligula. Phasellus pretium risus in metus accumsan, at ultricies elit sodales. Nunc at ligula quis ligula aliquam tincidunt. Maecenas condimentum tincidunt quam, eu viverra dolor pharetra egestas. In vitae erat nunc. Vivamus tincidunt augue ipsum, ac ornare quam viverra sed. Proin pretium est a congue fermentum. Nam rhoncus eros vitae libero varius, ut vehicula diam fermentum. </p>
           </ola-text>
+          <ola-text variant="caption" color="gray">
+            <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit.</a> Aliquam et erat ullamcorper, tincidunt elit non, varius ligula. Phasellus pretium risus in metus accumsan, at ultricies elit sodales. Nunc at ligula quis ligula aliquam tincidunt. Maecenas condimentum tincidunt quam, eu viverra dolor pharetra egestas. In vitae erat nunc. Vivamus tincidunt augue ipsum, ac ornare quam viverra sed. Proin pretium est a congue fermentum. Nam rhoncus eros vitae libero varius, ut vehicula diam fermentum. </p>
+          </ola-text>
         </mj-column>
       </ola-panel-section>
+
+      <ola-signature>
+      </ola-signature>
     </ola-panel>
 
     <ola-menu>
-      <ola-menu-item href="https://marketgoo.com/">Contact Us</ola-menu-item>
-      <ola-menu-item href="https://marketgoo.com/">Privacy Policy</ola-menu-item>
-      <ola-menu-item href="https://marketgoo.com/">Open in Browser</ola-menu-item>
+      <ola-menu-link href="https://marketgoo.com/">Contact Us</ola-menu-link>
+      <ola-menu-link href="https://marketgoo.com/">Privacy Policy</ola-menu-link>
+      <ola-menu-link href="https://marketgoo.com/">Open in Browser</ola-menu-link>
     </ola-menu>
   </mj-body>
 </mjml>

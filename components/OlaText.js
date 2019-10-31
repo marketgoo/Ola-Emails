@@ -28,10 +28,10 @@ module.exports = class OlaText extends BodyComponent {
     return this.renderMJML(`
 			<mj-text
         ${this.htmlAttributes({
+          ...style,
           align: this.getAttribute('align'),
           color: tokens[this.getAttribute('color')],
-          'vertical-align': this.getAttribute('vertical-align'),
-          ...style
+          'vertical-align': this.getAttribute('vertical-align')
         })}
       >
         ${this.getContent()}

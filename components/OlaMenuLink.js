@@ -1,7 +1,12 @@
+import { registerDependencies } from 'mjml-validator';
 import { BodyComponent } from 'mjml-core';
 import tokens from '../tokens';
 
-module.exports = class OlaMenuItem extends BodyComponent {
+registerDependencies({
+  'ola-menu-item': ['ola-menu'],
+})
+
+module.exports = class OlaMenuLink extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {

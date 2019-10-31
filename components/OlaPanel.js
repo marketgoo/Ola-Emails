@@ -1,5 +1,10 @@
+import { registerDependencies } from 'mjml-validator';
 import { BodyComponent } from 'mjml-core';
 import tokens from '../tokens';
+
+registerDependencies({
+  'mj-body': ['ola-panel'],
+})
 
 module.exports = class OlaPanel extends BodyComponent {
   static endingTag = true

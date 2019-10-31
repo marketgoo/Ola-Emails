@@ -1,5 +1,11 @@
+import { registerDependencies } from 'mjml-validator';
 import { BodyComponent } from 'mjml-core';
 import tokens from '../tokens';
+
+registerDependencies({
+  'ola-panel': ['ola-panel-section'],
+  'ola-panel-section': ['mj-column'],
+})
 
 const styles = {
   default: {
@@ -27,7 +33,7 @@ module.exports = class OlaPanelSection extends BodyComponent {
       }
       @media only screen and (max-width:${breakpoint}) {
         .ola_panel-section {
-          padding: ${tokens['size-7']}
+          padding: ${tokens['size-7']};
         }
       }
     `;
