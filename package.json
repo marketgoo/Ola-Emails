@@ -3,9 +3,8 @@
   "description": "Ola design system implemented for emails, using MJML",
   "version": "0.1.0",
   "scripts": {
-    "start": "gulp watch",
+    "start": "nodemon --exec gulp demo",
     "build": "gulp build",
-    "compile": "gulp compile",
     "publish:demo": "gh-pages -d demo"
   },
   "license": "MIT",
@@ -19,6 +18,14 @@
     "gulp-babel": "^8.0.0"
   },
   "dependencies": {
-    "mjml": "^4.5.1"
+    "mjml": "^4.5.1",
+    "nodemon": "^1.19.4"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "demo/",
+      "components/"
+    ],
+    "ext": "js,mjml"
   }
 }

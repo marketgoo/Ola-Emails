@@ -3,23 +3,16 @@ import babel from 'gulp-babel';
 import fs from 'fs';
 import path from 'path';
 import mjml2html from 'mjml';
-import { registerComponent } from 'mjml-core';
 
-gulp.task('compile', () => 
+import './components/index.js';
+
+gulp.task('build', () => 
   gulp.src('components/**/*.js')
     .pipe(babel())
     .pipe(gulp.dest('lib'))
 )
 
-const components = getComponents();
-
-gulp.task('build', done => {
-  components.forEach(compPath => {
-    const fullPath = path.join(process.cwd(), compPath.replace(/^components/, 'lib'));
-    delete require.cache[fullPath]
-    registerComponent(require(fullPath))
-  })
-
+gulp.task('demo', done => {
   fs.readFile(path.normalize('./demo/index.mjml'), 'utf8', (err, data) => {
     if (err) throw err
     const result = mjml2html(data, { validationLevel: 'soft' });
@@ -29,27 +22,3 @@ gulp.task('build', done => {
     done();
   })
 })
-
-gulp.task('watch', gulp.series('compile', 'build', () => 
-  gulp.watch(
-    [
-      'components/**/*.js',
-      'demo/*.mjml'
-    ],
-    gulp.series('compile', 'build')
-  )
-))
-
-function getComponents (dir = './components') {
-  const filelist = [];
-
-  fs.readdirSync(dir).forEach(file => {
-    file = path.join(dir, file);
-
-    if (!fs.statSync(file).isDirectory()) {
-      filelist.push(file);
-    }
-  })
-
-  return filelist
-}

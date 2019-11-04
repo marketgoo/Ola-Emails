@@ -6,7 +6,7 @@ registerDependencies({
   'mj-body': ['ola-panel'],
 })
 
-module.exports = class OlaPanel extends BodyComponent {
+export default class OlaPanel extends BodyComponent {
   static endingTag = true
 
   headStyle() {

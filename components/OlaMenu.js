@@ -5,7 +5,7 @@ registerDependencies({
   'mj-body': ['ola-menu'],
 })
 
-module.exports = class OlaMenu extends BodyComponent {
+export default class OlaMenu extends BodyComponent {
   static endingTag = true
 
   render() {

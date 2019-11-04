@@ -40,8 +40,7 @@
         </mj-column>
       </ola-panel-section>
 
-      <ola-signature>
-      </ola-signature>
+      <ola-signature></ola-signature>
     </ola-panel>
 
     <ola-menu>
@@ -49,5 +48,8 @@
       <ola-menu-link href="https://marketgoo.com/">Privacy Policy</ola-menu-link>
       <ola-menu-link href="https://marketgoo.com/">Open in Browser</ola-menu-link>
     </ola-menu>
+
+    <ola-footer-message>You recived this message as part of the service provided by <strong>marketgoo</strong>. We hope you enjoy it but if you have any problem, please <a href="#">leave us feedback.</a></ola-footer-message>
+    <ola-footer-address>Malatones, 63, 28110 Algete. Madrid. Spain</ola-footer-address>
   </mj-body>
 </mjml>

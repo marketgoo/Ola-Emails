@@ -1,7 +1,7 @@
 import { BodyComponent } from 'mjml-core';
 import tokens from '../tokens';
 
-module.exports = class OlaText extends BodyComponent {
+export default class OlaText extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {

@@ -1,7 +1,7 @@
 import { BodyComponent } from 'mjml-core';
 import tokens from '../tokens';
 
-module.exports = class OlaSignature extends BodyComponent {
+export default class OlaSignature extends BodyComponent {
     static endingTag = true
 
     headStyle(breakpoint) {
@@ -23,7 +23,7 @@ module.exports = class OlaSignature extends BodyComponent {
           <mj-column vertical-align="middle" width="88px" padding-right="28px" css-class="ola_signature-image">
               <mj-image border-radius="30px" width="60px" height="60px" align="left" padding="0" src="person.jpg" alt="marketgoo"></mj-image>
           </mj-column>
-          <mj-column vertical-align="middle" css-class="ola_signature-text">
+          <mj-column vertical-align="middle" css-class="ola_signature-text" padding-top="8px" padding-bottom="8px">
             <ola-text variant="callout" font-weight="bold">Thanks,</ola-text>
             <ola-text variant="caption">David Roch and the marketgoo team</ola-text>
           </mj-column>

@@ -15,7 +15,7 @@ const styles = {
   }
 }
 
-module.exports = class OlaPanelSection extends BodyComponent {
+export default class OlaPanelSection extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {

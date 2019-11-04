@@ -6,7 +6,7 @@ registerDependencies({
   'ola-menu-item': ['ola-menu'],
 })
 
-module.exports = class OlaMenuLink extends BodyComponent {
+export default class OlaMenuLink extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {

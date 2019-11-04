@@ -24,7 +24,7 @@ const styles = {
   }
 }
 
-module.exports = class OlaButton extends BodyComponent {
+export default class OlaButton extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {
