@@ -16,5 +16,5 @@ Button | [Button](https://zeroheight.com/22mjgbuf6/p/60c52c)
 Text | [Typography](https://zeroheight.com/22mjgbuf6/p/09840f)
 Panel | [Panel](https://zeroheight.com/22mjgbuf6/p/92dbc5)
 Header | --
-Menu | --
+FooterMenu | --
 Signature | --

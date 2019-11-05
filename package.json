@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon --exec gulp demo",
     "build": "gulp build",
-    "publish:demo": "gh-pages -d demo"
+    "publish:demo": "gulp demo && gh-pages -d demo"
   },
   "license": "MIT",
   "devDependencies": {

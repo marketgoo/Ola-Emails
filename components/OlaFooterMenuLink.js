@@ -3,20 +3,24 @@ import { BodyComponent } from 'mjml-core';
 import tokens from '../tokens';
 
 registerDependencies({
-  'ola-menu-item': ['ola-menu'],
+  'ola-footer-menu': ['ola-footer-menu-link'],
 })
 
-export default class OlaMenuLink extends BodyComponent {
+export default class OlaFooterMenuLink extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {
     'href': 'string'
   }
 
+  static defaultAttributes = {
+    'href': '#'
+  }
+
   render() {
     return this.renderMJML(`
       <mj-navbar-link ${this.htmlAttributes({
-        href: this.getAttribute('href') || '#',
+        href: this.getAttribute('href'),
         'css-class': 'ola_menu-link',
         'text-transform': 'none',
         'text-decoration': 'underline',
