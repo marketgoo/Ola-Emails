@@ -3,54 +3,57 @@ import { BodyComponent } from 'mjml-core';
 import tokens from '../tokens';
 
 registerDependencies({
-  'ola-panel': ['ola-panel-section'],
-  'ola-panel-section': ['mj-column'],
-})
+    'ola-panel': ['ola-panel-section'],
+    'ola-panel-section': ['mj-column']
+});
 
 const styles = {
-  default: {
-  },
-  highlight: {
-    'background-color': tokens['gray-xlight']
-  }
-}
+    default: {},
+    highlight: {
+        'background-color': tokens('gray-xlight')
+    }
+};
 
 export default class OlaPanelSection extends BodyComponent {
-  static endingTag = true
+    static endingTag = true;
 
-  static allowedAttributes = {
-    'variant': 'enum(default,highlight)'
-  }
+    static allowedAttributes = {
+        variant: 'enum(default,highlight)'
+    };
 
-  static defaultAttributes = {
-    'variant': 'default'
-  }
+    static defaultAttributes = {
+        variant: 'default'
+    };
 
-  headStyle(breakpoint) {
-    return `
+    headStyle(breakpoint) {
+        return `
       .ola_panel-section {
-        padding: ${tokens['size-8']};
+        padding-right: ${tokens('size-8')};
+        padding-left: ${tokens('size-8')};
       }
       @media only screen and (max-width:${breakpoint}) {
         .ola_panel-section {
-          padding: ${tokens['size-7']};
+          padding-right: ${tokens('size-7')};
+          padding-left: ${tokens('size-7')};
         }
       }
     `;
-  }
-
-  render() {
-    const attributes = {
-      ...styles[this.getAttribute('variant')]
     }
 
-    return this.renderMJML(`
+    render() {
+        const attributes = {
+            ...styles[this.getAttribute('variant')]
+        };
+
+        return this.renderMJML(`
       <mj-section ${this.htmlAttributes({
-        'css-class': 'ola_panel-section',
-        ...attributes
+          'css-class': 'ola_panel-section',
+          ...attributes
       })}>
-        ${this.getContent()}
+        <mj-column>
+          ${this.getContent()}
+        </mj-column>
       </mj-section>
-		`)
-  }
+		`);
+    }
 }

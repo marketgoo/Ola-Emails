@@ -1,7 +1,15 @@
 {
   "packages": [
-    "./lib/MjBasicComponent.js",
-    "./lib/MjImageText.js",
-    "./lib/MjLayout.js"
+    "./components/OlaButton.js",
+    "./components/OlaFooterAddress.js",
+    "./components/OlaFooterMenu.js",
+    "./components/OlaFooterMenuIcon.js",
+    "./components/OlaFooterMenuLink.js",
+    "./components/OlaFooterMessage.js",
+    "./components/OlaHeader.js",
+    "./components/OlaPanel.js",
+    "./components/OlaPanelSection.js",
+    "./components/OlaSignature.js",
+    "./components/OlaText.js"
   ]
 }

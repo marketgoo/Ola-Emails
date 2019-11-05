@@ -2,22 +2,22 @@ import { registerDependencies } from 'mjml-validator';
 import { BodyComponent } from 'mjml-core';
 
 registerDependencies({
-  'mj-body': ['ola-footer-message'],
-})
+    'mj-body': ['ola-footer-message']
+});
 
 export default class OlaFooterMessage extends BodyComponent {
-  static endingTag = true
+    static endingTag = true;
 
-  headStyle() {
-    return `
+    headStyle() {
+        return `
       .ola_footer-message a {
         color: inherit;
       }
     `;
-  }
+    }
 
-  render() {
-    return this.renderMJML(`
+    render() {
+        return this.renderMJML(`
       <mj-section>
         <mj-column css-class="ola_footer-message">
           <ola-text variant="caption" color="gray" align="center">
@@ -25,6 +25,6 @@ export default class OlaFooterMessage extends BodyComponent {
           </ola-text>
         </mj-column>
       </mj-section>
-	`)
-  }
+	`);
+    }
 }
