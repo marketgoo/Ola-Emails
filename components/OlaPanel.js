@@ -10,7 +10,7 @@ export default class OlaPanel extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-      overlap: 'enum(top)'
+        overlap: 'enum(top)'
     };
 
     headStyle() {
@@ -39,9 +39,9 @@ export default class OlaPanel extends BodyComponent {
     }
 
     render() {
-      const className = this.getAttribute('overlap') ? `ola_panel-${this.getAttribute('overlap')}` : 'ola_panel';
+        const className = this.getAttribute('overlap') ? `ola_panel-${this.getAttribute('overlap')}` : 'ola_panel';
 
-      return this.renderMJML(`
+        return this.renderMJML(`
         <mj-wrapper css-class="${className}">
           ${this.getContent()}
         </mj-wrapper>

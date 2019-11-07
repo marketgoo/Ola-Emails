@@ -19,7 +19,7 @@ export default class OlaHero extends BodyComponent {
         'css-class': 'ola_hero',
         'full-width': 'full-width',
         'background-color': tokens('black'),
-        'padding': 0,
+        padding: 0
     })}>
         ${this.getContent()}
     </mj-wrapper>
