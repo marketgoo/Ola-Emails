@@ -9,6 +9,10 @@ registerDependencies({
 export default class OlaPanel extends BodyComponent {
     static endingTag = true;
 
+    static allowedAttributes = {
+      overlap: 'enum(top)'
+    };
+
     headStyle() {
         return `
       .ola_panel {
@@ -16,8 +20,18 @@ export default class OlaPanel extends BodyComponent {
         background-color: ${tokens('white')};
         box-shadow: ${tokens('shadow-1')};
       }
+      .ola_panel-top {
+        border-radius: ${tokens('radius')};
+        background-color: ${tokens('white')};
+        box-shadow: ${tokens('shadow-1')};
+        margin-top: -100px !important;
+        padding-top: 100px;
+      }
       @media only screen and (max-width:600px) {
         .ola_panel {
+          border-radius: 0;
+        }
+        .ola_panel-top {
           border-radius: 0;
         }
       }
@@ -25,10 +39,12 @@ export default class OlaPanel extends BodyComponent {
     }
 
     render() {
-        return this.renderMJML(`
-      <mj-wrapper css-class="ola_panel">
-        ${this.getContent()}
-      </mj-wrapper>
-		`);
+      const className = this.getAttribute('overlap') ? `ola_panel-${this.getAttribute('overlap')}` : 'ola_panel';
+
+      return this.renderMJML(`
+        <mj-wrapper css-class="${className}">
+          ${this.getContent()}
+        </mj-wrapper>
+		  `);
     }
 }
