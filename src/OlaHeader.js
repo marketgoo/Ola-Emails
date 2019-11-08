@@ -1,6 +1,8 @@
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 
+const tokens = require('../tokens');
+
 registerDependencies({
     'mj-body': ['ola-header']
 });
@@ -28,11 +30,12 @@ class OlaHeader extends BodyComponent {
 
     render() {
         return this.renderMJML(`
-    <mj-section vertical-align="middle" css-class="ola_header">
+    <mj-section vertical-align="middle" css-class="ola_header" padding="${tokens('size-6')}">
         <mj-column vertical-align="middle">
             <mj-image ${this.htmlAttributes({
                 width: '154px',
                 align: 'left',
+                padding: 0,
                 src: this.getAttribute('src'),
                 href: this.getAttribute('href'),
                 alt: this.getAttribute('alt')

@@ -9,11 +9,28 @@ registerDependencies({
 class OlaFooterAddress extends BodyComponent {
     static endingTag = true;
 
+    static allowedAttributes = {
+      href: 'string',
+      src: 'string',
+      alt: 'string'
+    };
+
+    static defaultAttributes = {
+        href: '#'
+    };
+
     render() {
         return this.renderMJML(`
       <mj-section border-top="solid 1px ${tokens('gray-light')}">
-        <mj-column vertical-align="middle" width="112px" padding-right="28px">
-            <mj-image padding="0" width="84px" align="left" src="marketgoo.png" href="https://marketgoo.com" alt="marketgoo"></mj-image>
+        <mj-column vertical-align="middle" width="112px" padding-right="${tokens('size-7')}">
+          <mj-image ${this.htmlAttributes({
+            width: '84px',
+            align: 'center',
+            padding: `${tokens('size-3')} 0`,
+            src: this.getAttribute('src'),
+            href: this.getAttribute('href'),
+            alt: this.getAttribute('alt')
+        })}></mj-image>
         </mj-column>
         <mj-column vertical-align="middle">
           <ola-text variant="caption" color="gray" align="center">

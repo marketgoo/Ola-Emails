@@ -1,5 +1,6 @@
 <mjml>
   <mj-head>
+    <mj-font name="Omnes" href="http//use.typekit.net/ktf8dir.css" />
     <mj-attributes>
       <mj-all font-family="Arial" />
     </mj-attributes>
@@ -16,8 +17,8 @@
     </mj-style>
   </mj-head>
   <mj-body background-color="#F0F2F4">
-    <ola-header src="marketgoo.png">
-      <a href="#">Open in browser</a>
+    <ola-header src="https://marketgoo.github.io/Ola-Emails/marketgoo.png">
+      <a href="https://marketgoo.github.io/Ola-Emails/resetpass.html" target="_blank">Open in browser</a>
     </ola-header>
     <ola-panel>
       <ola-panel-section>
@@ -44,10 +45,10 @@
     </ola-panel>
 
     <ola-footer-menu>
-      <ola-footer-menu-icon src="facebook.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-      <ola-footer-menu-icon src="twitter.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-      <ola-footer-menu-icon src="instagram.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-      <ola-footer-menu-icon src="linkedin.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/facebook.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/twitter.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/instagram.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/linkedin.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
     </ola-footer-menu>
 
     <ola-footer-menu>
@@ -57,6 +58,6 @@
     </ola-footer-menu>
 
     <ola-footer-message>You recived this message as part of the service provided by <strong>marketgoo</strong>. We hope you enjoy it but if you have any problem, please <a href="#">leave us feedback.</a></ola-footer-message>
-    <ola-footer-address>Malatones, 63, 28110 Algete. Madrid. Spain</ola-footer-address>
+    <ola-footer-address src="https://marketgoo.github.io/Ola-Emails/marketgoo.png">Malatones, 63, 28110 Algete. Madrid. Spain</ola-footer-address>
   </mj-body>
 </mjml>
