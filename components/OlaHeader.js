@@ -1,11 +1,11 @@
-import { registerDependencies } from 'mjml-validator';
-import { BodyComponent } from 'mjml-core';
+const { registerDependencies } = require('mjml-validator');
+const { BodyComponent } = require('mjml-core');
 
 registerDependencies({
     'mj-body': ['ola-header']
 });
 
-export default class OlaHeader extends BodyComponent {
+class OlaHeader extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
@@ -47,3 +47,5 @@ export default class OlaHeader extends BodyComponent {
 	`);
     }
 }
+
+module.exports = OlaHeader;

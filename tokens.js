@@ -85,7 +85,7 @@ tokens['shadow-1'] = '0 1px 3px #0003, 0 0 0 1px #0001';
 tokens['shadow-2'] = '0 2px 6px #0003, 0 0 0 1px #0001';
 tokens['shadow-3'] = '0 4px 12px #0003, 0 0 0 1px #0001';
 
-export default function(key, subkey) {
+module.exports = function(key, subkey) {
     const value = tokens[key];
 
     if (subkey) {
@@ -93,4 +93,4 @@ export default function(key, subkey) {
     }
 
     return typeof value === 'object' ? { ...value } : value;
-}
+};

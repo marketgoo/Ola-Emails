@@ -1,7 +1,8 @@
-import { BodyComponent } from 'mjml-core';
-import tokens from '../tokens';
+const { registerDependencies } = require('mjml-validator');
+const { BodyComponent } = require('mjml-core');
+const tokens = require('../tokens');
 
-export default class OlaText extends BodyComponent {
+class OlaText extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
@@ -38,3 +39,5 @@ export default class OlaText extends BodyComponent {
 		`);
     }
 }
+
+module.exports = OlaText;

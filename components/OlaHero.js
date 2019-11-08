@@ -1,12 +1,12 @@
-import { registerDependencies } from 'mjml-validator';
-import { BodyComponent } from 'mjml-core';
-import tokens from '../tokens';
+const { registerDependencies } = require('mjml-validator');
+const { BodyComponent } = require('mjml-core');
+const tokens = require('../tokens');
 
 registerDependencies({
     'mj-body': ['ola-hero']
 });
 
-export default class OlaHero extends BodyComponent {
+class OlaHero extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
@@ -26,3 +26,5 @@ export default class OlaHero extends BodyComponent {
 	`);
     }
 }
+
+module.exports = OlaHero;

@@ -1,14 +1,8 @@
-import gulp from 'gulp';
-import babel from 'gulp-babel';
-import mjml2html from 'mjml';
-import { Transform } from 'stream';
-import './components/index.js';
+const gulp = require('gulp');
+const mjml2html = require('mjml');
+const { Transform } = require('stream');
 
-gulp.task('build', () => 
-  gulp.src('components/**/*.js')
-    .pipe(babel())
-    .pipe(gulp.dest('lib'))
-)
+require('./components');
 
 gulp.task('demo', () =>
   gulp.src('demo/*.mjml')

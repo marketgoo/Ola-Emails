@@ -1,12 +1,12 @@
-import { registerDependencies } from 'mjml-validator';
-import { BodyComponent } from 'mjml-core';
-import tokens from '../tokens';
+const { registerDependencies } = require('mjml-validator');
+const { BodyComponent } = require('mjml-core');
+const tokens = require('../tokens');
 
 registerDependencies({
     'mj-body': ['ola-footer-address']
 });
 
-export default class OlaFooterAddress extends BodyComponent {
+class OlaFooterAddress extends BodyComponent {
     static endingTag = true;
 
     render() {
@@ -24,3 +24,5 @@ export default class OlaFooterAddress extends BodyComponent {
 	`);
     }
 }
+
+module.exports = OlaFooterAddress;

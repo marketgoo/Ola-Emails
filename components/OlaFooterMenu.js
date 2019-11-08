@@ -1,11 +1,11 @@
-import { registerDependencies } from 'mjml-validator';
-import { BodyComponent } from 'mjml-core';
+const { registerDependencies } = require('mjml-validator');
+const { BodyComponent } = require('mjml-core');
 
 registerDependencies({
     'mj-body': ['ola-footer-menu']
 });
 
-export default class OlaFooterMenu extends BodyComponent {
+class OlaFooterMenu extends BodyComponent {
     static endingTag = true;
 
     render() {
@@ -18,3 +18,5 @@ export default class OlaFooterMenu extends BodyComponent {
 	`);
     }
 }
+
+module.exports = OlaFooterMenu;

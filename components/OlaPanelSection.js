@@ -1,6 +1,6 @@
-import { registerDependencies } from 'mjml-validator';
-import { BodyComponent } from 'mjml-core';
-import tokens from '../tokens';
+const { registerDependencies } = require('mjml-validator');
+const { BodyComponent } = require('mjml-core');
+const tokens = require('../tokens');
 
 registerDependencies({
     'ola-panel': ['ola-panel-section'],
@@ -14,7 +14,7 @@ const styles = {
     }
 };
 
-export default class OlaPanelSection extends BodyComponent {
+class OlaPanelSection extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
@@ -57,3 +57,5 @@ export default class OlaPanelSection extends BodyComponent {
 		`);
     }
 }
+
+module.exports = OlaPanelSection;

@@ -1,11 +1,11 @@
-import { registerDependencies } from 'mjml-validator';
-import { BodyComponent } from 'mjml-core';
+const { registerDependencies } = require('mjml-validator');
+const { BodyComponent } = require('mjml-core');
 
 registerDependencies({
     'mj-body': ['ola-footer-message']
 });
 
-export default class OlaFooterMessage extends BodyComponent {
+class OlaFooterMessage extends BodyComponent {
     static endingTag = true;
 
     headStyle() {
@@ -28,3 +28,5 @@ export default class OlaFooterMessage extends BodyComponent {
 	`);
     }
 }
+
+module.exports = OlaFooterMessage;

@@ -7,6 +7,7 @@
     "./components/OlaFooterMenuLink.js",
     "./components/OlaFooterMessage.js",
     "./components/OlaHeader.js",
+    "./components/OlaHero.js",
     "./components/OlaPanel.js",
     "./components/OlaPanelSection.js",
     "./components/OlaSignature.js",
