@@ -23,7 +23,7 @@
         </ola-header>
         <mj-section>
             <mj-column>
-                <mj-image padding="0" src="promo.png" alt="Promo" width="300px"></mj-image>
+                <mj-image padding="0" src="https://marketgoo.github.io/Ola-Emails/promo.png" alt="Promo" width="300px"></mj-image>
             </mj-column>
         </mj-section>
     </ola-hero>
@@ -47,7 +47,7 @@
         </ola-text>
       </ola-panel-section>
 
-      <ola-signature src="person.jpg">
+      <ola-signature src="https://marketgoo.github.io/Ola-Emails/person.jpg">
           <ola-text variant="callout" font-weight="bold">Thanks,</ola-text>
           <ola-text variant="caption">The marketgoo team</ola-text>
       </ola-signature>
