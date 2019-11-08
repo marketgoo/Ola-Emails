@@ -1,16 +1,16 @@
 {
   "packages": [
-    "./components/OlaButton.js",
-    "./components/OlaFooterAddress.js",
-    "./components/OlaFooterMenu.js",
-    "./components/OlaFooterMenuIcon.js",
-    "./components/OlaFooterMenuLink.js",
-    "./components/OlaFooterMessage.js",
-    "./components/OlaHeader.js",
-    "./components/OlaHero.js",
-    "./components/OlaPanel.js",
-    "./components/OlaPanelSection.js",
-    "./components/OlaSignature.js",
-    "./components/OlaText.js"
+    "./src/OlaButton.js",
+    "./src/OlaFooterAddress.js",
+    "./src/OlaFooterMenu.js",
+    "./src/OlaFooterMenuIcon.js",
+    "./src/OlaFooterMenuLink.js",
+    "./src/OlaFooterMessage.js",
+    "./src/OlaHeader.js",
+    "./src/OlaHero.js",
+    "./src/OlaPanel.js",
+    "./src/OlaPanelSection.js",
+    "./src/OlaSignature.js",
+    "./src/OlaText.js"
   ]
 }

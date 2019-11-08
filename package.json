@@ -2,6 +2,7 @@
   "name": "@marketgoo/ola-emails",
   "description": "Ola design system implemented for emails, using MJML",
   "version": "0.1.0",
+  "main": "src",
   "scripts": {
     "start": "nodemon --exec gulp demo",
     "publish:demo": "gulp demo && gh-pages -d demo",
@@ -20,7 +21,7 @@
   "nodemonConfig": {
     "watch": [
       "demo/",
-      "components/"
+      "src/"
     ],
     "ext": "js,mjml"
   }

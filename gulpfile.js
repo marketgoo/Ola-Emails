@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const mjml2html = require('mjml');
 const { Transform } = require('stream');
 
-require('./components');
+require('./src');
 
 gulp.task('demo', () =>
   gulp.src('demo/*.mjml')
