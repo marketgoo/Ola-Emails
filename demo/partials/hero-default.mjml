@@ -1,9 +1,9 @@
 <ola-hero background-color="#2C333E">
-    <ola-header src="https://marketgoo.github.io/Ola-Emails/marketgoo.png" color="gray-light">
+    <ola-header src="https://marketgoo.github.io/Ola-Emails/img/marketgoo.png" color="gray-light">
         <a href="#">Open in browser</a>
     </ola-header>
 
-    <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/promo.png" />
+    <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/img/promo.png" />
 
     <ola-hero-header>
         <ola-text variant="headline">Welcome to marketgoo, Jennifer</ola-text>

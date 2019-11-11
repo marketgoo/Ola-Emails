@@ -1,71 +1,16 @@
 <mjml>
-  <mj-head>
-    <mj-font name="Omnes" href="http//use.typekit.net/ktf8dir.css" />
-    <mj-attributes>
-      <mj-all font-family="Arial" />
-    </mj-attributes>
-    <mj-style>
-      body {
-        scroll-behavior: smooth;
-        text-rendering: auto;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-      }
-      a {
-        color: #0090DA;
-      }
-    </mj-style>
-  </mj-head>
+  <mj-include path="demo/partials/head-default.mjml" />
+
   <mj-body background-color="#F0F2F4">
-    <ola-header src="https://marketgoo.github.io/Ola-Emails/marketgoo.png">
-      <a href="https://marketgoo.github.io/Ola-Emails/" target="_blank">Open in Browser</a>
-    </ola-header>
-    <ola-panel>
+    <ola-panel close-to="top">
       <ola-panel-section>
-        <mj-column>
-          <ola-button>Ola</ola-button>
-          <ola-button variant="primary">Ola</ola-button>
-          <ola-text>Que pasa</ola-text>
-          <ola-text variant="display">This is a display</ola-text>
-          <ola-text variant="title">This is the title</ola-text>
-        </mj-column>
+        <ola-text variant="callout">
+          <ul>
+            <li><a href="welcome.html">Welcome</a></li>
+            <li><a href="resetpass.html">Reset password</a></li>
+          </ul>
+        </ola-text>
       </ola-panel-section>
-      <ola-panel-section variant="highlight">
-        <mj-column>
-          <ola-text variant="headline">This is the headline</ola-text>
-          <ola-text variant="body">This is the body</ola-text>
-          <ola-text variant="callout">This is the callout</ola-text>
-          <ola-text variant="caption">This is the caption</ola-text>
-        </mj-column>
-      </ola-panel-section>
-      <ola-panel-section>
-        <mj-column>
-          <ola-text variant="callout" color="gray">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et erat ullamcorper, tincidunt elit non, varius ligula. Phasellus pretium risus in metus accumsan, at ultricies elit sodales. Nunc at ligula quis ligula aliquam tincidunt. Maecenas condimentum tincidunt quam, eu viverra dolor pharetra egestas. In vitae erat nunc. Vivamus tincidunt augue ipsum, ac ornare quam viverra sed. Proin pretium est a congue fermentum. Nam rhoncus eros vitae libero varius, ut vehicula diam fermentum. </p>
-          </ola-text>
-          <ola-text variant="caption" color="gray">
-            <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit.</a> Aliquam et erat ullamcorper, tincidunt elit non, varius ligula. Phasellus pretium risus in metus accumsan, at ultricies elit sodales. Nunc at ligula quis ligula aliquam tincidunt. Maecenas condimentum tincidunt quam, eu viverra dolor pharetra egestas. In vitae erat nunc. Vivamus tincidunt augue ipsum, ac ornare quam viverra sed. Proin pretium est a congue fermentum. Nam rhoncus eros vitae libero varius, ut vehicula diam fermentum. </p>
-          </ola-text>
-        </mj-column>
-      </ola-panel-section>
-
-      <ola-signature></ola-signature>
     </ola-panel>
-
-    <ola-footer-menu>
-      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/facebook.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/twitter.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/instagram.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/linkedin.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-    </ola-footer-menu>
-
-    <ola-footer-menu>
-      <ola-footer-menu-link href="https://marketgoo.com/">Contact Us</ola-footer-menu-link>
-      <ola-footer-menu-link href="https://marketgoo.com/">Privacy Policy</ola-footer-menu-link>
-      <ola-footer-menu-link href="https://marketgoo.com/">Open in Browser</ola-footer-menu-link>
-    </ola-footer-menu>
-
-    <ola-footer-message>You recived this message as part of the service provided by <strong>marketgoo</strong>. We hope you enjoy it but if you have any problem, please <a href="#">leave us feedback.</a></ola-footer-message>
-    <ola-footer-address src="https://marketgoo.github.io/Ola-Emails/marketgoo.png">Malatones, 63, 28110 Algete. Madrid. Spain</ola-footer-address>
   </mj-body>
 </mjml>

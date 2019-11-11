@@ -4,7 +4,7 @@
   <mj-body background-color="#F0F2F4">
     <mj-include path="demo/partials/hero-default.mjml" />
 
-    <ola-panel overlap="top">
+    <ola-panel close-to="top">
       <ola-panel-section>
         <ola-text variant="callout">
             <p>Thank you for signing up to marketgoo, the easy do-it-yourself SEO tool that guides you in improving your site in order to get found on Google and grow your business online.</p>
