@@ -18,14 +18,10 @@ class OlaPanel extends BodyComponent {
       .ola_panel {
         border-radius: ${tokens('radius')};
         background-color: ${tokens('white')};
-        box-shadow: ${tokens('shadow-1')};
       }
       .ola_panel-top {
-        border-radius: ${tokens('radius')};
+        border-radius: 0 0 ${tokens('radius')} ${tokens('radius')};
         background-color: ${tokens('white')};
-        box-shadow: ${tokens('shadow-1')};
-        margin-top: -100px !important;
-        padding-top: 100px;
       }
       @media only screen and (max-width:600px) {
         .ola_panel {

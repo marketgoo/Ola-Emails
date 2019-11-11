@@ -30,19 +30,27 @@ class OlaHeader extends BodyComponent {
 
     render() {
         return this.renderMJML(`
-    <mj-section vertical-align="middle" css-class="ola_header" padding="${tokens('size-6')}">
+    <mj-section
+      vertical-align="middle"
+      css-class="ola_header"
+      padding="${tokens('size-6')}"
+      >
         <mj-column vertical-align="middle">
-            <mj-image ${this.htmlAttributes({
-                width: '154px',
-                align: 'left',
-                padding: 0,
-                src: this.getAttribute('src'),
-                href: this.getAttribute('href'),
-                alt: this.getAttribute('alt')
-            })}></mj-image>
+            <mj-image
+                width="154px"
+                align="left"
+                padding="0"
+                src="${this.getAttribute('src')}"
+                href="${this.getAttribute('href')}"
+                alt="${this.getAttribute('alt')}"
+            ></mj-image>
         </mj-column>
         <mj-column vertical-align="middle">
-            <ola-text variant="caption" color="gray" align="right">
+            <ola-text
+              variant="caption"
+              color="gray"
+              align="right"
+              >
                 ${this.getContent()}
             </ola-text>
         </mj-column>

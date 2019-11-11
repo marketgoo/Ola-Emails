@@ -17,15 +17,8 @@
     </mj-style>
   </mj-head>
   <mj-body background-color="#F0F2F4">
-    <ola-hero src="https://marketgoo.github.io/Ola-Emails/promo.png">
-        <ola-header src="https://marketgoo.github.io/Ola-Emails/marketgoo.png">
-            <a href="#">Open in browser</a>
-        </ola-header>
-        <mj-section>
-            <mj-column>
-                <mj-image padding="0" src="https://marketgoo.github.io/Ola-Emails/promo.png" alt="Promo" width="300px"></mj-image>
-            </mj-column>
-        </mj-section>
+    <ola-hero src="https://marketgoo.github.io/Ola-Emails/promo.png" background-color="#2C333E">
+        <ola-text variant="title">Ola ke ase</ola-text>
     </ola-hero>
 
     <ola-panel overlap="top">

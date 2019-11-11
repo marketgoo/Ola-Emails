@@ -34,12 +34,16 @@ class OlaFooterMenuIcon extends BodyComponent {
 
     render() {
         return this.renderMJML(`
-        <ola-footer-menu-link ${this.htmlAttributes({ href: this.getAttribute('href') })}>
-        <img ${this.htmlAttributes({
-            src: this.getAttribute('src'),
-            alt: this.getAttribute('alt'),
-            style: 'img'
-        })}>
+        <ola-footer-menu-link href=${this.getAttribute('href')}">
+            <img
+              src="${this.getAttribute('src')}"
+              alt="${this.getAttribute('alt')}"
+              width="${tokens('size-6')}"
+              height="${tokens('size-6')}"
+              padding="${tokens('size-3')}"
+              border="0"
+              style="outline:none;display:block"
+            >
         </ola-footer-menu-link>
     `);
     }

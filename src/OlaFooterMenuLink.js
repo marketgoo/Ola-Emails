@@ -19,15 +19,14 @@ class OlaFooterMenuLink extends BodyComponent {
 
     render() {
         return this.renderMJML(`
-      <mj-navbar-link ${this.htmlAttributes({
-          href: this.getAttribute('href'),
-          'css-class': 'ola_menu-link',
-          'text-transform': 'none',
-          'text-decoration': 'underline',
-          color: tokens('gray'),
-          padding: '4px 20px',
-          'font-size': tokens('caption', 'font-size')
-      })}
+      <mj-navbar-link
+          href="${this.getAttribute('href')}"
+          css-class="ola_menu-link"
+          text-transform="none"
+          text-decoration="underline"
+          color="${tokens('gray')}"
+          padding="4px 20px"
+          font-size="${tokens('caption', 'font-size')}"
       >
         ${this.getContent()}
       </mj-navbar-link>
