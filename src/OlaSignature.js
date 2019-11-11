@@ -10,7 +10,8 @@ class OlaSignature extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        src: 'string'
+        src: 'string',
+        alt: 'string'
     };
 
     headStyle(breakpoint) {
@@ -40,8 +41,8 @@ class OlaSignature extends BodyComponent {
                       height="60px"
                       align="left"
                       padding="0"
-                      src="person.jpg"
-                      alt="Avatar"
+                      src="${this.getAttribute('src')}"
+                      alt="${this.getAttribute('alt')}"
                   ></mj-image>
               </mj-column>`
             : '';
