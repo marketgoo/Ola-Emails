@@ -13,11 +13,15 @@ class OlaHeader extends BodyComponent {
     static allowedAttributes = {
         href: 'string',
         src: 'string',
-        alt: 'string'
+        alt: 'string',
+        color: 'string',
+        'background-color': 'string',
     };
 
     static defaultAttributes = {
-        href: '#'
+        href: '#',
+        'background-color': 'white',
+        'color': 'gray',
     };
 
     headStyle() {
@@ -48,7 +52,7 @@ class OlaHeader extends BodyComponent {
         <mj-column vertical-align="middle">
             <ola-text
               variant="caption"
-              color="gray"
+              color="${this.getAttribute('color')}"
               align="right"
               >
                 ${this.getContent()}

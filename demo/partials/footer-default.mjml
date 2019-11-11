@@ -1,0 +1,15 @@
+<ola-footer-menu>
+    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/facebook.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/twitter.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/instagram.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/linkedin.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+</ola-footer-menu>
+
+<ola-footer-menu>
+    <ola-footer-menu-link href="https://marketgoo.com/">Contact Us</ola-footer-menu-link>
+    <ola-footer-menu-link href="https://marketgoo.com/">Privacy Policy</ola-footer-menu-link>
+    <ola-footer-menu-link href="https://marketgoo.com/">Open in Browser</ola-footer-menu-link>
+</ola-footer-menu>
+
+<ola-footer-message>You recived this message as part of the service provided by <strong>marketgoo</strong>. We hope you enjoy it but if you have any problem, please <a href="#">leave us feedback.</a></ola-footer-message>
+<ola-footer-address src="https://marketgoo.github.io/Ola-Emails/marketgoo.png">Malatones, 63, 28110 Algete. Madrid. Spain</ola-footer-address>

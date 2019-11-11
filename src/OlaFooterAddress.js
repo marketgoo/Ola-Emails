@@ -25,7 +25,7 @@ class OlaFooterAddress extends BodyComponent {
         <mj-column
           vertical-align="middle"
           width="112px"
-          padding-right="${tokens('size-7')}"
+          padding=0
           >
           <mj-image
             width="84px"
@@ -36,7 +36,7 @@ class OlaFooterAddress extends BodyComponent {
             alt="${this.getAttribute('alt')}"
           ></mj-image>
         </mj-column>
-        <mj-column vertical-align="middle">
+        <mj-column vertical-align="middle" padding="0 ${tokens('size-6')}" width="66%">
           <ola-text variant="caption" color="gray" align="center">
             ${this.getContent()}
           </ola-text>

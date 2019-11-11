@@ -1,0 +1,4 @@
+<ola-signature src="https://marketgoo.github.io/Ola-Emails/person.jpg">
+    <ola-text variant="callout" font-weight="bold">Thanks,</ola-text>
+    <ola-text variant="caption">The marketgoo team</ola-text>
+</ola-signature>

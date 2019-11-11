@@ -1,30 +1,14 @@
 <mjml>
-  <mj-head>
-    <mj-font name="Omnes" href="http//use.typekit.net/ktf8dir.css" />
-    <mj-attributes>
-      <mj-all font-family="Arial" />
-    </mj-attributes>
-    <mj-style>
-      body {
-        scroll-behavior: smooth;
-        text-rendering: auto;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-      }
-      a {
-        color: #0090DA;
-      }
-    </mj-style>
-  </mj-head>
+  <mj-include path="demo/partials/head-default.mjml" />
+
   <mj-body background-color="#F0F2F4">
-    <ola-header src="https://marketgoo.github.io/Ola-Emails/marketgoo.png">
-      <a href="https://marketgoo.github.io/Ola-Emails/resetpass.html" target="_blank">Open in browser</a>
-    </ola-header>
+    <mj-include path="demo/partials/header-default.mjml" />
+
     <ola-panel>
       <ola-panel-section>
-        <ola-text variant="body" font-weight="bold">Hi, Jennifer</ola-text>
         <ola-text variant="callout">
-            <p>You have requested a change of password for your <strong>marketgoo</strong> account. This password reset is only valid for the next 24 hours.</p>
+          <p><strong>Hi, Jennifer</strong></p>
+          <p>You have requested a change of password for your <strong>marketgoo</strong> account. This password reset is only valid for the next 24 hours.</p>
         </ola-text>
       </ola-panel-section>
 
@@ -44,20 +28,6 @@
       </ola-signature>
     </ola-panel>
 
-    <ola-footer-menu>
-      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/facebook.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/twitter.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/instagram.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-      <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/linkedin.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-    </ola-footer-menu>
-
-    <ola-footer-menu>
-      <ola-footer-menu-link href="https://marketgoo.com/">Contact Us</ola-footer-menu-link>
-      <ola-footer-menu-link href="https://marketgoo.com/">Privacy Policy</ola-footer-menu-link>
-      <ola-footer-menu-link href="https://marketgoo.com/">Open in Browser</ola-footer-menu-link>
-    </ola-footer-menu>
-
-    <ola-footer-message>You recived this message as part of the service provided by <strong>marketgoo</strong>. We hope you enjoy it but if you have any problem, please <a href="#">leave us feedback.</a></ola-footer-message>
-    <ola-footer-address src="https://marketgoo.github.io/Ola-Emails/marketgoo.png">Malatones, 63, 28110 Algete. Madrid. Spain</ola-footer-address>
+    <mj-include path="demo/partials/footer-default.mjml" />
   </mj-body>
 </mjml>

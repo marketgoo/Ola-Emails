@@ -3,16 +3,11 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('../tokens');
 
 registerDependencies({
-    'mj-body': ['ola-hero']
+    'ola-hero': ['ola-hero-header']
 });
 
-class OlaHero extends BodyComponent {
+class OlaHeroHeader extends BodyComponent {
     static endingTag = true;
-
-    static allowedAttributes = {
-        src: 'string',
-        'background-color': 'string',
-    };
 
     headStyle(breakpoint) {
         return `
@@ -34,16 +29,18 @@ class OlaHero extends BodyComponent {
 
     render() {
         return this.renderMJML(`
-    <mj-wrapper
-        css-class="ola_hero"
-        full-width="full-width"
-        background-color="${this.getAttribute('background-color')}"
-        padding="0"
-        >
-        ${this.getContent()}
-    </mj-wrapper>
+        <mj-section
+            vertical-align="middle"
+            css-class="ola_hero-header"
+            padding-top="${tokens('size-8')}"
+            padding-bottom="0"
+            >
+            <mj-column>
+                ${this.getContent()}
+            </mj-column>
+        </section>
 	`);
     }
 }
 
-module.exports = OlaHero;
+module.exports = OlaHeroHeader;
