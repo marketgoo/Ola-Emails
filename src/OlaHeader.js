@@ -14,20 +14,22 @@ class OlaHeader extends BodyComponent {
         href: 'string',
         src: 'string',
         alt: 'string',
-        color: 'string',
-        'background-color': 'string',
     };
 
     static defaultAttributes = {
         href: '#',
-        'background-color': 'white',
-        'color': 'gray',
     };
 
-    headStyle() {
+    headStyle(breakpoint) {
         return `
       .ola_header a {
         color: inherit;
+      }
+
+      @media only screen and (min-width:${breakpoint}) {
+        .ola_header-content div {
+          text-align: right !important;
+        }
       }
     `;
     }
@@ -49,14 +51,8 @@ class OlaHeader extends BodyComponent {
                 alt="${this.getAttribute('alt')}"
             ></mj-image>
         </mj-column>
-        <mj-column vertical-align="middle">
-            <ola-text
-              variant="caption"
-              color="${this.getAttribute('color')}"
-              align="right"
-              >
-                ${this.getContent()}
-            </ola-text>
+        <mj-column vertical-align="middle" css-class="ola_header-content">
+            ${this.getContent()}
         </mj-column>
     </mj-section>
 	`);

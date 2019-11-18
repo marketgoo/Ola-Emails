@@ -1,16 +1,7 @@
 {
+  "validationLevel": "strict",
+  "filePath": "./demo/partials/",
   "packages": [
-    "./src/OlaButton.js",
-    "./src/OlaFooterAddress.js",
-    "./src/OlaFooterMenu.js",
-    "./src/OlaFooterMenuIcon.js",
-    "./src/OlaFooterMenuLink.js",
-    "./src/OlaFooterMessage.js",
-    "./src/OlaHeader.js",
-    "./src/OlaHero.js",
-    "./src/OlaPanel.js",
-    "./src/OlaPanelSection.js",
-    "./src/OlaSignature.js",
-    "./src/OlaText.js"
+    "./src/"
   ]
 }

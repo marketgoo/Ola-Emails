@@ -1,8 +1,8 @@
 <mjml>
-  <mj-include path="demo/partials/head-default.mjml" />
+  <mj-include path="./partials/head-default.mjml" />
 
   <mj-body background-color="#F0F2F4">
-    <mj-include path="demo/partials/header-default.mjml" />
+    <mj-include path="./partials/header-default.mjml" />
 
     <ola-panel>
       <ola-panel-section>
@@ -28,6 +28,6 @@
       </ola-signature>
     </ola-panel>
 
-    <mj-include path="demo/partials/footer-default.mjml" />
+    <mj-include path="./partials/footer-default.mjml" />
   </mj-body>
 </mjml>

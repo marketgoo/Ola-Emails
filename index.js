@@ -1,0 +1,31 @@
+const { registerComponent } = require('mjml-core');
+
+const OlaButton = require('./src/OlaButton');
+const OlaFooterMessage = require('./src/OlaFooterMessage');
+const OlaFooterAddress = require('./src/OlaFooterAddress');
+const OlaFooterMenu = require('./src/OlaFooterMenu');
+const OlaFooterMenuLink = require('./src/OlaFooterMenuLink');
+const OlaFooterMenuIcon = require('./src/OlaFooterMenuIcon');
+const OlaHeader = require('./src/OlaHeader');
+const OlaHero = require('./src/OlaHero');
+const OlaHeroHeader = require('./src/OlaHeroHeader');
+const OlaHeroImg = require('./src/OlaHeroImg');
+const OlaPanel = require('./src/OlaPanel');
+const OlaPanelSection = require('./src/OlaPanelSection');
+const OlaSignature = require('./src/OlaSignature');
+const OlaText = require('./src/OlaText');
+
+registerComponent(OlaButton);
+registerComponent(OlaFooterMessage);
+registerComponent(OlaFooterAddress);
+registerComponent(OlaFooterMenu);
+registerComponent(OlaFooterMenuLink);
+registerComponent(OlaFooterMenuIcon);
+registerComponent(OlaHeader);
+registerComponent(OlaHero);
+registerComponent(OlaHeroHeader);
+registerComponent(OlaHeroImg);
+registerComponent(OlaPanel);
+registerComponent(OlaPanelSection);
+registerComponent(OlaSignature);
+registerComponent(OlaText);

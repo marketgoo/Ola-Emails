@@ -1,6 +1,8 @@
 <ola-hero background-color="#2C333E">
     <ola-header src="https://marketgoo.github.io/Ola-Emails/img/marketgoo.png" color="gray-light">
-        <a href="#">Open in browser</a>
+        <ola-text variant="caption" color="gray-light">
+            <a href="#" target="_blank">Open in browser</a>
+        </ola-text>
     </ola-header>
 
     <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/img/promo.png" />
