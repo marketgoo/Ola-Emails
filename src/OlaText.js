@@ -23,7 +23,7 @@ class OlaText extends BodyComponent {
         const style = tokens(this.getAttribute('variant'));
 
         if (!style['font-weight'] && this.getAttribute('font-weight')) {
-            style['font-weight'] = this.getAttribute('font-weight');
+            style['font-weight'] = this.getAttribute('font-weight') === 'bold' ? tokens('bold') : tokens('regular');
         }
         return this.renderMJML(`
 			<mj-text

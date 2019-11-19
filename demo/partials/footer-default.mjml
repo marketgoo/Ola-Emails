@@ -1,8 +1,8 @@
 <ola-footer-menu>
-    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/img/facebook.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/img/twitter.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/img/instagram.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
-    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/img/linkedin.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/img/social-facebook.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/img/social-twitter.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/img/social-instagram.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
+    <ola-footer-menu-icon src="https://marketgoo.github.io/Ola-Emails/img/social-linkedin.png" href="https://marketgoo.com/"></ola-footer-menu-icon>
 </ola-footer-menu>
 
 <ola-footer-menu>
@@ -12,4 +12,4 @@
 </ola-footer-menu>
 
 <ola-footer-message>You recived this message as part of the service provided by <strong>marketgoo</strong>. We hope you enjoy it but if you have any problem, please <a href="#">leave us feedback.</a></ola-footer-message>
-<ola-footer-address src="https://marketgoo.github.io/Ola-Emails/img/marketgoo.png">Malatones, 63, 28110 Algete. Madrid. Spain</ola-footer-address>
+<ola-footer-address src="https://marketgoo.github.io/Ola-Emails/img/logo-gray.png">Malatones, 63, 28110 Algete. Madrid. Spain</ola-footer-address>
