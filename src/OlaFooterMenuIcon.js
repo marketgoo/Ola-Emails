@@ -19,19 +19,6 @@ class OlaFooterMenuIcon extends BodyComponent {
         href: '#'
     };
 
-    getStyles() {
-        return {
-            img: {
-                border: 0,
-                display: 'block',
-                outline: 'none',
-                width: tokens('size-6'),
-                height: tokens('size-6'),
-                padding: tokens('size-3')
-            }
-        };
-    }
-
     render() {
         return this.renderMJML(`
         <ola-footer-menu-link href=${this.getAttribute('href')}">
