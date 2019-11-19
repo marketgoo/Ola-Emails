@@ -5,7 +5,7 @@
   "main": "src",
   "scripts": {
     "start": "nodemon --exec gulp demo",
-    "publish:demo": "rm demo/*.html && gulp demo && gh-pages -d demo",
+    "publish:demo": "rm -f demo/*.html && gulp demo && gh-pages -d demo",
     "prettier": "prettier --single-quote 'components/*.js' tokens.js --tab-width 4 --print-width=120 --write"
   },
   "license": "MIT",

@@ -38,9 +38,9 @@ class OlaFooterMenuIcon extends BodyComponent {
             <img
               src="${this.getAttribute('src')}"
               alt="${this.getAttribute('alt')}"
-              width="${tokens('size-6')}"
-              height="${tokens('size-6')}"
-              padding="${tokens('size-3')}"
+              width="${tokens('size-7')}"
+              height="${tokens('size-7')}"
+              padding="0"
               border="0"
               style="outline:none;display:block"
             >
