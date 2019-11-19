@@ -7,7 +7,12 @@
         <ola-text variant="callout">
           <ul>
             <li><a href="welcome.html">Welcome</a></li>
+            <li><a href="welcome-partners.html">Welcome (Partners)</a></li>
             <li><a href="resetpass.html">Reset password</a></li>
+            <li><a href="resetpass-partners.html">Reset password (Partners)</a></li>
+            <li><a href="in-house-reviews.html">In-house reviews</a></li>
+            <li><a href="site-configured.html">Site configured</a></li>
+            <li><a href="quick-question.html">Quick question</a></li>
           </ul>
         </ola-text>
       </ola-panel-section>
