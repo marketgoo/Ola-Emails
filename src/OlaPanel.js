@@ -38,7 +38,11 @@ class OlaPanel extends BodyComponent {
         const className = this.getAttribute('close-to') ? `ola_panel-${this.getAttribute('close-to')}` : 'ola_panel';
 
         return this.renderMJML(`
-        <mj-wrapper css-class="${className}">
+        <mj-wrapper
+          css-class="${className}"
+          padding-top="0"
+          padding-bottom="0"
+          >
           ${this.getContent()}
         </mj-wrapper>
 		  `);

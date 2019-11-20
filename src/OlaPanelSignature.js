@@ -3,24 +3,26 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('../tokens');
 
 registerDependencies({
-  'ola-panel': ['ola-signature']
+  'ola-panel': ['ola-panel-signature']
 });
 
-class OlaSignature extends BodyComponent {
-    static endingTag = true;
+class OlaPanelSignature extends BodyComponent {
+    static endingTag = false;
 
     static allowedAttributes = {
         src: 'string',
-        alt: 'string'
+        alt: 'string',
+        title: 'string',
+        subtitle: 'string'
     };
 
     headStyle(breakpoint) {
         return `
-        .ola_signature {
+        .ola_panel-signature {
           padding: 0 ${tokens('size-8')};
         }
         @media only screen and (max-width:${breakpoint}) {
-          .ola_signature {
+          .ola_panel-signature {
             padding: 0 ${tokens('size-7')};
           }
         }
@@ -48,7 +50,7 @@ class OlaSignature extends BodyComponent {
             : '';
 
         return this.renderMJML(`
-      <mj-section vertical-align="middle" css-class="ola_signature" text-align="left">
+      <mj-section vertical-align="middle" css-class="ola_panel-signature" text-align="left">
           ${img}
           <mj-column
             vertical-align="middle"
@@ -56,11 +58,12 @@ class OlaSignature extends BodyComponent {
             padding-top="8px"
             padding-bottom="8px"
             >
-            ${this.getContent()}
+            <ola-text variant="callout" font-weight="bold">${this.getAttribute('title')}</ola-text>
+            <ola-text variant="caption">${this.getAttribute('subtitle')}</ola-text>
           </mj-column>
       </mj-section>
       `);
     }
 }
 
-module.exports = OlaSignature;
+module.exports = OlaPanelSignature;

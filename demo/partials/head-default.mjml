@@ -2,6 +2,7 @@
     <mj-font name="Omnes" href="http//use.typekit.net/ktf8dir.css" />
     <mj-attributes>
         <mj-all font-family="Arial" />
+        <mj-body background-color="#F0F2F4" />
     </mj-attributes>
     <mj-style>
         body {

@@ -7,22 +7,12 @@ registerDependencies({
     'ola-panel-section': ['mj-column']
 });
 
-const styles = {
-    default: {},
-    highlight: {
-        'background-color': tokens('gray-xlight')
-    }
-};
-
 class OlaPanelSection extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        variant: 'enum(default,highlight)'
-    };
-
-    static defaultAttributes = {
-        variant: 'default'
+        'background-color': 'string',
+        'multicolumn': 'boolean'
     };
 
     headStyle(breakpoint) {
@@ -41,18 +31,14 @@ class OlaPanelSection extends BodyComponent {
     }
 
     render() {
-        const attributes = {
-            ...styles[this.getAttribute('variant')]
-        };
+        const content = this.getAttribute('multicolumn') ? this.getContent() : `<mj-column>${this.getContent()}</mj-column>`;
 
         return this.renderMJML(`
       <mj-section ${this.htmlAttributes({
           'css-class': 'ola_panel-section',
-          ...attributes
+          'background-color': tokens(this.getAttribute('background-color')),
       })}>
-        <mj-column>
-          ${this.getContent()}
-        </mj-column>
+          ${content}
       </mj-section>
 		`);
     }

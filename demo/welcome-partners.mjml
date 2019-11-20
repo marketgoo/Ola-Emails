@@ -1,63 +1,45 @@
 <mjml>
   <mj-include path="./partials/head-default.mjml" />
 
-  <mj-body background-color="#F0F2F4">
-    
+  <mj-body>
     <ola-hero background-color="#2C333E">
-    	<ola-header src="https://marketgoo.github.io/Ola-Emails/img/logo-white.png" color="gray-light">
-        <ola-text variant="caption" color="gray-light">
-          <a href="#" target="_blank">Open in browser</a>
-        </ola-text>
-      </ola-header>
-      
+      <ola-header variant="dark" />
       <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/img/promo.png" />
-      
-      <ola-hero-header>
-        <ola-text variant="headline">Welcome to the marketgoo referral partner network, {{name}}!</ola-text>
-      </ola-hero-header>
+      <ola-hero-title>Welcome to marketgoo, Jennifer</ola-hero-title>
     </ola-hero>
 
     <ola-panel close-to="top">
-      <ola-panel-section>
-        <ola-text variant="callout">
-            <p>You’re officially set up and ready to start earning, so go ahead and log in to your account!</p>
-        </ola-text>
-      </ola-panel-section>
+      <ola-panel-text>
+          <p>You’re officially set up and ready to start earning, so go ahead and log in to your account!</p>
+      </ola-panel-text>
 
       <ola-panel-section>
         <ola-button variant="primary">Login</ola-button>
       </ola-panel-section>
 
-      <ola-panel-section>
-        <ola-text variant="callout" color="black">
-          <p>We’d like to quickly share some useful links (so save this e-mail):</p>
-          <ul>
-            <li><strong><a href="#">How to promote marketgoo</a></strong></li>
-            <li><strong><a href="#">Logos, banners and screenshots</a></strong></li>
-            <li><strong><a href="#">How payment works</a></strong></li>
-          </ul>
-        </ola-text>
-      </ola-panel-section>
+      <ola-panel-text>
+        <p>We’d like to quickly share some useful links (so save this e-mail):</p>
+        <ul>
+          <li><strong><a href="#">How to promote marketgoo</a></strong></li>
+          <li><strong><a href="#">Logos, banners and screenshots</a></strong></li>
+          <li><strong><a href="#">How payment works</a></strong></li>
+        </ul>
+      </ola-panel-text>
       
-      <ola-panel-section variant="highlight">
+      <ola-panel-section background-color="gray-xlight">
         <ola-text variant="body" font-weight="bold">Your referral link</ola-text>
-        <ola-text variant="callout" color="black">
+        <ola-text variant="callout">
           <p>Your unique link to share with your audience is:</p>
           <p><a href="#"><strong>marketgoo.com/free-seo-report {{partner_token}}</strong></a></p>
           <p>You can find it within the <em>Referral Links</em> section of your account, and create more unique links should you want to track different campaigns.</p>
         </ola-text>
       </ola-panel-section>
       
-      <ola-panel-section>
-        <ola-text variant="caption" color="gray">
-            <p>If you did not sign up to marketgoo, please contact us at <a href="mailto:support@marketgoo.com">support@marketgoo.com</a>.</p>
-        </ola-text>
-      </ola-panel-section>
+      <ola-panel-text variant="caption" color="gray">
+          <p>If you did not sign up to marketgoo, please contact us at <a href="mailto:support@marketgoo.com">support@marketgoo.com</a>.</p>
+      </ola-panel-text>
 
-      <ola-signature src="https://marketgoo.github.io/Ola-Emails/img/person.jpg">
-          <ola-text variant="callout" font-weight="bold">Welcome aboard!</ola-text>
-          <ola-text variant="caption">David Roch and the marketgoo team</ola-text>
-      </ola-signature>
+      <ola-panel-signature src="https://marketgoo.github.io/Ola-Emails/img/person.jpg" title="Welcome aboard!" subtitle="David Roch and the marketgoo team" />
     </ola-panel>
 
     <mj-include path="./partials/footer-default.mjml" />

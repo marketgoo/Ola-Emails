@@ -10,11 +10,14 @@
     "./src/OlaFooterMessage.js",
     "./src/OlaHeader.js",
     "./src/OlaHero.js",
-    "./src/OlaHeroHeader.js",
     "./src/OlaHeroImg.js",
+    "./src/OlaHeroTitle.js",
     "./src/OlaPanel.js",
     "./src/OlaPanelSection.js",
-    "./src/OlaSignature.js",
+    "./src/OlaPanelSignature.js",
+    "./src/OlaPanelText.js",
+    "./src/OlaPanelTitle.js",
+    "./src/OlaTask.js",
     "./src/OlaText.js"
   ]
 }

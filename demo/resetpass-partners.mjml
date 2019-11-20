@@ -1,16 +1,15 @@
 <mjml>
   <mj-include path="./partials/head-default.mjml" />
 
-  <mj-body background-color="#F0F2F4">
-    <mj-include path="./partials/header-default.mjml" />
+  <mj-body>
+    <ola-header />
 
     <ola-panel>
-      <ola-panel-section>
-        <ola-text variant="callout">
-          <p><strong>Hi, Jennifer</strong></p>
+      <ola-panel-title>Hi, {{ name }}</ola-panel-title>
+
+      <ola-panel-text>
           <p>You have requested a change of password for your <strong>marketgoo partner network</strong> account. This password reset is only valid for the next 24 hours.</p>
-        </ola-text>
-      </ola-panel-section>
+      </ola-panel-text>
 
       <ola-panel-section>
         <ola-button variant="primary">Reset the password</ola-button>
@@ -22,10 +21,7 @@
         </ola-text>
       </ola-panel-section>
 
-      <ola-signature>
-          <ola-text variant="callout" font-weight="bold">Thanks,</ola-text>
-          <ola-text variant="caption">The marketgoo team</ola-text>
-      </ola-signature>
+      <ola-panel-signature title="Thanks," subtitle="The marketgoo team" />
     </ola-panel>
 
     <mj-include path="./partials/footer-default.mjml" />

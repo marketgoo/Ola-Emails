@@ -1,31 +1,28 @@
 <mjml>
   <mj-include path="./partials/head-default.mjml" />
 
-  <mj-body background-color="#F0F2F4">
-    <mj-include path="./partials/hero-default.mjml" />
+  <mj-body>
+    <ola-hero background-color="#2C333E">
+      <ola-header variant="dark" />
+      <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/img/promo.png" />
+      <ola-hero-title>Welcome to marketgoo, Jennifer</ola-hero-title>
+    </ola-hero>
 
     <ola-panel close-to="top">
-      <ola-panel-section>
-        <ola-text variant="callout">
-            <p>Very thank you for signing up to marketgoo, the easy do-it-yourself SEO tool that guides you in improving your site in order to get found on Google and grow your business online.</p>
-            <p>Please confirm your e-mail because it's where you'll receive important notifications like password recovery and updates.</p>
-        </ola-text>
-      </ola-panel-section>
+      <ola-panel-text>
+          <p>Very thank you for signing up to marketgoo, the easy do-it-yourself SEO tool that guides you in improving your site in order to get found on Google and grow your business online.</p>
+          <p>Please confirm your e-mail because it's where you'll receive important notifications like password recovery and updates.</p>
+      </ola-panel-text>
 
       <ola-panel-section>
         <ola-button variant="primary">Yes, this is my email</ola-button>
       </ola-panel-section>
 
-      <ola-panel-section>
-        <ola-text variant="caption" color="gray">
-            <p>If you did not sign up to marketgoo, please contact us at <a href="mailto:support@marketgoo.com">support@marketgoo.com</a>.</p>
-        </ola-text>
-      </ola-panel-section>
+      <ola-panel-text variant="caption" color="gray">
+        <p>If you did not sign up to marketgoo, please contact us at <a href="mailto:support@marketgoo.com">support@marketgoo.com</a>.</p>
+      </ola-panel-text>
 
-      <ola-signature src="https://marketgoo.github.io/Ola-Emails/img/person.jpg">
-          <ola-text variant="callout" font-weight="bold">Welcome aboard!</ola-text>
-          <ola-text variant="caption">David Roch and the marketgoo team</ola-text>
-      </ola-signature>
+      <ola-panel-signature src="https://marketgoo.github.io/Ola-Emails/img/person.jpg" title="Welcome aboard!" subtitle="David Roch and the marketgoo team" />
     </ola-panel>
 
     <mj-include path="./partials/footer-default.mjml" />

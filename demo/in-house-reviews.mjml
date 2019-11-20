@@ -1,18 +1,20 @@
 <mjml>
   <mj-include path="./partials/head-default.mjml" />
 
-  <mj-body background-color="#F0F2F4">
-    <mj-include path="./partials/hero-default.mjml" />
+  <mj-body>
+    <ola-hero background-color="#2C333E">
+      <ola-header variant="dark" />
+      <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/img/promo.png" />
+      <ola-hero-title>Welcome to marketgoo, Jennifer</ola-hero-title>
+    </ola-hero>
     
     <ola-panel>
-      <ola-panel-section>
-        <ola-text variant="callout">
-          <p>We know you want better rankings and more traffic for {{ url }}.</p>
-          <p>The good news is, you have access to <strong>marketgoo PRO</strong>, the easy, do-it-yourself SEO tool which guides you in improving your site in order to grow your business online.</p>
-          <p>It’ll quickly scan your site, identify errors and give you instructions on how to fix them - but in order to do that your site needs to be configured.</p>
-          <p>So what do you need to do? Just log in and tell us a few things about your business’s website. It’ll take less than 1 minute.</p>
-        </ola-text>
-      </ola-panel-section>
+      <ola-panel-text>
+        <p>We know you want better rankings and more traffic for {{ url }}.</p>
+        <p>The good news is, you have access to <strong>marketgoo PRO</strong>, the easy, do-it-yourself SEO tool which guides you in improving your site in order to grow your business online.</p>
+        <p>It’ll quickly scan your site, identify errors and give you instructions on how to fix them - but in order to do that your site needs to be configured.</p>
+        <p>So what do you need to do? Just log in and tell us a few things about your business’s website. It’ll take less than 1 minute.</p>
+      </ola-panel-text>
 
       <ola-panel-section>
         <ola-button variant="primary">Configure {{ url }}</ola-button>
@@ -22,16 +24,11 @@
         </ola-text>
       </ola-panel-section>
 
-      <ola-panel-section>
-        <ola-text variant="caption" color="gray">
-            <p>If you have any question, feel free <a href="#">to email our customer success team,</a> we're lightning quick at replying.</p>
-        </ola-text>
-      </ola-panel-section>
+      <ola-panel-text variant="caption" color="gray">
+          <p>If you have any question, feel free <a href="#">to email our customer success team,</a> we're lightning quick at replying.</p>
+      </ola-panel-text>
 
-      <ola-signature src="https://marketgoo.github.io/Ola-Emails/img/person.jpg">
-          <ola-text variant="callout" font-weight="bold">Big thanks!</ola-text>
-          <ola-text variant="caption">David Roch and the marketgoo team</ola-text>
-      </ola-signature>
+      <ola-panel-signature src="https://marketgoo.github.io/Ola-Emails/img/person.jpg" title="Big thanks!" subtitle="David Roch and the marketgoo team" />
     </ola-panel>
 
     <mj-include path="./partials/footer-default.mjml" />

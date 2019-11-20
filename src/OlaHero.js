@@ -10,8 +10,11 @@ class OlaHero extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        src: 'string',
         'background-color': 'string',
+    };
+
+    static defaultAttributes = {
+        'background-color': 'black',
     };
 
     headStyle(breakpoint) {
@@ -33,11 +36,13 @@ class OlaHero extends BodyComponent {
     }
 
     render() {
+        const color = tokens(this.getAttribute('background-color')) || this.getAttribute('background-color');
+
         return this.renderMJML(`
     <mj-wrapper
         css-class="ola_hero"
         full-width="full-width"
-        background-color="${this.getAttribute('background-color')}"
+        background-color="${color}"
         padding="0"
         >
         ${this.getContent()}

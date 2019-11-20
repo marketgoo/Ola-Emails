@@ -12,8 +12,8 @@
   "devDependencies": {
     "gh-pages": "^2.1.1",
     "gulp": "^4.0.2",
-    "nodemon": "^1.19.4",
-    "prettier": "^1.18.2"
+    "nodemon": "^2.0.0",
+    "prettier": "^1.19.1"
   },
   "dependencies": {
     "mjml": "^4.5.1"
