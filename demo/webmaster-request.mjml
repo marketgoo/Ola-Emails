@@ -1,0 +1,37 @@
+<mjml>
+  <mj-include path="./partials/head-default.mjml" />
+
+  <mj-body background-color="#F0F2F4">
+    <mj-include path="./partials/header-default.mjml" />
+
+    <ola-panel>
+      <ola-panel-section>
+        <ola-text variant="headline">
+          <p>New task for {{ site }} that requires your intervention</p>
+        </ola-text>
+      </ola-panel-section>
+
+      <ola-panel-section>
+        <ola-text variant="callout">
+          <p><strong>Hi, Jennifer</strong></p>
+          <p>{{ user }} has required your help to complete the following task:</p>
+        </ola-text>
+      </ola-panel-section>
+
+      <ola-task variant="error">Write the keyword in the secondary headers</ola-task>
+
+      <ola-panel-section>
+        <ola-text variant="caption" color="gray">
+            <p>If you have any question, feel free to <a href="#">email our customer success team</a>, we're lightning quick at replying. Or if you need immediate help getting started check out our <a href="#">help documentation</a>.</p>
+        </ola-text>
+      </ola-panel-section>
+
+      <ola-signature src="https://marketgoo.github.io/Ola-Emails/img/person.jpg">
+          <ola-text variant="callout" font-weight="bold">Keep the good work!</ola-text>
+          <ola-text variant="caption">David Roch and the marketgoo team</ola-text>
+      </ola-signature>
+    </ola-panel>
+
+    <mj-include path="./partials/footer-default.mjml" />
+  </mj-body>
+</mjml>

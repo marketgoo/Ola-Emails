@@ -13,6 +13,7 @@ const OlaHeroImg = require('./src/OlaHeroImg');
 const OlaPanel = require('./src/OlaPanel');
 const OlaPanelSection = require('./src/OlaPanelSection');
 const OlaSignature = require('./src/OlaSignature');
+const OlaTask = require('./src/OlaTask');
 const OlaText = require('./src/OlaText');
 
 registerComponent(OlaButton);
@@ -28,4 +29,5 @@ registerComponent(OlaHeroImg);
 registerComponent(OlaPanel);
 registerComponent(OlaPanelSection);
 registerComponent(OlaSignature);
+registerComponent(OlaTask);
 registerComponent(OlaText);
