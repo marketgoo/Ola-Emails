@@ -2,7 +2,7 @@
   <mj-include path="./partials/head-default.mjml" />
 
   <mj-body>
-    <ola-hero background-color="#2C333E">
+    <ola-hero>
       <ola-header variant="dark" />
       <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/img/promo.png" />
       <ola-hero-title>Welcome to marketgoo, Jennifer</ola-hero-title>
