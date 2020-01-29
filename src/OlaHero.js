@@ -1,6 +1,6 @@
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
-const tokens = require('../tokens');
+const tokens = require('./tokens');
 
 registerDependencies({
     'mj-body': ['ola-hero']
@@ -10,11 +10,11 @@ class OlaHero extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        'background-color': 'string',
+        'background-color': 'string'
     };
 
     static defaultAttributes = {
-        'background-color': 'black',
+        'background-color': 'black'
     };
 
     headStyle(breakpoint) {

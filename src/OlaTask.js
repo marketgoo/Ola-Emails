@@ -1,12 +1,12 @@
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
-const tokens = require('../tokens');
+const tokens = require('./tokens');
 
 class OlaTask extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        variant: 'enum(error,suggestion,success,warning)',
+        variant: 'enum(error,suggestion,success,warning)'
     };
 
     static defaultAttributes = {

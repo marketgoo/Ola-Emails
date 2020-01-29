@@ -1,6 +1,6 @@
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
-const tokens = require('../tokens');
+const tokens = require('./tokens');
 
 registerDependencies({
     'ola-panel': ['ola-panel-title']
@@ -11,14 +11,14 @@ class OlaPanelTitle extends BodyComponent {
 
     static allowedAttributes = {
         variant: 'enum(title,headline,body)',
-        'color': 'string',
-        'background-color': 'string',
+        color: 'string',
+        'background-color': 'string'
     };
 
     static defaultAttributes = {
         variant: 'body',
-        'color': 'black',
-        'background-color': 'white',
+        color: 'black',
+        'background-color': 'white'
     };
 
     headStyle(breakpoint) {

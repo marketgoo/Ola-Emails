@@ -9,14 +9,14 @@ class OlaHeroImg extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-      src: 'string',
-      alt: 'string',
-      href: 'string',
+        src: 'string',
+        alt: 'string',
+        href: 'string'
     };
 
     static defaultAttributes = {
-      alt: '',
-      href: '',
+        alt: '',
+        href: ''
     };
 
     render() {

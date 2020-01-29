@@ -1,5 +1,7 @@
 <mjml>
-  <mj-include path="./partials/head-default.mjml" />
+  <mj-head>
+    <ola-head></ola-head>
+  </mj-head>
 
   <mj-body>
     <ola-hero>

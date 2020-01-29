@@ -1,6 +1,6 @@
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
-const tokens = require('../tokens');
+const tokens = require('./tokens');
 
 registerDependencies({
     'mj-body': ['ola-footer-message']

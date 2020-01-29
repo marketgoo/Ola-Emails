@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --exec gulp demo",
     "publish:demo": "rm -f demo/*.html && gulp demo && gh-pages -d demo",
-    "prettier": "prettier --single-quote 'components/*.js' tokens.js --tab-width 4 --print-width=120 --write"
+    "prettier": "prettier --single-quote 'src/*.js' --tab-width 4 --print-width=120 --write"
   },
   "license": "MIT",
   "devDependencies": {
@@ -16,12 +16,14 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
+    "@marketgoo/ola-themes": "https://marketgoo.gitlab.io/ola-themes/nightly.tgz",
     "mjml": "^4.5.1"
   },
   "nodemonConfig": {
     "watch": [
       "demo/",
-      "src/"
+      "src/",
+      "tokens.js"
     ],
     "ext": "js,mjml"
   }

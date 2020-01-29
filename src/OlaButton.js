@@ -1,6 +1,6 @@
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
-const tokens = require('../tokens');
+const tokens = require('./tokens');
 
 registerDependencies({
     'mj-hero': ['ola-button'],
@@ -12,10 +12,10 @@ const styles = {
     default: {
         'border-radius': tokens('radius-big'),
         'font-weight': tokens('bold'),
-        ...tokens('callout')
+        ...tokens.font('callout')
     },
     primary: {
-        'background-color': tokens('brand'),
+        'background-color': tokens('accent'),
         color: tokens('white')
     },
     secondary: {

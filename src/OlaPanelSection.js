@@ -1,6 +1,6 @@
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
-const tokens = require('../tokens');
+const tokens = require('./tokens');
 
 registerDependencies({
     'ola-panel': ['ola-panel-section'],
@@ -12,7 +12,7 @@ class OlaPanelSection extends BodyComponent {
 
     static allowedAttributes = {
         'background-color': 'string',
-        'multicolumn': 'boolean'
+        multicolumn: 'boolean'
     };
 
     headStyle(breakpoint) {
@@ -31,12 +31,14 @@ class OlaPanelSection extends BodyComponent {
     }
 
     render() {
-        const content = this.getAttribute('multicolumn') ? this.getContent() : `<mj-column>${this.getContent()}</mj-column>`;
+        const content = this.getAttribute('multicolumn')
+            ? this.getContent()
+            : `<mj-column>${this.getContent()}</mj-column>`;
 
         return this.renderMJML(`
       <mj-section ${this.htmlAttributes({
           'css-class': 'ola_panel-section',
-          'background-color': tokens(this.getAttribute('background-color')),
+          'background-color': tokens(this.getAttribute('background-color'))
       })}>
           ${content}
       </mj-section>

@@ -1,6 +1,6 @@
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
-const tokens = require('../tokens');
+const tokens = require('./tokens');
 
 class OlaText extends BodyComponent {
     static endingTag = true;
@@ -20,7 +20,7 @@ class OlaText extends BodyComponent {
     };
 
     render() {
-        const style = tokens(this.getAttribute('variant'));
+        const style = tokens.font(this.getAttribute('variant'));
 
         if (!style['font-weight'] && this.getAttribute('font-weight')) {
             style['font-weight'] = this.getAttribute('font-weight') === 'bold' ? tokens('bold') : tokens('regular');

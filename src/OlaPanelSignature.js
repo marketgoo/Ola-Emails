@@ -1,9 +1,9 @@
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
-const tokens = require('../tokens');
+const tokens = require('./tokens');
 
 registerDependencies({
-  'ola-panel': ['ola-panel-signature']
+    'ola-panel': ['ola-panel-signature']
 });
 
 class OlaPanelSignature extends BodyComponent {

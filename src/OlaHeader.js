@@ -1,7 +1,7 @@
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 
-const tokens = require('../tokens');
+const tokens = require('./tokens');
 
 registerDependencies({
     'mj-body': ['ola-header']
@@ -38,7 +38,10 @@ class OlaHeader extends BodyComponent {
     }
 
     render() {
-        const logo = this.getAttribute('variant') === 'light' ? 'https://marketgoo.github.io/Ola-Emails/img/logo-brand.png' : 'https://marketgoo.github.io/Ola-Emails/img/logo-white.png';
+        const logo =
+            this.getAttribute('variant') === 'light'
+                ? 'https://marketgoo.github.io/Ola-Emails/img/logo-brand.png'
+                : 'https://marketgoo.github.io/Ola-Emails/img/logo-white.png';
         const colorText = this.getAttribute('variant') === 'light' ? 'gray' : 'gray-light';
 
         return this.renderMJML(`

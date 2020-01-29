@@ -1,6 +1,6 @@
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
-const tokens = require('../tokens');
+const tokens = require('./tokens');
 
 registerDependencies({
     'ola-panel': ['ola-panel-text']
@@ -18,8 +18,8 @@ class OlaPanelText extends BodyComponent {
 
     static allowedAttributes = {
         'background-color': 'string',
-        'color': 'string',
-        'variant': 'string',
+        color: 'string',
+        variant: 'string'
     };
 
     static defaultAttributes = {
