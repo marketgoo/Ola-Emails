@@ -16,7 +16,7 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
-    "@marketgoo/ola-themes": "https://marketgoo.gitlab.io/ola-themes/nightly.tgz",
+    "@marketgoo/ola-themes": "https://marketgoo.gitlab.io/ola/ola-themes/nightly.tgz",
     "mjml": "^4.5.1"
   },
   "nodemonConfig": {

@@ -16,7 +16,7 @@ function mjml() {
       transform(file, encoding, done) {
         const result = mjml2html(file.contents.toString(), {
           validationLevel: 'soft',
-          filePath: './demo/partials/'
+          filePath: './demo/'
         });
         result.errors.length && console.log(result.errors);
         file.contents = Buffer.from(result.html);

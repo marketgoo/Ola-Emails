@@ -8,6 +8,7 @@
     "./src/OlaFooterMenuIcon.js",
     "./src/OlaFooterMenuLink.js",
     "./src/OlaFooterMessage.js",
+    "./src/OlaHead.js",
     "./src/OlaHeader.js",
     "./src/OlaHero.js",
     "./src/OlaHeroImg.js",
