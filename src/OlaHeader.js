@@ -19,8 +19,6 @@ class OlaHeader extends BodyComponent {
 
     static defaultAttributes = {
         variant: 'light',
-        href: '#',
-        text: 'Open in browser',
     };
 
     headStyle(breakpoint) {
@@ -38,11 +36,22 @@ class OlaHeader extends BodyComponent {
     }
 
     render() {
+        let content = '';
         const logo =
             this.getAttribute('variant') === 'light'
                 ? 'https://marketgoo.github.io/Ola-Emails/img/logo-brand.png'
                 : 'https://marketgoo.github.io/Ola-Emails/img/logo-white.png';
-        const colorText = this.getAttribute('variant') === 'light' ? 'gray' : 'gray-light';
+
+        if (this.getAttribute('href')) {
+            const colorText = this.getAttribute('variant') === 'light' ? 'gray' : 'gray-light';
+
+            content = `
+            <mj-column vertical-align="middle" css-class="ola_header-content">
+                <ola-text variant="caption" color="${colorText}">
+                    <a href="${this.getAttribute('href')}" target="_blank">${this.getAttribute('text')}</a>
+                </ola-text>
+            </mj-column>`;
+        }
 
         return this.renderMJML(`
     <mj-section
@@ -58,11 +67,7 @@ class OlaHeader extends BodyComponent {
                 src="${logo}"
             ></mj-image>
         </mj-column>
-        <mj-column vertical-align="middle" css-class="ola_header-content">
-            <ola-text variant="caption" color="${colorText}">
-                <a href="${this.getAttribute('href')}" target="_blank">${this.getAttribute('text')}</a>
-            </ola-text>
-        </mj-column>
+        ${content}
     </mj-section>
 	`);
     }
