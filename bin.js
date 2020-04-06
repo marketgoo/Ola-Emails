@@ -4,17 +4,16 @@ const fs = require('fs');
 const tokens = require('./src/tokens');
 const argv = require('yargs-parser')(process.argv.slice(2), {
     default: {
-        tokens: null,
+        theme: null,
         validation: 'soft',
-        mjml: '',
         file: null,
     },
     boolean: ['show-errors'],
 });
 
 try {
-    if (argv.tokens) {
-        tokens.load(require(argv.tokens));
+    if (argv.theme) {
+        tokens.load(require(argv.theme));
     }
 
     require('./index');
