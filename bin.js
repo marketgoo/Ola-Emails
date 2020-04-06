@@ -29,11 +29,10 @@ try {
             let chunk;
 
             while ((chunk = process.stdin.read()) !== null) {
-                console.log(chunk);
                 code += chunk;
             }
-            render(code);
         });
+
         process.stdin.on('end', () => render(code));
     }
 } catch (err) {
