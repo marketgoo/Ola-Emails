@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const tokens = require('./src/tokens');
-const mjml2html = require('mjml');
 const argv = require('yargs-parser')(process.argv.slice(2), {
     default: {
         tokens: null,
@@ -13,12 +12,12 @@ const argv = require('yargs-parser')(process.argv.slice(2), {
     boolean: ['show-errors'],
 });
 
-require('./index');
-
 try {
     if (argv.tokens) {
-        tokens.tokens = require(argv.tokens);
+        tokens.load(require(argv.tokens));
     }
+
+    require('./index');
 
     const code = argv.file ? fs.readFileSync(argv.file, 'UTF-8') : argv._[0];
 
@@ -43,6 +42,7 @@ try {
 }
 
 function render(code) {
+    const mjml2html = require('mjml');
     const result = mjml2html(code, { validationLevel: argv.validation });
 
     if (argv.showErrors && result.errors.length) {

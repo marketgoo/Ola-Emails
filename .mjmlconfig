@@ -1,6 +1,5 @@
 {
   "validationLevel": "strict",
-  "filePath": "./demo/partials/",
   "packages": [
     "./src/OlaButton.js",
     "./src/OlaFooterAddress.js",

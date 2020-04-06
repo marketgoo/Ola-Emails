@@ -1,7 +1,11 @@
-const tokens = require('./tokens-defaults.json');
+let tokens;
 
 function get(key, subkey) {
-    const value = get.tokens[key];
+    if (!tokens) {
+        tokens = require('./tokens-defaults.json');
+    }
+
+    const value = tokens[key];
 
     if (subkey) {
         return value[subkey];
@@ -14,6 +18,8 @@ get.font = function (name, subkey) {
     return get('font-' + name, subkey);
 };
 
-get.tokens = tokens;
+get.load = function (json) {
+    tokens = json;
+};
 
 module.exports = get;
