@@ -5,24 +5,24 @@ const tokens = require('./tokens');
 registerDependencies({
     'mj-hero': ['ola-button'],
     'mj-column': ['ola-button'],
-    'ola-button': []
+    'ola-button': [],
 });
 
 const styles = {
     default: {
         'border-radius': tokens('radius-big'),
         'font-weight': tokens('bold'),
-        ...tokens.font('callout')
+        ...tokens.font('callout'),
     },
     primary: {
         'background-color': tokens('accent'),
-        color: tokens('white')
+        color: tokens('white'),
     },
     secondary: {
         color: tokens('brand'),
         'background-color': tokens('white'),
-        border: `solid 1px ${tokens('gray-xlight')}`
-    }
+        border: `solid 1px ${tokens('gray-xlight')}`,
+    },
 };
 
 class OlaButton extends BodyComponent {
@@ -31,18 +31,18 @@ class OlaButton extends BodyComponent {
     static allowedAttributes = {
         variant: 'enum(primary,secondary)',
         href: 'string',
-        align: 'enum(left,center,right)'
+        align: 'enum(left,center,right)',
     };
 
     static defaultAttributes = {
         variant: 'secondary',
-        align: 'center'
+        align: 'center',
     };
 
     render() {
         const attributes = {
             ...styles.default,
-            ...styles[this.getAttribute('variant')]
+            ...styles[this.getAttribute('variant')],
         };
 
         return this.renderMJML(`
@@ -50,7 +50,7 @@ class OlaButton extends BodyComponent {
         ${this.htmlAttributes({
             href: this.getAttribute('href') || '#',
             align: this.getAttribute('align'),
-            ...attributes
+            ...attributes,
         })}
       >
         ${this.getContent()}

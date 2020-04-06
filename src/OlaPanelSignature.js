@@ -3,7 +3,7 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'ola-panel': ['ola-panel-signature']
+    'ola-panel': ['ola-panel-signature'],
 });
 
 class OlaPanelSignature extends BodyComponent {
@@ -13,7 +13,7 @@ class OlaPanelSignature extends BodyComponent {
         src: 'string',
         alt: 'string',
         title: 'string',
-        subtitle: 'string'
+        subtitle: 'string',
     };
 
     headStyle(breakpoint) {

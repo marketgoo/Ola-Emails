@@ -3,7 +3,7 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'ola-panel': ['ola-panel-title']
+    'ola-panel': ['ola-panel-title'],
 });
 
 class OlaPanelTitle extends BodyComponent {
@@ -12,13 +12,13 @@ class OlaPanelTitle extends BodyComponent {
     static allowedAttributes = {
         variant: 'enum(title,headline,body)',
         color: 'string',
-        'background-color': 'string'
+        'background-color': 'string',
     };
 
     static defaultAttributes = {
         variant: 'body',
         color: 'black',
-        'background-color': 'white'
+        'background-color': 'white',
     };
 
     headStyle(breakpoint) {
@@ -46,7 +46,7 @@ class OlaPanelTitle extends BodyComponent {
       <mj-section ${this.htmlAttributes({
           'css-class': 'ola_panel-title',
           'padding-bottom': '0',
-          'background-color': tokens(this.getAttribute('background-color'))
+          'background-color': tokens(this.getAttribute('background-color')),
       })}>
         <mj-column>
             <ola-text

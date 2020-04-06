@@ -4,7 +4,7 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'mj-body': ['ola-header']
+    'mj-body': ['ola-header'],
 });
 
 class OlaHeader extends BodyComponent {
@@ -14,13 +14,13 @@ class OlaHeader extends BodyComponent {
         variant: 'enum(light,dark)',
         text: 'string',
         href: 'string',
-        logo: 'string'
+        logo: 'string',
     };
 
     static defaultAttributes = {
         variant: 'light',
         href: '#',
-        text: 'Open in browser'
+        text: 'Open in browser',
     };
 
     headStyle(breakpoint) {

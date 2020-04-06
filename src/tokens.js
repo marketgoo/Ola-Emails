@@ -1,7 +1,7 @@
-const tokens = require('@marketgoo/ola-themes/themes/mktgoo/tokens.json');
+const tokens = require('./tokens-defaults.json');
 
 function get(key, subkey) {
-    const value = tokens[key];
+    const value = get.tokens[key];
 
     if (subkey) {
         return value[subkey];
@@ -10,8 +10,10 @@ function get(key, subkey) {
     return typeof value === 'object' ? { ...value } : value;
 }
 
-get.font = function(name, subkey) {
+get.font = function (name, subkey) {
     return get('font-' + name, subkey);
 };
+
+get.tokens = tokens;
 
 module.exports = get;

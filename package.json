@@ -2,22 +2,25 @@
   "name": "@marketgoo/ola-emails",
   "description": "Ola design system implemented for emails, using MJML",
   "version": "0.1.0",
-  "main": "src",
+  "main": "index.js",
+  "bin": {
+    "ola-emails": "bin.js"
+  },
   "scripts": {
     "start": "nodemon --exec gulp demo",
     "publish:demo": "rm -f demo/*.html && gulp demo && gh-pages -d demo",
-    "prettier": "prettier --single-quote 'src/*.js' --tab-width 4 --print-width=120 --write"
+    "prettier": "prettier --single-quote 'src/*.js' bin.js index.js --tab-width 4 --print-width=120 --write"
   },
   "license": "MIT",
   "devDependencies": {
     "gh-pages": "^2.1.1",
     "gulp": "^4.0.2",
     "nodemon": "^2.0.0",
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.4"
   },
   "dependencies": {
-    "@marketgoo/ola-themes": "https://marketgoo.gitlab.io/ola/ola-themes/nightly.tgz",
-    "mjml": "^4.5.1"
+    "mjml": "^4.5.1",
+    "yargs-parser": "^18.1.2"
   },
   "nodemonConfig": {
     "watch": [

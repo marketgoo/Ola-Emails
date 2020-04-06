@@ -3,7 +3,7 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'ola-hero': ['ola-hero-title']
+    'ola-hero': ['ola-hero-title'],
 });
 
 class OlaHeroTitle extends BodyComponent {

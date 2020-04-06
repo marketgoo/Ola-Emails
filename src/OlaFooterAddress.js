@@ -3,7 +3,7 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'mj-body': ['ola-footer-address']
+    'mj-body': ['ola-footer-address'],
 });
 
 class OlaFooterAddress extends BodyComponent {
@@ -12,11 +12,11 @@ class OlaFooterAddress extends BodyComponent {
     static allowedAttributes = {
         href: 'string',
         src: 'string',
-        alt: 'string'
+        alt: 'string',
     };
 
     static defaultAttributes = {
-        href: '#'
+        href: '#',
     };
 
     render() {

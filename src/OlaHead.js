@@ -4,7 +4,7 @@ const { HeadComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'mj-head': ['ola-head']
+    'mj-head': ['ola-head'],
 });
 
 class OlaHead extends HeadComponent {

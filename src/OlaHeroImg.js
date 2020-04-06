@@ -2,7 +2,7 @@ const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 
 registerDependencies({
-    'ola-hero': ['ola-hero-img']
+    'ola-hero': ['ola-hero-img'],
 });
 
 class OlaHeroImg extends BodyComponent {
@@ -11,12 +11,12 @@ class OlaHeroImg extends BodyComponent {
     static allowedAttributes = {
         src: 'string',
         alt: 'string',
-        href: 'string'
+        href: 'string',
     };
 
     static defaultAttributes = {
         alt: '',
-        href: ''
+        href: '',
     };
 
     render() {

@@ -2,7 +2,7 @@ const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 
 registerDependencies({
-    'mj-body': ['ola-footer-menu']
+    'mj-body': ['ola-footer-menu'],
 });
 
 class OlaFooterMenu extends BodyComponent {

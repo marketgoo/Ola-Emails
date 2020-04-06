@@ -3,7 +3,7 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'ola-footer-menu': ['ola-footer-menu-icon']
+    'ola-footer-menu': ['ola-footer-menu-icon'],
 });
 
 class OlaFooterMenuIcon extends BodyComponent {
@@ -12,11 +12,11 @@ class OlaFooterMenuIcon extends BodyComponent {
     static allowedAttributes = {
         href: 'string',
         src: 'string',
-        alt: 'string'
+        alt: 'string',
     };
 
     static defaultAttributes = {
-        href: '#'
+        href: '#',
     };
 
     render() {

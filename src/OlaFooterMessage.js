@@ -3,7 +3,7 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'mj-body': ['ola-footer-message']
+    'mj-body': ['ola-footer-message'],
 });
 
 class OlaFooterMessage extends BodyComponent {

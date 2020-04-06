@@ -6,11 +6,11 @@ class OlaTask extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        variant: 'enum(error,suggestion,success,warning)'
+        variant: 'enum(error,suggestion,success,warning)',
     };
 
     static defaultAttributes = {
-        variant: 'error'
+        variant: 'error',
     };
 
     headStyle(breakpoint) {

@@ -4,7 +4,7 @@ const tokens = require('./tokens');
 
 registerDependencies({
     'ola-panel': ['ola-panel-section'],
-    'ola-panel-section': ['mj-column']
+    'ola-panel-section': ['mj-column'],
 });
 
 class OlaPanelSection extends BodyComponent {
@@ -12,7 +12,7 @@ class OlaPanelSection extends BodyComponent {
 
     static allowedAttributes = {
         'background-color': 'string',
-        multicolumn: 'boolean'
+        multicolumn: 'boolean',
     };
 
     headStyle(breakpoint) {
@@ -38,7 +38,7 @@ class OlaPanelSection extends BodyComponent {
         return this.renderMJML(`
       <mj-section ${this.htmlAttributes({
           'css-class': 'ola_panel-section',
-          'background-color': tokens(this.getAttribute('background-color'))
+          'background-color': tokens(this.getAttribute('background-color')),
       })}>
           ${content}
       </mj-section>

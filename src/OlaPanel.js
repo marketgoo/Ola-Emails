@@ -3,14 +3,14 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'mj-body': ['ola-panel']
+    'mj-body': ['ola-panel'],
 });
 
 class OlaPanel extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        'close-to': 'enum(top)'
+        'close-to': 'enum(top)',
     };
 
     headStyle() {

@@ -3,14 +3,14 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'ola-panel': ['ola-panel-text']
+    'ola-panel': ['ola-panel-text'],
 });
 
 const styles = {
     default: {},
     highlight: {
-        'background-color': tokens('gray-xlight')
-    }
+        'background-color': tokens('gray-xlight'),
+    },
 };
 
 class OlaPanelText extends BodyComponent {
@@ -19,11 +19,11 @@ class OlaPanelText extends BodyComponent {
     static allowedAttributes = {
         'background-color': 'string',
         color: 'string',
-        variant: 'string'
+        variant: 'string',
     };
 
     static defaultAttributes = {
-        variant: 'callout'
+        variant: 'callout',
     };
 
     render() {

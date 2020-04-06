@@ -10,13 +10,13 @@ class OlaText extends BodyComponent {
         align: 'enum(left,center,right)',
         color: 'enum(brand,white,black,gray,gray-light,error,warning,success,pro,premium)',
         'vertical-align': 'enum(top,middle,bottom)',
-        'font-weight': 'enum(regular,bold)'
+        'font-weight': 'enum(regular,bold)',
     };
 
     static defaultAttributes = {
         variant: 'body',
         align: 'left',
-        color: 'black'
+        color: 'black',
     };
 
     render() {
@@ -31,7 +31,7 @@ class OlaText extends BodyComponent {
             ...style,
             align: this.getAttribute('align'),
             color: tokens(this.getAttribute('color')),
-            'vertical-align': this.getAttribute('vertical-align')
+            'vertical-align': this.getAttribute('vertical-align'),
         })}
       >
         ${this.getContent()}
