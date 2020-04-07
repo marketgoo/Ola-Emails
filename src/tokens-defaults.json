@@ -84,5 +84,9 @@
     "column-gap": "16px",
     "row-gap": "16px",
     "inner-gap": "16px",
-    "duration": "100ms"
+    "duration": "100ms",
+    "custom-font": {
+        "name": "omnes-pro",
+        "src": "//use.typekit.net/ktf8dir.css"
+    }
 }

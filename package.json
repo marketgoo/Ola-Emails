@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "nodemon --exec gulp demo",
+    "build:demo": "rm -f demo/*.html && gulp demo",
     "publish:demo": "rm -f demo/*.html && gulp demo && gh-pages -d demo",
     "prettier": "prettier --single-quote 'src/*.js' bin.js index.js --tab-width 4 --print-width=120 --write"
   },

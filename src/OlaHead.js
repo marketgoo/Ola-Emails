@@ -16,8 +16,8 @@ class OlaHead extends HeadComponent {
         add('defaultAttributes', 'mj-all', { 'font-family': 'Arial' });
         add('defaultAttributes', 'mj-body', { 'background-color': tokens('gray-xlight') });
 
-        if (tokens('font-brand-name')) {
-            add('fonts', tokens('font-brand-name'), 'http//use.typekit.net/ktf8dir.css');
+        if (tokens('custom-font')) {
+            add('fonts', tokens('custom-font', 'name'), tokens('custom-font', 'src'));
         }
 
         add(

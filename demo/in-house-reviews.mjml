@@ -19,6 +19,7 @@
       </ola-panel-text>
 
       <ola-panel-section>
+        <ola-text variant="title">Custom font</ola-text>
         <ola-button variant="primary">Configure {{ url }}</ola-button>
 
         <ola-text variant="caption" color="gray" align="center" padding-top="8px">
