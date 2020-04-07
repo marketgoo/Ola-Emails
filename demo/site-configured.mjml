@@ -5,7 +5,7 @@
 
   <mj-body>
     <ola-hero>
-      <ola-header variant="dark" />
+      <ola-header variant="dark" logo="https://marketgoo.github.io/Ola-Emails/img/logo-white.png"/>
       <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/img/promo.png" />
       <ola-hero-title>Welcome to marketgoo, Jennifer</ola-hero-title>
     </ola-hero>

@@ -4,7 +4,7 @@
   </mj-head>
 
   <mj-body>
-    <ola-header />
+    <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png"/>
 
     <ola-panel>
       <ola-panel-title>Hi, Jennifer</ola-panel-title>
