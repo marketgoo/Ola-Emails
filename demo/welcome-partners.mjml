@@ -5,7 +5,7 @@
 
   <mj-body>
     <ola-hero>
-      <ola-header variant="dark" />
+      <ola-header variant="dark" logo="https://marketgoo.github.io/Ola-Emails/img/logo-white.png"/>
       <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/img/promo.png" />
       <ola-hero-title>Welcome to marketgoo, Jennifer</ola-hero-title>
     </ola-hero>
@@ -27,7 +27,7 @@
           <li><strong><a href="#">How payment works</a></strong></li>
         </ul>
       </ola-panel-text>
-      
+
       <ola-panel-section background-color="gray-xlight">
         <ola-text variant="body" font-weight="bold">Your referral link</ola-text>
         <ola-text variant="callout">
@@ -36,7 +36,7 @@
           <p>You can find it within the <em>Referral Links</em> section of your account, and create more unique links should you want to track different campaigns.</p>
         </ola-text>
       </ola-panel-section>
-      
+
       <ola-panel-text variant="caption" color="gray">
           <p>If you did not sign up to marketgoo, please contact us at <a href="mailto:support@marketgoo.com">support@marketgoo.com</a>.</p>
       </ola-panel-text>

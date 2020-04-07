@@ -37,11 +37,6 @@ class OlaHeader extends BodyComponent {
 
     render() {
         let content = '';
-        const logo =
-            this.getAttribute('variant') === 'light'
-                ? 'https://marketgoo.github.io/Ola-Emails/img/logo-brand.png'
-                : 'https://marketgoo.github.io/Ola-Emails/img/logo-white.png';
-
         if (this.getAttribute('href')) {
             const colorText = this.getAttribute('variant') === 'light' ? 'gray' : 'gray-light';
 
@@ -64,7 +59,7 @@ class OlaHeader extends BodyComponent {
                 width="154px"
                 align="left"
                 padding="0"
-                src="${logo}"
+                src="${this.getAttribute('logo')}"
             ></mj-image>
         </mj-column>
         ${content}
