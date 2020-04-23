@@ -16,7 +16,8 @@ class OlaFooterAddress extends BodyComponent {
     };
 
     static defaultAttributes = {
-        href: '#',
+        src: null,
+        alt: null,
     };
 
     render() {
@@ -28,12 +29,14 @@ class OlaFooterAddress extends BodyComponent {
           padding=0
           >
           <mj-image
-            width="84px"
-            align="center"
-            padding="${tokens('size-3')} 0"
-            src="${this.getAttribute('src')}"
-            href="${this.getAttribute('href')}"
-            alt="${this.getAttribute('alt')}"
+            ${this.htmlAttributes({
+                width: '84px',
+                align: 'center',
+                padding: `${tokens('size-3')} 0`,
+                src: this.getAttribute('src'),
+                href: this.getAttribute('href'),
+                alt: this.getAttribute('alt'),
+            })}
           ></mj-image>
         </mj-column>
         <mj-column vertical-align="middle" padding="0 ${tokens('size-6')}" width="66%">
