@@ -31,6 +31,10 @@
     ],
     "ext": "js,mjml"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marketgoo/Ola-Emails.git"
+  },
   "publishConfig": {
     "registry":"https://npm.pkg.github.com/"
   }
