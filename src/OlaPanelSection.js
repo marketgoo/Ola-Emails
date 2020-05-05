@@ -3,8 +3,7 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'ola-panel': ['ola-panel-section'],
-    'ola-panel-section': ['mj-column'],
+    'ola-panel': ['ola-panel-section']
 });
 
 class OlaPanelSection extends BodyComponent {

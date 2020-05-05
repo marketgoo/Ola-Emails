@@ -4,6 +4,7 @@ const tokens = require('./tokens');
 
 registerDependencies({
     'ola-panel': ['ola-panel-text'],
+    'ola-panel-section': ['ola-panel-text'],
 });
 
 const styles = {
@@ -29,11 +30,9 @@ class OlaPanelText extends BodyComponent {
     render() {
         return this.renderMJML(`
       <ola-panel-section background-color="${this.getAttribute('background-color')}">
-        <mj-column>
-            <ola-text variant="${this.getAttribute('variant')}" color="${this.getAttribute('color')}">
-                ${this.getContent()}
-            </ola-text>
-        </mj-column>
+        <ola-text variant="${this.getAttribute('variant')}" color="${this.getAttribute('color')}">
+            ${this.getContent()}
+        </ola-text>
       </ola-panel-section>
 		`);
     }
