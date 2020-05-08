@@ -2,12 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/) 
+The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 0.1.1 - Unreleased
+## [0.1.1] - 2020-05-08
+### Removed
+- mjmlconfig file
+
 ### Fixed
 - Removed duplicated `<mj-column>` in `<ola-panel-text>`.
+- The exit code of `bin.js` must be `1` on error
 
 ## 0.1.0 - 2020-04-23
 First version
+
+[0.1.1]: https://github.com/marketgoo/Ola-Emails/compare/v0.1.0...v0.1.1

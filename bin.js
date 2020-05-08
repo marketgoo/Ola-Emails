@@ -37,6 +37,7 @@ try {
     }
 } catch (err) {
     console.error(red(err.message));
+    process.exit(1);
 }
 
 function render(code) {
@@ -50,6 +51,7 @@ function render(code) {
     if (argv.showErrors && result.errors.length) {
         console.error(red(`${result.errors.length} errors found:`));
         console.log(result.errors);
+        process.exit(1);
     } else {
         console.log(result.html);
     }
