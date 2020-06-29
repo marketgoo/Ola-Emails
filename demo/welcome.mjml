@@ -4,27 +4,49 @@
   </mj-head>
 
   <mj-body>
-    <ola-hero>
-      <ola-header variant="dark" logo="https://marketgoo.github.io/Ola-Emails/img/logo-white.png"/>
-      <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/img/promo.png" />
-      <ola-hero-title>Welcome to marketgoo, Jennifer</ola-hero-title>
-    </ola-hero>
+    <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png"/>
 
-    <ola-panel close-to="top">
+    <ola-panel>
+      <ola-panel-title>Welcome, {{ name }}</ola-panel-title>
+
       <ola-panel-text>
-          <p>Very thank you for signing up to marketgoo, the easy do-it-yourself SEO tool that guides you in improving your site in order to get found on Google and grow your business online.</p>
-          <p>Please confirm your e-mail because it's where you'll receive important notifications like password recovery and updates.</p>
+          <p>Thank you for signing up <strong>{product}</strong> for your website <strong>{domain}.</strong></p>
+          <p>SEO is the best way to attract visitors by making your website visible on search engines. {product} will analyze your website so that you can act on opportunities to improve and optimize it for SEO.</p>
       </ola-panel-text>
 
-      <ola-panel-section>
-        <ola-button variant="primary">Yes, this is my email</ola-button>
+      <ola-divider></ola-divider>
+
+      <ola-panel-section multicolumn="true">
+        <mj-column width="20%">
+          <ola-counter>1</ola-counter>
+        </mj-column>
+        <mj-column width="80%">
+          <ola-text variant="body">Publish your website</ola-text>
+          <ola-text variant="caption" color="gray">Your site must be publicly accesible, so make sure that the address {domain} works</ola-text>
+        </mj-column>
       </ola-panel-section>
 
-      <ola-panel-text variant="caption" color="gray">
-        <p>If you did not sign up to marketgoo, please contact us at <a href="mailto:support@marketgoo.com">support@marketgoo.com</a>.</p>
-      </ola-panel-text>
+      <ola-panel-section multicolumn="true">
+        <mj-column width="20%">
+          <ola-counter>2</ola-counter>
+        </mj-column>
+        <mj-column width="80%">
+          <ola-text variant="body">Go to {product} to see your website’s optimization score</ola-text>
+          <ola-text variant="caption" color="gray">We will scan your website to detect all issues and generate a SEO optimization score</ola-text>
+        </mj-column>
+      </ola-panel-section>
 
-      <ola-panel-signature src="https://marketgoo.github.io/Ola-Emails/img/person.jpg" title="Welcome aboard!" subtitle="David Roch and the marketgoo team" />
+      <ola-panel-section multicolumn="true">
+        <mj-column width="20%">
+          <ola-counter>3</ola-counter>
+        </mj-column>
+        <mj-column width="80%">
+          <ola-text variant="body">Start working on your SEO plan and improve your siteit for quicker results</ola-text>
+          <ola-text variant="caption" color="gray">We will generate a personalized plan and help you to fix all detected issues.</ola-text>
+        </mj-column>
+      </ola-panel-section>
+
+      <ola-panel-signature title="Welcome aboard!" subtitle="The marketgoo team" />
     </ola-panel>
 
     <mj-include path="./partials/footer-default.mjml" />
