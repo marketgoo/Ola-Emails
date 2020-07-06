@@ -24,25 +24,25 @@ class OlaCounter extends BodyComponent {
         padding: ${tokens('size-3')};
         margin: auto auto 10px auto;
       }
-      .ola_counter > div {
-          margin-top: -2px;
-      }
     `;
     }
 
     render() {
+        const shadow = tokens('shadow-2');
         return `
-            <div class="ola_counter" style="background-color:${tokens(this.getAttribute('background-color'))}">
+            <table class="ola_counter" style="background-color:${tokens(this.getAttribute('background-color'))}; box-shadow: ${shadow};">
+                <tbody><tr><td style="vertical-align:middle;">
                 ${this.renderMJML(`
                 <ola-text ${this.htmlAttributes({
-                    'variant': 'title',
+                    'variant': 'headline',
                     'align': 'center',
                     'color': this.getAttribute('color'),
                 })}>
                     ${this.getContent()}
                 </ola-text>
                 `)}
-            </div>
+                </td></tr></tbody>
+            </table>
 		`;
     }
 }

@@ -14,14 +14,12 @@ class OlaDivider extends BodyComponent {
     };
 
     render() {
-        return this.renderMJML(`
-			<mj-divider
-        ${this.htmlAttributes({
-            'border-color': tokens(this.getAttribute('color')),
-        })}
-      >
-			</mj-divider>
-		`);
+        const color = tokens(this.getAttribute('color'));
+        const margin = tokens('size-7');
+        return `
+        <p style="border-top:solid 4px ${color};font-size:1px;margin:${margin} auto;width:100%;">
+        </p>
+        `;
     }
 }
 

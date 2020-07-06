@@ -22,7 +22,7 @@
         </mj-column>
         <mj-column width="80%">
           <ola-text variant="body">Publish your website</ola-text>
-          <ola-text variant="caption" color="gray">Your site must be publicly accesible, so make sure that the address {domain} works</ola-text>
+          <ola-text variant="caption" color="gray">Your site must be publicly accesible, so make sure that the address <a href="http://example.com">example.com</a> works</ola-text>
         </mj-column>
       </ola-panel-section>
 
