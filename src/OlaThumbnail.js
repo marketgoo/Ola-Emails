@@ -3,7 +3,7 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'ola-hero': ['ola-hero-img'],
+    'mj-section': ['ola-thumbnail-img'],
 });
 
 class OlaThumbnail extends BodyComponent {
@@ -16,41 +16,65 @@ class OlaThumbnail extends BodyComponent {
 
     static defaultAttributes = {
         alt: '',
+        'background-color': 'black',
     };
-    headStyle() {
-        return `
-      .ola_panel {
-        border-radius: ${tokens('radius')};
-        background-color: ${tokens('white')};
-      }
-      .ola_panel-top {
-        border-radius: 0 0 ${tokens('radius')} ${tokens('radius')};
-        background-color: ${tokens('white')};
-      }
-      @media only screen and (max-width:600px) {
-        .ola_panel {
-          border-radius: 0;
-        }
-        .ola_panel-top {
-          border-radius: 0;
-        }
-      }
-    `;
+    
+    renderImage() {
+      return `
+        <mj-column
+          ${this.htmlAttributes({
+            width: this.getAttribute('column-width'),
+            'background-color': this.getAttribute('background-color')
+          })}
+        >
+          <mj-image
+            src="${this.getAttribute('src')}"
+            alt="${this.getAttribute('alt')}"
+            width="300px"
+            })
+          >
+          </mj-image>
+      </mj-column>
+      `
     }
+
+    renderText() {
+      return `
+        <mj-column
+          ${this.htmlAttributes({
+            width: this.getAttribute('column-width'),
+            'background-color': this.getAttribute('background-color')
+          })}
+        >
+          <mj-text
+            ${this.htmlAttributes({
+              color: this.getAttribute('color'),
+              'font-size': this.getAttribute('font-size'),
+            })}
+          >
+            ${this.getContent()}
+          </mj-text>
+        </mj-column>
+      `
+    }
+
+
     render() {
+      const content = [this.renderText(), this.renderImage()]
+       const orderedContent = this.getAttribute('image-position') === 'right' ? content : reverse(content)
+    
         return this.renderMJML(`
-        <mj-section padding-bottom="0">
-            <mj-column>
-                <mj-image
-                    padding="0"
-                    src="${this.getAttribute('src')}"
-                    alt="${this.getAttribute('alt')}"
-                    width="300px"
-                ></mj-image>
-            </mj-column>
+          <mj-section
+                ${this.htmlAttributes({
+                  'background-color': this.getAttribute('background-color')
+                })}
+            >
+                ${orderedContent}
+                
         </mj-section>
-	`);
+      `)
     }
+    
 }
 
 module.exports = OlaThumbnail;
