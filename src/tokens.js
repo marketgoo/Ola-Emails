@@ -1,21 +1,27 @@
 let tokens;
 
-function get(key, subkey) {
+function get(...keys) {
     if (!tokens) {
         tokens = require('./tokens-defaults.json');
     }
 
-    const value = tokens[key];
+    let value = tokens;
 
-    if (subkey) {
-        return value[subkey];
+    while (keys.length) {
+        value = value[keys.shift()];
+
+        if (!value) {
+            return;
+        }
     }
 
     return typeof value === 'object' ? { ...value } : value;
 }
 
-get.font = function (name, subkey) {
-    return get('font-' + name, subkey);
+get.font = function (...keys) {
+    keys[0] = `font-${keys[0]}`;
+
+    return get(...keys);
 };
 
 get.load = function (json) {
