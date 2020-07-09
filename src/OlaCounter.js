@@ -27,7 +27,7 @@ class OlaCounter extends BodyComponent {
       .ola_counter-number {
         width: ${tokens('size-8')};
         height: ${tokens('size-8')};
-        padding: ${tokens('size-3')};
+        padding: ${tokens('size-2')};
         margin: ${tokens('size-2')} 0 0;
       }
     `;
@@ -38,7 +38,7 @@ class OlaCounter extends BodyComponent {
         <table class="ola_counter" style="margin-bottom:${tokens('size-7')}">
             <tbody>
                 <tr>
-                    <td style="vertical-align:top;width=76px;" width="76px">
+                    <td style="vertical-align:top;width=70px;" width="70px">
                         <table style="border-radius: 50%; background-color:${tokens(this.getAttribute('background-color'))};">
                             <tr>
                                 <td class="ola_counter-number">
@@ -58,7 +58,6 @@ class OlaCounter extends BodyComponent {
                     <td>
                         ${this.renderMJML(`<ola-text variant="body" font-weight="bold"><p>${this.getAttribute('title')}</p></ola-text>`)}
                         ${this.renderMJML(this.getContent())}
-                        </div>
                     </td>
                 </tr>
             </tbody>
