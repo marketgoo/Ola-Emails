@@ -3,7 +3,8 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'mj-section': ['ola-thumbnail-img'],
+    'mj-section': ['ola-thumbnail'],
+    'mj-body': ['ola-thumbnail'],
 });
 
 class OlaThumbnail extends BodyComponent {
@@ -12,66 +13,44 @@ class OlaThumbnail extends BodyComponent {
     static allowedAttributes = {
         src: 'string',
         alt: 'string',
+        align: 'string',
+        'background-color': 'string',
+             
     };
 
     static defaultAttributes = {
         alt: '',
-        'background-color': 'black',
+        align: 'center',
+        // width:'250px',
+    
+      
     };
+    headStyle(){
+      return`
+      .ola_thumbnail img {
+        border-radius: ${tokens('radius')};
+        box-shadow: ${tokens('shadow-2')};
+        
+      }
+      `;
+    }
     
-    renderImage() {
-      return `
-        <mj-column
-          ${this.htmlAttributes({
-            width: this.getAttribute('column-width'),
-            'background-color': this.getAttribute('background-color')
-          })}
-        >
-          <mj-image
-            src="${this.getAttribute('src')}"
-            alt="${this.getAttribute('alt')}"
-            width="300px"
-            })
-          >
-          </mj-image>
-      </mj-column>
-      `
-    }
-
-    renderText() {
-      return `
-        <mj-column
-          ${this.htmlAttributes({
-            width: this.getAttribute('column-width'),
-            'background-color': this.getAttribute('background-color')
-          })}
-        >
-          <mj-text
-            ${this.htmlAttributes({
-              color: this.getAttribute('color'),
-              'font-size': this.getAttribute('font-size'),
-            })}
-          >
-            ${this.getContent()}
-          </mj-text>
-        </mj-column>
-      `
-    }
-
-
+  
     render() {
-      const content = [this.renderText(), this.renderImage()]
-       const orderedContent = this.getAttribute('image-position') === 'right' ? content : reverse(content)
-    
         return this.renderMJML(`
-          <mj-section
-                ${this.htmlAttributes({
-                  'background-color': this.getAttribute('background-color')
-                })}
-            >
-                ${orderedContent}
-                
-        </mj-section>
+        <mj-section padding-bottom="0">
+        <mj-column>
+            <mj-image
+                css-class = "ola_thumbnail img"
+                padding="0"
+                src="${this.getAttribute('src')}"
+                alt="${this.getAttribute('alt')}"
+                width="250px"
+                border="10"
+                // 'background-color'= "${this.getAttribute('background-color')})"
+            > ${this.getContent()}</mj-image>
+        </mj-column>
+    </mj-section>
       `)
     }
     

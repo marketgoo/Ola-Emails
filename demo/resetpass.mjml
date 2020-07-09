@@ -4,12 +4,6 @@
   </mj-head>
 
   <mj-body>
- <mj-section>
-     <ola-panel>
-      <ola-panel-title>Hi, Jennifer</ola-panel-title>
-      </ola-panel-title>
-    <ola-thumbnail-img src="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png"/>
-  </mj-section>
 
     <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png"/>
 
