@@ -1,52 +1,55 @@
 <mjml>
   <mj-head>
     <ola-head></ola-head>
+    <mj-title>{{ name }}, you can now access our SEO tool</mj-title>
+    <mj-preview>Let’s get more potential clients to your site!</mj-preview>
   </mj-head>
 
   <mj-body>
     <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png"/>
 
     <ola-panel>
-      <ola-panel-title>Welcome, {{ name }}</ola-panel-title>
+      <ola-panel-title>Hi, {{ name }}</ola-panel-title>
 
       <ola-panel-text>
-          <p>Thank you for signing up <strong>{product}</strong> for your website <strong>{domain}.</strong></p>
-          <p>SEO is the best way to attract visitors by making your website visible on search engines. {product} will analyze your website so that you can act on opportunities to improve and optimize it for SEO.</p>
+          <p>Thank you for signing up to <strong>{product}</strong> with your website, <strong>{domain}.</strong></p>
+          <p>As part of your subscription, you can also use our SEO tool. We make SEO optimization easy by taking care of all the heavy lifting for you.</p>
       </ola-panel-text>
 
       <ola-divider></ola-divider>
 
-      <ola-panel-section multicolumn="true">
-        <mj-column width="20%">
-          <ola-counter>1</ola-counter>
-        </mj-column>
-        <mj-column width="80%">
-          <ola-text variant="body">Publish your website</ola-text>
-          <ola-text variant="caption" color="gray">Your site must be publicly accesible, so make sure that the address <a href="http://example.com">example.com</a> works</ola-text>
-        </mj-column>
+      <ola-panel-text variant="headline" align="center">
+        What happens next?
+      </ola-panel-text>
+
+      <ola-panel-section>
+        <ola-counter number="1" title="Check your website is live">
+            <ola-text variant="caption" color="gray">
+              <ul>
+                <li><strong>Already live?</strong> Great! Head straight to step 2.</li>
+                <li><strong>Not live yet?</strong> Activate your site as soon as you can so we can calculate your SEO score.</li>
+              </ul>
+            </ola-text>
+        </ola-counter>
+
+        <ola-counter number="2" title="We’ll calculate your SEO score">
+            <ola-text variant="caption" color="gray">
+              <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
+            </ola-text>
+        </ola-counter>
+
+        <ola-counter number="3" title="We’ll prepare your SEO improvement plan">
+            <ola-text variant="caption" color="gray">
+              <p>Get an easy-to-implement plan broken down into small, simple tasks so you can start improving your SEO score one step at a time.</p>
+            </ola-text>
+        </ola-counter>
       </ola-panel-section>
 
-      <ola-panel-section multicolumn="true">
-        <mj-column width="20%">
-          <ola-counter>2</ola-counter>
-        </mj-column>
-        <mj-column width="80%">
-          <ola-text variant="body">Go to {product} to see your website’s optimization score</ola-text>
-          <ola-text variant="caption" color="gray">We will scan your website to detect all issues and generate a SEO optimization score</ola-text>
-        </mj-column>
-      </ola-panel-section>
+      <ola-panel-text>
+        <p>Stay tuned for your SEO score and improvement plan – you’ll be welcoming more visitors to your site in no time!</p>
+      </ola-panel-text>
 
-      <ola-panel-section multicolumn="true">
-        <mj-column width="20%">
-          <ola-counter>3</ola-counter>
-        </mj-column>
-        <mj-column width="80%">
-          <ola-text variant="body">Start working on your SEO plan and improve your siteit for quicker results</ola-text>
-          <ola-text variant="caption" color="gray">We will generate a personalized plan and help you to fix all detected issues.</ola-text>
-        </mj-column>
-      </ola-panel-section>
-
-      <ola-panel-signature title="Welcome aboard!" subtitle="The marketgoo team" />
+      <ola-panel-signature title="All the best," subtitle="The marketgoo team" />
     </ola-panel>
 
     <mj-include path="./partials/footer-default.mjml" />

@@ -2,47 +2,67 @@ const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
+registerDependencies({
+    'ola-panel-section': ['ola-counter'],
+});
+
 class OlaCounter extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
         'background-color': 'string',
         'color': 'string',
+        'number': 'string',
+        'title': 'string',
     };
 
     static defaultAttributes = {
         'background-color': 'accent',
         'color': 'white',
+        'number': '1',
     };
 
     headStyle() {
         return `
-      .ola_counter {
-        border-radius: 50%;
+      .ola_counter-number {
         width: ${tokens('size-8')};
         height: ${tokens('size-8')};
         padding: ${tokens('size-3')};
-        margin: auto auto 10px auto;
+        margin: ${tokens('size-2')} 0 0;
       }
     `;
     }
 
     render() {
-        const shadow = tokens('shadow-2');
         return `
-            <table class="ola_counter" style="background-color:${tokens(this.getAttribute('background-color'))}; box-shadow: ${shadow};">
-                <tbody><tr><td style="vertical-align:middle;">
-                ${this.renderMJML(`
-                <ola-text ${this.htmlAttributes({
-                    'variant': 'headline',
-                    'align': 'center',
-                    'color': this.getAttribute('color'),
-                })}>
-                    ${this.getContent()}
-                </ola-text>
-                `)}
-                </td></tr></tbody>
-            </table>
+        <table class="ola_counter" style="margin-bottom:${tokens('size-7')}">
+            <tbody>
+                <tr>
+                    <td style="vertical-align:top;width=76px;" width="76px">
+                        <table style="border-radius: 50%; background-color:${tokens(this.getAttribute('background-color'))};">
+                            <tr>
+                                <td class="ola_counter-number">
+                                    ${this.renderMJML(`
+                                    <ola-text ${this.htmlAttributes({
+                                        'variant': 'headline',
+                                        'align': 'center',
+                                        'color': this.getAttribute('color'),
+                                    })}>
+                                    ${this.getAttribute('number')}
+                                    </ola-text>
+                                    `)}
+                                <td/>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        ${this.renderMJML(`<ola-text variant="body" font-weight="bold"><p>${this.getAttribute('title')}</p></ola-text>`)}
+                        ${this.renderMJML(this.getContent())}
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 		`;
     }
 }

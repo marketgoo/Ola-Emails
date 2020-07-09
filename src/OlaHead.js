@@ -34,14 +34,16 @@ class OlaHead extends HeadComponent {
         }
         p {
             margin-top: 0;
-            margin-bottom: ${tokens('size-4')};
+            margin-bottom: ${tokens('size-3')};
         }
         strong {
             font-weight: ${tokens('bold')};
         }
       	ul {
       		padding-left: 1em;
-      		margin-left: 0;
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: ${tokens('size-3')};
       	}`
         );
     }
