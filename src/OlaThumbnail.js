@@ -27,17 +27,16 @@ class OlaThumbnail extends BodyComponent {
         box-shadow: ${tokens('shadow-2')}; 
       }`;
     }
-    
+
     render() {
         return this.renderMJML(`
-        <ola-panel-section>
             <mj-image
                 css-class="ola_thumbnail"
                 src="${this.getAttribute('src')}"
                 alt="${this.getAttribute('alt')}"
                 width="250px"
-            > ${this.getContent()}</mj-image>
-        </ola-panel-section>
+            > ${this.getContent()}
+            </mj-image>
       `)
     }   
 }
