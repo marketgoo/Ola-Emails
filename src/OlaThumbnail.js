@@ -18,6 +18,7 @@ class OlaThumbnail extends BodyComponent {
     static defaultAttributes = {
         alt: '',
         align: 'center',
+        'css-class': 'ola_thumbnail'
     };
 
     headStyle(){
@@ -31,14 +32,12 @@ class OlaThumbnail extends BodyComponent {
     render() {
         return this.renderMJML(`
             <mj-image
-                css-class="ola_thumbnail"
                 src="${this.getAttribute('src')}"
                 alt="${this.getAttribute('alt')}"
                 width="250px"
-            > ${this.getContent()}
-            </mj-image>
+            />
       `)
-    }   
+    }
 }
 
 module.exports = OlaThumbnail;

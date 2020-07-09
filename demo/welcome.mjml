@@ -17,7 +17,7 @@
       </ola-panel-text>
 
       <ola-panel-section>
-        <ola-button variant="primary">Yes, this is my email</ola-button>
+        <ola-thumbnail src="https://marketgoo.github.io/Ola-Emails/img/person.jpg"></ola-thumbnail>
       </ola-panel-section>
 
       <ola-panel-text variant="caption" color="gray">
