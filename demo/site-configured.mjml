@@ -4,6 +4,8 @@
   </mj-head>
 
   <mj-body>
+ 
+    <ola-thumbnail src="./img/person.jpg"/>
   
     <ola-hero>
       <ola-header variant="dark" logo="https://marketgoo.github.io/Ola-Emails/img/logo-white.png"/>

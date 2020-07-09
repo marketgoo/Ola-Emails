@@ -3,8 +3,7 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'mj-section': ['ola-thumbnail'],
-    'mj-body': ['ola-thumbnail'],
+    'ola-panel-section': ['ola-thumbnail'],
 });
 
 class OlaThumbnail extends BodyComponent {
@@ -13,47 +12,34 @@ class OlaThumbnail extends BodyComponent {
     static allowedAttributes = {
         src: 'string',
         alt: 'string',
-        align: 'string',
-        'background-color': 'string',
-             
+        align: 'string',    
     };
 
     static defaultAttributes = {
         alt: '',
         align: 'center',
-        // width:'250px',
-    
-      
     };
+
     headStyle(){
       return`
       .ola_thumbnail img {
         border-radius: ${tokens('radius')};
-        box-shadow: ${tokens('shadow-2')};
-        
-      }
-      `;
+        box-shadow: ${tokens('shadow-2')}; 
+      }`;
     }
     
-  
     render() {
         return this.renderMJML(`
-        <mj-section padding-bottom="0">
-        <mj-column>
+        <ola-panel-section>
             <mj-image
-                css-class = "ola_thumbnail img"
-                padding="0"
+                css-class="ola_thumbnail"
                 src="${this.getAttribute('src')}"
                 alt="${this.getAttribute('alt')}"
                 width="250px"
-                border="10"
-                // 'background-color'= "${this.getAttribute('background-color')})"
             > ${this.getContent()}</mj-image>
-        </mj-column>
-    </mj-section>
+        </ola-panel-section>
       `)
-    }
-    
+    }   
 }
 
 module.exports = OlaThumbnail;
