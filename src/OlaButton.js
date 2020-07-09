@@ -15,13 +15,13 @@ const styles = {
         ...tokens.font('callout'),
     },
     primary: {
-        'background-color': tokens('accent'),
-        color: tokens('white'),
+        'background-color': tokens('button', 'primary', 'background') || tokens('accent'),
+        color: tokens('button', 'primary', 'color') || tokens('white'),
     },
     secondary: {
-        color: tokens('brand'),
-        'background-color': tokens('white'),
-        border: `solid 1px ${tokens('gray-xlight')}`,
+        'background-color': tokens('button', 'primary', 'background') || tokens('white'),
+        color: tokens('button', 'secondary', 'color') || tokens('brand'),
+        border: `solid 1px ${tokens('button', 'secondary', 'border') || tokens('gray-xlight')}`,
     },
 };
 
@@ -39,6 +39,32 @@ class OlaButton extends BodyComponent {
         align: 'center',
     };
 
+    headStyle() {
+        //Ignored for now
+        return;
+        const styles = [];
+
+        toCss(
+            styles,
+            '.ola_button-primary,.ola_button-secondary',
+            tokens('button', '@css')
+        );
+
+        toCss(
+            styles,
+            '.ola_button-primary',
+            tokens('button', 'primary', '@css')
+        );
+
+        toCss(
+            styles,
+            '.ola_button-secondary',
+            tokens('button', 'secondary', '@css')
+        );
+
+        return styles.join('\n');
+    }
+
     render() {
         const attributes = {
             ...styles.default,
@@ -50,6 +76,9 @@ class OlaButton extends BodyComponent {
         ${this.htmlAttributes({
             href: this.getAttribute('href') || '#',
             align: this.getAttribute('align'),
+            'css-class': 'ola_button-' + this.getAttribute('variant'),
+            ...(tokens('button', '@css') || {}),
+            ...(tokens('button', '@css', this.getAttribute('variant')) || {}),
             ...attributes,
         })}
       >
@@ -60,3 +89,16 @@ class OlaButton extends BodyComponent {
 }
 
 module.exports = OlaButton;
+
+function toCss(css, selector, props) {
+    if (!props) {
+        return;
+    }
+
+    css.push(`${selector} {`);
+
+    for (const [key, value] of Object.entries(props)) {
+        css.push(`  ${key}: ${value} !important;`);
+    }
+    css.push(`}`);
+}

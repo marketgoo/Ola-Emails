@@ -21,16 +21,18 @@ class OlaPanelText extends BodyComponent {
         'background-color': 'string',
         color: 'string',
         variant: 'string',
+        align: 'string',
     };
 
     static defaultAttributes = {
         variant: 'callout',
+        align: 'left',
     };
 
     render() {
         return this.renderMJML(`
       <ola-panel-section background-color="${this.getAttribute('background-color')}">
-        <ola-text variant="${this.getAttribute('variant')}" color="${this.getAttribute('color')}">
+        <ola-text variant="${this.getAttribute('variant')}" align="${this.getAttribute('align')}" color="${this.getAttribute('color')}">
             ${this.getContent()}
         </ola-text>
       </ola-panel-section>

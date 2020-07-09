@@ -1,6 +1,8 @@
 const { registerComponent } = require('mjml-core');
 
 const OlaButton = require('./src/OlaButton');
+const OlaCounter = require('./src/OlaCounter');
+const OlaDivider = require('./src/OlaDivider');
 const OlaFooterMessage = require('./src/OlaFooterMessage');
 const OlaFooterAddress = require('./src/OlaFooterAddress');
 const OlaFooterMenu = require('./src/OlaFooterMenu');
@@ -21,6 +23,8 @@ const OlaText = require('./src/OlaText');
 const OlaThumbnail = require('./src/OlaThumbnail');
 
 registerComponent(OlaButton);
+registerComponent(OlaCounter);
+registerComponent(OlaDivider);
 registerComponent(OlaFooterMessage);
 registerComponent(OlaFooterAddress);
 registerComponent(OlaFooterMenu);
