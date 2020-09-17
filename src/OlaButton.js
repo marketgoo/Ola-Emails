@@ -39,32 +39,6 @@ class OlaButton extends BodyComponent {
         align: 'center',
     };
 
-    headStyle() {
-        //Ignored for now
-        return;
-        const styles = [];
-
-        toCss(
-            styles,
-            '.ola_button-primary,.ola_button-secondary',
-            tokens('button', '@css')
-        );
-
-        toCss(
-            styles,
-            '.ola_button-primary',
-            tokens('button', 'primary', '@css')
-        );
-
-        toCss(
-            styles,
-            '.ola_button-secondary',
-            tokens('button', 'secondary', '@css')
-        );
-
-        return styles.join('\n');
-    }
-
     render() {
         const attributes = {
             ...styles.default,
@@ -80,8 +54,7 @@ class OlaButton extends BodyComponent {
             ...(tokens('button', '@css') || {}),
             ...(tokens('button', '@css', this.getAttribute('variant')) || {}),
             ...attributes,
-        })}
-      >
+        })}>
         ${this.getContent()}
 			</mj-button>
 		`);
