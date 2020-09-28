@@ -16,7 +16,7 @@ jobs:
       - name: Build
         uses: actions/setup-node@v1
         with:
-          node-version: 10
+          node-version: 12
 
       - run: npm i
       - run: npm run publish:demo
