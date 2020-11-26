@@ -65,6 +65,20 @@ class OlaTag extends BodyComponent {
     };
 
     render() {
+        return `
+        <table class="ola_tag">
+            <tbody>
+                <tr>
+                    <td style="background:pink; padding: 2px 14px;border-radius:8px">
+                        ${this.renderMJML(`<ola-text variant="caption" font-weight="bold" align="center">${this.getContent()}</ola-text>`)}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+		`;
+    }
+
+    _render() {
         const attributes = {
             ...styles.default,
             ...styles[this.getAttribute('variant')],
