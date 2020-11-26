@@ -33,8 +33,7 @@ class OlaHead extends HeadComponent {
             color: ${tokens('brand')};
         }
         p {
-            margin-top: 0;
-            margin-bottom: ${tokens('size-3')};
+            margin: 0;
         }
         strong {
             font-weight: ${tokens('bold')};

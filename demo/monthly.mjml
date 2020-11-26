@@ -25,6 +25,9 @@
           medium
         </ola-panel-text>
 
+        <ola-score title="Your score" value="45" level="low">
+        </ola-score>
+
         <ola-panel-text color="gray" variant="caption" align="center">
           This is a value between 0-100% that indicate how well optimizaed is your site for SEO. The more task completed, the better score
         </ola-panel-text>

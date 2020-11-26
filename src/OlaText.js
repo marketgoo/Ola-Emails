@@ -31,7 +31,7 @@ class OlaText extends BodyComponent {
             ...style,
             align: this.getAttribute('align'),
             color: tokens(this.getAttribute('color')),
-            'vertical-align': this.getAttribute('vertical-align'),
+            'vertical-align': this.getAttribute('vertical-align')
         })}
       >
         ${this.getContent()}
