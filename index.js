@@ -21,6 +21,7 @@ const OlaPanelTitle = require('./src/OlaPanelTitle');
 const OlaTask = require('./src/OlaTask');
 const OlaText = require('./src/OlaText');
 const OlaThumbnail = require('./src/OlaThumbnail');
+const OlaTag = require('./src/OlaTag');
 
 registerComponent(OlaButton);
 registerComponent(OlaCounter);
@@ -43,3 +44,4 @@ registerComponent(OlaPanelTitle);
 registerComponent(OlaTask);
 registerComponent(OlaText);
 registerComponent(OlaThumbnail);
+registerComponent(OlaTag);
