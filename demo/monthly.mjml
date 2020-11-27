@@ -19,7 +19,7 @@
       </ola-panel-section>
 
       <ola-panel-section>
-        <ola-score title="Your score" value="45" level="low">
+        <ola-score title="Your score" value="60" level="medium">
         </ola-score>
 
         <ola-panel-text color="gray" variant="caption" align="center">
@@ -32,6 +32,7 @@
           Do you want to improve your score?
         </ola-panel-text>
         <ola-button variant="primary" align="center"> Optimize my site </ola-button>
+      </ola-panel-section>
 
         <ola-divider> </ola-divider>
 
@@ -49,28 +50,34 @@
 
         </ola-panel-section>
 
-        <!-- <ola-panel-section>
-        <ola-counter number="1" title="Check your website is live">
-          <ola-text variant="caption" color="gray">
-            <ul>
-              <li><strong>Already live?</strong> Great! Head straight to step 2.</li>
-              <li><strong>Not live yet?</strong> Activate your site as soon as you can so we can calculate your SEO score.</li>
-            </ul>
-          </ola-text>
-        </ola-counter>
+        <ola-divider> </ola-divider>
 
-        <ola-counter number="2" title="We’ll calculate your SEO score">
-          <ola-text variant="caption" color="gray">
-            <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
+      <ola-panel-section>
+        <mj-image width="76px" src="https://marketgoo.github.io/Ola-Emails/img/social-twitter.png" alt="" />
+          <ola-text align="center" font-weight="bold">
+            Your backlinks
           </ola-text>
-        </ola-counter>
+          <ola-panel-text color="gray" variant="caption" align="center">
+            Backlinks, or links pointing back to your pages from other websites help your site rank higher
+          </ola-panel-text>
+          <ola-text align="center" font-weight="bold">
+            What new links did you get this month?
+          </ola-text>
+          <mj-spacer height="28px" />
 
-        <ola-counter number="3" title="We’ll prepare your SEO improvement plan">
+        <ola-item-list icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png" title="The Best 10 Plumbing in Austing, TX">
           <ola-text variant="caption" color="gray">
-            <p>Get an easy-to-implement plan broken down into small, simple tasks so you can start improving your SEO score one step at a time.</p>
+            Once your site is live, we’ll scan it and award an
           </ola-text>
-        </ola-counter>
-      </ola-panel-section> -->
+        </ola-item-list>
+
+        <ola-item-list icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png" title="We’ll prepare your SEO improvement plan">
+          <ola-text variant="caption" color="gray">
+            Get an easy-to-implement plan broken down into small,
+          </ola-text>
+        </ola-item-list>
+      </ola-panel-section>
+
 
         <ola-panel-signature title="All the best," subtitle="The marketgoo team" />
     </ola-panel>

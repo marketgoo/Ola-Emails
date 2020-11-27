@@ -24,11 +24,7 @@
         What happens next?
       </ola-panel-text>
 
-      <ola-tag variant="success"> low </ola-tag>
-
-
       <ola-panel-section>
-
         <ola-counter number="1" title="Check your website is live">
             <ola-text variant="caption" color="gray">
               <ul>
