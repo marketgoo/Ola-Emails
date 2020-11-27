@@ -20,12 +20,6 @@
 
       <ola-panel-section>
         <ola-tag>Esto es un tag</ola-tag>
-        
-        <ola-panel-text variant="caption" align="center">
-          Your score: </br>
-          {{ score }}% </br>
-          medium
-        </ola-panel-text>
 
         <ola-score title="Your score" value="45" level="low">
         </ola-score>
