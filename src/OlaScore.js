@@ -38,16 +38,24 @@ class OlaScore extends BodyComponent {
     }
 
     render() {
-        const image = `${this.getAttribute('src-prefix')}${this.getAttribute('value')}.png`;
+        const value = this.getAttribute('value');
+        const image = `${this.getAttribute('src-prefix')}${value}.png`;
+        let level = 'error';
+
+        if (value >= 85) {
+            level = 'success';
+        } else if (value >= 50) {
+            level = 'warning';
+        }
 
         return `
         <table class="ola_score" style="width:180px;height:180px;background-image:url(${image});background-repeat:no-repeat;background-position:center center;background-size:180px 180px">
             <tbody>
                 <tr>
                     <td style="width:180px;height:180px;">
-                        ${this.renderMJML(`<ola-text variant="caption" font-weight="bold" align="center"><p>${this.getAttribute('title')}</p></ola-text>`)}
-                        ${this.renderMJML(`<ola-text variant="display" align="center"><p>${this.getAttribute('value')}<sup class="ola_score-percentage"> %</sup></p></ola-text>`)}
-                        ${this.renderMJML(`<ola-text variant="caption" font-weight="bold" align="center"><p>${this.getAttribute('level')}</p></ola-text>`)}
+                        ${this.renderMJML(`<ola-text variant="caption" color="gray" font-weight="bold" align="center"><p>${this.getAttribute('title')}</p></ola-text>`)}
+                        ${this.renderMJML(`<ola-text variant="display" align="center"><p>${value}<sup class="ola_score-percentage"> %</sup></p></ola-text>`)}
+                        ${this.renderMJML(`<ola-tag variant="${level}"><p>${this.getAttribute('level')}</p></ola-tag>`)}
                     </td>
                 </tr>
             </tbody>

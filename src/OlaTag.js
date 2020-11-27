@@ -20,14 +20,10 @@ class OlaTag extends BodyComponent {
 
 
     render() {
-
         const background_color = this.getAttribute('variant') ? tokens(this.getAttribute('variant')) : tokens('gray-xlight');
         const color = this.getAttribute('variant') ? 'white' : tokens('black');
-
         const height = this.getAttribute('size') === 'medium' ? tokens('size-7') : this.getAttribute('size') === 'big' ? tokens('size-7') : tokens('size-6')
-
         const font = this.getAttribute('size') === 'medium' ? 'callout' : this.getAttribute('size') === 'big' ? 'body' : 'caption'
-
 
         return `
         <table class="ola_tag" style="margin: auto">

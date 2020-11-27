@@ -19,8 +19,6 @@
       </ola-panel-section>
 
       <ola-panel-section>
-        <ola-tag>Esto es un tag</ola-tag>
-
         <ola-score title="Your score" value="45" level="low">
         </ola-score>
 
