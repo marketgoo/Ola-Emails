@@ -2,10 +2,6 @@ const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
-// registerDependencies({
-//     'ola-panel-section': ['ola-item-list'],
-// });
-
 class OlaItemList extends BodyComponent {
     static endingTag = true;
 
@@ -17,7 +13,7 @@ class OlaItemList extends BodyComponent {
 
     render() {
         return `
-        <table class="ola_counter" style="margin-bottom:${tokens('size-7')}">
+        <table style="margin-bottom:${tokens('size-7')}; width:100%">
             <tbody>
                 <tr>
                     <td style="vertical-align:top; padding:${tokens('size-2')}; width:${tokens('size-8')}">
@@ -34,7 +30,7 @@ class OlaItemList extends BodyComponent {
                         </table>
                     </td>
                     <td>
-                        ${this.renderMJML(`<ola-text variant="body" font-weight="bold">${this.getAttribute('title')}</ola-text>`)}
+                        ${this.renderMJML(`<ola-text variant="callout" font-weight="bold">${this.getAttribute('title')}</ola-text>`)}
                         ${this.renderMJML(this.getContent())}
                     </td>
                 </tr>

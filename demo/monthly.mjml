@@ -76,6 +76,21 @@
             Get an easy-to-implement plan broken down into small,
           </ola-text>
         </ola-item-list>
+
+
+        <ola-item-list icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png" title="We’ll prepare your SEO improvement plan">
+          <ola-progress-bar value="50" description="mundo"></ola-progress-bar>
+        </ola-item-list>
+
+        <ola-counter number="1st" variant="callout" title="We’ll prepare your SEO improvement plan">
+          <ola-progress-bar value="50" description="mundo maravilloso"></ola-progress-bar>
+        </ola-counter>
+
+        <ola-counter number="2nd" title="We’ll calculate your SEO score">
+            <ola-text variant="caption" color="gray">
+              <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
+            </ola-text>
+        </ola-counter>
       </ola-panel-section>
 
 
