@@ -6,13 +6,13 @@ class OlaItemCircle extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        'background-color': 'string',
+        'background-color': 'enum(brand,white,black,gray,gray-light,error,warning,success,pro,premium)',
         'color': 'string',
         'number': 'string',
     };
 
     static defaultAttributes = {
-        'background-color': 'accent',
+        'background-color': 'gray',
         'color': 'white',
         'number': '1',
     };
