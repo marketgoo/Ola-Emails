@@ -19,7 +19,7 @@ class OlaItemList extends BodyComponent {
         <table style="margin-bottom:${tokens('size-7')}; width:100%">
             <tbody>
                 <tr>
-                    <td style="vertical-align:top; padding:${tokens('size-2')}; width:15%">
+                    <td style="vertical-align:top; width:70px">
                         ${this.renderMJML(content)}
                     </td>
                     <td>
