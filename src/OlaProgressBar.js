@@ -44,7 +44,7 @@ class OlaProgressBar extends BodyComponent {
                 </tr>
                 <tr>
                     <td>
-                        ${this.renderMJML(`<ola-text variant="caption" color="gray" >${this.getAttribute('description')}</ola-text>`)}
+                        ${this.renderMJML(this.getContent())}
                     </td>
                 </tr>
 

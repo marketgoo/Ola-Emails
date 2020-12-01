@@ -1,3 +1,4 @@
+
 const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
@@ -14,14 +15,12 @@ class OlaCounter extends BodyComponent {
         'color': 'string',
         'number': 'string',
         'title': 'string',
-        'variant': 'string'
     };
 
     static defaultAttributes = {
         'background-color': 'accent',
         'color': 'white',
         'number': '1',
-        'variant': 'body'
     };
 
     headStyle() {
@@ -37,16 +36,16 @@ class OlaCounter extends BodyComponent {
 
     render() {
         return `
-        <table class="ola_counter" style="margin-bottom:${tokens('size-7')}; width:100%">
+        <table class="ola_counter" style="margin-bottom:${tokens('size-7')}">
             <tbody>
                 <tr>
-                    <td style="vertical-align:top;" width="70px">
+                    <td style="vertical-align:top;width=70px;" width="70px">
                         <table style="border-radius: 50%; background-color:${tokens(this.getAttribute('background-color'))};">
                             <tr>
                                 <td class="ola_counter-number">
                                     ${this.renderMJML(`
                                     <ola-text ${this.htmlAttributes({
-                                        'variant': 'body',
+                                        'variant': 'headline',
                                         'align': 'center',
                                         'color': this.getAttribute('color'),
                                     })}>
@@ -58,7 +57,7 @@ class OlaCounter extends BodyComponent {
                         </table>
                     </td>
                     <td>
-                        ${this.renderMJML(`<ola-text variant=${this.getAttribute('variant')} font-weight="bold"><p>${this.getAttribute('title')}</p></ola-text>`)}
+                        ${this.renderMJML(`<ola-text variant="body" font-weight="bold"><p>${this.getAttribute('title')}</p></ola-text>`)}
                         ${this.renderMJML(this.getContent())}
                     </td>
                 </tr>

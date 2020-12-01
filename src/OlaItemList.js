@@ -6,28 +6,21 @@ class OlaItemList extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        'title': 'string',
-        text: 'string',
         icon: 'string',
+        title: 'string',
+        number: 'string'
     };
 
+
     render() {
+
+        const content = this.getAttribute('icon') ? `<ola-item-icon icon=${this.getAttribute('icon')}> </ola-item-icon>` : this.getAttribute('number') ? `<ola-item-circle number=${this.getAttribute('number')}> </ola-item-circle>` : null;
         return `
         <table style="margin-bottom:${tokens('size-7')}; width:100%">
             <tbody>
                 <tr>
-                    <td style="vertical-align:top; padding:${tokens('size-2')}; width:${tokens('size-8')}">
-                        <table>
-                            <tr>
-                                <td style="width: 100%;">
-                                    ${this.renderMJML(`
-                                    <mj-image
-                                    src="${this.getAttribute('icon')}"
-                                    ></mj-image>
-                                    `)}
-                                <td/>
-                            </tr>
-                        </table>
+                    <td style="vertical-align:top; padding:${tokens('size-2')}; width:15%">
+                        ${this.renderMJML(content)}
                     </td>
                     <td>
                         ${this.renderMJML(`<ola-text variant="callout" font-weight="bold">${this.getAttribute('title')}</ola-text>`)}
