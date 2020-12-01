@@ -13,7 +13,7 @@ class OlaItemIcon extends BodyComponent {
         return `
                 <table>
                     <tr>
-                        <td style="width:58px" >
+                        <td style="width:52px" >
                             ${this.renderMJML(`<mj-image align="center" src="${this.getAttribute('icon')}"></mj-image>`)}
                         <td/>
                     </tr>
