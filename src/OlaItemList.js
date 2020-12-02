@@ -3,28 +3,27 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 class OlaItemList extends BodyComponent {
-    static endingTag = true;
 
     static allowedAttributes = {
-        icon: 'string',
-        title: 'string',
-        number: 'string'
+
     };
 
-
     render() {
+        const children = this.props.children;
+        const right_children = children.slice(1);
 
-        const content = this.getAttribute('icon') ? `<ola-item-icon icon=${this.getAttribute('icon')}> </ola-item-icon>` : this.getAttribute('number') ? `<ola-item-circle number=${this.getAttribute('number')}> </ola-item-circle>` : null;
+        const copy = children.slice(0)
+        const first_child = copy.splice(0, 1);
+
         return `
         <table style="margin-bottom:${tokens('size-7')}; width:100%">
             <tbody>
                 <tr>
                     <td style="vertical-align:top; width:70px">
-                        ${this.renderMJML(content)}
+                        ${this.renderChildren(first_child)}
                     </td>
                     <td>
-                        ${this.renderMJML(`<ola-text variant="callout" font-weight="bold">${this.getAttribute('title')}</ola-text>`)}
-                        ${this.renderMJML(this.getContent())}
+                        ${this.renderChildren(right_children)}
                     </td>
                 </tr>
             </tbody>

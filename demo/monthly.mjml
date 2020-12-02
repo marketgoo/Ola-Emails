@@ -78,21 +78,29 @@
         </ola-item-list> -->
 
 
-        <ola-item-list icon="https://marketgoo.github.io/Ola-Emails/img/task-warning.png" title="We’ll prepare your SEO improvement plan">
+        <ola-item-list>
+          <ola-item-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-warning.png"> </ola-item-icon>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
         </ola-item-list>
 
-        <ola-item-list icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png" title="We’ll prepare your SEO improvement plan">
+        <ola-item-list >
+          <ola-item-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png"> </ola-item-icon>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-progress-bar value="13">
             <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
           </ola-progress-bar>
         </ola-item-list>
 
-        <ola-item-list number="4" title="We’ll prepare your SEO improvement plan">
+        <ola-item-list >
+          <ola-item-circle number="4"> </ola-item-circle>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
         </ola-item-list>
 
-        <ola-item-list number="2" variant="callout" title="We’ll prepare your SEO improvement plan">
+        <ola-item-list variant="callout">
+          <ola-item-circle number="2"> </ola-item-circle>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-progress-bar value="50">
             <ola-text variant="caption" color="gray"> Your SEO Traffic </ola-text>
           </ola-progress-bar>
@@ -103,6 +111,8 @@
               <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
             </ola-text>
         </ola-counter>
+
+        <ola-bar-chart> </ola-bar-chart>
       </ola-panel-section>
 
 

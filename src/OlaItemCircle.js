@@ -19,7 +19,7 @@ class OlaItemCircle extends BodyComponent {
 
     headStyle() {
         return `
-      .ola_circle-number {
+    .ola_circle-number {
         width: ${tokens('size-8')};
         height: ${tokens('size-8')};
         padding: ${tokens('size-2')};
@@ -56,8 +56,8 @@ class OlaItemCircle extends BodyComponent {
             <td/>
         </tr>
     </table>
-                `;
-    }
+`;
+}
 }
 
 module.exports = OlaItemCircle;
