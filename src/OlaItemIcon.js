@@ -11,10 +11,10 @@ class OlaItemIcon extends BodyComponent {
 
     render() {
         return `
-                <table>
+                <table style="margin: auto">
                     <tr>
-                        <td style="width:52px" >
-                            ${this.renderMJML(`<mj-image align="center" src="${this.getAttribute('icon')}"></mj-image>`)}
+                        <td style="width:44px" >
+                            ${this.renderMJML(`<mj-image align="center" width="44" src="${this.getAttribute('icon')}"></mj-image>`)}
                         <td/>
                     </tr>
                 </table>

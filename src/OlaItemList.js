@@ -19,10 +19,10 @@ class OlaItemList extends BodyComponent {
         <table style="margin-bottom:${tokens('size-7')}; width:100%">
             <tbody>
                 <tr>
-                    <td style="vertical-align:top; width:70px">
+                    <td style="vertical-align:top; width:52px">
                         ${this.renderChildren(first_child)}
                     </td>
-                    <td>
+                    <td style="padding-left: ${tokens('size-4')}">
                         ${this.renderChildren(right_children)}
                     </td>
                 </tr>
