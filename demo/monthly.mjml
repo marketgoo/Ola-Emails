@@ -99,7 +99,7 @@
         </ola-item-list>
 
         <ola-item-list variant="callout">
-          <ola-item-circle number="2"> </ola-item-circle>
+          <ola-item-circle number="2"> <span> nd </span> </ola-item-circle>
           <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-progress-bar value="50">
             <ola-text variant="caption" color="gray"> Your SEO Traffic </ola-text>

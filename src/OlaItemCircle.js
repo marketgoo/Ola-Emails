@@ -32,13 +32,6 @@ class OlaItemCircle extends BodyComponent {
     }
 
     render() {
-        const ordinaries = {
-            1: 'st',
-            2: 'nd',
-            3: 'rd',
-            "default": 'th'
-        }
-        const sub = ordinaries[this.getAttribute('number')] || ordinaries["default"]
         return `
     <table class="ola_circle" style="border-radius: 50%; background-color:${tokens(this.getAttribute('background-color'))};">
         <tr>
@@ -50,7 +43,7 @@ class OlaItemCircle extends BodyComponent {
                     'color': this.getAttribute('color'),
                     'font-weight': 'bold'
                 })}>
-                ${this.getAttribute('number')}<span> ${sub} </span>
+                ${this.getAttribute('number') + this.getContent()}
                 </ola-text>
                 `)}
             <td/>
