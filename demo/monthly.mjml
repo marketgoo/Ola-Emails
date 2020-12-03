@@ -1,0 +1,128 @@
+<mjml>
+  <mj-head>
+    <ola-head></ola-head>
+    <mj-title>{{ name }}, you can now access our SEO tool</mj-title>
+    <mj-preview>Let’s get more potential clients to your site!</mj-preview>
+  </mj-head>
+
+  <mj-body>
+    <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png" />
+
+    <ola-panel>
+
+      <ola-panel-title>Hi {{ name }}, <br /> This is your {{ month }} SEO report for your site example.com </ola-panel-title>
+
+      <ola-panel-section>
+        <ola-text><strong>Good news</strong>, your SEO score </ola-text>
+        <ola-text font-weight="bold" color="success"> has increased {{ percent_variation }} </ola-text>
+        <ola-text>in the last month. Your progress is slow but solid. Keep working, we recomend a at least 85% of score to have a good optimization.</ola-text>
+      </ola-panel-section>
+
+      <ola-panel-section>
+        <ola-score title="Your score" value="60" level="medium">
+        </ola-score>
+
+        <ola-panel-text color="gray" variant="caption" align="center">
+          This is a value between 0-100% that indicate how well optimizaed is your site for SEO. The more task completed, the better score
+        </ola-panel-text>
+      </ola-panel-section>
+
+      <ola-panel-section>
+        <ola-panel-text align="center" font-weight="bold">
+          Do you want to improve your score?
+        </ola-panel-text>
+        <ola-button variant="primary" align="center"> Optimize my site </ola-button>
+      </ola-panel-section>
+
+        <ola-divider> </ola-divider>
+
+        <ola-panel-section>
+          <mj-image width="76px" src="https://marketgoo.github.io/Ola-Emails/img/social-twitter.png" alt="" />
+          <ola-text align="center" font-weight="bold">
+            SEO Traffic
+          </ola-text>
+          <ola-panel-text color="gray" variant="caption" align="center">
+            Find out more about your visits coming from SEO
+          </ola-panel-text>
+          <ola-text align="center" font-weight="bold">
+            Your top keyword:
+          </ola-text>
+
+        </ola-panel-section>
+
+        <ola-divider> </ola-divider>
+
+      <ola-panel-section>
+        <mj-image width="76px" src="https://marketgoo.github.io/Ola-Emails/img/social-twitter.png" alt="" />
+          <ola-text align="center" font-weight="bold">
+            Your backlinks
+          </ola-text>
+          <ola-panel-text color="gray" variant="caption" align="center">
+            Backlinks, or links pointing back to your pages from other websites help your site rank higher
+          </ola-panel-text>
+          <ola-text align="center" font-weight="bold">
+            What new links did you get this month?
+          </ola-text>
+          <mj-spacer height="28px" />
+
+        <!-- <ola-item-list icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png" title="The Best 10 Plumbing in Austing, TX">
+          <ola-text variant="caption" color="gray">
+            Once your site is live, we’ll scan it and award an
+          </ola-text>
+        </ola-item-list>
+
+        <ola-item-list icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png" title="We’ll prepare your SEO improvement plan">
+          <ola-text variant="caption" color="gray">
+            Get an easy-to-implement plan broken down into small,
+          </ola-text>
+        </ola-item-list> -->
+
+
+        <ola-item-list>
+          <ola-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-warning.png"> </ola-icon>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
+          <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
+        </ola-item-list>
+
+        <ola-item-list >
+          <ola-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png"> </ola-icon>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
+          <ola-progress-bar value="13">
+            <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
+          </ola-progress-bar>
+        </ola-item-list>
+
+        <ola-item-list >
+          <ola-circle>4</ola-circle>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
+          <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
+        </ola-item-list>
+
+        <ola-item-list variant="callout">
+          <ola-circle>2<span>nd</span></ola-circle>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
+          <ola-progress-bar value="50">
+            <ola-text variant="caption" color="gray"> Your SEO Traffic </ola-text>
+          </ola-progress-bar>
+        </ola-item-list>
+
+        <ola-counter number="2" title="We’ll calculate your SEO score">
+            <ola-text variant="caption" color="gray">
+              <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
+            </ola-text>
+        </ola-counter>
+
+        <ola-chart-column>
+          <ola-chart-column-value value="0.5" footer="August" > 122 pages </ola-chart-column-value>
+          <ola-chart-column-value value="0.8" footer="September"> 157 pages </ola-chart-column-value>
+          <ola-chart-column-value value="1" color="brand" footer="October"> 166 pages </ola-chart-column-value>
+        </ola-chart-column>
+      </ola-panel-section>
+
+
+        <ola-panel-signature title="All the best," subtitle="The marketgoo team" />
+    </ola-panel>
+
+    <mj-include path="./partials/footer-default.mjml" />
+  </mj-body>
+</mjml>

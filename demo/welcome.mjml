@@ -9,6 +9,8 @@
     <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png"/>
 
     <ola-panel>
+
+
       <ola-panel-title>Hi, {{ name }}</ola-panel-title>
 
       <ola-panel-text>
