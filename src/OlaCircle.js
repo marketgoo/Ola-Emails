@@ -2,7 +2,7 @@ const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
-class OlaItemCircle extends BodyComponent {
+class OlaCircle extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
@@ -51,4 +51,4 @@ class OlaItemCircle extends BodyComponent {
 }
 }
 
-module.exports = OlaItemCircle;
+module.exports = OlaCircle;

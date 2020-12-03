@@ -79,13 +79,13 @@
 
 
         <ola-item-list>
-          <ola-item-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-warning.png"> </ola-item-icon>
+          <ola-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-warning.png"> </ola-icon>
           <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
         </ola-item-list>
 
         <ola-item-list >
-          <ola-item-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png"> </ola-item-icon>
+          <ola-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png"> </ola-icon>
           <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-progress-bar value="13">
             <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
@@ -93,13 +93,13 @@
         </ola-item-list>
 
         <ola-item-list >
-          <ola-item-circle>4</ola-item-circle>
+          <ola-circle>4</ola-circle>
           <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
         </ola-item-list>
 
         <ola-item-list variant="callout">
-          <ola-item-circle>2<span>nd</span></ola-item-circle>
+          <ola-circle>2<span>nd</span></ola-circle>
           <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-progress-bar value="50">
             <ola-text variant="caption" color="gray"> Your SEO Traffic </ola-text>

@@ -1,6 +1,7 @@
 const { registerComponent } = require('mjml-core');
 
 const OlaButton = require('./src/OlaButton');
+const OlaCircle = require('./src/OlaCircle');
 const OlaCounter = require('./src/OlaCounter');
 const OlaChartColumn = require('./src/OlaChartColumn');
 const OlaChartColumnValue = require('./src/OlaChartColumnValue');
@@ -15,9 +16,8 @@ const OlaHeader = require('./src/OlaHeader');
 const OlaHero = require('./src/OlaHero');
 const OlaHeroImg = require('./src/OlaHeroImg');
 const OlaHeroTitle = require('./src/OlaHeroTitle');
-const OlaItemCircle = require('./src/OlaItemCircle');
+const OlaIcon = require('./src/OlaIcon');
 const OlaItemList = require('./src/OlaItemList');
-const OlaItemIcon = require('./src/OlaItemIcon');
 const OlaPanel = require('./src/OlaPanel');
 const OlaPanelSection = require('./src/OlaPanelSection');
 const OlaPanelSignature = require('./src/OlaPanelSignature');
@@ -31,6 +31,7 @@ const OlaThumbnail = require('./src/OlaThumbnail');
 const OlaTag = require('./src/OlaTag');
 
 registerComponent(OlaButton);
+registerComponent(OlaCircle);
 registerComponent(OlaCounter);
 registerComponent(OlaChartColumn);
 registerComponent(OlaChartColumnValue);
@@ -45,9 +46,8 @@ registerComponent(OlaHeader);
 registerComponent(OlaHero);
 registerComponent(OlaHeroImg);
 registerComponent(OlaHeroTitle);
-registerComponent(OlaItemCircle);
+registerComponent(OlaIcon);
 registerComponent(OlaItemList);
-registerComponent(OlaItemIcon);
 registerComponent(OlaPanel);
 registerComponent(OlaPanelSection);
 registerComponent(OlaPanelSignature);

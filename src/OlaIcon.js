@@ -2,7 +2,7 @@ const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
-class OlaItemIcon extends BodyComponent {
+class OlaIcon extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
@@ -22,4 +22,4 @@ class OlaItemIcon extends BodyComponent {
     }
 }
 
-module.exports = OlaItemIcon;
+module.exports = OlaIcon;
