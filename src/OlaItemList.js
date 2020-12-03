@@ -10,20 +10,18 @@ class OlaItemList extends BodyComponent {
 
     render() {
         const children = this.props.children;
-        const right_children = children.slice(1);
-
-        const copy = children.slice(0)
-        const first_child = copy.splice(0, 1);
+        const left = children.slice(0, 1);
+        const right = children.slice(1);
 
         return `
         <table style="margin-bottom:${tokens('size-7')}; width:100%">
             <tbody>
                 <tr>
                     <td style="vertical-align:top; width:70px">
-                        ${this.renderChildren(first_child)}
+                        ${this.renderChildren(left)}
                     </td>
                     <td>
-                        ${this.renderChildren(right_children)}
+                        ${this.renderChildren(right)}
                     </td>
                 </tr>
             </tbody>

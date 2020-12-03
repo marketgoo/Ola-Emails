@@ -112,7 +112,11 @@
             </ola-text>
         </ola-counter>
 
-        <ola-bar-chart> </ola-bar-chart>
+        <ola-chart-column>
+          <ola-chart-column-value value="0.5" footer="August" > 122 pages </ola-chart-column-value>
+          <ola-chart-column-value value="0.8" footer="September"> 157 pages </ola-chart-column-value>
+          <ola-chart-column-value value="1" color="brand" footer="October"> 166 pages </ola-chart-column-value>
+        </ola-chart-column>
       </ola-panel-section>
 
 
