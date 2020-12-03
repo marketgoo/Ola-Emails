@@ -8,13 +8,11 @@ class OlaItemCircle extends BodyComponent {
     static allowedAttributes = {
         'background-color': 'enum(brand,white,black,gray,gray-light,error,warning,success,pro,premium)',
         'color': 'string',
-        'number': 'string',
     };
 
     static defaultAttributes = {
         'background-color': 'gray',
         'color': 'white',
-        'number': '1',
     };
 
     headStyle() {
@@ -43,7 +41,7 @@ class OlaItemCircle extends BodyComponent {
                     'color': this.getAttribute('color'),
                     'font-weight': 'bold'
                 })}>
-                ${this.getAttribute('number') + this.getContent()}
+                ${this.getContent()}
                 </ola-text>
                 `)}
             <td/>
