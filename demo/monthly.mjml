@@ -117,6 +117,15 @@
           <ola-chart-column-value value="0.8" footer="September"> 157 pages </ola-chart-column-value>
           <ola-chart-column-value value="1" color="brand" footer="October"> 166 pages </ola-chart-column-value>
         </ola-chart-column>
+
+        <mj-section>
+          <mj-column width="150px" border-right="4px solid gray" >
+            <ola-kpi title="Título" value="243" description="descripción"> </ola-kpi>
+          </mj-column>
+          <mj-column width="150px" padding-left="20px" >
+            <ola-kpi title="Título" value="2412" description="descripción"> </ola-kpi>
+          </mj-column>
+        </mj-section>
       </ola-panel-section>
 
 
