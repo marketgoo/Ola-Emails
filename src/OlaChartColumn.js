@@ -15,15 +15,14 @@ class OlaChartColumn extends BodyComponent {
     }
 
     render() {
+      const sub_children = this.props.children.map(child => child.children);
         return (`
         <table class="ola_chartColumn">
           <tr>
             ${this.renderChildren()}
           </tr>
           <tr>
-            ${this.props.children.map(child =>
-              `<td> ${this.renderMJML(`<ola-text variant="caption" align="center" color="gray" > ${child.attributes.footer} </ola-text>`)} </td>`)
-              }
+            ${sub_children.map(child => `<td style="vertical-align: top"> ${this.renderChildren(child)} </td>`)}
           </tr>
         </table>
         `);

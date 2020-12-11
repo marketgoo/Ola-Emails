@@ -113,13 +113,21 @@
         </ola-counter>
 
         <ola-chart-column>
-          <ola-chart-column-value value="0.5" footer="August" > 122 pages </ola-chart-column-value>
-          <ola-chart-column-value value="0.8" footer="September"> 157 pages </ola-chart-column-value>
-          <ola-chart-column-value value="1" color="brand" footer="October"> 166 pages </ola-chart-column-value>
+          <ola-chart-column-value value="0.5" label="122 pages">
+            <ola-text variant="caption" color="gray" align="center"> August </ola-text>
+          </ola-chart-column-value>
+          <ola-chart-column-value value="0.8" label="157 pages">
+            <ola-text variant="caption" color="gray" align="center"> September </ola-text>
+            <ola-text variant="caption" color="success" align="center" font-weight="bold"> +3% </ola-text>
+          </ola-chart-column-value>
+          <ola-chart-column-value value="1" color="brand" label="166 pages">
+            <ola-text variant="caption" color="gray" align="center"> October </ola-text>
+            <ola-text variant="caption" color="success" align="center" font-weight="bold"> +2% </ola-text>
+          </ola-chart-column-value>
         </ola-chart-column>
 
         <mj-section>
-          <mj-column width="150px" border-right="4px solid gray" >
+          <mj-column width="150px" >
             <ola-kpi title="Título" value="243" description="descripción"> </ola-kpi>
           </mj-column>
           <mj-column width="150px" padding-left="20px" >
