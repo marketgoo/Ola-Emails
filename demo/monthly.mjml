@@ -127,11 +127,15 @@
         </ola-chart-column>
 
         <mj-section>
-          <mj-column width="150px" >
-            <ola-kpi title="Título" value="243" description="descripción"> </ola-kpi>
+          <mj-column width="190px" >
+            <ola-kpi title="Your monthly visits coming from SEO" description="descripción">
+              <ola-text variant="title" color="black" align="center"> 243 <span>visits</span> </ola-text>
+            </ola-kpi>
           </mj-column>
-          <mj-column width="150px" padding-left="20px" >
-            <ola-kpi title="Título" value="2412" description="descripción"> </ola-kpi>
+          <mj-column width="190px" padding-left="20px" >
+            <ola-kpi title="Number of keywords bringing in traffic" description="descripción" variant="error">
+              <ola-text variant="title" color="black" align="center"> 24 <span>keywords</span> </ola-text>
+            </ola-kpi>
           </mj-column>
         </mj-section>
       </ola-panel-section>
