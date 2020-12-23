@@ -19,7 +19,7 @@ class OlaItemList extends BodyComponent {
         width:100%;
         border-radius: ${tokens('radius')};
         border-collapse: separate;
-        border-spacing: ${tokens('size-4')};
+        border-spacing: ${tokens('size-3')};
     }
     `;
     }

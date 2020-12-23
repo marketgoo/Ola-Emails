@@ -18,7 +18,9 @@ class OlaKpi extends BodyComponent {
     headStyle() {
         return `
     .ola_kpi-value span {
-            font-size: ${tokens('size-7')};
+        font-size: ${tokens('font-headline', 'font-size')};
+        font-family: ${tokens('font-headline', 'font-family')};
+        line-height: ${tokens('font-headline', 'line-height')};
     }
     `;
     }
