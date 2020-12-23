@@ -2,19 +2,23 @@ const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
-
 class OlaProgressBar extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
         'value': 'string',
-        'description': 'string'
+        'description': 'string',
+        'disabled': 'boolean'
     };
+
+    static defaultAttributes = {
+        'disabled': false
+    }
 
     headStyle() {
         return `
         .progress {
-            border: solid 1px ${tokens('brand')};
+            border: solid 1px;
             height: 10px;
             width: 100%;
             min-width: 100px;
@@ -26,7 +30,6 @@ class OlaProgressBar extends BodyComponent {
         .progress > span {
             display: block;
             height: 100%;
-            background: ${tokens('brand')};
         }
         `
     }
@@ -37,8 +40,8 @@ class OlaProgressBar extends BodyComponent {
             <tbody>
                 <tr>
                     <td >
-                        <div class="progress">
-                            <span style="width: ${this.getAttribute('value') || 0}%;"></span>
+                        <div class="progress" style="border-color: ${this.getAttribute('disabled') ? tokens('gray-xlight') : tokens('brand')};">
+                            <span style="width: ${this.getAttribute('value') || 0}%; background-color: ${this.getAttribute('disabled') ? tokens('gray-xlight') : tokens('brand')};"></span>
                         </div>
                     <td/>
                 </tr>
@@ -47,7 +50,6 @@ class OlaProgressBar extends BodyComponent {
                         ${this.renderMJML(this.getContent())}
                     </td>
                 </tr>
-
             </tbody>
         </table>
 		`;
