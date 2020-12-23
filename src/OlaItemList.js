@@ -5,8 +5,24 @@ const tokens = require('./tokens');
 class OlaItemList extends BodyComponent {
 
     static allowedAttributes = {
-
+        'background-color': 'enum(brand,white,black,gray,gray-light,error,warning,success,pro,premium)'
     };
+
+    static defaultAttributes = {
+        'background-color': 'white'
+    };
+
+    headStyle() {
+        return `
+    .ola_item-list {
+        margin-bottom:${tokens('size-7')};
+        width:100%;
+        border-radius: ${tokens('radius')};
+        border-collapse: separate;
+        border-spacing: ${tokens('size-3')};
+    }
+    `;
+    }
 
     render() {
         const children = this.props.children;
@@ -14,7 +30,7 @@ class OlaItemList extends BodyComponent {
         const right = children.slice(1);
 
         return `
-        <table style="margin-bottom:${tokens('size-7')}; width:100%">
+        <table class="ola_item-list" style="background-color: ${tokens(this.getAttribute('background-color'))};">
             <tbody>
                 <tr>
                     <td style="vertical-align:top; width:54px">

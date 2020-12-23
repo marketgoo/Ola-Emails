@@ -3,56 +3,58 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 class OlaKpi extends BodyComponent {
-    static endingTag = true;
 
     static allowedAttributes = {
         title: 'string',
-        value: 'string',
-        description: 'string'
+        description: 'string',
+        variant: 'enum(brand,white,black,gray,gray-light,error,warning,success,pro,premium)'
     };
 
-    headStyle(breakpoint) {
+    static defaultAttributes = {
+        description: '',
+        variant: 'gray'
+    }
+
+    headStyle() {
         return `
-    .ola_kpi-title {
-        margin: 0 0;
-    }
-    .ola_kpi-value {
-        margin: ${tokens('size-3')} 0 0;
-    }
-    .ola_kpi-description {
-        margin: ${tokens('size-1')} 0 0;
+    .ola_kpi-value span {
+        font-size: ${tokens('font-headline', 'font-size')};
+        font-family: ${tokens('font-headline', 'font-family')};
+        line-height: ${tokens('font-headline', 'line-height')};
     }
     `;
     }
 
     render() {
         return (`
-                <table>
-                    <tr>
-                        <td style="vertical-align:middle;">
-                            <div class="ola_kpi-title">
+                <table style="table-layout: fixed; width:200px">
+                    <thead>
+                        <tr>
+                            <td colspan="2" style="vertical-align:middle;">
                                 ${this.renderMJML(`
-                                <ola-text variant="callout" color="gray" font-weight="regular">
-                                    ${this.getAttribute('title')}
+                                    <ola-text variant="callout" color="gray" align="center">
+                                        ${this.getAttribute('title')}
+                                    </ola-text>
+                                `)}
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="ola_kpi-value" style="vertical-align:middle;">
+                                ${this.renderChildren()}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="vertical-align:middle;">
+                                ${this.renderMJML(`
+                                <ola-text variant="caption" color=${this.getAttribute('variant')} font-weight="bold" align="center">
+                                ${this.getAttribute('description')}
                                 </ola-text>
                                 `)}
-                            </div>
-                            <div class="ola_kpi-value">
-                            ${this.renderMJML(`
-                                <ola-text variant="title" color="black">
-                                ${this.getAttribute('value')}
-                            </ola-text>
-                            `)}
-                            </div>
-                            <div class="ola_kpi-description">
-                            ${this.renderMJML(`
-                            <ola-text variant="caption" color="gray" font-weight="bold">
-                                ${this.getAttribute('description')}
-                            </ola-text>
-                            `)}
-                            </div>
-                        </td>
-                    </tr>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 `);
     }
