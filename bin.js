@@ -8,7 +8,7 @@ const argv = require('yargs-parser')(process.argv.slice(2), {
         validation: 'soft',
         file: null,
     },
-    boolean: ['show-errors', 'minify', 'beautify'],
+    boolean: ['show-errors'],
 });
 
 try {
@@ -43,9 +43,7 @@ try {
 function render(code) {
     const mjml2html = require('mjml');
     const result = mjml2html(code, {
-        validationLevel: argv.validation,
-        beautify: argv.beautify,
-        minify: argv.minify,
+        validationLevel: argv.validation
     });
 
     if (argv.showErrors && result.errors.length) {
