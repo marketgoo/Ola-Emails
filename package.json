@@ -18,7 +18,7 @@
     "prettier": "^2.0.5"
   },
   "dependencies": {
-    "mjml": "^4.6.3",
+    "mjml": "4.6.3",
     "yargs-parser": "^20.2.4"
   },
   "nodemonConfig": {
