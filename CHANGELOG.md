@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.3.3] - 2021-01-05
+### Changed
+- Component `ola-head` added color classes [#14]
+
 ## [0.3.2] - 2020-12-23
 ### Changed
 - Component `ola-kpi` changed styles and added variant attribute [#12]
