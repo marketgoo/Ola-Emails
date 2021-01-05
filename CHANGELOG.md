@@ -77,7 +77,9 @@ First version
 [#10]: https://github.com/marketgoo/Ola-Emails/issues/10
 [#11]: https://github.com/marketgoo/Ola-Emails/issues/11
 [#12]: https://github.com/marketgoo/Ola-Emails/issues/12
+[#14]: https://github.com/marketgoo/Ola-Emails/issues/14
 
+[0.3.3]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.2.1...v0.3.0
