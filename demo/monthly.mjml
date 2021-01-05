@@ -13,9 +13,7 @@
       <ola-panel-title>Hi {{ name }}, <br /> This is your {{ month }} SEO report for your site example.com </ola-panel-title>
 
       <ola-panel-section>
-        <ola-text><strong>Good news</strong>, your SEO score </ola-text>
-        <ola-text font-weight="bold" color="success"> has increased {{ percent_variation }} </ola-text>
-        <ola-text>in the last month. Your progress is slow but solid. Keep working, we recomend a at least 85% of score to have a good optimization.</ola-text>
+        <ola-text><strong>Good news</strong>, your SEO score <strong class="ola-success"> has increased {{ percent_variation }} </strong> in the last month. Your progress is slow but solid. Keep working, we recomend a at least 85% of score to have a good optimization.</ola-text>
       </ola-panel-section>
 
       <ola-panel-section>
@@ -85,7 +83,7 @@
           <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
         </ola-item-list>
 
-        <ola-item-list variant="callout">
+        <ola-item-list>
           <ola-circle background-color="gray-light">?</ola-circle>
           <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-progress-bar value="100" disabled=true>

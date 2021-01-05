@@ -38,12 +38,50 @@ class OlaHead extends HeadComponent {
         strong {
             font-weight: ${tokens('bold')};
         }
-      	ul {
-      		padding-left: 1em;
+        ul {
+            padding-left: 1em;
             margin-left: 0;
             margin-top: 0;
             margin-bottom: ${tokens('size-3')};
-      	}`
+        }
+        /* Colors */
+        .ola-brand {
+            color: ${tokens('brand')};
+        }
+        .ola-accent {
+            color: ${tokens('accent')};
+        }
+        .ola-white {
+            color: ${tokens('white')};
+        }
+        .ola-black {
+            color: ${tokens('black')};
+        }
+        .ola-gray {
+            color: ${tokens('gray')};
+        }
+        .ola-gray-light {
+            color: ${tokens('gray-light')};
+        }
+        .ola-gray-xlight {
+            color: ${tokens('gray-xlight')};
+        }
+        .ola-error {
+            color: ${tokens('error')};
+        }
+        .ola-warning {
+            color: ${tokens('warning')};
+        }
+        .ola-success {
+            color: ${tokens('success')};
+        }
+        .ola-pro {
+            color: ${tokens('pro')};
+}        }
+        .ola-black-bolds b,
+        .ola-black-bolds strong {
+            color: ${tokens('black')};
+        }`
         );
     }
 }
