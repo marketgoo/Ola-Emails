@@ -77,10 +77,6 @@ class OlaHead extends HeadComponent {
         }
         .ola-pro {
             color: ${tokens('pro')};
-}        }
-        .ola-black-bolds b,
-        .ola-black-bolds strong {
-            color: ${tokens('black')};
         }`
         );
     }
