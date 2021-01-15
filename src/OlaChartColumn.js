@@ -22,7 +22,7 @@ class OlaChartColumn extends BodyComponent {
             ${this.renderChildren()}
           </tr>
           <tr>
-            ${sub_children.map(child => `<td style="vertical-align: top"> ${this.renderChildren(child)} </td>`)}
+            ${sub_children.map(child => `<td style="vertical-align: top"> ${this.renderChildren(child)} </td>`).join("")}
           </tr>
         </table>
         `);
