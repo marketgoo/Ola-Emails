@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.3.5] - 2021-02-01
+### Changed
+- Component `ola-progress-bar` added background-color attribute for disabled state [#16]
+
 ## [0.3.4] - 2021-01-15
 ### Fixed
 - Component `ola-chart-column` added .join("") to the array of children to avoid comma and extra <td> [#15]
@@ -83,7 +87,9 @@ First version
 [#12]: https://github.com/marketgoo/Ola-Emails/issues/12
 [#14]: https://github.com/marketgoo/Ola-Emails/issues/14
 [#15]: https://github.com/marketgoo/Ola-Emails/issues/15
+[#16]: https://github.com/marketgoo/Ola-Emails/issues/16
 
+[0.3.5]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.4...v0.3.5
 [0.3.4]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.3...v0.3.4
 [0.3.3]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.1...v0.3.2
