@@ -72,7 +72,7 @@
         <ola-item-list background-color="gray-xlight">
           <ola-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png"> </ola-icon>
           <ola-text variant="body" font-weight="bold"> You </ola-text>
-          <ola-progress-bar value="100" disabled=true background-color="white">
+          <ola-progress-bar disabled=true background-color="white">
             <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
           </ola-progress-bar>
         </ola-item-list>
@@ -86,7 +86,7 @@
         <ola-item-list>
           <ola-circle background-color="gray-light">?</ola-circle>
           <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
-          <ola-progress-bar value="100" disabled=true>
+          <ola-progress-bar disabled=true>
             <ola-text variant="caption" color="gray"> We’re still collecting data on this competitor. We’ll share it soon </ola-text>
           </ola-progress-bar>
         </ola-item-list>
