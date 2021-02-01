@@ -8,21 +8,21 @@ class OlaProgressBar extends BodyComponent {
     static allowedAttributes = {
         'value': 'string',
         'description': 'string',
-        'disabled': 'boolean'
+        'disabled': 'boolean',
+        'background-color': 'enum(white,gray-xlight)'
     };
 
     static defaultAttributes = {
-        'disabled': false
+        'disabled': false,
+        'background-color': 'gray-xlight'
     }
 
     headStyle() {
         return `
         .progress {
-            border: solid 1px;
             height: 10px;
             width: 100%;
             min-width: 100px;
-            background: ${tokens('white')};
             border-radius: 6px;
             box-sizing: border-box;
             position: relative;
@@ -35,13 +35,14 @@ class OlaProgressBar extends BodyComponent {
     }
 
     render() {
+        const background_disabled = this.getAttribute('background-color');
         return `
         <table class="ola_progress" style="width:100%">
             <tbody>
                 <tr>
                     <td >
-                        <div class="progress" style="border-color: ${this.getAttribute('disabled') ? tokens('gray-xlight') : tokens('brand')};">
-                            <span style="width: ${this.getAttribute('value') || 0}%; background-color: ${this.getAttribute('disabled') ? tokens('gray-xlight') : tokens('brand')};"></span>
+                        <div class="progress" style="border-color: ${this.getAttribute('disabled') ? tokens('gray-xlight') : tokens('brand')}; border: ${this.getAttribute('disabled') ? 'none' : 'solid 1px'}; background-color: ${this.getAttribute('disabled') ? tokens(background_disabled) : tokens('brand')};">
+                            <span style="width: ${this.getAttribute('value') || 0}%; background-color: ${tokens('brand')};"></span>
                         </div>
                     <td/>
                 </tr>
