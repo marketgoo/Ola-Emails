@@ -41,7 +41,7 @@ class OlaProgressBar extends BodyComponent {
             <tbody>
                 <tr>
                     <td >
-                        <div class="progress" style="border-color: ${this.getAttribute('disabled') ? tokens('gray-xlight') : tokens('brand')}; border: ${this.getAttribute('disabled') ? 'none' : 'solid 1px'}; background-color: ${this.getAttribute('disabled') ? tokens(background_disabled) : tokens('brand')};">
+                        <div class="progress" style="border: ${this.getAttribute('disabled') ? 'none' : `solid 1px ${tokens('brand')}`}; background-color: ${this.getAttribute('disabled') ? tokens(background_disabled) : tokens('white')};">
                             <span style="width: ${this.getAttribute('value') || 0}%; background-color: ${tokens('brand')};"></span>
                         </div>
                     <td/>

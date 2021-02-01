@@ -91,6 +91,14 @@
           </ola-progress-bar>
         </ola-item-list>
 
+        <ola-item-list>
+          <ola-circle background-color="brand">1<span>st</span></ola-circle>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
+          <ola-progress-bar value="20">
+            <ola-text variant="caption" color="gray"> We’re still collecting data on this competitor. We’ll share it soon </ola-text>
+          </ola-progress-bar>
+        </ola-item-list>
+
         <ola-counter number="2" title="We’ll calculate your SEO score">
             <ola-text variant="caption" color="gray">
               <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
