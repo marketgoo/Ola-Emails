@@ -2,7 +2,7 @@ const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
-class OlaTask extends BodyComponent {
+class OlaIssue extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
@@ -33,7 +33,7 @@ class OlaTask extends BodyComponent {
         <table class="ola_task" style="vertical-align:middle;text-align=left">
             <tbody>
                     <tr>
-                        <td style="width:44px;vertical-align:middle;">
+                        <td style="width:44px;vertical-align:top;">
                                 <img
                                     src="${this.getAttribute('icon')}"
                                     width="28"
@@ -54,4 +54,4 @@ class OlaTask extends BodyComponent {
     }
 }
 
-module.exports = OlaTask;
+module.exports = OlaIssue;
