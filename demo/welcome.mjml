@@ -46,10 +46,10 @@
             </ola-text>
         </ola-counter>
 
-        <ola-task>Esto es una task</ola-task>
-        <ola-task>Esto es una task</ola-task>
-        <ola-task>Esto es una task</ola-task>
-        <ola-task>Esto es una task</ola-task>
+        <ola-task icon="./img/task-error.png">Esto es una task</ola-task>
+        <ola-task icon="./img/task-error.png">Esto es una task</ola-task>
+        <ola-task icon="./img/task-error.png">Esto es una task</ola-task>
+        <ola-task icon="./img/task-error.png">Esto es una task</ola-task>
       </ola-panel-section>
 
       <ola-panel-text>
