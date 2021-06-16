@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.3.7] - 2021-06-16
+### Added
+- Component `ola-issue` [#18]
+
+### Removed
+- Component `ola-task` [#18]
+
 ## [0.3.6] - 2021-02-01
 ### Fixed
 - Component `ola-progress-bar` fixed border property [#17]
@@ -93,7 +100,9 @@ First version
 [#15]: https://github.com/marketgoo/Ola-Emails/issues/15
 [#16]: https://github.com/marketgoo/Ola-Emails/issues/16
 [#17]: https://github.com/marketgoo/Ola-Emails/issues/17
+[#18]: https://github.com/marketgoo/Ola-Emails/issues/18
 
+[0.3.7]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.6...v0.3.7
 [0.3.6]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.5...v0.3.6
 [0.3.5]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.4...v0.3.5
 [0.3.4]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.3...v0.3.4
