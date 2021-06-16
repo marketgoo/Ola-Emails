@@ -11,6 +11,7 @@ class OlaTask extends BodyComponent {
 
     static defaultAttributes = {
         variant: 'error',
+        icon: 'string'
     };
 
     headStyle(breakpoint) {
@@ -29,21 +30,20 @@ class OlaTask extends BodyComponent {
     }
 
     render() {
-        const img = `./img/task-${this.getAttribute('variant')}.png`;
+        const icon = `./img/task-${this.getAttribute('variant')}.png`;
 
         return this.renderMJML(`
             <mj-section
                 vertical-align="middle"
                 css-class="ola_task"
                 text-align="left"
-                border-top="solid 1px ${tokens('gray-light')}"
                 >
                 <mj-column>
                     <mj-table padding="0">
                         <tr>
                             <td style="width:44px;vertical-align:middle;">
                                 <img
-                                    src="${img}"
+                                    src="${icon}"
                                     width="28"
                                     style="display:block;"
                                     >

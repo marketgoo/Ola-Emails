@@ -45,6 +45,11 @@
               <p>Get an easy-to-implement plan broken down into small, simple tasks so you can start improving your SEO score one step at a time.</p>
             </ola-text>
         </ola-counter>
+
+        <ola-task>Esto es una task</ola-task>
+        <ola-task>Esto es una task</ola-task>
+        <ola-task>Esto es una task</ola-task>
+        <ola-task>Esto es una task</ola-task>
       </ola-panel-section>
 
       <ola-panel-text>
