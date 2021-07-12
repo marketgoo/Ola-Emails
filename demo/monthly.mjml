@@ -10,6 +10,10 @@
 
     <ola-panel>
 
+        <ola-panel-section>
+        <ola-thumbnail src="https://via.placeholder.com/150" text="Here's your June SEO report for your site example.com" />
+    </ola-panel-section>
+
       <ola-panel-title>Hi {{ name }}, <br /> This is your {{ month }} SEO report for your site example.com </ola-panel-title>
 
       <ola-panel-section>
@@ -31,9 +35,9 @@
         </ola-panel-text>
         <ola-button variant="primary" align="center"> Optimize my site </ola-button>
       </ola-panel-section>
+      </ola-panel>
 
-        <ola-divider> </ola-divider>
-
+      <ola-panel>
         <ola-panel-section>
           <mj-image width="76px" src="https://marketgoo.github.io/Ola-Emails/img/social-twitter.png" alt="" />
           <ola-text align="center" font-weight="bold">
@@ -47,9 +51,9 @@
           </ola-text>
 
         </ola-panel-section>
+        </ola-panel>
 
-        <ola-divider> </ola-divider>
-
+      <ola-panel>
       <ola-panel-section>
         <mj-image width="76px" src="https://marketgoo.github.io/Ola-Emails/img/social-twitter.png" alt="" />
           <ola-text align="center" font-weight="bold">
@@ -118,24 +122,9 @@
             <ola-text variant="caption" color="success" align="center" font-weight="bold"> +2% </ola-text>
           </ola-chart-column-value>
         </ola-chart-column>
-
-        <mj-section>
-          <mj-column width="190px" >
-            <ola-kpi title="Your monthly visits coming from SEO" description="descripción">
-              <ola-text variant="title" color="black" align="center"> 243 <span>visits</span> </ola-text>
-            </ola-kpi>
-          </mj-column>
-          <mj-column width="190px" padding-left="20px" >
-            <ola-kpi title="Number of keywords bringing in traffic" description="descripción" variant="error">
-              <ola-text variant="title" color="black" align="center"> 24 <span>keywords</span> </ola-text>
-            </ola-kpi>
-          </mj-column>
-        </mj-section>
       </ola-panel-section>
-
-
-        <ola-panel-signature title="All the best," subtitle="The marketgoo team" />
-    </ola-panel>
+      <ola-panel-signature title="All the best," subtitle="The marketgoo team" />
+      </ola-panel>
 
     <mj-include path="./partials/footer-default.mjml" />
   </mj-body>
