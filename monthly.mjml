@@ -1,0 +1,131 @@
+<mjml>
+  <mj-head>
+    <ola-head></ola-head>
+    <mj-title>{{ name }}, you can now access our SEO tool</mj-title>
+    <mj-preview>Let’s get more potential clients to your site!</mj-preview>
+  </mj-head>
+
+  <mj-body>
+    <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png" />
+
+    <ola-panel>
+
+        <ola-panel-section>
+        <ola-thumbnail src="https://via.placeholder.com/150" text="Here's your June SEO report for your site example.com" />
+    </ola-panel-section>
+
+      <ola-panel-title>Hi {{ name }}, <br /> This is your {{ month }} SEO report for your site example.com </ola-panel-title>
+
+      <ola-panel-section>
+        <ola-text><strong>Good news</strong>, your SEO score <strong class="ola-success"> has increased {{ percent_variation }} </strong> in the last month. Your progress is slow but solid. Keep working, we recomend a at least 85% of score to have a good optimization.</ola-text>
+      </ola-panel-section>
+
+      <ola-panel-section>
+        <ola-score title="Your score" value="60" level="medium">
+        </ola-score>
+
+        <ola-panel-text color="gray" variant="caption" align="center">
+          This is a value between 0-100% that indicate how well optimizaed is your site for SEO. The more task completed, the better score
+        </ola-panel-text>
+      </ola-panel-section>
+
+      <ola-panel-section>
+        <ola-panel-text align="center" font-weight="bold">
+          Do you want to improve your score?
+        </ola-panel-text>
+        <ola-button variant="primary" align="center"> Optimize my site </ola-button>
+      </ola-panel-section>
+      </ola-panel>
+
+      <ola-panel>
+        <ola-panel-section>
+          <mj-image width="76px" src="https://marketgoo.github.io/Ola-Emails/img/social-twitter.png" alt="" />
+          <ola-text align="center" font-weight="bold">
+            SEO Traffic
+          </ola-text>
+          <ola-panel-text color="gray" variant="caption" align="center">
+            Find out more about your visits coming from SEO
+          </ola-panel-text>
+          <ola-text align="center" font-weight="bold">
+            Your top keyword:
+          </ola-text>
+
+        </ola-panel-section>
+        </ola-panel>
+
+      <ola-panel>
+      <ola-panel-section>
+        <mj-image width="76px" src="https://marketgoo.github.io/Ola-Emails/img/social-twitter.png" alt="" />
+          <ola-text align="center" font-weight="bold">
+            Your backlinks
+          </ola-text>
+          <ola-panel-text color="gray" variant="caption" align="center">
+            Backlinks, or links pointing back to your pages from other websites help your site rank higher
+          </ola-panel-text>
+          <ola-text align="center" font-weight="bold">
+            What new links did you get this month?
+          </ola-text>
+          <mj-spacer height="28px" />
+
+        <ola-item-list>
+          <ola-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-warning.png"> </ola-icon>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
+          <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
+        </ola-item-list>
+
+        <ola-item-list background-color="gray-xlight">
+          <ola-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png"> </ola-icon>
+          <ola-text variant="body" font-weight="bold"> You </ola-text>
+          <ola-progress-bar disabled=true background-color="white">
+            <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
+          </ola-progress-bar>
+        </ola-item-list>
+
+        <ola-item-list >
+          <ola-circle>4</ola-circle>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
+          <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
+        </ola-item-list>
+
+        <ola-item-list>
+          <ola-circle background-color="gray-light">?</ola-circle>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
+          <ola-progress-bar disabled=true>
+            <ola-text variant="caption" color="gray"> We’re still collecting data on this competitor. We’ll share it soon </ola-text>
+          </ola-progress-bar>
+        </ola-item-list>
+
+        <ola-item-list>
+          <ola-circle background-color="brand">1<span>st</span></ola-circle>
+          <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
+          <ola-progress-bar value="20">
+            <ola-text variant="caption" color="gray"> We’re still collecting data on this competitor. We’ll share it soon </ola-text>
+          </ola-progress-bar>
+        </ola-item-list>
+
+        <ola-counter number="2" title="We’ll calculate your SEO score">
+            <ola-text variant="caption" color="gray">
+              <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
+            </ola-text>
+        </ola-counter>
+
+        <ola-chart-column>
+          <ola-chart-column-value value="0.5" label="122 pages">
+            <ola-text variant="caption" color="gray" align="center"> August </ola-text>
+          </ola-chart-column-value>
+          <ola-chart-column-value value="0.8" label="157 pages">
+            <ola-text variant="caption" color="gray" align="center"> September </ola-text>
+            <ola-text variant="caption" color="success" align="center" font-weight="bold"> +3% </ola-text>
+          </ola-chart-column-value>
+          <ola-chart-column-value value="1" color="brand" label="166 pages">
+            <ola-text variant="caption" color="gray" align="center"> October </ola-text>
+            <ola-text variant="caption" color="success" align="center" font-weight="bold"> +2% </ola-text>
+          </ola-chart-column-value>
+        </ola-chart-column>
+      </ola-panel-section>
+      <ola-panel-signature title="All the best," subtitle="The marketgoo team" />
+      </ola-panel>
+
+    <mj-include path="./partials/footer-default.mjml" />
+  </mj-body>
+</mjml>

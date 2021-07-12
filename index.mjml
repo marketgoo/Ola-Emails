@@ -1,0 +1,15 @@
+<mjml>
+  <mj-head>
+    <ola-head></ola-head>
+  </mj-head>
+
+  <mj-body>
+    <ola-panel close-to="top">
+      <ola-panel-text>
+        <ul>
+          <li><a href="welcome.html">Welcome</a></li>
+        </ul>
+      </ola-panel-text>
+    </ola-panel>
+  </mj-body>
+</mjml>
