@@ -131,6 +131,46 @@
             </ola-kpi>
           </mj-column>
         </mj-section>
+
+        <ola-table>
+          <ola-table-row>
+            <ola-table-cell header=true> </ola-table-cell>
+            <ola-table-cell header=true><ola-text variant="caption">Your position</ola-text> </ola-table-cell>
+            <ola-table-cell header=true><ola-text variant="caption">Your best competitor</ola-text> </ola-table-cell>
+          </ola-table-row>
+
+          <ola-table-row>
+            <ola-table-cell>
+              <ola-text variant="callout" font-weight="bold">testing playing piano</ola-text>
+              <ola-text variant="caption" color="gray">2.3K searches this month</ola-text>
+            </ola-table-cell>
+            <ola-table-cell>
+              <ola-text align="center" font-weight="bold">23º</ola-text>
+              <ola-tag variant="success">+2</ola-tag>
+            </ola-table-cell>
+            <ola-table-cell focused=true>
+              <ola-text align="center" font-weight="bold">12º</ola-text>
+              <ola-text align="center" variant="caption" color="gray">bgtoutdoors.com</ola-text>
+            </ola-table-cell>
+          </ola-table-row>
+
+          <ola-table-row>
+            <ola-table-cell>
+              <ola-text variant="callout" font-weight="bold">treadstone riding boots</ola-text>
+              <ola-text variant="caption" color="gray">2.3K searches this month</ola-text>
+            </ola-table-cell>
+            <ola-table-cell>
+              <ola-text align="center" font-weight="bold">23º</ola-text>
+              <ola-tag variant="error">-1</ola-tag>
+            </ola-table-cell>
+            <ola-table-cell focused=true>
+              <ola-text align="center" font-weight="bold">12º</ola-text>
+              <ola-text align="center" variant="caption" color="gray">bgtoutdoors.com</ola-text>
+            </ola-table-cell>
+          </ola-table-row>
+
+        </ola-table>
+
       </ola-panel-section>
 
 
