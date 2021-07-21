@@ -25,7 +25,7 @@ class OlaTableCell extends BodyComponent {
         const header = this.getAttribute('header') === true;
         const is_highlight = this.getAttribute('highlight') === true;
         const background_cell = is_highlight ? tokens('gray-xlight') : "transparent";
-        const padding = is_highlight ? "15px 0" : "0";
+        const padding = is_highlight ? "15px" : "15px 0";
         return (`
             ${header ? `<th align="${this.getAttribute('align')}" style="padding: 15px;">
                             ${this.renderChildren()}
