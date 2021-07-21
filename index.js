@@ -29,6 +29,9 @@ const OlaProgressBar = require('./src/OlaProgressBar');
 const OlaScore = require('./src/OlaScore');
 const OlaText = require('./src/OlaText');
 const OlaThumbnail = require('./src/OlaThumbnail');
+const OlaTable = require('./src/OlaTable');
+const OlaTableCell = require('./src/OlaTableCell');
+const OlaTableRow = require('./src/OlaTableRow');
 const OlaTag = require('./src/OlaTag');
 
 registerComponent(OlaButton);
@@ -60,4 +63,7 @@ registerComponent(OlaProgressBar);
 registerComponent(OlaScore);
 registerComponent(OlaText);
 registerComponent(OlaThumbnail);
+registerComponent(OlaTable);
+registerComponent(OlaTableCell);
+registerComponent(OlaTableRow);
 registerComponent(OlaTag);
