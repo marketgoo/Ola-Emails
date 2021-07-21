@@ -135,8 +135,8 @@
         <ola-table>
           <ola-table-row>
             <ola-table-cell header=true> </ola-table-cell>
-            <ola-table-cell header=true><ola-text variant="caption">Your position</ola-text> </ola-table-cell>
-            <ola-table-cell header=true><ola-text variant="caption">Your best competitor</ola-text> </ola-table-cell>
+            <ola-table-cell header=true><ola-text align="center" variant="caption">Your position</ola-text> </ola-table-cell>
+            <ola-table-cell header=true><ola-text align="center" variant="caption">Your best competitor</ola-text> </ola-table-cell>
           </ola-table-row>
 
           <ola-table-row>
@@ -148,7 +148,7 @@
               <ola-text align="center" font-weight="bold">23º</ola-text>
               <ola-tag variant="success">+2</ola-tag>
             </ola-table-cell>
-            <ola-table-cell focused=true>
+            <ola-table-cell highlight=true>
               <ola-text align="center" font-weight="bold">12º</ola-text>
               <ola-text align="center" variant="caption" color="gray">bgtoutdoors.com</ola-text>
             </ola-table-cell>
@@ -163,7 +163,7 @@
               <ola-text align="center" font-weight="bold">23º</ola-text>
               <ola-tag variant="error">-1</ola-tag>
             </ola-table-cell>
-            <ola-table-cell focused=true>
+            <ola-table-cell highlight=true>
               <ola-text align="center" font-weight="bold">12º</ola-text>
               <ola-text align="center" variant="caption" color="gray">bgtoutdoors.com</ola-text>
             </ola-table-cell>

@@ -11,23 +11,26 @@ class OlaTableCell extends BodyComponent {
 
     static allowedAttributes = {
         header: 'boolean',
-        focused: 'boolean'
+        highlight: 'boolean',
+        align: 'enum(left,center,right)'
     };
 
     static defaultAttributes = {
         header: 'false',
-        focused: 'false'
+        highlight: 'false',
+        align: 'center'
     };
 
     render() {
         const header = this.getAttribute('header') === true;
-        const focused = this.getAttribute('focused') === true;
-        const background_cell = focused ? tokens('gray-xlight') : "transparent";
+        const is_highlight = this.getAttribute('highlight') === true;
+        const background_cell = is_highlight ? tokens('gray-xlight') : "transparent";
+        const padding = is_highlight ? "15px" : "0";
         return (`
-            ${header ? `<th style="padding: 15px; border-bottom:1px solid ${tokens('gray-xlight')};">
+            ${header ? `<th align="${this.getAttribute('align')}" style="padding: 15px; border-bottom:1px solid ${tokens('gray-xlight')};">
                             ${this.renderChildren()}
                         </th>` :
-                        `<td style="padding: 15px; background-color: ${background_cell}; border-top:1px solid ${tokens('gray-xlight')};">
+                        `<td style="padding: ${padding}; background-color: ${background_cell}; border-top:1px solid ${tokens('gray-xlight')};">
                             ${this.renderChildren()}
                         </td>`
             }

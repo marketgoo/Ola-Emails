@@ -7,7 +7,7 @@ class OlaTable extends BodyComponent {
 
     render() {
         return (`
-        <table>
+        <table style="width: 100%;">
             ${this.renderChildren()}
         </table>
         `);
