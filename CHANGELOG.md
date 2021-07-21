@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.3.9] - 2021-07-21
+### Fixed
+- Component `ola-table-cell` [#21]
+
 ## [0.3.8] - 2021-07-21
 ### Added
 - Component `ola-table` [#20]
@@ -108,7 +112,9 @@ First version
 [#17]: https://github.com/marketgoo/Ola-Emails/issues/17
 [#18]: https://github.com/marketgoo/Ola-Emails/issues/18
 [#20]: https://github.com/marketgoo/Ola-Emails/issues/20
+[#21]: https://github.com/marketgoo/Ola-Emails/issues/21
 
+[0.3.9]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.8...v0.3.9
 [0.3.8]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.7...v0.3.8
 [0.3.7]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.6...v0.3.7
 [0.3.6]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.5...v0.3.6
