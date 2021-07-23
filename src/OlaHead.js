@@ -14,7 +14,7 @@ class OlaHead extends HeadComponent {
         const { add } = this.context;
 
         add('defaultAttributes', 'mj-all', { 'font-family': 'Arial' });
-        add('defaultAttributes', 'mj-body', { 'background-color': tokens('gray-xlight') });
+        add('defaultAttributes', 'mj-body', { 'background-color': tokens('gray-xxlight') });
 
         if (tokens('custom-font')) {
             add('fonts', tokens('custom-font', 'name'), tokens('custom-font', 'src'));

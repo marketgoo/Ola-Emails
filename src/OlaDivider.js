@@ -6,11 +6,11 @@ class OlaDivider extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        color: 'enum(brand,white,black,gray,gray-light,gray-xlight)',
+        color: 'enum(brand,white,black,gray,gray-light,gray-xlight,gray-xxlight)',
     };
 
     static defaultAttributes = {
-        color: 'gray-xlight',
+        color: 'gray-xxlight',
     };
 
     render() {
