@@ -7,15 +7,17 @@ class OlaDivider extends BodyComponent {
 
     static allowedAttributes = {
         color: 'enum(brand,white,black,gray,gray-light,gray-xlight,gray-xxlight)',
+        margin: 'enum(0,1,2,3,4,5,6,7)'
     };
 
     static defaultAttributes = {
         color: 'gray-xxlight',
+        margin: '7'
     };
 
     render() {
         const color = tokens(this.getAttribute('color'));
-        const margin = tokens('size-7');
+        const margin = this.getAttribute('margin') === "0" ? "0" : tokens(`size-${this.getAttribute('margin')}`);
         return `
         <p style="border-top:solid 4px ${color};font-size:1px;margin:${margin} auto;width:100%;">
         </p>
