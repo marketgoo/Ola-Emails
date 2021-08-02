@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.4.0] - Unreleased
+## [0.4.0] - 2021-08-02
 ### Added
 - New color `gray-xxlight`
 
@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - The color `gray-xlight` is a bit darker.
 - The default color of body is `gray-xxlight`.
 - The default color of `OlaDivider` is `gray-xxlight`.
+
+## [0.3.10] - 2021-08-02
+### Changed
+- Component `ola-divider` added margin attribute [#23]
 
 ## [0.3.9] - 2021-07-21
 ### Fixed
@@ -122,8 +126,10 @@ First version
 [#18]: https://github.com/marketgoo/Ola-Emails/issues/18
 [#20]: https://github.com/marketgoo/Ola-Emails/issues/20
 [#21]: https://github.com/marketgoo/Ola-Emails/issues/21
+[#23]: https://github.com/marketgoo/Ola-Emails/issues/23
 
-[0.4.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.9...HEAD
+[0.4.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.10...v0.4.0
+[0.3.10]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.9...v0.3.10
 [0.3.9]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.8...v0.3.9
 [0.3.8]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.7...v0.3.8
 [0.3.7]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.6...v0.3.7
