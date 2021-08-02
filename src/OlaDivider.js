@@ -2,6 +2,10 @@ const { registerDependencies } = require('mjml-validator');
 const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
+registerDependencies({
+    'mj-body': ['ola-divider']
+});
+
 class OlaDivider extends BodyComponent {
     static endingTag = true;
 
