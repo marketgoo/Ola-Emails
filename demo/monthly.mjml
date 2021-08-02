@@ -176,7 +176,7 @@
 
         <ola-panel-signature title="All the best," subtitle="The marketgoo team" />
     </ola-panel>
-    <ola-divider margin="6"></ola-divider>
+    <ola-divider margin="small"></ola-divider>
     <ola-panel>
       <ola-panel-title>Hi {{ name }}, <br /> This is your {{ month }} SEO report for your site example.com </ola-panel-title>
 
