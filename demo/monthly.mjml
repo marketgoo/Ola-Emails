@@ -176,7 +176,14 @@
 
         <ola-panel-signature title="All the best," subtitle="The marketgoo team" />
     </ola-panel>
+    <ola-divider margin="small"></ola-divider>
+    <ola-panel>
+      <ola-panel-title>Hi {{ name }}, <br /> This is your {{ month }} SEO report for your site example.com </ola-panel-title>
 
+      <ola-panel-section>
+        <ola-text><strong>Good news</strong>, your SEO score <strong class="ola-success"> has increased {{ percent_variation }} </strong> in the last month. Your progress is slow but solid. Keep working, we recomend a at least 85% of score to have a good optimization.</ola-text>
+      </ola-panel-section>
+    </ola-panel>
     <mj-include path="./partials/footer-default.mjml" />
   </mj-body>
 </mjml>
