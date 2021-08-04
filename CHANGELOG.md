@@ -14,6 +14,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - The default color of body is `gray-xxlight`.
 - The default color of `OlaDivider` is `gray-xxlight`.
 
+## [0.3.10] - 2021-08-04
+### Added
+- New attribute `background-color` to `ola-table-cell` component [#24]
+- New colors to `tokens-defaults.json` [#24]
+- Color `gray-xxlight` to `background-color` from `ola-item-list` component [#24]
+
 ## [0.3.10] - 2021-08-02
 ### Changed
 - Component `ola-divider` added margin attribute [#23]
@@ -127,8 +133,10 @@ First version
 [#20]: https://github.com/marketgoo/Ola-Emails/issues/20
 [#21]: https://github.com/marketgoo/Ola-Emails/issues/21
 [#23]: https://github.com/marketgoo/Ola-Emails/issues/23
+[#24]: https://github.com/marketgoo/Ola-Emails/issues/24
 
-[0.4.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.10...v0.4.0
+[0.4.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.10...HEAD
+[0.3.10]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.10...v0.3.10
 [0.3.10]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.9...v0.3.10
 [0.3.9]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.8...v0.3.9
 [0.3.8]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.7...v0.3.8
