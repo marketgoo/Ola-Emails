@@ -10,21 +10,23 @@ registerDependencies({
 class OlaTableCell extends BodyComponent {
 
     static allowedAttributes = {
-        header: 'boolean',
-        highlight: 'boolean',
-        align: 'enum(left,center,right)'
+        'header': 'boolean',
+        'highlight': 'boolean',
+        'background-color': 'enum(brand,white,black,gray,gray-light,gray-xlight,gray-xxlight,error,warning,success,pro,premium)',
+        'align': 'enum(left,center,right)'
     };
 
     static defaultAttributes = {
-        header: 'false',
-        highlight: 'false',
-        align: 'center'
+        'header': 'false',
+        'highlight': 'false',
+        'background-color': 'gray-xxlight',
+        'align': 'center'
     };
 
     render() {
         const header = this.getAttribute('header') === true;
         const is_highlight = this.getAttribute('highlight') === true;
-        const background_cell = is_highlight ? tokens('gray-xlight') : "transparent";
+        const background_cell = is_highlight ? tokens(this.getAttribute('background-color')) : "transparent";
         const padding = is_highlight ? "15px" : "15px 0";
         return (`
             ${header ? `<th align="${this.getAttribute('align')}" style="padding: 15px;">
