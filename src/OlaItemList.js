@@ -5,7 +5,7 @@ const tokens = require('./tokens');
 class OlaItemList extends BodyComponent {
 
     static allowedAttributes = {
-        'background-color': 'enum(brand,white,black,gray,gray-light,error,warning,success,pro,premium)'
+        'background-color': 'enum(brand,white,black,gray,gray-light,gray-xlight,gray-xxlight,error,warning,success,pro,premium)'
     };
 
     static defaultAttributes = {
