@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - The default color of body is `gray-xxlight`.
 - The default color of `OlaDivider` is `gray-xxlight`.
 
-## [0.3.12] - 2021-08-02
+## [0.3.12] - 2021-08-11
 ### Added
 - Added font-size to sup element in `ola-head` [#25]
 
