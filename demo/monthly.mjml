@@ -92,7 +92,7 @@
         </ola-item-list>
 
         <ola-item-list>
-          <ola-circle background-color="brand">1<span>st</span></ola-circle>
+          <ola-circle background-color="brand">1<sup>st</sup></ola-circle>
           <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-progress-bar value="20">
             <ola-text variant="caption" color="gray"> We’re still collecting data on this competitor. We’ll share it soon </ola-text>
@@ -145,7 +145,7 @@
               <ola-text variant="caption" color="gray">2.3K searches this month</ola-text>
             </ola-table-cell>
             <ola-table-cell>
-              <ola-text align="center" font-weight="bold">23º</ola-text>
+              <ola-text align="center" font-weight="bold">23<sup>rd</sup></ola-text>
               <ola-tag variant="success">+2</ola-tag>
             </ola-table-cell>
             <ola-table-cell highlight=true>

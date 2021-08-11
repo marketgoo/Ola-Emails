@@ -44,6 +44,9 @@ class OlaHead extends HeadComponent {
             margin-top: 0;
             margin-bottom: ${tokens('size-3')};
         }
+        sup {
+            font-size: 50%
+        }
         /* Colors */
         .ola-brand {
             color: ${tokens('brand')};
