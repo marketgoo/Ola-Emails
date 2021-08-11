@@ -23,8 +23,8 @@ class OlaCircle extends BodyComponent {
         padding: ${tokens('size-2')};
         margin: ${tokens('size-2')} 0 0;
     }
-    span {
-        font-size: ${tokens('size-4')}
+    .ola_circle-number sup {
+        font-size: ${tokens('size-4')};
     }
     `;
     }
@@ -36,19 +36,19 @@ class OlaCircle extends BodyComponent {
             <td class="ola_circle-number">
                 ${this.renderMJML(`
                 <ola-text ${this.htmlAttributes({
-                    'variant': 'body',
-                    'align': 'center',
-                    'color': this.getAttribute('color'),
-                    'font-weight': 'bold'
-                })}>
+            'variant': 'body',
+            'align': 'center',
+            'color': this.getAttribute('color'),
+            'font-weight': 'bold'
+        })}>
                 ${this.getContent()}
                 </ola-text>
                 `)}
             <td/>
         </tr>
     </table>
-`;
-}
+    `;
+    }
 }
 
 module.exports = OlaCircle;
