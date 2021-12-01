@@ -23,13 +23,21 @@ const styles = {
         color: tokens('button', 'secondary', 'color') || tokens('brand'),
         border: `solid 1px ${tokens('button', 'secondary', 'border') || tokens('gray-xlight')}`,
     },
+    link: {
+        'background-color': tokens('button', 'primary', 'background') || 'transparent',
+        color: tokens('button', 'primary', 'color') || tokens('brand'),
+        border: 'none',
+        'border-radius': '0',
+        'font-weight': tokens('regular')
+    }
+
 };
 
 class OlaButton extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        variant: 'enum(primary,secondary)',
+        variant: 'enum(primary,secondary,link)',
         href: 'string',
         align: 'enum(left,center,right)',
     };
