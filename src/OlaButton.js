@@ -40,32 +40,60 @@ class OlaButton extends BodyComponent {
         variant: 'enum(primary,secondary,link)',
         href: 'string',
         align: 'enum(left,center,right)',
+        icon: 'string'
     };
 
     static defaultAttributes = {
         variant: 'secondary',
-        align: 'center',
+        align: 'center'
     };
+
+    headStyle() {
+        return `
+      .ola_button-link a {
+        padding: 10px 8px !important;
+      }
+    `;
+    }
 
     render() {
         const attributes = {
             ...styles.default,
             ...styles[this.getAttribute('variant')],
         };
+        const icon = this.getAttribute('icon');
 
-        return this.renderMJML(`
-			<mj-button
-        ${this.htmlAttributes({
-            href: this.getAttribute('href') || '#',
-            align: this.getAttribute('align'),
-            'css-class': 'ola_button-' + this.getAttribute('variant'),
-            ...(tokens('button', '@css') || {}),
-            ...(tokens('button', '@css', this.getAttribute('variant')) || {}),
-            ...attributes,
-        })}>
-        ${this.getContent()}
-			</mj-button>
-		`);
+        return `
+            <a href=${this.getAttribute('href')} target="_blank">
+            <table style="border-spacing: 0;">
+                <tbody>
+                    <tr>
+                        <td class="ola_button-${this.getAttribute('variant')}">
+                            ${this.renderMJML(`
+                            <mj-button
+                                ${this.htmlAttributes({
+                                    href: this.getAttribute('href') || '#',
+                                    align: this.getAttribute('align'),
+                                    'css-class': 'ola_button-' + this.getAttribute('variant'),
+                                    ...(tokens('button', '@css') || {}),
+                                    ...(tokens('button', '@css', this.getAttribute('variant')) || {}),
+                                    ...attributes,
+                                    })}>
+                                        ${this.getContent()}
+			                </mj-button> `)}
+                        </td>
+                        ${icon && `
+                        <td>
+                            ${this.renderMJML(`
+                            <ola-icon icon="${this.getAttribute('icon')}" />
+                            `)}
+                        </td>
+                        `}
+                    </tr>
+                </tbody>
+            </table>
+            </a>
+        `
     }
 }
 

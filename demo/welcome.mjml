@@ -6,7 +6,7 @@
   </mj-head>
 
   <mj-body>
-    <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png"/>
+    <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png" />
 
     <ola-panel>
 
@@ -14,8 +14,8 @@
       <ola-panel-title>Hi, {{ name }}</ola-panel-title>
 
       <ola-panel-text>
-          <p>Thank you for signing up to <strong>{product}</strong> with your website, <strong>{domain}.</strong></p>
-          <p>As part of your subscription, you can also use our SEO tool. We make SEO optimization easy by taking care of all the heavy lifting for you.</p>
+        <p>Thank you for signing up to <strong>{product}</strong> with your website, <strong>{domain}.</strong></p>
+        <p>As part of your subscription, you can also use our SEO tool. We make SEO optimization easy by taking care of all the heavy lifting for you.</p>
       </ola-panel-text>
 
       <ola-divider></ola-divider>
@@ -26,36 +26,61 @@
 
       <ola-panel-section>
         <ola-counter number="1" title="Check your website is live">
-            <ola-text variant="caption" color="gray">
-              <ul>
-                <li><strong>Already live?</strong> Great! Head straight to step 2.</li>
-                <li><strong>Not live yet?</strong> Activate your site as soon as you can so we can calculate your SEO score.</li>
-              </ul>
-            </ola-text>
+          <ola-text variant="caption" color="gray">
+            <ul>
+              <li><strong>Already live?</strong> Great! Head straight to step 2.</li>
+              <li><strong>Not live yet?</strong> Activate your site as soon as you can so we can calculate your SEO score.</li>
+            </ul>
+          </ola-text>
         </ola-counter>
 
         <ola-counter number="2" title="We’ll calculate your SEO score">
-            <ola-text variant="caption" color="gray">
-              <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
-            </ola-text>
+          <ola-text variant="caption" color="gray">
+            <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
+          </ola-text>
         </ola-counter>
 
         <ola-counter number="3" title="We’ll prepare your SEO improvement plan">
-            <ola-text variant="caption" color="gray">
-              <p>Get an easy-to-implement plan broken down into small, simple tasks so you can start improving your SEO score one step at a time.</p>
-            </ola-text>
+          <ola-text variant="caption" color="gray">
+            <p>Get an easy-to-implement plan broken down into small, simple tasks so you can start improving your SEO score one step at a time.</p>
+          </ola-text>
         </ola-counter>
 
         <ola-issue icon="./img/task-error.png">Esto es una task</ola-issue>
         <ola-issue icon="./img/task-error.png">Esto es una task</ola-issue>
         <ola-issue icon="./img/task-error.png">Esto es una task</ola-issue>
         <ola-issue icon="./img/task-error.png">Esto es una task</ola-issue>
-
-        <ola-card background-color="gray-light">
-          <ola-text align="center">Esto es una card</ola-text>
-          <ola-button-icon variant="link" href="#" icon="./img/social-linkedin.png">Show me more</ola-button-icon>
-        </ola-card>
       </ola-panel-section>
+
+      <ola-highlight padding="0 10px" background-color="gray-xxlight" multicolumn="true">
+
+        <mj-column>
+          <ola-highlight padding="25px" border-radius="16px" background-color="white">
+            <ola-text align="center">Esto es una card</ola-text>
+            <ola-divider color="white"></ola-divider>
+            <ola-button variant="link" href="#" icon="./img/social-linkedin.png">Show me more</ola-button>
+          </ola-highlight>
+          <ola-highlight padding="25px" border-radius="16px" background-color="white">
+            <ola-text align="center">Esto es una card</ola-text>
+            <ola-divider color="white"></ola-divider>
+            <ola-button variant="link" href="#" icon="./img/social-linkedin.png">Show me more</ola-button>
+          </ola-highlight>
+        </mj-column>
+
+        <mj-column>
+          <ola-highlight padding="25px" border-radius="16px" background-color="white">
+            <ola-text align="center">Esto es una card</ola-text>
+            <ola-divider color="white"></ola-divider>
+            <ola-button variant="link" href="#" icon="./img/social-linkedin.png">Show me more</ola-button>
+          </ola-highlight>
+          <ola-highlight padding="25px" border-radius="16px" background-color="white">
+            <ola-text align="center">Esto es una card</ola-text>
+            <ola-divider color="white"></ola-divider>
+            <ola-button variant="link" href="#" icon="./img/social-linkedin.png">Show me more</ola-button>
+          </ola-highlight>
+        </mj-column>
+
+      </ola-highlight>
 
       <ola-panel-text>
         <p>Stay tuned for your SEO score and improvement plan – you’ll be welcoming more visitors to your site in no time!</p>
