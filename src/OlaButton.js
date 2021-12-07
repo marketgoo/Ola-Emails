@@ -34,7 +34,6 @@ const styles = {
 };
 
 class OlaButton extends BodyComponent {
-    static endingTag = true;
 
     static allowedAttributes = {
         variant: 'enum(primary,secondary,link)',
@@ -50,9 +49,17 @@ class OlaButton extends BodyComponent {
 
     headStyle() {
         return `
-      .ola_button-link a {
-        padding: 10px 8px !important;
-      }
+        .ola_button-link {
+            padding: 0 !important;
+        }
+        .ola_button-link a {
+        display: flex !important;
+        align-items: center;
+        padding: 0 !important;
+        }
+        .ola_button-link span:first-child {
+            padding: 0 10px;
+        }
     `;
     }
 
@@ -61,39 +68,26 @@ class OlaButton extends BodyComponent {
             ...styles.default,
             ...styles[this.getAttribute('variant')],
         };
-        const icon = this.getAttribute('icon');
 
-        return `
-            <a href=${this.getAttribute('href')} target="_blank">
-            <table style="border-spacing: 0;">
-                <tbody>
-                    <tr>
-                        <td class="ola_button-${this.getAttribute('variant')}">
-                            ${this.renderMJML(`
-                            <mj-button
-                                ${this.htmlAttributes({
-                                    href: this.getAttribute('href') || '#',
-                                    align: this.getAttribute('align'),
+        return this.renderMJML(`
+                        <mj-column css-class="ola_button-${this.getAttribute('variant')}">
+                            <mj-button ${this.htmlAttributes({
+                                    'href': this.getAttribute('href') || '#',
+                                    'align': this.getAttribute('align'),
                                     'css-class': 'ola_button-' + this.getAttribute('variant'),
                                     ...(tokens('button', '@css') || {}),
                                     ...(tokens('button', '@css', this.getAttribute('variant')) || {}),
                                     ...attributes,
                                     })}>
-                                        ${this.getContent()}
-			                </mj-button> `)}
-                        </td>
-                        ${icon && `
-                        <td>
-                            ${this.renderMJML(`
-                            <ola-icon icon="${this.getAttribute('icon')}" />
-                            `)}
-                        </td>
-                        `}
-                    </tr>
-                </tbody>
-            </table>
-            </a>
-        `
+                                        <span>${this.getContent()}</span>
+                                        <span>${this.renderChildren()}</span>
+                            </mj-button>
+                        </mj-column>
+                            `)
+
+
+
+
     }
 }
 
