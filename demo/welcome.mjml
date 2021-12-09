@@ -52,48 +52,61 @@
         <ola-issue icon="./img/task-error.png">Esto es una task</ola-issue>
       </ola-panel-section>
 
-      <ola-highlight outer-padding="10px" padding="32px" background-color="gray-xxlight">
-      <mj-group>
-        <mj-column padding-right="10px">
-          <ola-highlight padding="16px 0" outer-padding="16px" border-radius="16px" background-color="white">
-            <ola-text align="center">Include a sitemap in XML format</ola-text>
-            <ola-divider color="white"></ola-divider>
-            <ola-button variant="link" href="#">
-              Show me more
-              <ola-icon variant="medium" icon="./img/social-linkedin.png" />
-            </ola-button>
-          </ola-highlight>
+      <ola-highlight padding="10px">
+        <ola-panel-section background-color="gray-xxlight">
+          <ola-text variant="title" align="left">
+            Tasks to start with
+          </ola-text>
+          <ola-text align="left">
+            Tasks to start with
+          </ola-text>
+        </ola-panel-section>
 
-          <ola-highlight padding="16px 0" outer-padding="16px" border-radius="16px" background-color="white">
-            <ola-text align="center">Fix programing related errors</ola-text>
-            <ola-divider color="white"></ola-divider>
-            <ola-button variant="link" href="#">
-              Show me more
-              <ola-icon icon="./img/social-linkedin.png" />
-            </ola-button>
-          </ola-highlight>
-        </mj-column>
+        <ola-panel-section multicolumn="true" background-color="gray-xxlight">
+          <mj-column padding-right="10px">
 
-        <mj-column padding-left="10px">
-          <ola-highlight padding="16px 0" outer-padding="16px" border-radius="16px" background-color="white">
-            <ola-text align="center">Fix duplicate webpage title on your website</ola-text>
-            <ola-divider color="white"></ola-divider>
-            <ola-button variant="link" href="#">
-              Show me more
-              <ola-icon icon="./img/social-linkedin.png" />
-            </ola-button>
-          </ola-highlight>
+            <ola-highlight padding="14px" border-radius="16px" background-color="white">
+              <ola-text align="center">Include a sitemap in XML format</ola-text>
+              <ola-divider color="white"></ola-divider>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+              </ola-button>
+            </ola-highlight>
 
-          <ola-highlight padding="16px 0" outer-padding="16px" border-radius="16px" background-color="white">
-            <ola-text align="center">Avoid duplicate content</ola-text>
-            <ola-divider color="white"></ola-divider>
-            <ola-button variant="link" href="#">
-              Show me more
-              <ola-icon icon="./img/social-linkedin.png" />
-            </ola-button>
-          </ola-highlight>
-        </mj-column>
-        </mj-group>
+            <ola-highlight padding="14px" border-radius="16px" background-color="white">
+              <ola-text align="center">Fix programing related errors</ola-text>
+              <ola-divider color="white"></ola-divider>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-icon variant="medium" icon="./img/social-linkedin.png" />
+              </ola-button>
+            </ola-highlight>
+
+          </mj-column>
+
+          <mj-column padding-left="10px">
+
+            <ola-highlight padding="14px" border-radius="16px" background-color="white">
+              <ola-text align="center">Fix duplicate webpage title on your website</ola-text>
+              <ola-divider color="white"></ola-divider>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-icon variant="medium" icon="./img/social-linkedin.png" />
+              </ola-button>
+            </ola-highlight>
+
+            <ola-highlight padding="14px" border-radius="16px" background-color="white">
+              <ola-text align="center">Avoid duplicate content</ola-text>
+              <ola-divider color="white"></ola-divider>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-icon variant="medium" icon="./img/social-linkedin.png" />
+              </ola-button>
+            </ola-highlight>
+
+          </mj-column>
+        </ola-panel-section>
       </ola-highlight>
 
       <ola-panel-text>
