@@ -38,8 +38,7 @@ class OlaButton extends BodyComponent {
     static allowedAttributes = {
         variant: 'enum(primary,secondary,link)',
         href: 'string',
-        align: 'enum(left,center,right)',
-        icon: 'string'
+        align: 'enum(left,center,right)'
     };
 
     static defaultAttributes = {
@@ -69,6 +68,9 @@ class OlaButton extends BodyComponent {
             ...styles[this.getAttribute('variant')],
         };
 
+        const { children } = this.props;
+        const render_children = children.length > 0;
+
         return this.renderMJML(`
                         <mj-column css-class="ola_button-${this.getAttribute('variant')}">
                             <mj-button ${this.htmlAttributes({
@@ -80,7 +82,7 @@ class OlaButton extends BodyComponent {
                                     ...attributes,
                                     })}>
                                         <span>${this.getContent()}</span>
-                                        <span>${this.renderChildren()}</span>
+                                        ${render_children ? `<span>${this.renderChildren()}</span>` : ""}
                             </mj-button>
                         </mj-column>
                             `)
