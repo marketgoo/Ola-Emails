@@ -14,6 +14,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - The default color of body is `gray-xxlight`.
 - The default color of `OlaDivider` is `gray-xxlight`.
 
+## [0.3.13] - 2021-12-09
+### Added
+- Component `ola-wrapper` [#26]
+- Component `ola-section` [#26]
+- Component `ola-column` [#26]
+
+### Changed
+- Component `ola-button` to accept children [#26]
+
 ## [0.3.12] - 2021-08-11
 ### Added
 - Added font-size to sup element in `ola-head` [#25]
@@ -139,8 +148,10 @@ First version
 [#23]: https://github.com/marketgoo/Ola-Emails/issues/23
 [#24]: https://github.com/marketgoo/Ola-Emails/issues/24
 [#25]: https://github.com/marketgoo/Ola-Emails/issues/25
+[#26]: https://github.com/marketgoo/Ola-Emails/issues/26
 
-[0.4.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.12...HEAD
+[0.4.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.13...HEAD
+[0.3.13]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.12...v0.3.13
 [0.3.12]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.11...v0.3.12
 [0.3.11]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.10...v0.3.11
 [0.3.10]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.9...v0.3.10
