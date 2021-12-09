@@ -23,21 +23,44 @@ const styles = {
         color: tokens('button', 'secondary', 'color') || tokens('brand'),
         border: `solid 1px ${tokens('button', 'secondary', 'border') || tokens('gray-xlight')}`,
     },
+    link: {
+        'background-color': tokens('button', 'primary', 'background') || 'transparent',
+        color: tokens('button', 'primary', 'color') || tokens('brand'),
+        border: 'none',
+        'border-radius': '0',
+        'font-weight': tokens('regular')
+    }
+
 };
 
 class OlaButton extends BodyComponent {
-    static endingTag = true;
 
     static allowedAttributes = {
-        variant: 'enum(primary,secondary)',
+        variant: 'enum(primary,secondary,link)',
         href: 'string',
-        align: 'enum(left,center,right)',
+        align: 'enum(left,center,right)'
     };
 
     static defaultAttributes = {
         variant: 'secondary',
-        align: 'center',
+        align: 'center'
     };
+
+    headStyle() {
+        return `
+        .ola_button-link {
+            padding: 0 !important;
+        }
+        .ola_button-link a {
+        display: flex !important;
+        align-items: center;
+        padding: 0 !important;
+        }
+        .ola_button-link span:first-child {
+            padding: 0 10px;
+        }
+    `;
+    }
 
     render() {
         const attributes = {
@@ -45,19 +68,28 @@ class OlaButton extends BodyComponent {
             ...styles[this.getAttribute('variant')],
         };
 
+        const { children } = this.props;
+        const render_children = children.length > 0;
+
         return this.renderMJML(`
-			<mj-button
-        ${this.htmlAttributes({
-            href: this.getAttribute('href') || '#',
-            align: this.getAttribute('align'),
-            'css-class': 'ola_button-' + this.getAttribute('variant'),
-            ...(tokens('button', '@css') || {}),
-            ...(tokens('button', '@css', this.getAttribute('variant')) || {}),
-            ...attributes,
-        })}>
-        ${this.getContent()}
-			</mj-button>
-		`);
+                        <mj-column css-class="ola_button-${this.getAttribute('variant')}">
+                            <mj-button ${this.htmlAttributes({
+                                    'href': this.getAttribute('href') || '#',
+                                    'align': this.getAttribute('align'),
+                                    'css-class': 'ola_button-' + this.getAttribute('variant'),
+                                    ...(tokens('button', '@css') || {}),
+                                    ...(tokens('button', '@css', this.getAttribute('variant')) || {}),
+                                    ...attributes,
+                                    })}>
+                                        <span>${this.getContent()}</span>
+                                        ${render_children ? `<span>${this.renderChildren()}</span>` : ""}
+                            </mj-button>
+                        </mj-column>
+                            `)
+
+
+
+
     }
 }
 
