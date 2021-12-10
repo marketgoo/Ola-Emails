@@ -42,7 +42,7 @@ try {
 
 function render(code) {
     const mjml2html = require('mjml');
-    const result = mjml2html(code, {
+    const result = mjml2html(tokens.replace(code), {
         validationLevel: argv.validation
     });
 

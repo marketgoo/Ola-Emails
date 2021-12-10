@@ -52,18 +52,77 @@
         <ola-issue icon="./img/task-error.png">Esto es una task</ola-issue>
       </ola-panel-section>
 
-      <ola-wrapper padding="10px">
-        <ola-section background-color="gray-xxlight" padding="50px 40px">
+      <mj-wrapper padding="10px">
+        <mj-section background-color="$gray-xxlight" padding="50px 40px">
           <ola-text variant="title" align="left">
             Tasks to start with
           </ola-text>
           <ola-text align="left">
             Tasks to start with
           </ola-text>
-        </ola-section>
+        </mj-section>
 
-        <ola-section background-color="gray-xxlight" padding="0 20px">
-          <ola-column padding="5px" inner-border-radius="16px" inner-background-color="white">
+        <mj-section background-color="$gray-xxlight" padding="0 20px">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
+            <ola-wrapper padding="8px">
+              <ola-text align="center">Include a sitemap in XML format</ola-text>
+              <ola-divider color="$white"></ola-divider>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
+            <ola-wrapper padding="8px">
+              <ola-text align="center">Include a sitemap in XML format</ola-text>
+              <ola-divider color="$white"></ola-divider>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+        </mj-section>
+
+        <mj-section background-color="$gray-xxlight" padding="0 20px">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
+            <ola-wrapper padding="8px">
+              <ola-text align="center">Include a sitemap in XML format</ola-text>
+              <ola-divider color="$white"></ola-divider>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
+            <ola-wrapper padding="8px">
+              <ola-text align="center">Include a sitemap in XML format</ola-text>
+              <ola-divider color="$white"></ola-divider>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+        </mj-section>
+
+        <mj-section background-color="$gray-xxlight" padding="0 20px 20px">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
+            <ola-wrapper padding="8px">
+              <ola-text align="center">Include a sitemap in XML format</ola-text>
+              <ola-divider color="$white"></ola-divider>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="white">
             <ola-wrapper padding="8px">
               <ola-text align="center">Include a sitemap in XML format</ola-text>
               <ola-divider color="white"></ola-divider>
@@ -72,68 +131,9 @@
                 <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
               </ola-button>
             </ola-wrapper>
-          </ola-column>
-
-          <ola-column padding="5px" inner-border-radius="16px" inner-background-color="white">
-            <ola-wrapper padding="8px">
-              <ola-text align="center">Include a sitemap in XML format</ola-text>
-              <ola-divider color="white"></ola-divider>
-              <ola-button variant="link" href="#">
-                Show me more
-                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
-              </ola-button>
-            </ola-wrapper>
-          </ola-column>
-        </ola-section>
-
-        <ola-section background-color="gray-xxlight" padding="0 20px">
-          <ola-column padding="5px" inner-border-radius="16px" inner-background-color="white">
-            <ola-wrapper padding="8px">
-              <ola-text align="center">Include a sitemap in XML format</ola-text>
-              <ola-divider color="white"></ola-divider>
-              <ola-button variant="link" href="#">
-                Show me more
-                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
-              </ola-button>
-            </ola-wrapper>
-          </ola-column>
-
-          <ola-column padding="5px" inner-border-radius="16px" inner-background-color="white">
-            <ola-wrapper padding="8px">
-              <ola-text align="center">Include a sitemap in XML format</ola-text>
-              <ola-divider color="white"></ola-divider>
-              <ola-button variant="link" href="#">
-                Show me more
-                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
-              </ola-button>
-            </ola-wrapper>
-          </ola-column>
-        </ola-section>
-
-        <ola-section background-color="gray-xxlight" padding="0 20px 20px">
-          <ola-column padding="5px" inner-border-radius="16px" inner-background-color="white">
-            <ola-wrapper padding="8px">
-              <ola-text align="center">Include a sitemap in XML format</ola-text>
-              <ola-divider color="white"></ola-divider>
-              <ola-button variant="link" href="#">
-                Show me more
-                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
-              </ola-button>
-            </ola-wrapper>
-          </ola-column>
-
-          <ola-column padding="5px" inner-border-radius="16px" inner-background-color="white">
-            <ola-wrapper padding="8px">
-              <ola-text align="center">Include a sitemap in XML format</ola-text>
-              <ola-divider color="white"></ola-divider>
-              <ola-button variant="link" href="#">
-                Show me more
-                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
-              </ola-button>
-            </ola-wrapper>
-          </ola-column>
-        </ola-section>
-      </ola-wrapper>
+          </mj-column>
+        </mj-section>
+      </mj-wrapper>
 
       <ola-panel-text>
         <p>Stay tuned for your SEO score and improvement plan – you’ll be welcoming more visitors to your site in no time!</p>

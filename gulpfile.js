@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const mjml2html = require('mjml');
 const { Transform } = require('stream');
+const tokens = require('./src/tokens');
 
 require('./index');
 
@@ -14,7 +15,7 @@ function mjml() {
   return new Transform({
       objectMode: true,
       transform(file, encoding, done) {
-        const result = mjml2html(file.contents.toString(), {
+        const result = mjml2html(tokens.replace(file.contents.toString()), {
           validationLevel: 'soft',
           filePath: './demo/'
         });
