@@ -5,14 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.4.0] - Unreleased
+## [0.4.0] - 2021-12-10
 ### Added
 - New color `gray-xxlight`
+- All attributes with values starting with `$` are replaced with the token real value.
 
 ### Changed
 - The color `gray-xlight` is a bit darker.
 - The default color of body is `gray-xxlight`.
 - The default color of `OlaDivider` is `gray-xxlight`.
+
+### Removed
+- Component `ola-section`
+- Component `ola-column`
 
 ## [0.3.13] - 2021-12-09
 ### Added
@@ -150,7 +155,7 @@ First version
 [#25]: https://github.com/marketgoo/Ola-Emails/issues/25
 [#26]: https://github.com/marketgoo/Ola-Emails/issues/26
 
-[0.4.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.13...HEAD
+[0.4.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.13...v0.4.0
 [0.3.13]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.12...v0.3.13
 [0.3.12]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.11...v0.3.12
 [0.3.11]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.10...v0.3.11
