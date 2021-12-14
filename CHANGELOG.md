@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.4.1] - 2021-12-14
+### Fixed
+- Added `height` attribute to `ola-text`  component. [#27]
+- Removed `min-height` from `ola-wrapper` component. [#27]
+
 ## [0.4.0] - 2021-12-10
 ### Added
 - New color `gray-xxlight`
@@ -154,7 +159,9 @@ First version
 [#24]: https://github.com/marketgoo/Ola-Emails/issues/24
 [#25]: https://github.com/marketgoo/Ola-Emails/issues/25
 [#26]: https://github.com/marketgoo/Ola-Emails/issues/26
+[#27]: https://github.com/marketgoo/Ola-Emails/issues/27
 
+[0.4.1]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.13...v0.4.0
 [0.3.13]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.12...v0.3.13
 [0.3.12]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.11...v0.3.12
