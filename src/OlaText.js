@@ -11,6 +11,7 @@ class OlaText extends BodyComponent {
         color: 'enum(brand,white,black,gray,gray-light,error,warning,success,pro,premium)',
         'vertical-align': 'enum(top,middle,bottom)',
         'font-weight': 'enum(regular,bold)',
+        height: 'string'
     };
 
     static defaultAttributes = {
@@ -29,6 +30,7 @@ class OlaText extends BodyComponent {
 			<mj-text
         ${this.htmlAttributes({
             ...style,
+            height: this.getAttribute('height'),
             align: this.getAttribute('align'),
             color: tokens(this.getAttribute('color')),
             'vertical-align': this.getAttribute('vertical-align')

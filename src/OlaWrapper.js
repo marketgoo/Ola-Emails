@@ -14,17 +14,9 @@ class OlaWrapper extends BodyComponent {
         'padding': '0'
     };
 
-    headStyle() {
-        return `
-    .ola_wrapper {
-        min-height: 215px;
-    }
-    `;
-    }
-
     render() {
         return this.renderMJML(`
-            <mj-wrapper css-class="ola_wrapper" padding=${this.getAttribute('padding')}>
+            <mj-wrapper padding=${this.getAttribute('padding')}>
                 ${this.getContent()}
             </mj-wrapper>
         `)
