@@ -68,7 +68,7 @@
                 <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">
                 Show me more
-                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+                <ola-text color="brand" variant="headline">➔</ola-text>
               </ola-button>
             </ola-wrapper>
           </mj-column>
@@ -79,7 +79,7 @@
 
               <ola-button variant="link" href="#">
                 Show me more
-                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+                <ola-text color="brand" variant="headline">➔</ola-text>
               </ola-button>
             </ola-wrapper>
           </mj-column>
@@ -92,7 +92,7 @@
               <ola-divider color="$white"></ola-divider>
               <ola-button variant="link" href="#">
                 Show me more
-                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+                <ola-text color="brand" variant="headline">➔</ola-text>
               </ola-button>
             </ola-wrapper>
           </mj-column>
@@ -103,7 +103,7 @@
               <ola-divider color="$white"></ola-divider>
               <ola-button variant="link" href="#">
                 Show me more
-                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+                <ola-text color="brand" variant="headline">➔</ola-text>
               </ola-button>
             </ola-wrapper>
           </mj-column>
@@ -116,7 +116,7 @@
               <ola-divider color="$white"></ola-divider>
               <ola-button variant="link" href="#">
                 Show me more
-                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+                <ola-text color="brand" variant="headline">➔</ola-text>
               </ola-button>
             </ola-wrapper>
           </mj-column>
@@ -127,7 +127,7 @@
               <ola-divider color="white"></ola-divider>
               <ola-button variant="link" href="#">
                 Show me more
-                <ola-icon variant="medium" variant="medium" icon="./img/social-linkedin.png" />
+                <ola-text color="brand" variant="headline">➔</ola-text>
               </ola-button>
             </ola-wrapper>
           </mj-column>

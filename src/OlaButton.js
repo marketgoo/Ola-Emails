@@ -57,6 +57,7 @@ class OlaButton extends BodyComponent {
         }
         .ola_button-link span:first-child {
             padding-right: 10px;
+            vertical-align: super;
         }
         .ola_button-link span:nth-child(2) div {
             display: inline;
