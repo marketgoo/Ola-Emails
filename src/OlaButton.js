@@ -57,7 +57,7 @@ class OlaButton extends BodyComponent {
         padding: 0 !important;
         }
         .ola_button-link span:first-child {
-            padding: 0 10px;
+            padding-right: 10px;
         }
     `;
     }
