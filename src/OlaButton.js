@@ -52,12 +52,14 @@ class OlaButton extends BodyComponent {
             padding: 0 !important;
         }
         .ola_button-link a {
-        display: flex !important;
-        align-items: center;
-        padding: 0 !important;
+            padding: 0 !important;
+            display: inline;
         }
         .ola_button-link span:first-child {
             padding-right: 10px;
+        }
+        .ola_button-link span:nth-child(2) div {
+            display: inline;
         }
     `;
     }
