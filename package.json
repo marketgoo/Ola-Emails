@@ -1,7 +1,7 @@
 {
   "name": "@marketgoo/ola-emails",
   "description": "Ola design system implemented for emails, using MJML",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "main": "index.js",
   "bin": {
     "ola-emails": "bin.js"

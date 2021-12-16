@@ -76,7 +76,6 @@
           <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
-
               <ola-button variant="link" href="#">
                 Show me more
                 <ola-text color="brand" variant="headline">➔</ola-text>
@@ -89,7 +88,6 @@
           <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
-              <ola-divider color="$white"></ola-divider>
               <ola-button variant="link" href="#">
                 Show me more
                 <ola-text color="brand" variant="headline">➔</ola-text>
@@ -100,7 +98,6 @@
           <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
-              <ola-divider color="$white"></ola-divider>
               <ola-button variant="link" href="#">
                 Show me more
                 <ola-text color="brand" variant="headline">➔</ola-text>
@@ -113,10 +110,8 @@
           <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
-              <ola-divider color="$white"></ola-divider>
               <ola-button variant="link" href="#">
                 Show me more
-                <ola-text color="brand" variant="headline">➔</ola-text>
               </ola-button>
             </ola-wrapper>
           </mj-column>
@@ -124,10 +119,8 @@
           <mj-column padding="5px" inner-border-radius="16px" inner-background-color="white">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
-              <ola-divider color="white"></ola-divider>
               <ola-button variant="link" href="#">
                 Show me more
-                <ola-text color="brand" variant="headline">➔</ola-text>
               </ola-button>
             </ola-wrapper>
           </mj-column>
