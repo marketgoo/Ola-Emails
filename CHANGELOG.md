@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.4.2] - 2021-12-16
+### Fixed
+- Fixed `padding` property to `ola-button` component when variant is `link`.
+
 ## [0.4.1] - 2021-12-14
 ### Fixed
 - Added `height` attribute to `ola-text`  component. [#27]
@@ -161,6 +165,7 @@ First version
 [#26]: https://github.com/marketgoo/Ola-Emails/issues/26
 [#27]: https://github.com/marketgoo/Ola-Emails/issues/27
 
+[0.4.2]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.13...v0.4.0
 [0.3.13]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.12...v0.3.13
