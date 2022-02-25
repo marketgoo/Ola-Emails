@@ -52,7 +52,7 @@
         <ola-issue icon="./img/task-error.png">Esto es una task</ola-issue>
       </ola-panel-section>
 
-      <mj-wrapper padding="10px">
+      <ola-wrapper padding="10px">
         <mj-section background-color="$gray-xxlight" padding="50px 40px">
           <ola-text variant="title" align="left">
             Tasks to start with
@@ -65,7 +65,7 @@
         <mj-section background-color="$gray-xxlight" padding="0 20px">
           <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
             <ola-wrapper padding="8px">
-                <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
+              <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">
                 Show me more
                 <ola-text color="brand" variant="headline">➔</ola-text>
@@ -125,7 +125,7 @@
             </ola-wrapper>
           </mj-column>
         </mj-section>
-      </mj-wrapper>
+      </ola-wrapper>
 
       <ola-panel-text>
         <p>Stay tuned for your SEO score and improvement plan – you’ll be welcoming more visitors to your site in no time!</p>
