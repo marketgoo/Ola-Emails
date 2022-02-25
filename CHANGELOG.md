@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.4.5] - 2022-02-25
+### Fixed
+- Allow align td's in `ola-table-cell`. [#29]
+
 ## [0.4.4] - 2021-12-16
 ### Fixed
 - Aligned `ola-button` elements.
@@ -172,7 +176,11 @@ First version
 [#25]: https://github.com/marketgoo/Ola-Emails/issues/25
 [#26]: https://github.com/marketgoo/Ola-Emails/issues/26
 [#27]: https://github.com/marketgoo/Ola-Emails/issues/27
+[#29]: https://github.com/marketgoo/Ola-Emails/issues/29
 
+[0.4.5]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.4...v0.4.5
+[0.4.4]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.3...v0.4.4
+[0.4.3]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.3.13...v0.4.0
