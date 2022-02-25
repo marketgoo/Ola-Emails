@@ -32,36 +32,36 @@
         <ola-button variant="primary" align="center"> Optimize my site </ola-button>
       </ola-panel-section>
 
-        <ola-divider> </ola-divider>
-
-        <ola-panel-section>
-          <mj-image width="76px" src="https://marketgoo.github.io/Ola-Emails/img/social-twitter.png" alt="" />
-          <ola-text align="center" font-weight="bold">
-            SEO Traffic
-          </ola-text>
-          <ola-panel-text color="gray" variant="caption" align="center">
-            Find out more about your visits coming from SEO
-          </ola-panel-text>
-          <ola-text align="center" font-weight="bold">
-            Your top keyword:
-          </ola-text>
-
-        </ola-panel-section>
-
-        <ola-divider> </ola-divider>
+      <ola-divider> </ola-divider>
 
       <ola-panel-section>
         <mj-image width="76px" src="https://marketgoo.github.io/Ola-Emails/img/social-twitter.png" alt="" />
-          <ola-text align="center" font-weight="bold">
-            Your backlinks
-          </ola-text>
-          <ola-panel-text color="gray" variant="caption" align="center">
-            Backlinks, or links pointing back to your pages from other websites help your site rank higher
-          </ola-panel-text>
-          <ola-text align="center" font-weight="bold">
-            What new links did you get this month?
-          </ola-text>
-          <mj-spacer height="28px" />
+        <ola-text align="center" font-weight="bold">
+          SEO Traffic
+        </ola-text>
+        <ola-panel-text color="gray" variant="caption" align="center">
+          Find out more about your visits coming from SEO
+        </ola-panel-text>
+        <ola-text align="center" font-weight="bold">
+          Your top keyword:
+        </ola-text>
+
+      </ola-panel-section>
+
+      <ola-divider> </ola-divider>
+
+      <ola-panel-section>
+        <mj-image width="76px" src="https://marketgoo.github.io/Ola-Emails/img/social-twitter.png" alt="" />
+        <ola-text align="center" font-weight="bold">
+          Your backlinks
+        </ola-text>
+        <ola-panel-text color="gray" variant="caption" align="center">
+          Backlinks, or links pointing back to your pages from other websites help your site rank higher
+        </ola-panel-text>
+        <ola-text align="center" font-weight="bold">
+          What new links did you get this month?
+        </ola-text>
+        <mj-spacer height="28px" />
 
         <ola-item-list>
           <ola-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-warning.png"> </ola-icon>
@@ -77,7 +77,7 @@
           </ola-progress-bar>
         </ola-item-list>
 
-        <ola-item-list >
+        <ola-item-list>
           <ola-circle>4</ola-circle>
           <ola-text variant="body" font-weight="bold"> Lorem ipsum </ola-text>
           <ola-text variant="caption" color="gray"> Hello World!!!!! </ola-text>
@@ -100,9 +100,9 @@
         </ola-item-list>
 
         <ola-counter number="2" title="We’ll calculate your SEO score">
-            <ola-text variant="caption" color="gray">
-              <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
-            </ola-text>
+          <ola-text variant="caption" color="gray">
+            <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
+          </ola-text>
         </ola-counter>
 
         <ola-chart-column>
@@ -120,12 +120,12 @@
         </ola-chart-column>
 
         <mj-section>
-          <mj-column width="190px" >
+          <mj-column width="190px">
             <ola-kpi title="Your monthly visits coming from SEO" description="descripción">
               <ola-text variant="title" color="black" align="center"> 243 <span>visits</span> </ola-text>
             </ola-kpi>
           </mj-column>
-          <mj-column width="190px" padding-left="20px" >
+          <mj-column width="190px" padding-left="20px">
             <ola-kpi title="Number of keywords bringing in traffic" description="descripción" variant="error">
               <ola-text variant="title" color="black" align="center"> 24 <span>keywords</span> </ola-text>
             </ola-kpi>
@@ -135,8 +135,12 @@
         <ola-table>
           <ola-table-row>
             <ola-table-cell header=true> </ola-table-cell>
-            <ola-table-cell header=true><ola-text align="center" variant="caption">Your position</ola-text> </ola-table-cell>
-            <ola-table-cell header=true><ola-text align="center" variant="caption">Your best competitor</ola-text> </ola-table-cell>
+            <ola-table-cell header=true>
+              <ola-text align="center" variant="caption">Your position</ola-text>
+            </ola-table-cell>
+            <ola-table-cell header=true>
+              <ola-text align="center" variant="caption">Your best competitor</ola-text>
+            </ola-table-cell>
           </ola-table-row>
 
           <ola-table-row>
@@ -168,13 +172,41 @@
               <ola-text align="center" variant="caption" color="gray">bgtoutdoors.com</ola-text>
             </ola-table-cell>
           </ola-table-row>
-
         </ola-table>
+      </ola-panel-section>
+      <ola-panel-section>
+        <ola-table>
+          <ola-table-row>
+            <ola-table-cell>
+              <ola-icon variant="medium" icon="https://marketgoo.github.io/Ola-Emails/img/task-warning.png"> </ola-icon>
+            </ola-table-cell>
+            <ola-table-cell>
+              <ola-text variant="callout" font-weight="bold">www.marketgoo.com (You)</ola-text>
+              <ola-text variant="callout">45 sitios</ola-text>
+            </ola-table-cell>
+            <ola-table-cell>
+              <ola-text variant="callout" align="center">23 visitas</ola-text>
+            </ola-table-cell>
+          </ola-table-row>
 
+          <ola-table-row>
+            <ola-table-cell>
+
+            </ola-table-cell>
+            <ola-table-cell>
+              <ola-text variant="callout" font-weight="bold">tuenti.es</ola-text>
+            </ola-table-cell>
+            <ola-table-cell>
+              <ola-text variant="caption" align="center">
+                We're still collecting this data. It'll be ready soon!
+              </ola-text>
+            </ola-table-cell>
+          </ola-table-row>
+        </ola-table>
       </ola-panel-section>
 
 
-        <ola-panel-signature title="All the best," subtitle="The marketgoo team" />
+      <ola-panel-signature title="All the best," subtitle="The marketgoo team" />
     </ola-panel>
     <ola-divider margin="small"></ola-divider>
     <ola-panel>
