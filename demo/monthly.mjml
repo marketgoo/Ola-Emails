@@ -148,7 +148,7 @@
               <ola-text variant="callout" font-weight="bold">testing playing piano</ola-text>
               <ola-text variant="caption" color="gray">2.3K searches this month</ola-text>
             </ola-table-cell>
-            <ola-table-cell>
+            <ola-table-cell padding="15px">
               <ola-text align="center" font-weight="bold">23<sup>rd</sup></ola-text>
               <ola-tag variant="success">+2</ola-tag>
             </ola-table-cell>
@@ -163,7 +163,7 @@
               <ola-text variant="callout" font-weight="bold">treadstone riding boots</ola-text>
               <ola-text variant="caption" color="gray">2.3K searches this month</ola-text>
             </ola-table-cell>
-            <ola-table-cell>
+            <ola-table-cell padding="15px">
               <ola-text align="center" font-weight="bold">23º</ola-text>
               <ola-tag variant="error">-1</ola-tag>
             </ola-table-cell>
