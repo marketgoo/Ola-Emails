@@ -13,14 +13,16 @@ class OlaTableCell extends BodyComponent {
         'header': 'boolean',
         'highlight': 'boolean',
         'background-color': 'enum(brand,white,black,gray,gray-light,gray-xlight,gray-xxlight,error,warning,success,pro,premium)',
-        'align': 'enum(left,center,right)'
+        'align': 'enum(left,center,right)',
+        'padding': 'string'
     };
 
     static defaultAttributes = {
         'header': 'false',
         'highlight': 'false',
         'background-color': 'gray-xxlight',
-        'align': 'center'
+        'align': 'center',
+        'padding': '15px 0'
     };
 
     render() {
@@ -31,7 +33,7 @@ class OlaTableCell extends BodyComponent {
             ${header ? `<th align="${this.getAttribute('align')}" style="padding: 15px;">
                             ${this.renderChildren()}
                         </th>` :
-                        `<td align="${this.getAttribute('align')}" style="padding: 15px; background-color: ${background_cell};">
+                        `<td align="${this.getAttribute('align')}" style="padding: ${this.getAttribute('padding')}; background-color: ${background_cell};">
                             ${this.renderChildren()}
                         </td>`
             }
