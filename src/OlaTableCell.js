@@ -23,7 +23,8 @@ class OlaTableCell extends BodyComponent {
         'highlight': 'false',
         'background-color': 'gray-xxlight',
         'align': 'center',
-        'padding': '15px 0'
+        'padding': '15px 0',
+        'width': 'auto'
     };
 
     render() {
