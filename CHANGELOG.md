@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.4.7] - 2022-03-14
+### Added
+- Added width attribute into `ola-table-cell`. [#31]
+
 ## [0.4.6] - 2022-03-04
 ### Added
 - Include padding attribute into `ola-table-cell`. [#30]
@@ -182,7 +186,9 @@ First version
 [#27]: https://github.com/marketgoo/Ola-Emails/issues/27
 [#29]: https://github.com/marketgoo/Ola-Emails/issues/29
 [#30]: https://github.com/marketgoo/Ola-Emails/issues/30
+[#31]: https://github.com/marketgoo/Ola-Emails/issues/31
 
+[0.4.7]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.6...v0.4.7
 [0.4.6]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.5...v0.4.6
 [0.4.5]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.4...v0.4.5
 [0.4.4]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.3...v0.4.4
