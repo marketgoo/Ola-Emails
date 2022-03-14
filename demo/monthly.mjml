@@ -177,7 +177,7 @@
       <ola-panel-section>
         <ola-table>
           <ola-table-row>
-            <ola-table-cell>
+            <ola-table-cell width="45px">
               <ola-icon variant="medium" icon="https://marketgoo.github.io/Ola-Emails/img/task-warning.png"> </ola-icon>
             </ola-table-cell>
             <ola-table-cell>
