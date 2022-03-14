@@ -14,7 +14,8 @@ class OlaTableCell extends BodyComponent {
         'highlight': 'boolean',
         'background-color': 'enum(brand,white,black,gray,gray-light,gray-xlight,gray-xxlight,error,warning,success,pro,premium)',
         'align': 'enum(left,center,right)',
-        'padding': 'string'
+        'padding': 'string',
+        'width': 'string'
     };
 
     static defaultAttributes = {
@@ -22,7 +23,8 @@ class OlaTableCell extends BodyComponent {
         'highlight': 'false',
         'background-color': 'gray-xxlight',
         'align': 'center',
-        'padding': '15px 0'
+        'padding': '15px 0',
+        'width': 'auto'
     };
 
     render() {
@@ -30,10 +32,10 @@ class OlaTableCell extends BodyComponent {
         const is_highlight = this.getAttribute('highlight') === true;
         const background_cell = is_highlight ? tokens(this.getAttribute('background-color')) : "transparent";
         return (`
-            ${header ? `<th align="${this.getAttribute('align')}" style="padding: 15px;">
+            ${header ? `<th align="${this.getAttribute('align')}" style="padding: 15px; width: ${this.getAttribute('width')}">
                             ${this.renderChildren()}
                         </th>` :
-                        `<td align="${this.getAttribute('align')}" style="padding: ${this.getAttribute('padding')}; background-color: ${background_cell};">
+                        `<td align="${this.getAttribute('align')}" style="padding: ${this.getAttribute('padding')}; background-color: ${background_cell}; width: ${this.getAttribute('width')}">
                             ${this.renderChildren()}
                         </td>`
             }
