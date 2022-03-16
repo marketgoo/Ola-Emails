@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.4.8] - 2022-03-16
+### Added
+- Added size attribute into `ola-circle`. [#32]
+
 ## [0.4.7] - 2022-03-14
 ### Added
 - Added width attribute into `ola-table-cell`. [#31]
@@ -187,7 +191,9 @@ First version
 [#29]: https://github.com/marketgoo/Ola-Emails/issues/29
 [#30]: https://github.com/marketgoo/Ola-Emails/issues/30
 [#31]: https://github.com/marketgoo/Ola-Emails/issues/31
+[#32]: https://github.com/marketgoo/Ola-Emails/issues/32
 
+[0.4.8]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.7...v0.4.8
 [0.4.7]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.6...v0.4.7
 [0.4.6]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.5...v0.4.6
 [0.4.5]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.4...v0.4.5
