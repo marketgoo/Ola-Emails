@@ -8,11 +8,13 @@ class OlaCircle extends BodyComponent {
     static allowedAttributes = {
         'background-color': 'enum(brand,white,black,gray,gray-light,error,warning,success,pro,premium)',
         'color': 'string',
+        'size': 'enum(small,medium,big)'
     };
 
     static defaultAttributes = {
         'background-color': 'gray',
         'color': 'white',
+        'size': 'big'
     };
 
     headStyle() {
@@ -30,13 +32,24 @@ class OlaCircle extends BodyComponent {
     }
 
     render() {
+        const size = this.getAttribute('size');
+        const circleSize = {
+            [size === "small"]: tokens('size-6'),
+            [size === "medium"]: tokens('size-7'),
+            [size === "big"]: tokens('size-8')
+        }[true] || null;
+        const textSize = {
+            [size === "small"]: 'caption',
+            [size === "medium"]: 'callout',
+            [size === "big"]: 'body'
+        }[true] || null;
         return `
     <table class="ola_circle" style="border-radius: 50%; background-color:${tokens(this.getAttribute('background-color'))};">
         <tr>
-            <td class="ola_circle-number">
+            <td class="ola_circle-number" style="width:${circleSize}; height:${circleSize}">
                 ${this.renderMJML(`
                 <ola-text ${this.htmlAttributes({
-            'variant': 'body',
+            'variant': `${textSize}`,
             'align': 'center',
             'color': this.getAttribute('color'),
             'font-weight': 'bold'
