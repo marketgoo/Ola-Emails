@@ -4,6 +4,7 @@ const winston = require('winston');
 const expressWinston = require('express-winston');
 const graceful = require('node-graceful');
 const mjml2html = require('mjml');
+const tokens = require('./src/tokens');
 
 const logger = winston.createLogger({
     format: winston.format.combine(
@@ -29,9 +30,6 @@ const server = (argv) => {
     app.use(bodyParser.text({
         type: () => true
     }));
-    app.get('/render', (req, res) => {
-        res.send({result: "Ahoiiii"});
-    })
     app.post('/render', (req, res) => {
         let code;
         try {
@@ -46,7 +44,12 @@ const server = (argv) => {
             minify: argv.minify,
         });
 
-        res.send({result: result});
+        res.send({
+            result: {
+                html: result.html,
+                errors: result.errors
+            }
+        });
     });
     app.use((req, res) => {
         res.status(404).send({ message: "Please use POST /render endpoint to render MJML." });
