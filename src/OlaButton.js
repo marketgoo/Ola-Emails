@@ -10,6 +10,7 @@ registerDependencies({
 
 const styles = {
     default: {
+        'padding': 0,
         'border-radius': tokens('radius-big'),
         'font-weight': tokens('bold'),
         ...tokens.font('callout'),

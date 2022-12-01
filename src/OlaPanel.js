@@ -11,6 +11,7 @@ class OlaPanel extends BodyComponent {
 
     static allowedAttributes = {
         'close-to': 'enum(top)',
+        overlap: 'boolean'
     };
 
     headStyle() {
@@ -18,6 +19,10 @@ class OlaPanel extends BodyComponent {
       .ola_panel {
         border-radius: ${tokens('radius')};
         background-color: ${tokens('white')};
+      }
+      .ola_panel-overlap {
+        margin-top: -30px !important;
+        min-width: 90%;
       }
       .ola_panel-top {
         border-radius: 0 0 ${tokens('radius')} ${tokens('radius')};
@@ -36,10 +41,11 @@ class OlaPanel extends BodyComponent {
 
     render() {
         const className = this.getAttribute('close-to') ? `ola_panel-${this.getAttribute('close-to')}` : 'ola_panel';
+        const extraClassName = this.getAttribute('overlap') && "ola_panel-overlap";
 
         return this.renderMJML(`
         <mj-wrapper
-          css-class="${className}"
+          css-class="${className} ${extraClassName}"
           padding-top="0"
           padding-bottom="0"
           >
