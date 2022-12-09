@@ -1,0 +1,61 @@
+<mjml>
+  <mj-head>
+    <ola-head></ola-head>
+    <mj-title>{{ name }}, you can now access our SEO tool</mj-title>
+    <mj-preview>Let’s get more potential clients to your site!</mj-preview>
+  </mj-head>
+
+  <mj-body>
+    <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png" />
+    <mj-section full-width="full-width" background-color="$brand" padding="30px 24px">
+      <ola-text variant="body" color="white" font-weight="bold">
+        Did you know that?
+      </ola-text>
+      <ola-divider color="$brand" />
+      <ola-text variant="title" color="white" font-weight="bold">
+        Your SEO Score has not improved in the last 3 months
+      </ola-text>
+      <ola-divider color="$brand" />
+      <ola-chart-column>
+        <ola-chart-column-value value="0.5" label="">
+          <ola-text variant="caption" color="white" font-weight="bold" align="center"> August </ola-text>
+          <ola-tag variant="warning" size="medium" align="center" font-weight="bold" font-weight="bold"> 50% </ola-tag>
+        </ola-chart-column-value>
+        <ola-chart-column-value value="0.5" label="">
+          <ola-text variant="caption" color="white" font-weight="bold" align="center"> September </ola-text>
+          <ola-tag variant="warning" size="medium" align="center" font-weight="bold" font-weight="bold"> 50% </ola-tag>
+        </ola-chart-column-value>
+        <ola-chart-column-value value="0.5" label="" color="brand-dark">
+          <ola-text variant="caption" color="white" font-weight="bold" align="center"> October </ola-text>
+          <ola-tag variant="warning" size="medium" align="center" font-weight="bold" font-weight="bold"> 50% </ola-tag>
+        </ola-chart-column-value>
+      </ola-chart-column>
+      <ola-divider color="brand"/>
+    </mj-section>
+
+    <ola-panel overlap="true">
+      <ola-panel-section>
+        <ola-text variant="callout" color="gray">If you want more site traffic, you need to work on your SEO. It does take work, patience & commitment - but you don’t have to do it yourself.</ola-text>
+      </ola-panel-section>
+
+      <ola-panel-section multicolumn="true">
+        <mj-column width="70%">
+          <ola-text variant="title" font-weight="bold">Our team will handle this for you</ola-text>
+        </mj-column>
+        <mj-column width="30%">
+          <mj-image src="https://marketgoo.github.io/Ola-Emails/img/promo.png" alt="" width="123px" />
+        </mj-column>
+      </ola-panel-section>
+
+      <ola-panel-section>
+        <ola-text variant="callout" font-weight="bold" color="gray">We offer you a complete set of integrated services to drive your company's digital growth.</ola-text>
+      </ola-panel-section>
+
+      <ola-panel-section>
+        <ola-button variant="primary" align="left">Book a free consultation</ola-button>
+      </ola-panel-section>
+    </ola-panel>
+
+    <mj-include path="./partials/footer-default.mjml" />
+  </mj-body>
+</mjml>
