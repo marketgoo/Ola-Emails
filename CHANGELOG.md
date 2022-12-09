@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.4.9] - 2022-12-09
+### Added
+- Added overlap attribute into `ola-panel`. [#34]
+
+### Changed
+- Changed padding `ola-button`. [#34]
+
 ## [0.4.8] - 2022-03-16
 ### Added
 - Added size attribute into `ola-circle`. [#32]
@@ -192,7 +199,9 @@ First version
 [#30]: https://github.com/marketgoo/Ola-Emails/issues/30
 [#31]: https://github.com/marketgoo/Ola-Emails/issues/31
 [#32]: https://github.com/marketgoo/Ola-Emails/issues/32
+[#34]: https://github.com/marketgoo/Ola-Emails/issues/34
 
+[0.4.9]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.8...v0.4.9
 [0.4.8]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.7...v0.4.8
 [0.4.7]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.6...v0.4.7
 [0.4.6]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.5...v0.4.6
