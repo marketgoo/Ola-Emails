@@ -17,11 +17,11 @@
       </ola-text>
       <ola-divider color="$brand" />
       <ola-chart-column>
-        <ola-chart-column-value value="0.5" label="">
+        <ola-chart-column-value value="0.5" label="" color="brand-dark" opacity="0.4">
           <ola-text variant="caption" color="white" font-weight="bold" align="center"> August </ola-text>
           <ola-tag variant="warning" size="medium" align="center" font-weight="bold" font-weight="bold"> 50% </ola-tag>
         </ola-chart-column-value>
-        <ola-chart-column-value value="0.5" label="">
+        <ola-chart-column-value value="0.5" label="" color="brand-dark" opacity="0.4">
           <ola-text variant="caption" color="white" font-weight="bold" align="center"> September </ola-text>
           <ola-tag variant="warning" size="medium" align="center" font-weight="bold" font-weight="bold"> 50% </ola-tag>
         </ola-chart-column-value>

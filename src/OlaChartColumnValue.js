@@ -6,12 +6,14 @@ const tokens = require('./tokens');
 class OlaChartColumnValue extends BodyComponent {
     static allowedAttributes = {
       'value': 'string',
-      'color': 'enum(brand,white,black,gray,gray-light,error,warning,success,pro,premium)',
+      'color': 'enum(brand,brand-dark,brand-xdark,white,black,gray,gray-light,error,warning,success,pro,premium)',
+      'opacity': 'string',
       'label': 'string'
     }
 
     static defaultAttributes = {
-      'color': 'gray'
+      'color': 'gray',
+      'opacity': '1'
     }
 
     headStyle() {
@@ -31,7 +33,7 @@ class OlaChartColumnValue extends BodyComponent {
 
     render() {
         return (`
-            <td class="ola_chartColumn-value" >
+            <td class="ola_chartColumn-value" style="opacity: ${this.getAttribute('opacity')}">
               <div class="ola_chartColumn-label">
                 ${this.renderMJML(`<ola-text variant="callout" align="center" color="gray" font-weight="bold" > ${this.getAttribute('label')} </ola-text>`)}
               </div>
