@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.5.0] - 2022-12-13
+### Added
+- Added brand-dark and brand-xdark colors into `ola-chart-column-value`.
+- Added opacity attribute into `ola-chart-column-value`.
+
 ## [0.4.9] - 2022-12-09
 ### Added
 - Added overlap attribute into `ola-panel`. [#34]
@@ -201,6 +206,7 @@ First version
 [#32]: https://github.com/marketgoo/Ola-Emails/issues/32
 [#34]: https://github.com/marketgoo/Ola-Emails/issues/34
 
+[0.5.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.9...v0.5.0
 [0.4.9]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.8...v0.4.9
 [0.4.8]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.7...v0.4.8
 [0.4.7]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.6...v0.4.7
