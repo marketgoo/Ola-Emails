@@ -22,7 +22,7 @@ const styles = {
     secondary: {
         'background-color': tokens('button', 'primary', 'background') || tokens('white'),
         color: tokens('button', 'secondary', 'color') || tokens('brand'),
-        border: `solid 1px ${tokens('button', 'secondary', 'border') || tokens('gray-xlight')}`,
+        border: `solid 1px ${tokens('button', 'secondary', 'border') || tokens('brand')}`,
     },
     link: {
         'background-color': tokens('button', 'primary', 'background') || 'transparent',
