@@ -7,7 +7,6 @@ class OlaProgressBar extends BodyComponent {
 
     static allowedAttributes = {
         'value': 'string',
-        'description': 'string',
         'disabled': 'boolean',
         'background-color': 'enum(white,gray-xlight)'
     };

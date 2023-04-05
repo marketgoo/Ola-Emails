@@ -9,6 +9,7 @@
   "scripts": {
     "start": "nodemon --exec gulp demo",
     "build:demo": "rm -f demo/*.html && gulp demo",
+    "build:docs": "node ./docs.js",
     "prettier": "prettier --single-quote 'src/*.js' bin.js index.js --tab-width 4 --print-width=120 --write"
   },
   "license": "MIT",
