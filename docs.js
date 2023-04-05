@@ -898,7 +898,7 @@ const createDocs = () => {
       }
 
       ${
-        comp.subcomponents?.length
+        comp.subcomponents && comp.subcomponents.length
         ? `
         <mj-wrapper padding-top="32px" padding-bottom="0">
           <ola-text variant="body" font-weight="bold">
@@ -918,7 +918,7 @@ const createDocs = () => {
       }
 
       ${
-        comp.attrs?.length
+        comp.attrs && comp.attrs.length
         ? `
       <mj-wrapper padding-top="32px">
         <ola-text variant="body" font-weight="bold">
@@ -952,7 +952,7 @@ const createDocs = () => {
               <ola-text variant="caption">${attr.type}</ola-text>
             </ola-table-cell>
             <ola-table-cell>
-              <ola-text variant="caption"><code>${attr.values?.join(",") || ""}</code></ola-text>
+              <ola-text variant="caption"><code>${attr.values && attr.values.length ? attr.values.join(",") : ""}</code></ola-text>
             </ola-table-cell>
             <ola-table-cell>
               <ola-text variant="caption"><code>${attr.default || ""}</code></ola-text>
