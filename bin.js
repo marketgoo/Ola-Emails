@@ -7,16 +7,25 @@ const argv = require('yargs-parser')(process.argv.slice(2), {
         theme: null,
         validation: 'soft',
         file: null,
+        host: 'localhost',
+        port: 8080
     },
     boolean: ['show-errors'],
+    string: ['host'],
+    integer: ['port']
 });
 
 try {
+    require('./index');
+
+    if (argv.server) {
+        require('./server')(argv);
+        return;
+    }
+
     if (argv.theme) {
         tokens.load(require(argv.theme));
     }
-
-    require('./index');
 
     const code = argv.file ? fs.readFileSync(argv.file, 'UTF-8') : argv._[0];
 
