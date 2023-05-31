@@ -6,15 +6,15 @@ class OlaProgressBar extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        'value': 'string',
-        'disabled': 'boolean',
-        'background-color': 'enum(color-white-100,color-neutral-200)'
+        value: 'string',
+        disabled: 'boolean',
+        'background-color': 'enum(color-white-100,color-neutral-200)',
     };
 
     static defaultAttributes = {
-        'disabled': false,
-        'background-color': 'color-neutral-200'
-    }
+        disabled: false,
+        'background-color': 'color-neutral-200',
+    };
 
     headStyle() {
         return `
@@ -30,7 +30,7 @@ class OlaProgressBar extends BodyComponent {
             display: block;
             height: 100%;
         }
-        `
+        `;
     }
 
     render() {
@@ -40,8 +40,14 @@ class OlaProgressBar extends BodyComponent {
             <tbody>
                 <tr>
                     <td >
-                        <div class="progress" style="border: ${this.getAttribute('disabled') ? 'none' : `solid 1px ${tokens('color-primary-500')}`}; background-color: ${this.getAttribute('disabled') ? tokens(background_disabled) : tokens('color-white-100')};">
-                            <span style="width: ${this.getAttribute('value') || 0}%; background-color: ${tokens('color-primary-500')};"></span>
+                        <div class="progress" style="border: ${
+                            this.getAttribute('disabled') ? 'none' : `solid 1px ${tokens('color-primary-500')}`
+                        }; background-color: ${
+            this.getAttribute('disabled') ? tokens(background_disabled) : tokens('color-white-100')
+        };">
+                            <span style="width: ${this.getAttribute('value') || 0}%; background-color: ${tokens(
+            'color-primary-500'
+        )};"></span>
                         </div>
                     <td/>
                 </tr>

@@ -3,13 +3,13 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 class OlaItemList extends BodyComponent {
-
     static allowedAttributes = {
-        'background-color': 'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-neutral-200,color-neutral-100,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)'
+        'background-color':
+            'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-neutral-200,color-neutral-100,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
     };
 
     static defaultAttributes = {
-        'background-color': 'color-white-100'
+        'background-color': 'color-white-100',
     };
 
     headStyle() {

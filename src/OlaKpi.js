@@ -3,17 +3,17 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 class OlaKpi extends BodyComponent {
-
     static allowedAttributes = {
         title: 'string',
         description: 'string',
-        variant: 'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)'
+        variant:
+            'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
     };
 
     static defaultAttributes = {
         description: '',
-        variant: 'color-neutral-700'
-    }
+        variant: 'color-neutral-700',
+    };
 
     headStyle() {
         return `
@@ -26,7 +26,7 @@ class OlaKpi extends BodyComponent {
     }
 
     render() {
-        return (`
+        return `
                 <table style="table-layout: fixed; width:200px">
                     <thead>
                         <tr>
@@ -48,7 +48,9 @@ class OlaKpi extends BodyComponent {
                         <tr>
                             <td colspan="2" style="vertical-align:middle;">
                                 ${this.renderMJML(`
-                                <ola-text variant="font-0-regular" color=${this.getAttribute('variant')} font-weight="font-weight-bold" align="center">
+                                <ola-text variant="font-0-regular" color=${this.getAttribute(
+                                    'variant'
+                                )} font-weight="font-weight-bold" align="center">
                                 ${this.getAttribute('description')}
                                 </ola-text>
                                 `)}
@@ -56,7 +58,7 @@ class OlaKpi extends BodyComponent {
                         </tr>
                     </tbody>
                 </table>
-`);
+`;
     }
 }
 

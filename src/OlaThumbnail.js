@@ -12,17 +12,17 @@ class OlaThumbnail extends BodyComponent {
     static allowedAttributes = {
         src: 'string',
         alt: 'string',
-        align: 'string',    
+        align: 'string',
     };
 
     static defaultAttributes = {
         alt: '',
         align: 'center',
-        'css-class': 'ola_thumbnail'
+        'css-class': 'ola_thumbnail',
     };
 
-    headStyle(){
-      return`
+    headStyle() {
+        return `
       .ola_thumbnail img {
         border-radius: ${tokens('radius-m')};
         box-shadow: ${tokens('shadow-level-2')}; 
@@ -36,7 +36,7 @@ class OlaThumbnail extends BodyComponent {
                 alt="${this.getAttribute('alt')}"
                 width="250px"
             />
-      `)
+      `);
     }
 }
 

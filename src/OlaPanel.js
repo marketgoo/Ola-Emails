@@ -11,7 +11,7 @@ class OlaPanel extends BodyComponent {
 
     static allowedAttributes = {
         'close-to': 'enum(top)',
-        overlap: 'boolean'
+        overlap: 'boolean',
     };
 
     headStyle() {
@@ -41,7 +41,7 @@ class OlaPanel extends BodyComponent {
 
     render() {
         const className = this.getAttribute('close-to') ? `ola_panel-${this.getAttribute('close-to')}` : 'ola_panel';
-        const extraClassName = this.getAttribute('overlap') && "ola_panel-overlap";
+        const extraClassName = this.getAttribute('overlap') && 'ola_panel-overlap';
 
         return this.renderMJML(`
         <mj-wrapper

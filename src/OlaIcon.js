@@ -7,26 +7,29 @@ class OlaIcon extends BodyComponent {
 
     static allowedAttributes = {
         icon: 'string',
-        variant: 'enum(small,medium,big)'
+        variant: 'enum(small,medium,big)',
     };
 
     static defaultAttributes = {
-        variant: 'big'
-    }
+        variant: 'big',
+    };
 
     render() {
         const variant = this.getAttribute('variant');
-        const width = {
-            [variant === "small"]: tokens('size-3'),
-            [variant === "medium"]: tokens('size-4'),
-            [variant === "big"]: tokens('size-5')
-        }[true] || null;
+        const width =
+            {
+                [variant === 'small']: tokens('size-3'),
+                [variant === 'medium']: tokens('size-4'),
+                [variant === 'big']: tokens('size-5'),
+            }[true] || null;
 
         return `
                 <table style="margin: auto">
                     <tr>
                         <td style="width:${width}" >
-                            ${this.renderMJML(`<mj-image align="center" width=${width} src="${this.getAttribute('icon')}"></mj-image>`)}
+                            ${this.renderMJML(
+                                `<mj-image align="center" width=${width} src="${this.getAttribute('icon')}"></mj-image>`
+                            )}
                         <td/>
                     </tr>
                 </table>

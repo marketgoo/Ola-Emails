@@ -6,15 +6,16 @@ class OlaCircle extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        'background-color': 'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
-        'color': 'string',
-        'size': 'enum(small,medium,big)'
+        'background-color':
+            'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
+        color: 'string',
+        size: 'enum(small,medium,big)',
     };
 
     static defaultAttributes = {
         'background-color': 'color-neutral-700',
-        'color': 'color-white-100',
-        'size': 'big'
+        color: 'color-white-100',
+        size: 'big',
     };
 
     headStyle() {
@@ -33,27 +34,31 @@ class OlaCircle extends BodyComponent {
 
     render() {
         const size = this.getAttribute('size');
-        const circleSize = {
-            [size === "small"]: tokens('size-3'),
-            [size === "medium"]: tokens('size-4'),
-            [size === "big"]: tokens('size-5')
-        }[true] || null;
-        const textSize = {
-            [size === "small"]: 'font-0-regular',
-            [size === "medium"]: 'font-1-regular',
-            [size === "big"]: 'font-2-regular'
-        }[true] || null;
+        const circleSize =
+            {
+                [size === 'small']: tokens('size-3'),
+                [size === 'medium']: tokens('size-4'),
+                [size === 'big']: tokens('size-5'),
+            }[true] || null;
+        const textSize =
+            {
+                [size === 'small']: 'font-0-regular',
+                [size === 'medium']: 'font-1-regular',
+                [size === 'big']: 'font-2-regular',
+            }[true] || null;
         return `
-    <table class="ola_circle" style="border-radius: 50%; background-color:${tokens(this.getAttribute('background-color'))};">
+    <table class="ola_circle" style="border-radius: 50%; background-color:${tokens(
+        this.getAttribute('background-color')
+    )};">
         <tr>
             <td class="ola_circle-number" style="width:${circleSize}; height:${circleSize}">
                 ${this.renderMJML(`
                 <ola-text ${this.htmlAttributes({
-            'variant': `${textSize}`,
-            'align': 'center',
-            'color': this.getAttribute('color'),
-            'font-weight': 'font-weight-bold'
-        })}>
+                    variant: `${textSize}`,
+                    align: 'center',
+                    color: this.getAttribute('color'),
+                    'font-weight': 'font-weight-bold',
+                })}>
                 ${this.getContent()}
                 </ola-text>
                 `)}

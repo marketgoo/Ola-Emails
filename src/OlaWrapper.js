@@ -3,15 +3,14 @@ const { BodyComponent } = require('mjml-core');
 const tokens = require('./tokens');
 
 class OlaWrapper extends BodyComponent {
-
     static endingTag = true;
 
     static allowedAttributes = {
-        'padding': 'string'
+        padding: 'string',
     };
 
     static defaultAttributes = {
-        'padding': '0'
+        padding: '0',
     };
 
     render() {
@@ -19,7 +18,7 @@ class OlaWrapper extends BodyComponent {
             <mj-wrapper padding=${this.getAttribute('padding')}>
                 ${this.getContent()}
             </mj-wrapper>
-        `)
+        `);
     }
 }
 

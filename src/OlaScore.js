@@ -51,8 +51,14 @@ class OlaScore extends BodyComponent {
             <tbody>
                 <tr>
                     <td style="width:180px;height:180px;">
-                        ${this.renderMJML(`<ola-text variant="font-0-regular" color="color-neutral-700" font-weight="font-weight-bold" align="center"><p>${this.getAttribute('title')}</p></ola-text>`)}
-                        ${this.renderMJML(`<ola-text variant="font-8-medium" align="center"><p>${value}<sup class="ola_score-percentage"> %</sup></p></ola-text>`)}
+                        ${this.renderMJML(
+                            `<ola-text variant="font-0-regular" color="color-neutral-700" font-weight="font-weight-bold" align="center"><p>${this.getAttribute(
+                                'title'
+                            )}</p></ola-text>`
+                        )}
+                        ${this.renderMJML(
+                            `<ola-text variant="font-8-medium" align="center"><p>${value}<sup class="ola_score-percentage"> %</sup></p></ola-text>`
+                        )}
                         ${this.renderMJML(`<ola-tag variant="${level}"><p>${this.getAttribute('level')}</p></ola-tag>`)}
                     </td>
                 </tr>

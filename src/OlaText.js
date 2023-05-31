@@ -11,7 +11,7 @@ class OlaText extends BodyComponent {
         color: 'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
         'vertical-align': 'enum(top,middle,bottom)',
         'font-weight': 'enum(font-weight-regular,font-weight-bold)',
-        height: 'string'
+        height: 'string',
     };
 
     static defaultAttributes = {
@@ -24,7 +24,10 @@ class OlaText extends BodyComponent {
         const style = tokens(this.getAttribute('variant'));
 
         if (!style['font-weight'] && this.getAttribute('font-weight')) {
-            style['font-weight'] = this.getAttribute('font-weight') === 'font-weight-bold' ? tokens('font-weight-bold') : tokens('font-weight-regular');
+            style['font-weight'] =
+                this.getAttribute('font-weight') === 'font-weight-bold'
+                    ? tokens('font-weight-bold')
+                    : tokens('font-weight-regular');
         }
         return this.renderMJML(`
 			<mj-text
@@ -33,7 +36,7 @@ class OlaText extends BodyComponent {
             height: this.getAttribute('height'),
             align: this.getAttribute('align'),
             color: tokens(this.getAttribute('color')),
-            'vertical-align': this.getAttribute('vertical-align')
+            'vertical-align': this.getAttribute('vertical-align'),
         })}
       >
         ${this.getContent()}

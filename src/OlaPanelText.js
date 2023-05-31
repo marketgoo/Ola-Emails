@@ -32,7 +32,9 @@ class OlaPanelText extends BodyComponent {
     render() {
         return this.renderMJML(`
       <ola-panel-section background-color="${this.getAttribute('background-color')}">
-        <ola-text variant="${this.getAttribute('variant')}" align="${this.getAttribute('align')}" color="${this.getAttribute('color')}">
+        <ola-text variant="${this.getAttribute('variant')}" align="${this.getAttribute(
+            'align'
+        )}" color="${this.getAttribute('color')}">
             ${this.getContent()}
         </ola-text>
       </ola-panel-section>

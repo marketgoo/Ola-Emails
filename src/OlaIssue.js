@@ -6,7 +6,7 @@ class OlaIssue extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        icon: 'string'
+        icon: 'string',
     };
 
     headStyle(breakpoint) {
@@ -28,7 +28,6 @@ class OlaIssue extends BodyComponent {
     }
 
     render() {
-
         return `
         <table class="ola_task" style="vertical-align:middle;text-align=left">
             <tbody>

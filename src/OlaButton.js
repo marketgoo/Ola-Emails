@@ -10,7 +10,7 @@ registerDependencies({
 
 const styles = {
     default: {
-        'padding': 0,
+        padding: 0,
         'border-radius': tokens('radius-xl'),
         'font-weight': tokens('font-weight-bold'),
         ...tokens('font-1-regular'),
@@ -29,22 +29,20 @@ const styles = {
         color: tokens('button', 'primary', 'color') || tokens('color-primary-500'),
         border: 'none',
         'border-radius': '0',
-        'font-weight': tokens('font-weight-regular')
-    }
-
+        'font-weight': tokens('font-weight-regular'),
+    },
 };
 
 class OlaButton extends BodyComponent {
-
     static allowedAttributes = {
         variant: 'enum(primary,secondary,link)',
         href: 'string',
-        align: 'enum(left,center,right)'
+        align: 'enum(left,center,right)',
     };
 
     static defaultAttributes = {
         variant: 'secondary',
-        align: 'center'
+        align: 'center',
     };
 
     headStyle() {
@@ -78,22 +76,18 @@ class OlaButton extends BodyComponent {
         return this.renderMJML(`
                         <mj-column css-class="ola_button-${this.getAttribute('variant')}">
                             <mj-button ${this.htmlAttributes({
-                                    'href': this.getAttribute('href') || '#',
-                                    'align': this.getAttribute('align'),
-                                    'css-class': 'ola_button-' + this.getAttribute('variant'),
-                                    ...(tokens('button', '@css') || {}),
-                                    ...(tokens('button', '@css', this.getAttribute('variant')) || {}),
-                                    ...attributes,
-                                    })}>
+                                href: this.getAttribute('href') || '#',
+                                align: this.getAttribute('align'),
+                                'css-class': 'ola_button-' + this.getAttribute('variant'),
+                                ...(tokens('button', '@css') || {}),
+                                ...(tokens('button', '@css', this.getAttribute('variant')) || {}),
+                                ...attributes,
+                            })}>
                                         <span>${this.getContent()}</span>
-                                        ${render_children ? `<span>${this.renderChildren()}</span>` : ""}
+                                        ${render_children ? `<span>${this.renderChildren()}</span>` : ''}
                             </mj-button>
                         </mj-column>
-                            `)
-
-
-
-
+                            `);
     }
 }
 
