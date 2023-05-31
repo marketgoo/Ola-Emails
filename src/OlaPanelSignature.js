@@ -19,11 +19,11 @@ class OlaPanelSignature extends BodyComponent {
     headStyle(breakpoint) {
         return `
         .ola_panel-signature {
-          padding: 0 ${tokens('size-8')};
+          padding: 0 ${tokens('size-5')};
         }
         @media only screen and (max-width:${breakpoint}) {
           .ola_panel-signature {
-            padding: 0 ${tokens('size-7')};
+            padding: 0 ${tokens('size-4')};
           }
         }
       `;
@@ -58,8 +58,8 @@ class OlaPanelSignature extends BodyComponent {
             padding-top="8px"
             padding-bottom="8px"
             >
-            <ola-text variant="callout" font-weight="bold">${this.getAttribute('title')}</ola-text>
-            <ola-text variant="caption">${this.getAttribute('subtitle')}</ola-text>
+            <ola-text variant="font-1-regular" font-weight="font-weight-bold">${this.getAttribute('title')}</ola-text>
+            <ola-text variant="font-0-regular">${this.getAttribute('subtitle')}</ola-text>
           </mj-column>
       </mj-section>
       `);

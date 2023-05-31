@@ -28,16 +28,16 @@
         </ul>
       </ola-panel-text>
 
-      <ola-panel-section background-color="gray-xlight">
-        <ola-text variant="body" font-weight="bold">Your referral link</ola-text>
-        <ola-text variant="callout">
+      <ola-panel-section background-color="color-neutral-200">
+        <ola-text variant="font-2-regular" font-weight="font-weight-bold">Your referral link</ola-text>
+        <ola-text variant="font-1-regular">
           <p>Your unique link to share with your audience is:</p>
           <p><a href="#"><strong>marketgoo.com/free-seo-report {{partner_token}}</strong></a></p>
           <p>You can find it within the <em>Referral Links</em> section of your account, and create more unique links should you want to track different campaigns.</p>
         </ola-text>
       </ola-panel-section>
 
-      <ola-panel-text variant="caption" color="gray">
+      <ola-panel-text variant="font-0-regular" color="color-neutral-700">
           <p>If you did not sign up to marketgoo, please contact us at <a href="mailto:support@marketgoo.com">support@marketgoo.com</a>.</p>
       </ola-panel-text>
 

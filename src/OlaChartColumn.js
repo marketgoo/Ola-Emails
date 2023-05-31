@@ -8,7 +8,7 @@ class OlaChartColumn extends BodyComponent {
     headStyle() {
         return `
         .ola_chartColumn {
-          height: ${tokens('size-10')};
+          height: ${tokens('size-12')};
           margin: auto;
       }
     `;

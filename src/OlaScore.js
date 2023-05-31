@@ -27,10 +27,10 @@ class OlaScore extends BodyComponent {
         return `
       .ola_score-percentage {
         vertical-align: baseline;
-        font-family: ${tokens('font-title', 'font-family')};
-        font-size: ${tokens('font-title', 'font-size')};
-        font-weight: ${tokens('font-title', 'font-weight')};
-        color: ${tokens('gray-light')};
+        font-family: ${tokens('font-5-medium', 'font-family')};
+        font-size: ${tokens('font-5-medium', 'font-size')};
+        font-weight: ${tokens('font-5-medium', 'font-weight')};
+        color: ${tokens('color-neutral-400')};
       }
     `;
     }
@@ -38,12 +38,12 @@ class OlaScore extends BodyComponent {
     render() {
         const value = this.getAttribute('value');
         const image = `${this.getAttribute('src-prefix')}${value}.png`;
-        let level = 'error';
+        let level = 'color-negative-500';
 
         if (value >= 85) {
-            level = 'success';
+            level = 'color-positive-500';
         } else if (value >= 50) {
-            level = 'warning';
+            level = 'color-warning-500';
         }
 
         return `
@@ -51,8 +51,8 @@ class OlaScore extends BodyComponent {
             <tbody>
                 <tr>
                     <td style="width:180px;height:180px;">
-                        ${this.renderMJML(`<ola-text variant="caption" color="gray" font-weight="bold" align="center"><p>${this.getAttribute('title')}</p></ola-text>`)}
-                        ${this.renderMJML(`<ola-text variant="display" align="center"><p>${value}<sup class="ola_score-percentage"> %</sup></p></ola-text>`)}
+                        ${this.renderMJML(`<ola-text variant="font-0-regular" color="color-neutral-700" font-weight="font-weight-bold" align="center"><p>${this.getAttribute('title')}</p></ola-text>`)}
+                        ${this.renderMJML(`<ola-text variant="font-8-medium" align="center"><p>${value}<sup class="ola_score-percentage"> %</sup></p></ola-text>`)}
                         ${this.renderMJML(`<ola-tag variant="${level}"><p>${this.getAttribute('level')}</p></ola-tag>`)}
                     </td>
                 </tr>

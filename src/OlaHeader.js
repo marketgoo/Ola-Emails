@@ -38,11 +38,11 @@ class OlaHeader extends BodyComponent {
     render() {
         let content = '';
         if (this.getAttribute('href')) {
-            const colorText = this.getAttribute('variant') === 'light' ? 'gray' : 'gray-light';
+            const colorText = this.getAttribute('variant') === 'light' ? 'color-neutral-700' : 'color-neutral-400';
 
             content = `
             <mj-column vertical-align="middle" css-class="ola_header-content">
-                <ola-text variant="caption" color="${colorText}">
+                <ola-text variant="font-0-regular" color="${colorText}">
                     <a href="${this.getAttribute('href')}" target="_blank">${this.getAttribute('text')}</a>
                 </ola-text>
             </mj-column>`;
@@ -52,7 +52,7 @@ class OlaHeader extends BodyComponent {
     <mj-section
       vertical-align="middle"
       css-class="ola_header"
-      padding="${tokens('size-6')}"
+      padding="${tokens('size-3')}"
       >
         <mj-column vertical-align="middle">
             <mj-image

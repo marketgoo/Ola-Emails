@@ -24,8 +24,8 @@ class OlaThumbnail extends BodyComponent {
     headStyle(){
       return`
       .ola_thumbnail img {
-        border-radius: ${tokens('radius')};
-        box-shadow: ${tokens('shadow-2')}; 
+        border-radius: ${tokens('radius-m')};
+        box-shadow: ${tokens('shadow-level-2')}; 
       }`;
     }
 

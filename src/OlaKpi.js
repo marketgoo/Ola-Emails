@@ -7,20 +7,20 @@ class OlaKpi extends BodyComponent {
     static allowedAttributes = {
         title: 'string',
         description: 'string',
-        variant: 'enum(brand,white,black,gray,gray-light,error,warning,success,pro,premium)'
+        variant: 'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)'
     };
 
     static defaultAttributes = {
         description: '',
-        variant: 'gray'
+        variant: 'color-neutral-700'
     }
 
     headStyle() {
         return `
     .ola_kpi-value span {
-        font-size: ${tokens('font-headline', 'font-size')};
-        font-family: ${tokens('font-headline', 'font-family')};
-        line-height: ${tokens('font-headline', 'line-height')};
+        font-size: ${tokens('font-3-regular', 'font-size')};
+        font-family: ${tokens('font-3-regular', 'font-family')};
+        line-height: ${tokens('font-3-regular', 'line-height')};
     }
     `;
     }
@@ -32,7 +32,7 @@ class OlaKpi extends BodyComponent {
                         <tr>
                             <td colspan="2" style="vertical-align:middle;">
                                 ${this.renderMJML(`
-                                    <ola-text variant="callout" color="gray" align="center">
+                                    <ola-text variant="font-1-regular" color="color-neutral-700" align="center">
                                         ${this.getAttribute('title')}
                                     </ola-text>
                                 `)}
@@ -48,7 +48,7 @@ class OlaKpi extends BodyComponent {
                         <tr>
                             <td colspan="2" style="vertical-align:middle;">
                                 ${this.renderMJML(`
-                                <ola-text variant="caption" color=${this.getAttribute('variant')} font-weight="bold" align="center">
+                                <ola-text variant="font-0-regular" color=${this.getAttribute('variant')} font-weight="font-weight-bold" align="center">
                                 ${this.getAttribute('description')}
                                 </ola-text>
                                 `)}

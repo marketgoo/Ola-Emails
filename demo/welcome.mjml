@@ -20,13 +20,13 @@
 
       <ola-divider></ola-divider>
 
-      <ola-panel-text variant="headline" align="center">
+      <ola-panel-text variant="font-3-regular" align="center">
         What happens next?
       </ola-panel-text>
 
       <ola-panel-section>
         <ola-counter number="1" title="Check your website is live">
-          <ola-text variant="caption" color="gray">
+          <ola-text variant="font-0-regular" color="color-neutral-700">
             <ul>
               <li><strong>Already live?</strong> Great! Head straight to step 2.</li>
               <li><strong>Not live yet?</strong> Activate your site as soon as you can so we can calculate your SEO score.</li>
@@ -35,13 +35,13 @@
         </ola-counter>
 
         <ola-counter number="2" title="We’ll calculate your SEO score">
-          <ola-text variant="caption" color="gray">
+          <ola-text variant="font-0-regular" color="color-neutral-700">
             <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
           </ola-text>
         </ola-counter>
 
         <ola-counter number="3" title="We’ll prepare your SEO improvement plan">
-          <ola-text variant="caption" color="gray">
+          <ola-text variant="font-0-regular" color="color-neutral-700">
             <p>Get an easy-to-implement plan broken down into small, simple tasks so you can start improving your SEO score one step at a time.</p>
           </ola-text>
         </ola-counter>
@@ -53,8 +53,8 @@
       </ola-panel-section>
 
       <ola-wrapper padding="10px">
-        <mj-section background-color="$gray-xxlight" padding="50px 40px">
-          <ola-text variant="title" align="left">
+        <mj-section background-color="$color-neutral-100" padding="50px 40px">
+          <ola-text variant="font-5-medium" align="left">
             Tasks to start with
           </ola-text>
           <ola-text align="left">
@@ -62,52 +62,52 @@
           </ola-text>
         </mj-section>
 
-        <mj-section background-color="$gray-xxlight" padding="0 20px">
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
+        <mj-section background-color="$color-neutral-100" padding="0 20px">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white-100">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">
                 Show me more
-                <ola-text color="brand" variant="headline">➔</ola-text>
+                <ola-text color="color-primary-500" variant="font-3-regular">➔</ola-text>
               </ola-button>
             </ola-wrapper>
           </mj-column>
 
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white-100">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">
                 Show me more
-                <ola-text color="brand" variant="headline">➔</ola-text>
-              </ola-button>
-            </ola-wrapper>
-          </mj-column>
-        </mj-section>
-
-        <mj-section background-color="$gray-xxlight" padding="0 20px">
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
-            <ola-wrapper padding="8px">
-              <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
-              <ola-button variant="link" href="#">
-                Show me more
-                <ola-text color="brand" variant="headline">➔</ola-text>
-              </ola-button>
-            </ola-wrapper>
-          </mj-column>
-
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
-            <ola-wrapper padding="8px">
-              <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
-              <ola-button variant="link" href="#">
-                Show me more
-                <ola-text color="brand" variant="headline">➔</ola-text>
+                <ola-text color="color-primary-500" variant="font-3-regular">➔</ola-text>
               </ola-button>
             </ola-wrapper>
           </mj-column>
         </mj-section>
 
-        <mj-section background-color="$gray-xxlight" padding="0 20px 20px">
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$white">
+        <mj-section background-color="$color-neutral-100" padding="0 20px">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white-100">
+            <ola-wrapper padding="8px">
+              <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-text color="color-primary-500" variant="font-3-regular">➔</ola-text>
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white-100">
+            <ola-wrapper padding="8px">
+              <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-text color="color-primary-500" variant="font-3-regular">➔</ola-text>
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+        </mj-section>
+
+        <mj-section background-color="$color-neutral-100" padding="0 20px 20px">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white-100">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">
@@ -116,7 +116,7 @@
             </ola-wrapper>
           </mj-column>
 
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="white">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="color-white-100">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">

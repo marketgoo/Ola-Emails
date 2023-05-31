@@ -8,12 +8,12 @@ class OlaProgressBar extends BodyComponent {
     static allowedAttributes = {
         'value': 'string',
         'disabled': 'boolean',
-        'background-color': 'enum(white,gray-xlight)'
+        'background-color': 'enum(color-white-100,color-neutral-200)'
     };
 
     static defaultAttributes = {
         'disabled': false,
-        'background-color': 'gray-xlight'
+        'background-color': 'color-neutral-200'
     }
 
     headStyle() {
@@ -40,8 +40,8 @@ class OlaProgressBar extends BodyComponent {
             <tbody>
                 <tr>
                     <td >
-                        <div class="progress" style="border: ${this.getAttribute('disabled') ? 'none' : `solid 1px ${tokens('brand')}`}; background-color: ${this.getAttribute('disabled') ? tokens(background_disabled) : tokens('white')};">
-                            <span style="width: ${this.getAttribute('value') || 0}%; background-color: ${tokens('brand')};"></span>
+                        <div class="progress" style="border: ${this.getAttribute('disabled') ? 'none' : `solid 1px ${tokens('color-primary-500')}`}; background-color: ${this.getAttribute('disabled') ? tokens(background_disabled) : tokens('color-white-100')};">
+                            <span style="width: ${this.getAttribute('value') || 0}%; background-color: ${tokens('color-primary-500')};"></span>
                         </div>
                     <td/>
                 </tr>

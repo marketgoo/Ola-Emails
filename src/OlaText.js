@@ -6,25 +6,25 @@ class OlaText extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        variant: 'enum(display,title,headline,body,callout,caption)',
+        variant: 'enum(font-8-medium,font-5-medium,font-3-regular,font-2-regular,font-1-regular,font-0-regular)',
         align: 'enum(left,center,right)',
-        color: 'enum(brand,white,black,gray,gray-light,error,warning,success,pro,premium)',
+        color: 'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
         'vertical-align': 'enum(top,middle,bottom)',
-        'font-weight': 'enum(regular,bold)',
+        'font-weight': 'enum(font-weight-regular,font-weight-bold)',
         height: 'string'
     };
 
     static defaultAttributes = {
-        variant: 'body',
+        variant: 'font-2-regular',
         align: 'left',
-        color: 'black',
+        color: 'color-neutral-900',
     };
 
     render() {
-        const style = tokens.font(this.getAttribute('variant'));
+        const style = tokens(this.getAttribute('variant'));
 
         if (!style['font-weight'] && this.getAttribute('font-weight')) {
-            style['font-weight'] = this.getAttribute('font-weight') === 'bold' ? tokens('bold') : tokens('regular');
+            style['font-weight'] = this.getAttribute('font-weight') === 'font-weight-bold' ? tokens('font-weight-bold') : tokens('font-weight-regular');
         }
         return this.renderMJML(`
 			<mj-text

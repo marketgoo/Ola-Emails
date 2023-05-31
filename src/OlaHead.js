@@ -14,7 +14,7 @@ class OlaHead extends HeadComponent {
         const { add } = this.context;
 
         add('defaultAttributes', 'mj-all', { 'font-family': 'Arial' });
-        add('defaultAttributes', 'mj-body', { 'background-color': tokens('gray-xxlight') });
+        add('defaultAttributes', 'mj-body', { 'background-color': tokens('color-neutral-100') });
 
         if (tokens('custom-font')) {
             add('fonts', tokens('custom-font', 'name'), tokens('custom-font', 'src'));
@@ -30,56 +30,56 @@ class OlaHead extends HeadComponent {
             -webkit-font-smoothing: antialiased;
         }
         a {
-            color: ${tokens('brand')};
+            color: ${tokens('color-primary-500')};
         }
         p {
             margin: 0;
         }
         strong {
-            font-weight: ${tokens('bold')};
+            font-weight: ${tokens('font-weight-bold')};
         }
         ul {
             padding-left: 1em;
             margin-left: 0;
             margin-top: 0;
-            margin-bottom: ${tokens('size-3')};
+            margin-bottom: ${tokens('size-1')};
         }
         sup {
             font-size: 50%
         }
         /* Colors */
-        .ola-brand {
-            color: ${tokens('brand')};
+        .ola-color-primary-500 {
+            color: ${tokens('color-primary-500')};
         }
-        .ola-accent {
-            color: ${tokens('accent')};
+        .ola-color-accent-500 {
+            color: ${tokens('color-accent-500')};
         }
-        .ola-white {
-            color: ${tokens('white')};
+        .ola-color-white-100 {
+            color: ${tokens('color-white-100')};
         }
-        .ola-black {
-            color: ${tokens('black')};
+        .ola-color-neutral-900 {
+            color: ${tokens('color-neutral-900')};
         }
-        .ola-gray {
-            color: ${tokens('gray')};
+        .ola-color-neutral-700 {
+            color: ${tokens('color-neutral-700')};
         }
-        .ola-gray-light {
-            color: ${tokens('gray-light')};
+        .ola-color-neutral-400 {
+            color: ${tokens('color-neutral-400')};
         }
-        .ola-gray-xlight {
-            color: ${tokens('gray-xlight')};
+        .ola-color-neutral-200 {
+            color: ${tokens('color-neutral-200')};
         }
-        .ola-error {
-            color: ${tokens('error')};
+        .ola-color-negative-500 {
+            color: ${tokens('color-negative-500')};
         }
-        .ola-warning {
-            color: ${tokens('warning')};
+        .ola-color-warning-500 {
+            color: ${tokens('color-warning-500')};
         }
-        .ola-success {
-            color: ${tokens('success')};
+        .ola-color-positive-500 {
+            color: ${tokens('color-positive-500')};
         }
-        .ola-pro {
-            color: ${tokens('pro')};
+        .ola-color-pro-500 {
+            color: ${tokens('color-pro-500')};
         }`
         );
     }

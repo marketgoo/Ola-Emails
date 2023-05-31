@@ -25,11 +25,11 @@ class OlaFooterMenuIcon extends BodyComponent {
             <img
               src="${this.getAttribute('src')}"
               alt="${this.getAttribute('alt')}"
-              width="${tokens('size-7')}"
-              height="${tokens('size-7')}"
+              width="${tokens('size-4')}"
+              height="${tokens('size-4')}"
               padding="0"
               border="0"
-              style="outline:none;display:block"
+              style="outline:none;font-8-medium:block"
             >
         </ola-footer-menu-link>
     `);

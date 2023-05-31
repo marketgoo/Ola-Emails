@@ -24,9 +24,9 @@ class OlaFooterMenuLink extends BodyComponent {
           css-class="ola_menu-link"
           text-transform="none"
           text-decoration="underline"
-          color="${tokens('gray')}"
+          color="${tokens('color-neutral-700')}"
           padding="4px 20px"
-          font-size="${tokens.font('caption', 'font-size')}"
+          font-size="${tokens('font-0-regular', 'font-size')}"
       >
         ${this.getContent()}
       </mj-navbar-link>

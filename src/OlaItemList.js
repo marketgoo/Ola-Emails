@@ -5,21 +5,21 @@ const tokens = require('./tokens');
 class OlaItemList extends BodyComponent {
 
     static allowedAttributes = {
-        'background-color': 'enum(brand,white,black,gray,gray-light,gray-xlight,gray-xxlight,error,warning,success,pro,premium)'
+        'background-color': 'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-neutral-200,color-neutral-100,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)'
     };
 
     static defaultAttributes = {
-        'background-color': 'white'
+        'background-color': 'color-white-100'
     };
 
     headStyle() {
         return `
     .ola_item-list {
-        margin-bottom:${tokens('size-7')};
+        margin-bottom:${tokens('size-4')};
         width:100%;
-        border-radius: ${tokens('radius')};
+        border-radius: ${tokens('radius-m')};
         border-collapse: separate;
-        border-spacing: ${tokens('size-3')};
+        border-spacing: ${tokens('size-1')};
     }
     `;
     }
@@ -36,7 +36,7 @@ class OlaItemList extends BodyComponent {
                     <td style="vertical-align:top; width:54px">
                         ${this.renderChildren(left)}
                     </td>
-                    <td style="padding-left:${tokens('size-4')}">
+                    <td style="padding-left:${tokens('size-2')}">
                         ${this.renderChildren(right)}
                     </td>
                 </tr>

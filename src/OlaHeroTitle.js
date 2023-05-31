@@ -12,16 +12,16 @@ class OlaHeroTitle extends BodyComponent {
     headStyle(breakpoint) {
         return `
       .ola_hero-title {
-        border-radius: ${tokens('radius')} ${tokens('radius')} 0 0;
-        background-color: ${tokens('white')};
-        padding-right: ${tokens('size-8')};
-        padding-left: ${tokens('size-8')};
+        border-radius: ${tokens('radius-m')} ${tokens('radius-m')} 0 0;
+        background-color: ${tokens('color-white-100')};
+        padding-right: ${tokens('size-5')};
+        padding-left: ${tokens('size-5')};
       }
       @media only screen and (max-width:${breakpoint}) {
         .ola_hero-title {
           border-radius: 0;
-          padding-right: ${tokens('size-7')};
-          padding-left: ${tokens('size-7')};
+          padding-right: ${tokens('size-4')};
+          padding-left: ${tokens('size-4')};
         }
       }
     `;
@@ -32,11 +32,11 @@ class OlaHeroTitle extends BodyComponent {
         <mj-section
             vertical-align="middle"
             css-class="ola_hero-title"
-            padding-top="${tokens('size-8')}"
+            padding-top="${tokens('size-5')}"
             padding-bottom="0"
             >
             <mj-column>
-              <ola-text variant="headline">
+              <ola-text variant="font-3-regular">
                 ${this.getContent()}
               </ola-text>
             </mj-column>

@@ -14,22 +14,22 @@ class OlaHero extends BodyComponent {
     };
 
     static defaultAttributes = {
-        'background-color': 'black',
+        'background-color': 'color-neutral-900',
     };
 
     headStyle(breakpoint) {
         return `
       .ola_hero-header {
-        border-radius: ${tokens('radius')} ${tokens('radius')} 0 0;
-        background-color: ${tokens('white')};
-        padding-right: ${tokens('size-8')};
-        padding-left: ${tokens('size-8')};
+        border-radius: ${tokens('radius-m')} ${tokens('radius-m')} 0 0;
+        background-color: ${tokens('color-white-100')};
+        padding-right: ${tokens('size-5')};
+        padding-left: ${tokens('size-5')};
       }
       @media only screen and (max-width:${breakpoint}) {
         .ola_hero-header {
           border-radius: 0;
-          padding-right: ${tokens('size-7')};
-          padding-left: ${tokens('size-7')};
+          padding-right: ${tokens('size-4')};
+          padding-left: ${tokens('size-4')};
         }
       }
     `;

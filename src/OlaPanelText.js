@@ -10,7 +10,7 @@ registerDependencies({
 const styles = {
     default: {},
     highlight: {
-        'background-color': tokens('gray-xlight'),
+        'background-color': tokens('color-neutral-200'),
     },
 };
 
@@ -25,7 +25,7 @@ class OlaPanelText extends BodyComponent {
     };
 
     static defaultAttributes = {
-        variant: 'callout',
+        variant: 'font-1-regular',
         align: 'left',
     };
 

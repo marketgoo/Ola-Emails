@@ -10,7 +10,7 @@ class OlaTableRow extends BodyComponent {
 
     render() {
         return (`
-        <tr style="padding:15px 0; border-bottom:1px solid ${tokens('gray-xlight')};">
+        <tr style="padding:15px 0; border-bottom:1px solid ${tokens('color-neutral-200')};">
             ${this.renderChildren()}
         </tr>
         `);

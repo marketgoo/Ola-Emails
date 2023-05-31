@@ -10,7 +10,7 @@ class OlaTag extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        'variant': 'enum(success,error,warning)',
+        'variant': 'enum(color-positive-500,color-negative-500,color-warning-500)',
         'size': 'enum(small,medium,big)',
     };
 
@@ -20,19 +20,19 @@ class OlaTag extends BodyComponent {
 
 
     render() {
-        const background_color = this.getAttribute('variant') ? tokens(this.getAttribute('variant')) : tokens('gray-xlight');
-        const color = this.getAttribute('variant') ? 'white' : tokens('black');
-        const height = this.getAttribute('size') === 'medium' ? tokens('size-7') : this.getAttribute('size') === 'big' ? tokens('size-7') : tokens('size-6')
-        const font = this.getAttribute('size') === 'medium' ? 'callout' : this.getAttribute('size') === 'big' ? 'body' : 'caption'
+        const background_color = this.getAttribute('variant') ? tokens(this.getAttribute('variant')) : tokens('color-neutral-200');
+        const color = this.getAttribute('variant') ? 'color-white-100' : tokens('color-neutral-900');
+        const height = this.getAttribute('size') === 'medium' ? tokens('size-4') : this.getAttribute('size') === 'big' ? tokens('size-4') : tokens('size-3')
+        const font = this.getAttribute('size') === 'medium' ? 'font-1-regular' : this.getAttribute('size') === 'big' ? 'font-2-regular' : 'font-0-regular'
 
         return `
         <table class="ola_tag" style="margin: auto">
             <tbody>
                 <tr>
                     <td
-                    style="background-color:${background_color}; border-radius:${tokens('radius-small')}; padding: 0 ${tokens('size-3')}; display: inline-flex; align-items: center;white-space: nowrap; vertical-align: middle; cursor: default; max-width: 100%; letter-spacing: 0; height: ${height};"
+                    style="background-color:${background_color}; border-radius:${tokens('radius-s')}; padding: 0 ${tokens('size-1')}; display: inline-flex; align-items: center;color-white-100-space: nowrap; vertical-align: middle; cursor: default; max-width: 100%; letter-spacing: 0; height: ${height};"
                     >
-                        ${this.renderMJML(`<ola-text font-weight="bold" align="center" color=${color} variant=${font} >
+                        ${this.renderMJML(`<ola-text font-weight="font-weight-bold" align="center" color=${color} variant=${font} >
                         ${this.getContent()}
                         </ola-text>`)}
                     </td>

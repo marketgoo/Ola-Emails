@@ -19,15 +19,15 @@
       </ola-panel-text>
 
       <ola-panel-section>
-        <ola-text variant="title">Custom font</ola-text>
+        <ola-text variant="font-5-medium">Custom font</ola-text>
         <ola-button variant="primary">Configure {{ url }}</ola-button>
 
-        <ola-text variant="caption" color="gray" align="center" padding-top="8px">
+        <ola-text variant="font-0-regular" color="color-neutral-700" align="center" padding-top="8px">
           <p>(It’ll take less than 1 minute)</p>
         </ola-text>
       </ola-panel-section>
 
-      <ola-panel-text variant="caption" color="gray">
+      <ola-panel-text variant="font-0-regular" color="color-neutral-700">
           <p>If you have any question, feel free <a href="#">to email our customer success team,</a> we're lightning quick at replying.</p>
       </ola-panel-text>
 

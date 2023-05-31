@@ -17,9 +17,9 @@ class OlaIcon extends BodyComponent {
     render() {
         const variant = this.getAttribute('variant');
         const width = {
-            [variant === "small"]: tokens('size-6'),
-            [variant === "medium"]: tokens('size-7'),
-            [variant === "big"]: tokens('size-8')
+            [variant === "small"]: tokens('size-3'),
+            [variant === "medium"]: tokens('size-4'),
+            [variant === "big"]: tokens('size-5')
         }[true] || null;
 
         return `

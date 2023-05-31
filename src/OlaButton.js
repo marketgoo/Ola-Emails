@@ -11,25 +11,25 @@ registerDependencies({
 const styles = {
     default: {
         'padding': 0,
-        'border-radius': tokens('radius-big'),
-        'font-weight': tokens('bold'),
-        ...tokens.font('callout'),
+        'border-radius': tokens('radius-xl'),
+        'font-weight': tokens('font-weight-bold'),
+        ...tokens('font-1-regular'),
     },
     primary: {
-        'background-color': tokens('button', 'primary', 'background') || tokens('accent'),
-        color: tokens('button', 'primary', 'color') || tokens('white'),
+        'background-color': tokens('button', 'primary', 'background') || tokens('color-accent-500'),
+        color: tokens('button', 'primary', 'color') || tokens('color-white-100'),
     },
     secondary: {
-        'background-color': tokens('button', 'primary', 'background') || tokens('white'),
-        color: tokens('button', 'secondary', 'color') || tokens('brand'),
-        border: `solid 1px ${tokens('button', 'secondary', 'border') || tokens('brand')}`,
+        'background-color': tokens('button', 'primary', 'background') || tokens('color-white-100'),
+        color: tokens('button', 'secondary', 'color') || tokens('color-primary-500'),
+        border: `solid 1px ${tokens('button', 'secondary', 'border') || tokens('color-primary-500')}`,
     },
     link: {
         'background-color': tokens('button', 'primary', 'background') || 'transparent',
-        color: tokens('button', 'primary', 'color') || tokens('brand'),
+        color: tokens('button', 'primary', 'color') || tokens('color-primary-500'),
         border: 'none',
         'border-radius': '0',
-        'font-weight': tokens('regular')
+        'font-weight': tokens('font-weight-regular')
     }
 
 };

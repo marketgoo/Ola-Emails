@@ -4,7 +4,7 @@ const fs = require('fs');
 
 require('./index');
 
-const ALL_COLORS = ["brand","white","black","gray","gray-light","gray-xlight","gray-xxlight","error","warning","success","pro","premium"];
+const ALL_COLORS = ["color-primary-500","color-white-100","color-neutral-900","color-neutral-700","color-neutral-400","color-neutral-200","color-neutral-100","color-negative-500","color-warning-500","color-positive-500","color-pro-500","color-premium"];
 
 const docs = {
   title: 'Ola-Emails Docs',
@@ -46,7 +46,7 @@ const docs = {
           name: "color",
           type: "enum",
           values: ALL_COLORS,
-          default: "black",
+          default: "color-neutral-900",
         },
         {
           name: "size",
@@ -56,8 +56,8 @@ const docs = {
         }
       ],
       example: `  <ola-circle
-    background-color="pro"
-    color="white"
+    background-color="color-pro-500"
+    color="color-white-100"
     size="medium">
       7
   </ola-circle>`,
@@ -70,13 +70,13 @@ const docs = {
           name: "background-color",
           type: "enum",
           values: ALL_COLORS,
-          default: "gray",
+          default: "color-neutral-700",
         },
         {
           name: "color",
           type: "enum",
           values: ALL_COLORS,
-          default: "black",
+          default: "color-neutral-900",
         },
         {
           name: "number",
@@ -88,13 +88,13 @@ const docs = {
         }
       ],
       example: `  <ola-counter
-      background-color="success"
-      color="white"
+      background-color="color-positive-500"
+      color="color-white-100"
       number="2"
       title="We'll calculate your SEO score">
       <ola-text
-          variant="caption"
-          color="gray">
+          variant="font-0-regular"
+          color="color-neutral-700">
           <p>Lorem ipsum dolor sit amet, consectetur 
           adipiscing elit. Suspendisse luctus vestibulum 
           aliquam...</p>
@@ -109,7 +109,7 @@ const docs = {
           name: "color",
           type: "enum",
           values: ALL_COLORS,
-          default: "gray-xxlight",
+          default: "color-neutral-100",
         },
         {
           name: "margin",
@@ -119,7 +119,7 @@ const docs = {
         }
       ],
       example: ` <ola-divider
-      color="brand" 
+      color="color-primary-500" 
       margin="small"></ola-divider>`
     },
     {
@@ -264,7 +264,7 @@ const docs = {
           name: "background-color",
           type: "enum",
           values: ALL_COLORS,
-          default: "black",
+          default: "color-neutral-900",
         }
       ],
       subcomponents: ["ola-hero-img", "ola-hero-title"],
@@ -349,19 +349,19 @@ const docs = {
           name: "background-color",
           type: "enum",
           values: ALL_COLORS,
-          default: "white",
+          default: "color-white-100",
         }
       ],
       example: `  <ola-item-list
-      background-color="premium">
+      background-color="color-premium">
       <ola-icon
           icon="https://marketgoo.github.io/Ola-Emails/img/task-warning.png"> </ola-icon>
       <ola-text
-          variant="body"
-          font-weight="bold">Lorem ipsum</ola-text>
+          variant="font-2-regular"
+          font-weight="font-weight-bold">Lorem ipsum</ola-text>
       <ola-text 
-          variant="caption" 
-          color="gray">Hello World!</ola-text>
+          variant="font-0-regular" 
+          color="color-neutral-700">Hello World!</ola-text>
   </ola-item-list>`
     },
     {
@@ -380,15 +380,15 @@ const docs = {
           name: "variant",
           type: "enum",
           values: ALL_COLORS,
-          default: "gray",
+          default: "color-neutral-700",
         }
       ],
       example: `  <ola-kpi 
       title="Your monthly visits coming from SEO" 
       description="Lorem ipsum">
       <ola-text 
-          variant="title" 
-          color="black" 
+          variant="font-5-medium" 
+          color="color-neutral-900" 
           align="center">243 <span>visits</span></ola-text>
   </ola-kpi>`
     },
@@ -417,7 +417,7 @@ const docs = {
       </ola-panel-title>
 
       <ola-panel-section>
-          <ola-text variant="callout" color="gray">
+          <ola-text variant="font-1-regular" color="color-neutral-700">
             If you want more site traffic, you need to 
             work on your SEO. It does take work, patience 
             & commitment - but you don't have to do it 
@@ -425,7 +425,7 @@ const docs = {
           </ola-text>
       </ola-panel-section>
 
-      <ola-panel-text variant="caption" color="gray">
+      <ola-panel-text variant="font-0-regular" color="color-neutral-700">
         If you have any question, feel free 
         to email our customer success team,</a> we're 
         lightning quick at replying.
@@ -444,27 +444,27 @@ const docs = {
         {
           name: "variant",
           type: "enum",
-          values: ["title", "headline", "body"],
-          default: "body",
+          values: ["font-5-medium", "font-3-regular", "font-2-regular"],
+          default: "font-2-regular",
         },
         {
           name: "color",
           type: "enum",
           values: ALL_COLORS,
-          default: "black"
+          default: "color-neutral-900"
         },
         {
           name: "background-color",
           type: "enum",
           values: ALL_COLORS,
-          default: "white"
+          default: "color-white-100"
         }
       ],
       parent: "ola-panel",
       example: `  <ola-panel-title
-      variant="headline"
-      color="brand"
-      background-color="gray-light">
+      variant="font-3-regular"
+      color="color-primary-500"
+      background-color="color-neutral-400">
       Hi Bowie, <br /> This is your July SEO report
       for your site example.com
   </ola-panel-title>`
@@ -486,9 +486,9 @@ const docs = {
       ],
       parent: "ola-panel",
       example: `  <ola-panel-section
-      background-color="gray-light"
+      background-color="color-neutral-400"
       multicolumn=false>
-      <ola-text variant="body">
+      <ola-text variant="font-2-regular">
         If you want more site traffic, you need to 
         work on your SEO. It does take work, patience 
         & commitment - but you don't have to do it 
@@ -503,8 +503,8 @@ const docs = {
         {
           name: "variant",
           type: "enum",
-          values: ["display","title","headline","body","callout","caption"],
-          default: "callout",
+          values: ["font-8-medium","font-5-medium","font-3-regular","font-2-regular","font-1-regular","font-0-regular"],
+          default: "font-1-regular",
         },
         {
           name: "color",
@@ -525,9 +525,9 @@ const docs = {
       ],
       parent: "ola-panel",
       example: `  <ola-panel-text 
-      variant="caption" 
-      color="pro"
-      background-color="gray-light"
+      variant="font-0-regular" 
+      color="color-pro-500"
+      background-color="color-neutral-400"
       align="center">
       If you have any question, feel free 
       to email our customer success team,</a> we're 
@@ -579,14 +579,14 @@ const docs = {
           name: "background-color",
           type: "enum",
           values: ALL_COLORS,
-          default: "gray-xlight",
+          default: "color-neutral-200",
         }
       ],
       example: `  <ola-progress-bar 
       value="20"
-      background-color="gray-xlight"
+      background-color="color-neutral-200"
       disabled=false>
-      <ola-text variant="caption" color="gray">
+      <ola-text variant="font-0-regular" color="color-neutral-700">
         We're still collecting data on this competitor. 
         We'll share it soon
       </ola-text>
@@ -682,7 +682,7 @@ const docs = {
           name: "background-color",
           type: "enum",
           values: ALL_COLORS,
-          default: "gray-xxlight",
+          default: "color-neutral-100",
         },
         {
           name: "align",
@@ -708,7 +708,7 @@ const docs = {
               <ola-text
                   header=false
                   highlight=false
-                  background-color="brand"
+                  background-color="color-primary-500"
                   align="center"
                   padding="16px"
                   width="100px">
@@ -735,7 +735,7 @@ const docs = {
         }
       ],
       example: `  <ola-tag 
-      variant="brand" 
+      variant="color-primary-500" 
       size="medium">
       50%
   </ola-tag>`
@@ -747,8 +747,8 @@ const docs = {
         {
           name: "variant",
           type: "enum",
-          values: ["display","title","headline","body","callout","caption"],
-          default: "body",
+          values: ["font-8-medium","font-5-medium","font-3-regular","font-2-regular","font-1-regular","font-0-regular"],
+          default: "font-2-regular",
         },
         {
           name: "align",
@@ -760,7 +760,7 @@ const docs = {
           name: "color",
           type: "enum",
           values: ALL_COLORS,
-          default: "black",
+          default: "color-neutral-900",
         },
         {
           name: "vertical-align",
@@ -774,16 +774,16 @@ const docs = {
         {
           name: "font-weight",
           type: "enum",
-          values: ["regular", "bold"],
+          values: ["font-weight-regular", "font-weight-bold"],
         }
       ],
       example: `  <ola-text 
       variant="body" 
       align="center"
-      color="pro" 
+      color="color-pro-500" 
       vertical-align="middle"
       height="40px"
-      font-weight="bold">
+      font-weight="font-weight-bold">
       Did you know that?
   </ola-text>`
     },
@@ -853,7 +853,7 @@ const createDocs = () => {
 
   docs.components.forEach(comp => {
     doc += `
-    <ola-text height="32px" font-weight="bold">
+    <ola-text height="32px" font-weight="font-weight-bold">
       - <a href="#${comp.tag}">${comp.name}</a>
     </ola-text>`;
   });
@@ -867,12 +867,12 @@ const createDocs = () => {
         <h2 id="${comp.tag}">🎨 ${comp.name}</h2>
       </ola-text>
 
-      <ola-text variant="body" height="36px" font-weight="bold">
+      <ola-text variant="font-2-regular" height="36px" font-weight="font-weight-bold">
         <p>🫴 Example of use</p>
       </ola-text>
 
       <mj-wrapper background-color="#fff" padding="0" border-radius="5px">
-        <ola-text variant="callout">
+        <ola-text variant="font-1-regular">
           <pre>${comp.example.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/(https?:\/\/[^\s]+)/g, 'https://[...]"')}</pre>
         </ola-text>
       </mj-wrapper>
@@ -885,13 +885,13 @@ const createDocs = () => {
         comp.parent
           ? `
           <mj-wrapper padding-top="32px" padding-bottom="0">
-            <ola-text variant="body" font-weight="bold">
+            <ola-text variant="font-2-regular" font-weight="font-weight-bold">
               <p>⬆️ Parent Component</p>
             </ola-text>
           </mj-wrapper>
 
           <mj-wrapper>
-            <ola-text variant="body" font-weight="bold"> - <a href="#${comp.parent}"><code>&lt;${comp.parent}&gt;</code></a></ola-text>
+            <ola-text variant="font-2-regular" font-weight="font-weight-bold"> - <a href="#${comp.parent}"><code>&lt;${comp.parent}&gt;</code></a></ola-text>
           </mj-wrapper>`
           : ""
 
@@ -901,7 +901,7 @@ const createDocs = () => {
         comp.subcomponents && comp.subcomponents.length
         ? `
         <mj-wrapper padding-top="32px" padding-bottom="0">
-          <ola-text variant="body" font-weight="bold">
+          <ola-text variant="font-2-regular" font-weight="font-weight-bold">
             <p>👶 Subcomponents</p>
           </ola-text>
         </mj-wrapper>
@@ -909,7 +909,7 @@ const createDocs = () => {
         <mj-wrapper>
           ${comp.subcomponents.map(scomp => {
             return `
-              <ola-text variant="body" font-weight="bold"> - <a href="#${scomp}"><code>&lt;${scomp}&gt;</code></a></ola-text>
+              <ola-text variant="font-2-regular" font-weight="font-weight-bold"> - <a href="#${scomp}"><code>&lt;${scomp}&gt;</code></a></ola-text>
               `;
           })}
         </mj-wrapper>
@@ -921,7 +921,7 @@ const createDocs = () => {
         comp.attrs && comp.attrs.length
         ? `
       <mj-wrapper padding-top="32px">
-        <ola-text variant="body" font-weight="bold">
+        <ola-text variant="font-2-regular" font-weight="font-weight-bold">
           <p>⚙️ Attributes</p>
         </ola-text>
       </mj-wrapper>
@@ -929,16 +929,16 @@ const createDocs = () => {
       <ola-table>
         <ola-table-row>
           <ola-table-cell width="120px">
-            <ola-text variant="callout" font-weight="bold">Name</ola-text>
+            <ola-text variant="font-1-regular" font-weight="font-weight-bold">Name</ola-text>
           </ola-table-cell>
           <ola-table-cell width="60px">
-            <ola-text variant="callout" font-weight="bold">Type</ola-text>
+            <ola-text variant="font-1-regular" font-weight="font-weight-bold">Type</ola-text>
           </ola-table-cell>
           <ola-table-cell>
-            <ola-text variant="callout" font-weight="bold">Allowed</ola-text>
+            <ola-text variant="font-1-regular" font-weight="font-weight-bold">Allowed</ola-text>
           </ola-table-cell>
           <ola-table-cell>
-            <ola-text variant="callout" font-weight="bold">Default</ola-text>
+            <ola-text variant="font-1-regular" font-weight="font-weight-bold">Default</ola-text>
           </ola-table-cell>
         </ola-table-row>
       ${
@@ -946,16 +946,16 @@ const createDocs = () => {
           return `
           <ola-table-row>
             <ola-table-cell>
-              <ola-text variant="caption"><code>${attr.name}</code></ola-text>
+              <ola-text variant="font-0-regular"><code>${attr.name}</code></ola-text>
             </ola-table-cell>
             <ola-table-cell>
-              <ola-text variant="caption">${attr.type}</ola-text>
+              <ola-text variant="font-0-regular">${attr.type}</ola-text>
             </ola-table-cell>
             <ola-table-cell>
-              <ola-text variant="caption"><code>${attr.values && attr.values.length ? attr.values.join(",") : ""}</code></ola-text>
+              <ola-text variant="font-0-regular"><code>${attr.values && attr.values.length ? attr.values.join(",") : ""}</code></ola-text>
             </ola-table-cell>
             <ola-table-cell>
-              <ola-text variant="caption"><code>${attr.default || ""}</code></ola-text>
+              <ola-text variant="font-0-regular"><code>${attr.default || ""}</code></ola-text>
             </ola-table-cell>
           </ola-table-row>`;
         })
@@ -964,7 +964,7 @@ const createDocs = () => {
       `
       : `
       <mj-wrapper padding-top="32px">
-        <ola-text variant="body" font-weight="bold">
+        <ola-text variant="font-2-regular" font-weight="font-weight-bold">
           <p>⚙️ No attributes supported</p>
         </ola-text>
       </mj-wrapper>

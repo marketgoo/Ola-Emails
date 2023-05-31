@@ -22,7 +22,7 @@ class OlaFooterAddress extends BodyComponent {
 
     render() {
         return this.renderMJML(`
-      <mj-section border-top="solid 1px ${tokens('gray-light')}">
+      <mj-section border-top="solid 1px ${tokens('color-neutral-400')}">
         <mj-column
           vertical-align="middle"
           width="112px"
@@ -32,15 +32,15 @@ class OlaFooterAddress extends BodyComponent {
             ${this.htmlAttributes({
                 width: '84px',
                 align: 'center',
-                padding: `${tokens('size-3')} 0`,
+                padding: `${tokens('size-1')} 0`,
                 src: this.getAttribute('src'),
                 href: this.getAttribute('href'),
                 alt: this.getAttribute('alt'),
             })}
           ></mj-image>
         </mj-column>
-        <mj-column vertical-align="middle" padding="0 ${tokens('size-6')}" width="66%">
-          <ola-text variant="caption" color="gray" align="center">
+        <mj-column vertical-align="middle" padding="0 ${tokens('size-3')}" width="66%">
+          <ola-text variant="font-0-regular" color="color-neutral-700" align="center">
             ${this.getContent()}
           </ola-text>
         </mj-column>

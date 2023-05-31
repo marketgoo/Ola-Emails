@@ -17,16 +17,16 @@ class OlaPanel extends BodyComponent {
     headStyle() {
         return `
       .ola_panel {
-        border-radius: ${tokens('radius')};
-        background-color: ${tokens('white')};
+        border-radius: ${tokens('radius-m')};
+        background-color: ${tokens('color-white-100')};
       }
       .ola_panel-overlap {
         margin-top: -30px !important;
         min-width: 90%;
       }
       .ola_panel-top {
-        border-radius: 0 0 ${tokens('radius')} ${tokens('radius')};
-        background-color: ${tokens('white')};
+        border-radius: 0 0 ${tokens('radius-m')} ${tokens('radius-m')};
+        background-color: ${tokens('color-white-100')};
       }
       @media only screen and (max-width:600px) {
         .ola_panel {

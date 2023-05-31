@@ -18,25 +18,25 @@ class OlaCounter extends BodyComponent {
     };
 
     static defaultAttributes = {
-        'background-color': 'accent',
-        'color': 'white',
+        'background-color': 'color-accent-500',
+        'color': 'color-white-100',
         'number': '1',
     };
 
     headStyle() {
         return `
       .ola_counter-number {
-        width: ${tokens('size-8')};
-        height: ${tokens('size-8')};
-        padding: ${tokens('size-2')};
-        margin: ${tokens('size-2')} 0 0;
+        width: ${tokens('size-5')};
+        height: ${tokens('size-5')};
+        padding: ${tokens('size-0')};
+        margin: ${tokens('size-0')} 0 0;
       }
     `;
     }
 
     render() {
         return `
-        <table class="ola_counter" style="margin-bottom:${tokens('size-7')}">
+        <table class="ola_counter" style="margin-bottom:${tokens('size-4')}">
             <tbody>
                 <tr>
                     <td style="vertical-align:top;width=70px;" width="70px">
@@ -45,7 +45,7 @@ class OlaCounter extends BodyComponent {
                                 <td class="ola_counter-number">
                                     ${this.renderMJML(`
                                     <ola-text ${this.htmlAttributes({
-                                        'variant': 'headline',
+                                        'variant': 'font-3-regular',
                                         'align': 'center',
                                         'color': this.getAttribute('color'),
                                     })}>
@@ -57,7 +57,7 @@ class OlaCounter extends BodyComponent {
                         </table>
                     </td>
                     <td>
-                        ${this.renderMJML(`<ola-text variant="body" font-weight="bold"><p>${this.getAttribute('title')}</p></ola-text>`)}
+                        ${this.renderMJML(`<ola-text variant="font-2-regular" font-weight="font-weight-bold"><p>${this.getAttribute('title')}</p></ola-text>`)}
                         ${this.renderMJML(this.getContent())}
                     </td>
                 </tr>

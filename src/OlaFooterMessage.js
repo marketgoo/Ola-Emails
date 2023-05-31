@@ -19,9 +19,9 @@ class OlaFooterMessage extends BodyComponent {
 
     render() {
         return this.renderMJML(`
-      <mj-section padding="${tokens('size-6')}">
+      <mj-section padding="${tokens('size-3')}">
         <mj-column css-class="ola_footer-message">
-          <ola-text variant="caption" color="gray" align="center">
+          <ola-text variant="font-0-regular" color="color-neutral-700" align="center">
             ${this.getContent()}
           </ola-text>
         </mj-column>

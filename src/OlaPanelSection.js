@@ -17,13 +17,13 @@ class OlaPanelSection extends BodyComponent {
     headStyle(breakpoint) {
         return `
       .ola_panel-section {
-        padding-right: ${tokens('size-8')};
-        padding-left: ${tokens('size-8')};
+        padding-right: ${tokens('size-5')};
+        padding-left: ${tokens('size-5')};
       }
       @media only screen and (max-width:${breakpoint}) {
         .ola_panel-section {
-          padding-right: ${tokens('size-7')};
-          padding-left: ${tokens('size-7')};
+          padding-right: ${tokens('size-4')};
+          padding-left: ${tokens('size-4')};
         }
       }
     `;

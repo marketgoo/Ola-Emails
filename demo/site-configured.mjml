@@ -21,7 +21,7 @@
         <ola-button variant="primary">Yes, this is my email</ola-button>
       </ola-panel-section>
 
-      <ola-panel-text variant="caption" color="gray">
+      <ola-panel-text variant="font-0-regular" color="color-neutral-700">
           <p>If you did not sign up to marketgoo, please contact us at <a href="mailto:support@marketgoo.com">support@marketgoo.com</a>.</p>
       </ola-panel-text>
 

@@ -12,16 +12,16 @@ class OlaIssue extends BodyComponent {
     headStyle(breakpoint) {
         return `
       .ola_task {
-        padding-right: ${tokens('size-8')};
-        padding-left: ${tokens('size-8')};
+        padding-right: ${tokens('size-5')};
+        padding-left: ${tokens('size-5')};
       }
       .ola_task td {
-          padding: ${tokens('size-5')} 0;
+          padding: ${tokens('size-2')} 0;
       }
       @media only screen and (max-width:${breakpoint}) {
         .ola_task {
-          padding-right: ${tokens('size-7')};
-          padding-left: ${tokens('size-7')};
+          padding-right: ${tokens('size-4')};
+          padding-left: ${tokens('size-4')};
         }
       }
     `;
@@ -37,12 +37,12 @@ class OlaIssue extends BodyComponent {
                                 <img
                                     src="${this.getAttribute('icon')}"
                                     width="28"
-                                    style="display:block;"
+                                    style="font-8-medium:block;"
                                     >
                         </td>
                         <td style="vertical-align:middle;">
                             ${this.renderMJML(`
-                            <ola-text variant="body">
+                            <ola-text variant="font-2-regular">
                                 ${this.getContent()}
                             </ola-text>
                             `)}

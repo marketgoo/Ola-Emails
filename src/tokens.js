@@ -18,12 +18,6 @@ function get(...keys) {
     return typeof value === 'object' ? { ...value } : value;
 }
 
-get.font = function (...keys) {
-    keys[0] = `font-${keys[0]}`;
-
-    return get(...keys);
-};
-
 get.load = function (json) {
     tokens = json;
 };
