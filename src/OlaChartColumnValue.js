@@ -5,7 +5,7 @@ const tokens = require('./tokens');
 class OlaChartColumnValue extends BodyComponent {
     static allowedAttributes = {
         value: 'string',
-        color: 'enum(color-primary-500,color-primary-600,color-primary-700,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
+        color: 'enum(color-primary-500,color-primary-600,color-primary-700,color-white,color-neutral-900,color-neutral-700,color-neutral-400,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
         opacity: 'string',
         label: 'string',
     };

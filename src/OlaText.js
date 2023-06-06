@@ -8,7 +8,7 @@ class OlaText extends BodyComponent {
     static allowedAttributes = {
         variant: 'enum(font-8-medium,font-5-medium,font-3-regular,font-2-regular,font-1-regular,font-0-regular)',
         align: 'enum(left,center,right)',
-        color: 'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
+        color: 'enum(color-primary-500,color-white,color-neutral-900,color-neutral-700,color-neutral-400,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
         'vertical-align': 'enum(top,middle,bottom)',
         'font-weight': 'enum(font-weight-regular,font-weight-bold)',
         height: 'string',

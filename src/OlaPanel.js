@@ -18,7 +18,7 @@ class OlaPanel extends BodyComponent {
         return `
       .ola_panel {
         border-radius: ${tokens('radius-m')};
-        background-color: ${tokens('color-white-100')};
+        background-color: ${tokens('color-white')};
       }
       .ola_panel-overlap {
         margin-top: -30px !important;
@@ -26,7 +26,7 @@ class OlaPanel extends BodyComponent {
       }
       .ola_panel-top {
         border-radius: 0 0 ${tokens('radius-m')} ${tokens('radius-m')};
-        background-color: ${tokens('color-white-100')};
+        background-color: ${tokens('color-white')};
       }
       @media only screen and (max-width:600px) {
         .ola_panel {

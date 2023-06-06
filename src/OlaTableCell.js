@@ -11,7 +11,7 @@ class OlaTableCell extends BodyComponent {
         header: 'boolean',
         highlight: 'boolean',
         'background-color':
-            'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-neutral-200,color-neutral-100,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
+            'enum(color-primary-500,color-white,color-neutral-900,color-neutral-700,color-neutral-400,color-neutral-200,color-neutral-100,color-negative-500,color-warning-500,color-positive-500,color-pro-500,color-premium)',
         align: 'enum(left,center,right)',
         padding: 'string',
         width: 'string',

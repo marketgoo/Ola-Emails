@@ -54,8 +54,8 @@ class OlaHead extends HeadComponent {
         .ola-color-accent-500 {
             color: ${tokens('color-accent-500')};
         }
-        .ola-color-white-100 {
-            color: ${tokens('color-white-100')};
+        .ola-color-white {
+            color: ${tokens('color-white')};
         }
         .ola-color-neutral-900 {
             color: ${tokens('color-neutral-900')};

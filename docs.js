@@ -4,7 +4,7 @@ const fs = require('fs');
 
 require('./index');
 
-const ALL_COLORS = ["color-primary-500","color-white-100","color-neutral-900","color-neutral-700","color-neutral-400","color-neutral-200","color-neutral-100","color-negative-500","color-warning-500","color-positive-500","color-pro-500","color-premium"];
+const ALL_COLORS = ["color-primary-500","color-white","color-neutral-900","color-neutral-700","color-neutral-400","color-neutral-200","color-neutral-100","color-negative-500","color-warning-500","color-positive-500","color-pro-500","color-premium"];
 
 const docs = {
   title: 'Ola-Emails Docs',
@@ -57,7 +57,7 @@ const docs = {
       ],
       example: `  <ola-circle
     background-color="color-pro-500"
-    color="color-white-100"
+    color="color-white"
     size="medium">
       7
   </ola-circle>`,
@@ -89,7 +89,7 @@ const docs = {
       ],
       example: `  <ola-counter
       background-color="color-positive-500"
-      color="color-white-100"
+      color="color-white"
       number="2"
       title="We'll calculate your SEO score">
       <ola-text
@@ -349,7 +349,7 @@ const docs = {
           name: "background-color",
           type: "enum",
           values: ALL_COLORS,
-          default: "color-white-100",
+          default: "color-white",
         }
       ],
       example: `  <ola-item-list
@@ -457,7 +457,7 @@ const docs = {
           name: "background-color",
           type: "enum",
           values: ALL_COLORS,
-          default: "color-white-100"
+          default: "color-white"
         }
       ],
       parent: "ola-panel",

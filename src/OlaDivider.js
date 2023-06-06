@@ -10,7 +10,7 @@ class OlaDivider extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        color: 'enum(color-primary-500,color-white-100,color-neutral-900,color-neutral-700,color-neutral-400,color-neutral-200,color-neutral-100)',
+        color: 'enum(color-primary-500,color-white,color-neutral-900,color-neutral-700,color-neutral-400,color-neutral-200,color-neutral-100)',
         margin: 'enum(none,small,normal)',
     };
 

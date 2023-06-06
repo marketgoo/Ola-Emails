@@ -18,7 +18,7 @@ class OlaCounter extends BodyComponent {
 
     static defaultAttributes = {
         'background-color': 'color-accent-500',
-        color: 'color-white-100',
+        color: 'color-white',
         number: '1',
     };
 

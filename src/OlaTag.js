@@ -22,7 +22,7 @@ class OlaTag extends BodyComponent {
         const background_color = this.getAttribute('variant')
             ? tokens(this.getAttribute('variant'))
             : tokens('color-neutral-200');
-        const color = this.getAttribute('variant') ? 'color-white-100' : tokens('color-neutral-900');
+        const color = this.getAttribute('variant') ? 'color-white' : tokens('color-neutral-900');
         const height =
             this.getAttribute('size') === 'medium'
                 ? tokens('size-4')
@@ -45,7 +45,7 @@ class OlaTag extends BodyComponent {
             'radius-s'
         )}; padding: 0 ${tokens(
             'size-1'
-        )}; display: inline-flex; align-items: center;color-white-100-space: nowrap; vertical-align: middle; cursor: default; max-width: 100%; letter-spacing: 0; height: ${height};"
+        )}; display: inline-flex; align-items: center;color-white-space: nowrap; vertical-align: middle; cursor: default; max-width: 100%; letter-spacing: 0; height: ${height};"
                     >
                         ${this
                             .renderMJML(`<ola-text font-weight="font-weight-bold" align="center" color=${color} variant=${font} >

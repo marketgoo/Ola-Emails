@@ -72,7 +72,7 @@
         <ola-item-list background-color="color-neutral-200">
           <ola-icon icon="https://marketgoo.github.io/Ola-Emails/img/task-success.png"> </ola-icon>
           <ola-text variant="font-2-regular" font-weight="font-weight-bold"> You </ola-text>
-          <ola-progress-bar disabled=true background-color="color-white-100">
+          <ola-progress-bar disabled=true background-color="color-white">
             <ola-text variant="font-0-regular" color="color-neutral-700"> Hello World!!!!! </ola-text>
           </ola-progress-bar>
         </ola-item-list>

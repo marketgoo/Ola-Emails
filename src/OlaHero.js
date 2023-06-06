@@ -21,7 +21,7 @@ class OlaHero extends BodyComponent {
         return `
       .ola_hero-header {
         border-radius: ${tokens('radius-m')} ${tokens('radius-m')} 0 0;
-        background-color: ${tokens('color-white-100')};
+        background-color: ${tokens('color-white')};
         padding-right: ${tokens('size-5')};
         padding-left: ${tokens('size-5')};
       }

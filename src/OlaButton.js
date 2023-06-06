@@ -17,10 +17,10 @@ const styles = {
     },
     primary: {
         'background-color': tokens('button', 'primary', 'background') || tokens('color-accent-500'),
-        color: tokens('button', 'primary', 'color') || tokens('color-white-100'),
+        color: tokens('button', 'primary', 'color') || tokens('color-white'),
     },
     secondary: {
-        'background-color': tokens('button', 'primary', 'background') || tokens('color-white-100'),
+        'background-color': tokens('button', 'primary', 'background') || tokens('color-white'),
         color: tokens('button', 'secondary', 'color') || tokens('color-primary-500'),
         border: `solid 1px ${tokens('button', 'secondary', 'border') || tokens('color-primary-500')}`,
     },

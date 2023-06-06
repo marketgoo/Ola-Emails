@@ -18,7 +18,7 @@ class OlaPanelTitle extends BodyComponent {
     static defaultAttributes = {
         variant: 'body',
         color: 'color-neutral-900',
-        'background-color': 'color-white-100',
+        'background-color': 'color-white',
     };
 
     headStyle(breakpoint) {

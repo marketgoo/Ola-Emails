@@ -63,7 +63,7 @@
         </mj-section>
 
         <mj-section background-color="$color-neutral-100" padding="0 20px">
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white-100">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">
@@ -73,7 +73,7 @@
             </ola-wrapper>
           </mj-column>
 
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white-100">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">
@@ -85,7 +85,7 @@
         </mj-section>
 
         <mj-section background-color="$color-neutral-100" padding="0 20px">
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white-100">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">
@@ -95,7 +95,7 @@
             </ola-wrapper>
           </mj-column>
 
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white-100">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">
@@ -107,7 +107,7 @@
         </mj-section>
 
         <mj-section background-color="$color-neutral-100" padding="0 20px 20px">
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white-100">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">
@@ -116,7 +116,7 @@
             </ola-wrapper>
           </mj-column>
 
-          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="color-white-100">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="color-white">
             <ola-wrapper padding="8px">
               <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
               <ola-button variant="link" href="#">
