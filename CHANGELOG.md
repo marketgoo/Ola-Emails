@@ -1,9 +1,12 @@
 # Changelog
-
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+## [1.0.0] - 2023-07-03
+### Changed
+- Add new ola tokens
 
 ## [0.7.0] - 2023-04-05
 ### Added
@@ -187,7 +190,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Removed duplicated `<mj-column>` in `<ola-panel-text>`.
 - The exit code of `bin.js` must be `1` on error
 
-## 0.1.0 - 2020-04-23
+## [0.1.0] - 2020-04-23
 First version
 
 [#5]: https://github.com/marketgoo/Ola-Emails/issues/5
@@ -216,6 +219,7 @@ First version
 [#35]: https://github.com/marketgoo/Ola-Emails/issues/35
 [#36]: https://github.com/marketgoo/Ola-Emails/issues/36
 
+[1.0.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.7.0...v1.0.0
 [0.7.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/marketgoo/Ola-Emails/compare/v0.4.9...v0.5.0
@@ -248,3 +252,4 @@ First version
 [0.1.3]: https://github.com/marketgoo/Ola-Emails/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/marketgoo/Ola-Emails/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/marketgoo/Ola-Emails/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/marketgoo/Ola-Emails/releases/tag/v0.1.0
