@@ -16,7 +16,7 @@ class OlaPanelTitle extends BodyComponent {
     };
 
     static defaultAttributes = {
-        variant: 'body',
+        variant: 'font-2-regular',
         color: 'color-neutral-900',
         'background-color': 'color-white',
     };
