@@ -778,7 +778,7 @@ const docs = {
         }
       ],
       example: `  <ola-text 
-      variant="body" 
+      variant="font-2-regular" 
       align="center"
       color="color-pro-500" 
       vertical-align="middle"
