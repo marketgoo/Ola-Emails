@@ -13,6 +13,7 @@ class OlaScore extends BodyComponent {
         value: 'integer',
         title: 'string',
         level: 'string',
+        align: 'enum(left,center,right)',
         'src-prefix': 'string',
     };
 
@@ -20,6 +21,7 @@ class OlaScore extends BodyComponent {
         value: 50,
         title: 'Your score',
         level: 'medium',
+        align: 'center',
         'src-prefix': 'https://apps.marketgoo.com/assets/themes/10edfa953b/mktgoo/charts/score/',
     };
 
