@@ -59,7 +59,7 @@ class OlaScore extends BodyComponent {
                             )}</p></ola-text>`
                         )}
                         ${this.renderMJML(
-                            `<ola-text variant="font-8-medium" align="center"><p>${value}<sup class="ola_score-percentage"> %</sup></p></ola-text>`
+                            `<ola-text variant="font-8-medium" align="center"><p style="line-height:60px">${value}<sup class="ola_score-percentage"> %</sup></p></ola-text>`
                         )}
                         ${this.renderMJML(`<ola-tag variant="${level}"><p>${this.getAttribute('level')}</p></ola-tag>`)}
                     </td>
