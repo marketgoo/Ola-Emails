@@ -1,21 +1,21 @@
-const { registerDependencies } = require('mjml-validator');
-const { BodyComponent } = require('mjml-core');
+const {registerDependencies} = require('mjml-validator');
+const {BodyComponent} = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'mj-body': ['ola-panel'],
+  'mj-body': ['ola-panel']
 });
 
 class OlaPanel extends BodyComponent {
-    static endingTag = true;
+  static endingTag = true;
 
-    static allowedAttributes = {
-        'close-to': 'enum(top)',
-        overlap: 'boolean',
-    };
+  static allowedAttributes = {
+    'close-to': 'enum(top)',
+    overlap: 'boolean'
+  };
 
-    headStyle() {
-        return `
+  headStyle() {
+    return `
       .ola_panel {
         border-radius: ${tokens('radius-m')};
         background-color: ${tokens('color-white')};
@@ -37,22 +37,24 @@ class OlaPanel extends BodyComponent {
         }
       }
     `;
-    }
+  }
 
-    render() {
-        const className = this.getAttribute('close-to') ? `ola_panel-${this.getAttribute('close-to')}` : 'ola_panel';
-        const extraClassName = this.getAttribute('overlap') && 'ola_panel-overlap';
+  render() {
+    const className = this.getAttribute('close-to')
+      ? `ola_panel-${this.getAttribute('close-to')}`
+      : 'ola_panel';
+    const extraClassName = this.getAttribute('overlap') && 'ola_panel-overlap';
 
-        return this.renderMJML(`
-        <mj-wrapper
-          css-class="${className} ${extraClassName}"
-          padding-top="0"
-          padding-bottom="0"
-          >
-          ${this.getContent()}
-        </mj-wrapper>
-		  `);
-    }
+    return this.renderMJML(`
+      <mj-wrapper
+        css-class="${className} ${extraClassName}"
+        padding-top="0"
+        padding-bottom="0"
+        >
+        ${this.getContent()}
+      </mj-wrapper>
+		`);
+  }
 }
 
 module.exports = OlaPanel;

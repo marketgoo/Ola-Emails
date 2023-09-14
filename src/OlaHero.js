@@ -1,24 +1,24 @@
-const { registerDependencies } = require('mjml-validator');
-const { BodyComponent } = require('mjml-core');
+const {registerDependencies} = require('mjml-validator');
+const {BodyComponent} = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'mj-body': ['ola-hero'],
+  'mj-body': ['ola-hero']
 });
 
 class OlaHero extends BodyComponent {
-    static endingTag = true;
+  static endingTag = true;
 
-    static allowedAttributes = {
-        'background-color': 'string',
-    };
+  static allowedAttributes = {
+    'background-color': 'string'
+  };
 
-    static defaultAttributes = {
-        'background-color': 'color-neutral-900',
-    };
+  static defaultAttributes = {
+    'background-color': 'color-neutral-900'
+  };
 
-    headStyle(breakpoint) {
-        return `
+  headStyle(breakpoint) {
+    return `
       .ola_hero-header {
         border-radius: ${tokens('radius-m')} ${tokens('radius-m')} 0 0;
         background-color: ${tokens('color-white')};
@@ -33,12 +33,14 @@ class OlaHero extends BodyComponent {
         }
       }
     `;
-    }
+  }
 
-    render() {
-        const color = tokens(this.getAttribute('background-color')) || this.getAttribute('background-color');
+  render() {
+    const color =
+      tokens(this.getAttribute('background-color')) ||
+      this.getAttribute('background-color');
 
-        return this.renderMJML(`
+    return this.renderMJML(`
     <mj-wrapper
         css-class="ola_hero"
         full-width="full-width"
@@ -48,7 +50,7 @@ class OlaHero extends BodyComponent {
         ${this.getContent()}
     </mj-wrapper>
 	`);
-    }
+  }
 }
 
 module.exports = OlaHero;

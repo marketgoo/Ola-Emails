@@ -1,43 +1,43 @@
-const { registerDependencies } = require('mjml-validator');
-const { BodyComponent } = require('mjml-core');
+const {registerDependencies} = require('mjml-validator');
+const {BodyComponent} = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'ola-panel-section': ['ola-thumbnail'],
+  'ola-panel-section': ['ola-thumbnail']
 });
 
 class OlaThumbnail extends BodyComponent {
-    static endingTag = true;
+  static endingTag = true;
 
-    static allowedAttributes = {
-        src: 'string',
-        alt: 'string',
-        align: 'string',
-    };
+  static allowedAttributes = {
+    src: 'string',
+    alt: 'string',
+    align: 'string'
+  };
 
-    static defaultAttributes = {
-        alt: '',
-        align: 'center',
-        'css-class': 'ola_thumbnail',
-    };
+  static defaultAttributes = {
+    alt: '',
+    align: 'center',
+    'css-class': 'ola_thumbnail'
+  };
 
-    headStyle() {
-        return `
+  headStyle() {
+    return `
       .ola_thumbnail img {
         border-radius: ${tokens('radius-m')};
         box-shadow: ${tokens('shadow-level-2')}; 
       }`;
-    }
+  }
 
-    render() {
-        return this.renderMJML(`
+  render() {
+    return this.renderMJML(`
             <mj-image
                 src="${this.getAttribute('src')}"
                 alt="${this.getAttribute('alt')}"
                 width="250px"
             />
       `);
-    }
+  }
 }
 
 module.exports = OlaThumbnail;
