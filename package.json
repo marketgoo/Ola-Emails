@@ -9,7 +9,8 @@
   "scripts": {
     "start": "nodemon --exec gulp demo",
     "build:demo": "rm -f demo/*.html && gulp demo",
-    "build:docs": "node ./docs.js"
+    "build:docs": "node ./docs.js",
+    "lint": "prettier ./src --write"
   },
   "license": "MIT",
   "devDependencies": {

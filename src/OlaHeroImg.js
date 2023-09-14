@@ -1,26 +1,26 @@
-const { registerDependencies } = require('mjml-validator');
-const { BodyComponent } = require('mjml-core');
+const {registerDependencies} = require('mjml-validator');
+const {BodyComponent} = require('mjml-core');
 
 registerDependencies({
-    'ola-hero': ['ola-hero-img'],
+  'ola-hero': ['ola-hero-img']
 });
 
 class OlaHeroImg extends BodyComponent {
-    static endingTag = true;
+  static endingTag = true;
 
-    static allowedAttributes = {
-        src: 'string',
-        alt: 'string',
-        href: 'string',
-    };
+  static allowedAttributes = {
+    src: 'string',
+    alt: 'string',
+    href: 'string'
+  };
 
-    static defaultAttributes = {
-        alt: '',
-        href: '',
-    };
+  static defaultAttributes = {
+    alt: '',
+    href: ''
+  };
 
-    render() {
-        return this.renderMJML(`
+  render() {
+    return this.renderMJML(`
         <mj-section padding-bottom="0">
             <mj-column>
                 <mj-image
@@ -33,7 +33,7 @@ class OlaHeroImg extends BodyComponent {
             </mj-column>
         </mj-section>
 	`);
-    }
+  }
 }
 
 module.exports = OlaHeroImg;

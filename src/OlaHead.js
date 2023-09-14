@@ -1,28 +1,30 @@
-const { registerDependencies } = require('mjml-validator');
-const { HeadComponent } = require('mjml-core');
+const {registerDependencies} = require('mjml-validator');
+const {HeadComponent} = require('mjml-core');
 
 const tokens = require('./tokens');
 
 registerDependencies({
-    'mj-head': ['ola-head'],
+  'mj-head': ['ola-head']
 });
 
 class OlaHead extends HeadComponent {
-    static endingTag = false;
+  static endingTag = false;
 
-    handler() {
-        const { add } = this.context;
+  handler() {
+    const {add} = this.context;
 
-        add('defaultAttributes', 'mj-all', { 'font-family': 'Arial' });
-        add('defaultAttributes', 'mj-body', { 'background-color': tokens('color-neutral-100') });
+    add('defaultAttributes', 'mj-all', {'font-family': 'Arial'});
+    add('defaultAttributes', 'mj-body', {
+      'background-color': tokens('color-neutral-100')
+    });
 
-        if (tokens('custom-font')) {
-            add('fonts', tokens('custom-font', 'name'), tokens('custom-font', 'src'));
-        }
+    if (tokens('custom-font')) {
+      add('fonts', tokens('custom-font', 'name'), tokens('custom-font', 'src'));
+    }
 
-        add(
-            'style',
-            `
+    add(
+      'style',
+      `
         body {
             scroll-behavior: smooth;
             text-rendering: auto;
@@ -81,8 +83,8 @@ class OlaHead extends HeadComponent {
         .ola-color-pro-500 {
             color: ${tokens('color-pro-500')};
         }`
-        );
-    }
+    );
+  }
 }
 
 module.exports = OlaHead;

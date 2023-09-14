@@ -1,16 +1,16 @@
-const { registerDependencies } = require('mjml-validator');
-const { BodyComponent } = require('mjml-core');
+const {registerDependencies} = require('mjml-validator');
+const {BodyComponent} = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'ola-hero': ['ola-hero-title'],
+  'ola-hero': ['ola-hero-title']
 });
 
 class OlaHeroTitle extends BodyComponent {
-    static endingTag = true;
+  static endingTag = true;
 
-    headStyle(breakpoint) {
-        return `
+  headStyle(breakpoint) {
+    return `
       .ola_hero-title {
         border-radius: ${tokens('radius-m')} ${tokens('radius-m')} 0 0;
         background-color: ${tokens('color-white')};
@@ -25,10 +25,10 @@ class OlaHeroTitle extends BodyComponent {
         }
       }
     `;
-    }
+  }
 
-    render() {
-        return this.renderMJML(`
+  render() {
+    return this.renderMJML(`
         <mj-section
             vertical-align="middle"
             css-class="ola_hero-title"
@@ -42,7 +42,7 @@ class OlaHeroTitle extends BodyComponent {
             </mj-column>
         </section>
 	`);
-    }
+  }
 }
 
 module.exports = OlaHeroTitle;

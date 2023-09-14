@@ -1,28 +1,28 @@
-const { registerDependencies } = require('mjml-validator');
-const { BodyComponent } = require('mjml-core');
+const {registerDependencies} = require('mjml-validator');
+const {BodyComponent} = require('mjml-core');
 
 const tokens = require('./tokens');
 
 registerDependencies({
-    'mj-body': ['ola-header'],
+  'mj-body': ['ola-header']
 });
 
 class OlaHeader extends BodyComponent {
-    static endingTag = false;
+  static endingTag = false;
 
-    static allowedAttributes = {
-        variant: 'enum(light,dark)',
-        text: 'string',
-        href: 'string',
-        logo: 'string',
-    };
+  static allowedAttributes = {
+    variant: 'enum(light,dark)',
+    text: 'string',
+    href: 'string',
+    logo: 'string'
+  };
 
-    static defaultAttributes = {
-        variant: 'light',
-    };
+  static defaultAttributes = {
+    variant: 'light'
+  };
 
-    headStyle(breakpoint) {
-        return `
+  headStyle(breakpoint) {
+    return `
       .ola_header a {
         color: inherit;
       }
@@ -33,22 +33,27 @@ class OlaHeader extends BodyComponent {
         }
       }
     `;
-    }
+  }
 
-    render() {
-        let content = '';
-        if (this.getAttribute('href')) {
-            const colorText = this.getAttribute('variant') === 'light' ? 'color-neutral-700' : 'color-neutral-400';
+  render() {
+    let content = '';
+    if (this.getAttribute('href')) {
+      const colorText =
+        this.getAttribute('variant') === 'light'
+          ? 'color-neutral-700'
+          : 'color-neutral-400';
 
-            content = `
+      content = `
             <mj-column vertical-align="middle" css-class="ola_header-content">
                 <ola-text variant="font-0-regular" color="${colorText}">
-                    <a href="${this.getAttribute('href')}" target="_blank">${this.getAttribute('text')}</a>
+                    <a href="${this.getAttribute(
+                      'href'
+                    )}" target="_blank">${this.getAttribute('text')}</a>
                 </ola-text>
             </mj-column>`;
-        }
+    }
 
-        return this.renderMJML(`
+    return this.renderMJML(`
     <mj-section
       vertical-align="middle"
       css-class="ola_header"
@@ -65,7 +70,7 @@ class OlaHeader extends BodyComponent {
         ${content}
     </mj-section>
 	`);
-    }
+  }
 }
 
 module.exports = OlaHeader;

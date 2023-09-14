@@ -1,16 +1,16 @@
-const { registerDependencies } = require('mjml-validator');
-const { BodyComponent } = require('mjml-core');
+const {registerDependencies} = require('mjml-validator');
+const {BodyComponent} = require('mjml-core');
 const tokens = require('./tokens');
 
 class OlaIssue extends BodyComponent {
-    static endingTag = true;
+  static endingTag = true;
 
-    static allowedAttributes = {
-        icon: 'string',
-    };
+  static allowedAttributes = {
+    icon: 'string'
+  };
 
-    headStyle(breakpoint) {
-        return `
+  headStyle(breakpoint) {
+    return `
       .ola_task {
         padding-right: ${tokens('size-5')};
         padding-left: ${tokens('size-5')};
@@ -25,10 +25,10 @@ class OlaIssue extends BodyComponent {
         }
       }
     `;
-    }
+  }
 
-    render() {
-        return `
+  render() {
+    return `
         <table class="ola_task" style="vertical-align:middle;text-align=left">
             <tbody>
                     <tr>
@@ -50,7 +50,7 @@ class OlaIssue extends BodyComponent {
             </tbody>
         </table>
 		`;
-    }
+  }
 }
 
 module.exports = OlaIssue;

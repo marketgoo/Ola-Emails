@@ -1,28 +1,28 @@
-const { registerDependencies } = require('mjml-validator');
-const { BodyComponent } = require('mjml-core');
+const {registerDependencies} = require('mjml-validator');
+const {BodyComponent} = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'ola-panel': ['ola-panel-title'],
+  'ola-panel': ['ola-panel-title']
 });
 
 class OlaPanelTitle extends BodyComponent {
-    static endingTag = true;
+  static endingTag = true;
 
-    static allowedAttributes = {
-        variant: 'enum(font-5-medium,font-3-regular,font-2-regular)',
-        color: 'string',
-        'background-color': 'string',
-    };
+  static allowedAttributes = {
+    variant: 'enum(font-5-medium,font-3-regular,font-2-regular)',
+    color: 'string',
+    'background-color': 'string'
+  };
 
-    static defaultAttributes = {
-        variant: 'font-2-regular',
-        color: 'color-neutral-900',
-        'background-color': 'color-white',
-    };
+  static defaultAttributes = {
+    variant: 'font-2-regular',
+    color: 'color-neutral-900',
+    'background-color': 'color-white'
+  };
 
-    headStyle(breakpoint) {
-        return `
+  headStyle(breakpoint) {
+    return `
       .ola_panel-title {
         border-top-left-radius: ${tokens('radius-m')};
         border-top-right-radius: ${tokens('radius-m')};
@@ -39,14 +39,14 @@ class OlaPanelTitle extends BodyComponent {
         }
       }
     `;
-    }
+  }
 
-    render() {
-        return this.renderMJML(`
+  render() {
+    return this.renderMJML(`
       <mj-section ${this.htmlAttributes({
-          'css-class': 'ola_panel-title',
-          'padding-bottom': '0',
-          'background-color': tokens(this.getAttribute('background-color')),
+        'css-class': 'ola_panel-title',
+        'padding-bottom': '0',
+        'background-color': tokens(this.getAttribute('background-color'))
       })}>
         <mj-column>
             <ola-text
@@ -59,7 +59,7 @@ class OlaPanelTitle extends BodyComponent {
         </mj-column>
       </mj-section>
 		`);
-    }
+  }
 }
 
 module.exports = OlaPanelTitle;

@@ -1,26 +1,26 @@
-const { registerDependencies } = require('mjml-validator');
-const { BodyComponent } = require('mjml-core');
+const {registerDependencies} = require('mjml-validator');
+const {BodyComponent} = require('mjml-core');
 const tokens = require('./tokens');
 
 registerDependencies({
-    'ola-footer-menu': ['ola-footer-menu-icon'],
+  'ola-footer-menu': ['ola-footer-menu-icon']
 });
 
 class OlaFooterMenuIcon extends BodyComponent {
-    static endingTag = true;
+  static endingTag = true;
 
-    static allowedAttributes = {
-        href: 'string',
-        src: 'string',
-        alt: 'string',
-    };
+  static allowedAttributes = {
+    href: 'string',
+    src: 'string',
+    alt: 'string'
+  };
 
-    static defaultAttributes = {
-        href: '#',
-    };
+  static defaultAttributes = {
+    href: '#'
+  };
 
-    render() {
-        return this.renderMJML(`
+  render() {
+    return this.renderMJML(`
         <ola-footer-menu-link href=${this.getAttribute('href')}">
             <img
               src="${this.getAttribute('src')}"
@@ -33,7 +33,7 @@ class OlaFooterMenuIcon extends BodyComponent {
             >
         </ola-footer-menu-link>
     `);
-    }
+  }
 }
 
 module.exports = OlaFooterMenuIcon;
