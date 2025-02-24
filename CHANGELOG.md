@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.7] - 2025-02-24
+### Fixed
+- Version in package.json
+
 ## [1.0.6] - 2025-02-24
 ### Added
 - `line-top` and `size` attributes to `OlaIssue`.
@@ -244,6 +248,7 @@ First version
 [#35]: https://github.com/marketgoo/Ola-Emails/issues/35
 [#36]: https://github.com/marketgoo/Ola-Emails/issues/36
 
+[1.0.7]: https://github.com/marketgoo/Ola-Emails/compare/v1.0.6...v1.0.7
 [1.0.6]: https://github.com/marketgoo/Ola-Emails/compare/v1.0.5...v1.0.6
 [1.0.5]: https://github.com/marketgoo/Ola-Emails/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/marketgoo/Ola-Emails/compare/v1.0.3...v1.0.4
