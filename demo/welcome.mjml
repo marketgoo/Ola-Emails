@@ -46,10 +46,10 @@
           </ola-text>
         </ola-counter>
 
-        <ola-issue icon="./img/task-error.png">Esto es una task</ola-issue>
-        <ola-issue icon="./img/task-error.png">Esto es una task</ola-issue>
-        <ola-issue icon="./img/task-error.png">Esto es una task</ola-issue>
-        <ola-issue icon="./img/task-error.png">Esto es una task</ola-issue>
+        <ola-issue line-top="true" size="small" icon="./img/task-error.png">Esto es una task</ola-issue>
+        <ola-issue line-top="true" size="small" icon="./img/task-error.png">Esto es una task</ola-issue>
+        <ola-issue line-top="true" size="small" icon="./img/task-error.png">Esto es una task</ola-issue>
+        <ola-issue line-top="true" icon="./img/task-error.png">Esto es una task</ola-issue>
       </ola-panel-section>
 
       <ola-wrapper padding="10px">
