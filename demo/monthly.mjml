@@ -109,7 +109,7 @@
           <ola-chart-column-value value="0.5" label="122 pages">
             <ola-text variant="font-0-regular" color="color-neutral-700" align="center"> August </ola-text>
           </ola-chart-column-value>
-          <ola-chart-column-value value="0.8" label="157 pages">
+          <ola-chart-column-value value="0" label="157 pages">
             <ola-text variant="font-0-regular" color="color-neutral-700" align="center"> September </ola-text>
             <ola-text variant="font-0-regular" color="color-positive-500" align="center" font-weight="font-weight-bold"> +3% </ola-text>
           </ola-chart-column-value>

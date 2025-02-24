@@ -42,7 +42,7 @@ class OlaChartColumnValue extends BodyComponent {
               </div>
               <div class="ola_chartColumn-graphic" style="height:${
                   parseInt(tokens('size-12')) * this.getAttribute('value')
-              }px; background-color: ${tokens(this.getAttribute('color'))};"></div>
+              }px; background-color: ${tokens(this.getAttribute('color'))}; border-bottom: solid 1px ${tokens(this.getAttribute('color'))};"></div>
             </td>
         `;
     }
