@@ -29,7 +29,7 @@ class OlaText extends BodyComponent {
                     ? tokens('font-weight-bold')
                     : tokens('font-weight-regular');
         }
-        
+
         return this.renderMJML(`
 			<mj-text
         ${this.htmlAttributes({

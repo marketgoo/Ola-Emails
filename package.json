@@ -16,10 +16,10 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "nodemon": "^2.0.4",
-    "prettier": "^2.0.5"
+    "prettier": "^3.5.3"
   },
   "dependencies": {
-    "mjml": "^4.6.3",
+    "mjml": "^4.15.3",
     "yargs-parser": "^20.2.4"
   },
   "nodemonConfig": {

@@ -48,7 +48,7 @@ class OlaCircle extends BodyComponent {
             }[true] || null;
         return `
     <table class="ola_circle" style="border-radius: 50%; background-color:${tokens(
-        this.getAttribute('background-color')
+        this.getAttribute('background-color'),
     )};">
         <tr>
             <td class="ola_circle-number" style="width:${circleSize}; height:${circleSize}">

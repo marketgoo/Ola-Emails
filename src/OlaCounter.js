@@ -40,7 +40,7 @@ class OlaCounter extends BodyComponent {
                 <tr>
                     <td style="vertical-align:top;width=70px;" width="70px">
                         <table style="border-radius: 50%; background-color:${tokens(
-                            this.getAttribute('background-color')
+                            this.getAttribute('background-color'),
                         )};">
                             <tr>
                                 <td class="ola_counter-number">
@@ -60,8 +60,8 @@ class OlaCounter extends BodyComponent {
                     <td>
                         ${this.renderMJML(
                             `<ola-text variant="font-2-regular" font-weight="font-weight-bold"><p>${this.getAttribute(
-                                'title'
-                            )}</p></ola-text>`
+                                'title',
+                            )}</p></ola-text>`,
                         )}
                         ${this.renderMJML(this.getContent())}
                     </td>

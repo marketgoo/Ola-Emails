@@ -49,7 +49,7 @@ class OlaKpi extends BodyComponent {
                             <td colspan="2" style="vertical-align:middle;">
                                 ${this.renderMJML(`
                                 <ola-text variant="font-0-regular" color=${this.getAttribute(
-                                    'variant'
+                                    'variant',
                                 )} font-weight="font-weight-bold" align="center">
                                 ${this.getAttribute('description')}
                                 </ola-text>
