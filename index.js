@@ -1,7 +1,8 @@
 const { registerComponent } = require('mjml-core');
 
 const OlaButton = require('./src/OlaButton');
-const OlaCard = require('./src/OlaCard'); // Importamos el nuevo componente
+const OlaCard = require('./src/OlaCard');
+const OlaCardContent = require('./src/OlaCardContent'); // Nuevo componente
 const OlaCardHeader = require('./src/OlaCardHeader');
 const OlaCircle = require('./src/OlaCircle');
 const OlaCounter = require('./src/OlaCounter');
@@ -38,7 +39,8 @@ const OlaTag = require('./src/OlaTag');
 const OlaWrapper = require('./src/OlaWrapper');
 
 registerComponent(OlaButton);
-registerComponent(OlaCard); // Registramos el nuevo componente
+registerComponent(OlaCard);
+registerComponent(OlaCardContent); // Registramos el nuevo componente
 registerComponent(OlaCardHeader);
 registerComponent(OlaCircle);
 registerComponent(OlaCounter);

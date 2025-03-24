@@ -3,7 +3,7 @@ const { BodyComponent } = require('mjml-core');
 
 registerDependencies({
     'mj-column': ['ola-card'],
-    'ola-card': ['mj-section', 'ola-card-header', 'ola-text', 'ola-score'],
+    'ola-card': ['mj-section', 'ola-card-header', 'ola-card-content', 'ola-text', 'ola-score'],
 });
 
 class OlaCard extends BodyComponent {
