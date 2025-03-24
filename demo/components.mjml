@@ -16,15 +16,11 @@
         <!-- Primera columna - Score (con componente score) -->
         <mj-column width="33.33%" padding="10px">
           <mj-wrapper padding="20px" border="1px solid #DDDDDD" border-radius="8px" background-color="#FFFFFF">
-            <!-- Fila para el icono y título -->
-            <mj-section padding="0 0 15px 0">
-              <mj-column width="20%" vertical-align="middle">
-                <mj-image width="24px" padding="0" src="https://apps.marketgoo.com/themes/mktgoo/img/icons/speedometer-gray.png" />
-              </mj-column>
-              <mj-column width="80%" vertical-align="middle">
-                <ola-text variant="font-1-regular" color="color-neutral-500">Score</ola-text>
-              </mj-column>
-            </mj-section>
+            <!-- Usando el nuevo componente OlaCardHeader -->
+            <ola-card-header
+              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/speedometer-gray.png"
+              text="Score"
+            ></ola-card-header>
             
             <!-- Componente score -->
             <mj-section padding="0">
@@ -38,15 +34,11 @@
         <!-- Segunda columna - Site Audit (sin componente score) -->
         <mj-column width="33.33%" padding="10px">
           <mj-wrapper padding="20px" border="1px solid #DDDDDD" border-radius="8px" background-color="#FFFFFF">
-            <!-- Fila para el icono y título -->
-            <mj-section padding="0 0 15px 0">
-              <mj-column width="20%" vertical-align="middle">
-                <mj-image width="24px" padding="0" src="https://apps.marketgoo.com/themes/mktgoo/img/icons/storefront-gray.png" />
-              </mj-column>
-              <mj-column width="80%" vertical-align="middle">
-                <ola-text variant="font-1-regular" color="color-neutral-500">Site Audit</ola-text>
-              </mj-column>
-            </mj-section>
+            <!-- Usando el nuevo componente OlaCardHeader -->
+            <ola-card-header
+              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/storefront-gray.png"
+              text="Site Audit"
+            ></ola-card-header>
             
             <!-- Contenido -->
             <mj-section padding="0">
