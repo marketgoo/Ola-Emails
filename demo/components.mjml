@@ -15,7 +15,7 @@
       <mj-section padding="0 20px">
         <!-- Primera columna - Score (con componente score) -->
         <mj-column width="33.33%" padding="10px">
-          <mj-wrapper padding="20px" border="1px solid #DDDDDD" border-radius="8px" background-color="#FFFFFF">
+          <ola-card>
             <!-- Usando el nuevo componente OlaCardHeader -->
             <ola-card-header
               src="https://apps.marketgoo.com/themes/mktgoo/img/icons/speedometer-gray.png"
@@ -28,12 +28,12 @@
                 <ola-score size='100' value="80"></ola-score>
               </mj-column>
             </mj-section>
-          </mj-wrapper>
+          </ola-card>
         </mj-column>
         
         <!-- Segunda columna - Site Audit (sin componente score) -->
         <mj-column width="33.33%" padding="10px">
-          <mj-wrapper padding="20px" border="1px solid #DDDDDD" border-radius="8px" background-color="#FFFFFF">
+          <ola-card>
             <!-- Usando el nuevo componente OlaCardHeader -->
             <ola-card-header
               src="https://apps.marketgoo.com/themes/mktgoo/img/icons/storefront-gray.png"
@@ -46,12 +46,12 @@
                 <ola-text variant="font-1-regular">Información del Site Audit</ola-text>
               </mj-column>
             </mj-section>
-          </mj-wrapper>
+          </ola-card>
         </mj-column>
         
         <!-- Tercera columna - Content (sin componente score) -->
         <mj-column width="33.33%" padding="10px">
-          <mj-wrapper padding="20px" border="1px solid #DDDDDD" border-radius="8px" background-color="#FFFFFF">
+          <ola-card>
             <!-- Fila para el icono y título -->
             <mj-section padding="0 0 15px 0">
               <mj-column width="20%" vertical-align="middle">
@@ -68,7 +68,7 @@
                 <ola-text variant="font-1-regular">Información de Content</ola-text>
               </mj-column>
             </mj-section>
-          </mj-wrapper>
+          </ola-card>
         </mj-column>
       </mj-section>
       
@@ -76,7 +76,7 @@
       <mj-section padding="0 20px">
         <!-- Primera columna ancha - Traffic -->
         <mj-column width="66.66%" padding="10px">
-          <mj-wrapper padding="20px" border="1px solid #DDDDDD" border-radius="8px" background-color="#FFFFFF">
+          <ola-card>
             <!-- Fila para el icono y título -->
             <mj-section padding="0 0 15px 0">
               <mj-column width="10%" vertical-align="middle">
@@ -93,12 +93,12 @@
                 <ola-text variant="font-1-regular">Información de Traffic</ola-text>
               </mj-column>
             </mj-section>
-          </mj-wrapper>
+          </ola-card>
         </mj-column>
         
         <!-- Segunda columna - Keywords -->
         <mj-column width="33.33%" padding="10px">
-          <mj-wrapper padding="20px" border="1px solid #DDDDDD" border-radius="8px" background-color="#FFFFFF">
+          <ola-card>
             <!-- Fila para el icono y título -->
             <mj-section padding="0 0 15px 0">
               <mj-column width="20%" vertical-align="middle">
@@ -115,7 +115,7 @@
                 <ola-text variant="font-1-regular">Información de Keywords</ola-text>
               </mj-column>
             </mj-section>
-          </mj-wrapper>
+          </ola-card>
         </mj-column>
       </mj-section>
       
@@ -123,7 +123,7 @@
       <mj-section padding="0 20px">
         <!-- Primera columna - Backlinks -->
         <mj-column width="50%" padding="10px">
-          <mj-wrapper padding="20px" border="1px solid #DDDDDD" border-radius="8px" background-color="#FFFFFF">
+          <ola-card>
             <!-- Fila para el icono y título -->
             <mj-section padding="0 0 15px 0">
               <mj-column width="20%" vertical-align="middle">
@@ -140,12 +140,12 @@
                 <ola-text variant="font-1-regular">Información de Backlinks</ola-text>
               </mj-column>
             </mj-section>
-          </mj-wrapper>
+          </ola-card>
         </mj-column>
         
         <!-- Segunda columna - Extra -->
         <mj-column width="50%" padding="10px">
-          <mj-wrapper padding="20px" border="1px solid #DDDDDD" border-radius="8px" background-color="#FFFFFF">
+          <ola-card>
             <!-- Fila para el icono y título -->
             <mj-section padding="0 0 15px 0">
               <mj-column width="20%" vertical-align="middle">
@@ -162,7 +162,7 @@
                 <ola-text variant="font-1-regular">Información adicional</ola-text>
               </mj-column>
             </mj-section>
-          </mj-wrapper>
+          </ola-card>
         </mj-column>
       </mj-section>
     </ola-panel>

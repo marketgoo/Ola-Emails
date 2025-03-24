@@ -1,6 +1,8 @@
 const { registerComponent } = require('mjml-core');
 
 const OlaButton = require('./src/OlaButton');
+const OlaCard = require('./src/OlaCard'); // Importamos el nuevo componente
+const OlaCardHeader = require('./src/OlaCardHeader');
 const OlaCircle = require('./src/OlaCircle');
 const OlaCounter = require('./src/OlaCounter');
 const OlaChartColumn = require('./src/OlaChartColumn');
@@ -34,9 +36,10 @@ const OlaTableCell = require('./src/OlaTableCell');
 const OlaTableRow = require('./src/OlaTableRow');
 const OlaTag = require('./src/OlaTag');
 const OlaWrapper = require('./src/OlaWrapper');
-const OlaCardHeader = require('./src/OlaCardHeader');
 
 registerComponent(OlaButton);
+registerComponent(OlaCard); // Registramos el nuevo componente
+registerComponent(OlaCardHeader);
 registerComponent(OlaCircle);
 registerComponent(OlaCounter);
 registerComponent(OlaChartColumn);
@@ -56,7 +59,6 @@ registerComponent(OlaIcon);
 registerComponent(OlaIssue);
 registerComponent(OlaItemList);
 registerComponent(OlaKpi);
-registerComponent(OlaCardHeader); // Registramos el nuevo componente
 registerComponent(OlaPanel);
 registerComponent(OlaPanelSection);
 registerComponent(OlaPanelSignature);
