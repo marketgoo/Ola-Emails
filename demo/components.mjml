@@ -16,117 +16,147 @@
         <!-- Primera columna - Score (con componente score) -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <!-- Usando el nuevo componente OlaCardHeader -->
             <ola-card-header
               src="https://apps.marketgoo.com/themes/mktgoo/img/icons/speedometer-gray.png"
               text="Score"
             ></ola-card-header>
-            
-            <!-- Componente score utilizando OlaCardContent -->
+
             <ola-card-content>
-              <ola-score size='100' value="80"></ola-score>
+              <ola-score size="100" value="80"></ola-score>
             </ola-card-content>
           </ola-card>
         </mj-column>
-        
+
         <!-- Segunda columna - Site Audit (sin componente score) -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <!-- Usando el nuevo componente OlaCardHeader -->
             <ola-card-header
               src="https://apps.marketgoo.com/themes/mktgoo/img/icons/storefront-gray.png"
               text="Site Audit"
             ></ola-card-header>
-            
-            <!-- Contenido utilizando OlaCardContent -->
+
             <ola-card-content>
-              <ola-text variant="font-1-regular">Información del Site Audit</ola-text>
+              <ola-text
+                variant="font-4-medium"
+                color="color-warning-500"
+                align="center"
+                >3</ola-text
+              >
+              <ola-text
+                variant="font-0-regular"
+                color="color-neutral-700"
+                align="center"
+                >Pending tasks</ola-text
+              >
             </ola-card-content>
           </ola-card>
         </mj-column>
-        
+
         <!-- Tercera columna - Content (sin componente score) -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <!-- Fila para el icono y título -->
             <ola-card-header
               src="https://apps.marketgoo.com/themes/mktgoo/img/icons/clipboard-text-gray.png"
               text="Content"
             ></ola-card-header>
-            
-            <!-- Contenido utilizando OlaCardContent -->
+
             <ola-card-content>
-              <ola-text variant="font-1-regular">Información de Content</ola-text>
+              <mj-section padding="0">
+                <mj-column>
+                  <ola-text
+                    variant="font-4-medium"
+                    color="color-negative-500"
+                    align="center"
+                    >19</ola-text
+                  >
+                </mj-column>
+                <mj-column>
+                  <ola-text variant="font-0-regular" color="color-neutral-700"
+                    >/28</ola-text
+                  >
+                </mj-column>
+              </mj-section>
+
+              <ola-text
+                variant="font-0-regular"
+                color="color-neutral-700"
+                align="center"
+                >Pending vs Optimized Pages</ola-text
+              >
             </ola-card-content>
           </ola-card>
         </mj-column>
       </mj-section>
-      
+
       <!-- Segunda fila - 1 columna ancha (66%) y 1 columna normal (33%) -->
       <mj-section padding="0 20px">
         <!-- Primera columna ancha - Traffic -->
         <mj-column width="66.66%" padding="10px">
           <ola-card>
-            <!-- Fila para el icono y título -->
             <ola-card-header
-              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png" 
+              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png"
               text="Traffic"
             ></ola-card-header>
-            
-            <!-- Contenido utilizando OlaCardContent -->
+
             <ola-card-content>
-              <ola-text variant="font-1-regular">Información de Traffic</ola-text>
+              <ola-text variant="font-1-regular"
+                >Información de Traffic</ola-text
+              >
             </ola-card-content>
           </ola-card>
         </mj-column>
-        
-        <!-- Segunda columna - Keywords -->
+
+        <!-- Segunda columna - Traffic -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <!-- Fila para el icono y título -->
             <ola-card-header
-              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/Keywords-gray.png"
-              text="Keywords"
+              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png"
+              text="Traffic"
             ></ola-card-header>
-            
-            <!-- Contenido utilizando OlaCardContent -->
+
             <ola-card-content>
-              <ola-text variant="font-1-regular">Información de Keywords</ola-text>
+              <ola-text variant="font-4-medium" align="center">34 s</ola-text>
+              <ola-text
+                variant="font-0-regular"
+                color="color-neutral-700"
+                align="center"
+                >Average visit duration</ola-text
+              >
             </ola-card-content>
           </ola-card>
         </mj-column>
       </mj-section>
-      
+
       <!-- Tercera fila - 2 columnas iguales (50% cada una) -->
       <mj-section padding="0 20px">
         <!-- Primera columna - Backlinks -->
         <mj-column width="50%" padding="10px">
           <ola-card>
-            <!-- Fila para el icono y título -->
             <ola-card-header
               src="https://apps.marketgoo.com/themes/mktgoo/img/icons/lego-gray.png"
               text="Backlinks"
             ></ola-card-header>
-            
-            <!-- Contenido utilizando OlaCardContent -->
+
             <ola-card-content>
-              <ola-text variant="font-1-regular">Información de Backlinks</ola-text>
+              <ola-text variant="font-1-regular"
+                >Información de Backlinks</ola-text
+              >
             </ola-card-content>
           </ola-card>
         </mj-column>
-        
+
         <!-- Segunda columna - Extra -->
         <mj-column width="50%" padding="10px">
           <ola-card>
-            <!-- Fila para el icono y título -->
             <ola-card-header
               src="https://apps.marketgoo.com/themes/mktgoo/img/icons/speedometer-gray.png"
               text="Otro elemento"
             ></ola-card-header>
-            
-            <!-- Contenido utilizando OlaCardContent -->
+
             <ola-card-content>
-              <ola-text variant="font-1-regular">Información adicional</ola-text>
+              <ola-text variant="font-1-regular"
+                >Información adicional</ola-text
+              >
             </ola-card-content>
           </ola-card>
         </mj-column>
