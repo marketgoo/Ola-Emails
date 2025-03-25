@@ -17,10 +17,23 @@ class OlaCardContent extends BodyComponent {
     padding: "0 16px 16px 16px",
   };
 
+  headStyle() {
+    return `
+        .card-content {
+          height: 116px;
+          vertical-align: middle;
+        }
+
+        .card-content > * {
+          height: 100%;
+        }
+    `;
+  }
+
   render() {
     return this.renderMJML(`
-            <mj-section padding="${this.getAttribute("padding")}">
-                <mj-column>
+            <mj-section css-class="card-content" padding="${this.getAttribute("padding")}">
+                <mj-column css-class="card-content-column">
                     ${this.getContent()}
                 </mj-column>
             </mj-section>

@@ -15,25 +15,22 @@ registerDependencies({
 class OlaCard extends BodyComponent {
   static endingTag = true;
 
-  static allowedAttributes = {
-    border: "string",
-    "border-radius": "string",
-    "background-color": "string",
-  };
-
-  static defaultAttributes = {
-    border: "1px solid #DDDDDD",
-    "border-radius": "16px",
-    "background-color": "#FFFFFF",
-  };
+  headStyle() {
+    return `
+        .card {
+            border: 1px solid #DDDDDD;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            height: 176px;
+        }
+        `;
+  }
 
   render() {
     return this.renderMJML(`
             <mj-wrapper
+                css-class="card"
                 padding="0"
-                border="${this.getAttribute("border")}"
-                border-radius="${this.getAttribute("border-radius")}"
-                background-color="${this.getAttribute("background-color")}"
             >
                 ${this.getContent()}
             </mj-wrapper>
