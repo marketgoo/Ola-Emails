@@ -129,33 +129,143 @@
 
       <!-- Tercera fila - 2 columnas iguales (50% cada una) -->
       <mj-section padding="0 20px">
-        <!-- Primera columna - Backlinks -->
-        <mj-column width="50%" padding="10px">
-          <ola-card>
-            <ola-card-header
-              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/lego-gray.png"
-              text="Backlinks"
-            ></ola-card-header>
-
-            <ola-card-content>
-              <ola-text variant="font-1-regular"
-                >Información de Backlinks</ola-text
-              >
-            </ola-card-content>
-          </ola-card>
-        </mj-column>
-
         <!-- Segunda columna - Extra -->
         <mj-column width="50%" padding="10px">
           <ola-card>
             <ola-card-header
               src="https://apps.marketgoo.com/themes/mktgoo/img/icons/speedometer-gray.png"
-              text="Otro elemento"
+              text="Keywords"
             ></ola-card-header>
 
             <ola-card-content>
-              <ola-text variant="font-1-regular"
-                >Información adicional</ola-text
+              <mj-section padding="0" background-color="#74CD94">
+                <mj-column>
+                  <ola-text variant="font-0-regular" color="color-neutral-900">
+                    Between 1 to 10
+                  </ola-text>
+                </mj-column>
+                <mj-column>
+                  <ola-text
+                    variant="font-0-regular"
+                    color="color-neutral-900"
+                    align="right"
+                  >
+                    2
+                  </ola-text>
+                </mj-column>
+              </mj-section>
+              <mj-section padding="0" background-color="#D1EEDB">
+                <mj-column>
+                  <ola-text variant="font-0-regular" color="color-neutral-900">
+                    Between 11 to 30
+                  </ola-text>
+                </mj-column>
+                <mj-column>
+                  <ola-text
+                    variant="font-0-regular"
+                    color="color-neutral-900"
+                    align="right"
+                  >
+                    21
+                  </ola-text>
+                </mj-column>
+              </mj-section>
+              <mj-section padding="0">
+                <mj-column>
+                  <ola-text variant="font-0-regular" color="color-neutral-900">
+                    Between 31 to 99
+                  </ola-text>
+                </mj-column>
+                <mj-column>
+                  <ola-text
+                    variant="font-0-regular"
+                    color="color-neutral-900"
+                    align="right"
+                  >
+                    4
+                  </ola-text>
+                </mj-column>
+              </mj-section>
+              <ola-text
+                variant="font-0-regular"
+                color="color-neutral-700"
+                align="center"
+                >Keywords distribution</ola-text
+              >
+            </ola-card-content>
+          </ola-card>
+        </mj-column>
+
+        <!-- Segunda columna - Backlinks -->
+        <mj-column width="50%" padding="10px">
+          <ola-card>
+            <ola-card-header
+              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/plugs-gray.png"
+              text="Backlinks"
+            ></ola-card-header>
+
+            <ola-card-content>
+              <mj-section
+                padding="0"
+                border-radius="8px"
+                border="1px solid #0090DA"
+              >
+                <mj-column>
+                  <ola-text variant="font-0-regular" color="color-neutral-900">
+                    Between 1 to 10
+                  </ola-text>
+                </mj-column>
+                <mj-column>
+                  <ola-text
+                    variant="font-0-regular"
+                    color="color-neutral-900"
+                    align="right"
+                  >
+                    2
+                  </ola-text>
+                </mj-column>
+              </mj-section>
+              <mj-section
+                padding="0"
+                border-radius="8px"
+                border="1px solid #0090DA"
+              >
+                <mj-column>
+                  <ola-text variant="font-0-regular" color="color-neutral-900">
+                    Between 11 to 30
+                  </ola-text>
+                </mj-column>
+                <mj-column>
+                  <ola-text
+                    variant="font-0-regular"
+                    color="color-neutral-900"
+                    align="right"
+                  >
+                    21
+                  </ola-text>
+                </mj-column>
+              </mj-section>
+              <mj-section padding="0">
+                <mj-column>
+                  <ola-text variant="font-0-regular" color="color-neutral-900">
+                    Between 31 to 99
+                  </ola-text>
+                </mj-column>
+                <mj-column>
+                  <ola-text
+                    variant="font-0-regular"
+                    color="color-neutral-900"
+                    align="right"
+                  >
+                    4
+                  </ola-text>
+                </mj-column>
+              </mj-section>
+              <ola-text
+                variant="font-0-regular"
+                color="color-neutral-700"
+                align="center"
+                >Top backlinks</ola-text
               >
             </ola-card-content>
           </ola-card>
