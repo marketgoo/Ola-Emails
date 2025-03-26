@@ -138,54 +138,20 @@
             ></ola-card-header>
 
             <ola-card-content>
-              <mj-section padding="0" background-color="#74CD94">
-                <mj-column>
-                  <ola-text variant="font-0-regular" color="color-neutral-900">
-                    Between 1 to 10
-                  </ola-text>
-                </mj-column>
-                <mj-column>
-                  <ola-text
-                    variant="font-0-regular"
-                    color="color-neutral-900"
-                    align="right"
-                  >
-                    2
-                  </ola-text>
-                </mj-column>
-              </mj-section>
-              <mj-section padding="0" background-color="#D1EEDB">
-                <mj-column>
-                  <ola-text variant="font-0-regular" color="color-neutral-900">
-                    Between 11 to 30
-                  </ola-text>
-                </mj-column>
-                <mj-column>
-                  <ola-text
-                    variant="font-0-regular"
-                    color="color-neutral-900"
-                    align="right"
-                  >
-                    21
-                  </ola-text>
-                </mj-column>
-              </mj-section>
-              <mj-section padding="0">
-                <mj-column>
-                  <ola-text variant="font-0-regular" color="color-neutral-900">
-                    Between 31 to 99
-                  </ola-text>
-                </mj-column>
-                <mj-column>
-                  <ola-text
-                    variant="font-0-regular"
-                    color="color-neutral-900"
-                    align="right"
-                  >
-                    4
-                  </ola-text>
-                </mj-column>
-              </mj-section>
+              <ola-long-tag 
+                background-color="#74CD94" 
+                text="Between 1 to 10" 
+                value="2"
+              ></ola-long-tag>
+              <ola-long-tag 
+                background-color="#D1EEDB" 
+                text="Between 11 to 30" 
+                value="21"
+              ></ola-long-tag>
+              <ola-long-tag 
+                text="Between 31 to 99" 
+                value="4"
+              ></ola-long-tag>
               <ola-text
                 variant="font-0-regular"
                 color="color-neutral-700"
@@ -205,62 +171,22 @@
             ></ola-card-header>
 
             <ola-card-content>
-              <mj-section
-                padding="0"
+              <ola-long-tag 
+                border="1px solid #0090DA" 
                 border-radius="8px"
-                border="1px solid #0090DA"
-              >
-                <mj-column>
-                  <ola-text variant="font-0-regular" color="color-neutral-900">
-                    Between 1 to 10
-                  </ola-text>
-                </mj-column>
-                <mj-column>
-                  <ola-text
-                    variant="font-0-regular"
-                    color="color-neutral-900"
-                    align="right"
-                  >
-                    2
-                  </ola-text>
-                </mj-column>
-              </mj-section>
-              <mj-section
-                padding="0"
+                text="Between 1 to 10" 
+                value="2"
+              ></ola-long-tag>
+              <ola-long-tag 
+                border="1px solid #0090DA" 
                 border-radius="8px"
-                border="1px solid #0090DA"
-              >
-                <mj-column>
-                  <ola-text variant="font-0-regular" color="color-neutral-900">
-                    Between 11 to 30
-                  </ola-text>
-                </mj-column>
-                <mj-column>
-                  <ola-text
-                    variant="font-0-regular"
-                    color="color-neutral-900"
-                    align="right"
-                  >
-                    21
-                  </ola-text>
-                </mj-column>
-              </mj-section>
-              <mj-section padding="0">
-                <mj-column>
-                  <ola-text variant="font-0-regular" color="color-neutral-900">
-                    Between 31 to 99
-                  </ola-text>
-                </mj-column>
-                <mj-column>
-                  <ola-text
-                    variant="font-0-regular"
-                    color="color-neutral-900"
-                    align="right"
-                  >
-                    4
-                  </ola-text>
-                </mj-column>
-              </mj-section>
+                text="Between 11 to 30" 
+                value="21"
+              ></ola-long-tag>
+              <ola-long-tag 
+                text="Between 31 to 99" 
+                value="4"
+              ></ola-long-tag>
               <ola-text
                 variant="font-0-regular"
                 color="color-neutral-700"
