@@ -138,19 +138,20 @@
             ></ola-card-header>
 
             <ola-card-content>
-              <ola-long-tag 
-                background-color="#74CD94" 
-                text="Between 1 to 10" 
+              <ola-long-tag
+                background-color="color-positive-300"
+                text="Between 1 to 10"
                 value="2"
               ></ola-long-tag>
-              <ola-long-tag 
-                background-color="#D1EEDB" 
-                text="Between 11 to 30" 
+              <ola-long-tag
+                background-color="color-positive-100"
+                text="Between 11 to 30"
                 value="21"
               ></ola-long-tag>
-              <ola-long-tag 
-                text="Between 31 to 99" 
+              <ola-long-tag
+                text="Between 31 to 99"
                 value="4"
+                border-color="color-neutral-100"
               ></ola-long-tag>
               <ola-text
                 variant="font-0-regular"
@@ -171,21 +172,20 @@
             ></ola-card-header>
 
             <ola-card-content>
-              <ola-long-tag 
-                border="1px solid #0090DA" 
-                border-radius="8px"
-                text="Between 1 to 10" 
+              <ola-long-tag
+                border-color="color-accent-600"
+                text="Between 1 to 10"
                 value="2"
               ></ola-long-tag>
-              <ola-long-tag 
-                border="1px solid #0090DA" 
-                border-radius="8px"
-                text="Between 11 to 30" 
+              <ola-long-tag
+                border-color="color-accent-300"
+                text="Between 11 to 30"
                 value="21"
               ></ola-long-tag>
-              <ola-long-tag 
-                text="Between 31 to 99" 
+              <ola-long-tag
+                text="Between 31 to 99"
                 value="4"
+                border-color="color-accent-100"
               ></ola-long-tag>
               <ola-text
                 variant="font-0-regular"
