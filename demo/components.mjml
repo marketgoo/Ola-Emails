@@ -70,7 +70,7 @@
                     >19</ola-text
                   >
                 </mj-column>
-                <mj-column>
+                <mj-column vertical-align="bottom">
                   <ola-text variant="font-0-regular" color="color-neutral-700"
                     >/28</ola-text
                   >
