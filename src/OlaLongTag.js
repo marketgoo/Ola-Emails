@@ -24,23 +24,25 @@ class OlaLongTag extends BodyComponent {
 
   render() {
     return this.renderMJML(`
-      <mj-section ${this.htmlAttributes({
-        padding: this.getAttribute("padding"),
-        "background-color": tokens(this.getAttribute("background-color")),
-        "border-radius": this.getAttribute("border-radius"),
-        border: `1px solid ${tokens(this.getAttribute("border-color"))}`,
-      })}>
-        <mj-column width="70%">
-          <ola-text variant="font-0-regular" color="color-neutral-900" padding-left="${tokens("size-1")}">
-            ${this.getAttribute("text")}
-          </ola-text>
-        </mj-column>
-        <mj-column width="30%">
-          <ola-text variant="font-0-regular" color="color-neutral-900" align="right" padding-right="${tokens("size-1")}">
-            ${this.getAttribute("value")}
-          </ola-text>
-        </mj-column>
-      </mj-section>
+      <ola-text variant="font-0-regular" color="color-neutral-900" padding="0">
+        <div style="
+          background-color: ${tokens(this.getAttribute("background-color"))};
+          border-radius: ${this.getAttribute("border-radius")};
+          border: 1px solid ${tokens(this.getAttribute("border-color"))};
+          padding: ${this.getAttribute("padding")};
+        ">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%">
+            <tr>
+              <td style="text-align: left; padding-left: ${tokens("size-1")}; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                ${this.getAttribute("text")}
+              </td>
+              <td style="text-align: right; padding-right: ${tokens("size-1")}; white-space: nowrap;">
+                ${this.getAttribute("value")}
+              </td>
+            </tr>
+          </table>
+        </div>
+      </ola-text>
     `);
   }
 }

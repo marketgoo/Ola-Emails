@@ -146,7 +146,7 @@
               <ola-long-tag
                 background-color="color-positive-100"
                 text="Between 11 to 30"
-                value="21"
+                value="999"
               ></ola-long-tag>
               <ola-long-tag
                 text="Between 31 to 99"
@@ -174,17 +174,17 @@
             <ola-card-content>
               <ola-long-tag
                 border-color="color-accent-600"
-                text="Between 1 to 10"
-                value="2"
+                text="1"
+                value="exampleweb1.com"
               ></ola-long-tag>
               <ola-long-tag
                 border-color="color-accent-300"
-                text="Between 11 to 30"
-                value="21"
+                text="2"
+                value="exampleweb2.com"
               ></ola-long-tag>
               <ola-long-tag
-                text="Between 31 to 99"
-                value="4"
+                text="3"
+                value="exampleweb3.com"
                 border-color="color-accent-100"
               ></ola-long-tag>
               <ola-text
