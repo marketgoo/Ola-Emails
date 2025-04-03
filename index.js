@@ -37,6 +37,7 @@ const OlaTable = require('./src/OlaTable');
 const OlaTableCell = require('./src/OlaTableCell');
 const OlaTableRow = require('./src/OlaTableRow');
 const OlaTag = require('./src/OlaTag');
+const OlaBarChart = require('./src/OlaBarChart'); // Nuevo componente
 const OlaWrapper = require('./src/OlaWrapper');
 
 registerComponent(OlaButton);
@@ -47,6 +48,7 @@ registerComponent(OlaCircle);
 registerComponent(OlaCounter);
 registerComponent(OlaChartColumn);
 registerComponent(OlaChartColumnValue);
+registerComponent(OlaBarChart); // Registramos el nuevo componente
 registerComponent(OlaDivider);
 registerComponent(OlaFooterMessage);
 registerComponent(OlaFooterAddress);

@@ -66,7 +66,7 @@
                   <ola-text
                     variant="font-4-medium"
                     color="color-negative-500"
-                    align="center"
+                    align="right"
                     >19</ola-text
                   >
                 </mj-column>
@@ -99,9 +99,14 @@
             ></ola-card-header>
 
             <ola-card-content>
-              <ola-text variant="font-1-regular"
-                >Información de Traffic</ola-text
-              >
+              <!-- Implementación con componente OlaBarChart estándar -->
+              <ola-bar-chart
+                labels="Lun,Mar,Mié,Jue,Vie"
+                values="40,80,60,100,70"
+                colors="#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF"
+                height="120"
+                title="Resumen de visitas semanales"
+              ></ola-bar-chart>
             </ola-card-content>
           </ola-card>
         </mj-column>
