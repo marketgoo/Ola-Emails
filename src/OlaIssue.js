@@ -8,12 +8,12 @@ class OlaIssue extends BodyComponent {
     static allowedAttributes = {
         icon: 'string',
         size: 'enum(small,big)',
-        "line-top": 'enum(true,false)',
+        'line-top': 'enum(true,false)',
     };
     static defaultAttributes = {
-      size: 'big',
-      "line-top": false,
-    }
+        size: 'big',
+        'line-top': false,
+    };
 
     headStyle(breakpoint) {
         return `
@@ -32,11 +32,11 @@ class OlaIssue extends BodyComponent {
     }
 
     render() {
-      const size = this.getAttribute('size') || 'big';
-      const iconSize = size === 'small' ? 24 : 28;
-      const fontSize = size === 'small' ? 'font-1-regular' : 'font-2-regular';
-      const padding = size === 'small' ? 'size-1' : 'size-2';
-      const lineTop = this.getAttribute('line-top') ? `border-top: 1px solid ${tokens("color-neutral-200")};` : '';
+        const size = this.getAttribute('size') || 'big';
+        const iconSize = size === 'small' ? 24 : 28;
+        const fontSize = size === 'small' ? 'font-1-regular' : 'font-2-regular';
+        const padding = size === 'small' ? 'size-1' : 'size-2';
+        const lineTop = this.getAttribute('line-top') ? `border-top: 1px solid ${tokens('color-neutral-200')};` : '';
 
         return `
         <table class="ola_task" style="vertical-align:middle;text-align:left;${lineTop}">

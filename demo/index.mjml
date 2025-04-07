@@ -7,6 +7,16 @@
     <ola-panel close-to="top">
       <ola-panel-text>
         <ul>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="diwm-campaign.html">Diwn campaign</a></li>
+          <li><a href="in-house-reviews.html">In house reviews</a></li>
+          <li><a href="monthly.html">Monthly</a></li>
+          <li><a href="quick-question.html">Quick question</a></li>
+          <li><a href="resetpass-partners.html">Reset partners</a></li>
+          <li><a href="resetpass.html">Resetpass</a></li>
+          <li><a href="site-configured.html">Site configured</a></li>
+          <li><a href="webmaster-request.html">Webmaster request</a></li>
+          <li><a href="welcome-partners.html">Welcome-partners</a></li>
           <li><a href="welcome.html">Welcome</a></li>
         </ul>
       </ola-panel-text>

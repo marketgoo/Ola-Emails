@@ -80,7 +80,7 @@ class OlaHead extends HeadComponent {
         }
         .ola-color-pro-500 {
             color: ${tokens('color-pro-500')};
-        }`
+        }`,
         );
     }
 }

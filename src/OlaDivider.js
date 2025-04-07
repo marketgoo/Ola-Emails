@@ -25,8 +25,8 @@ class OlaDivider extends BodyComponent {
             this.getAttribute('margin') === 'small'
                 ? tokens('size-3')
                 : this.getAttribute('margin') === 'normal'
-                ? tokens('size-4')
-                : '0';
+                  ? tokens('size-4')
+                  : '0';
 
         return `
         <p style="border-top:solid 4px ${color};font-size:1px;margin:${margin} auto;width:100%;">

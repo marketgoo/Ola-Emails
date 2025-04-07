@@ -172,6 +172,13 @@
     "line-height": "48px",
     "letter-spacing": "-0.0175em"
   },
+  "font-4-medium": {
+    "font-family": "Inter, -apple-system, system-ui, sans-serif",
+    "font-weight": "600",
+    "font-size": "32px",
+    "line-height": "36px",
+    "letter-spacing": "-0.015em"
+  },
   "font-3-regular": {
     "font-family": "Inter, -apple-system, system-ui, sans-serif",
     "font-weight": "400",

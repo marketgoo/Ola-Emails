@@ -27,14 +27,14 @@ class OlaTag extends BodyComponent {
             this.getAttribute('size') === 'medium'
                 ? tokens('size-4')
                 : this.getAttribute('size') === 'big'
-                ? tokens('size-4')
-                : tokens('size-3');
+                  ? tokens('size-4')
+                  : tokens('size-3');
         const font =
             this.getAttribute('size') === 'medium'
                 ? 'font-1-regular'
                 : this.getAttribute('size') === 'big'
-                ? 'font-2-regular'
-                : 'font-0-regular';
+                  ? 'font-2-regular'
+                  : 'font-0-regular';
 
         return `
         <table class="ola_tag" style="margin: auto">
@@ -42,10 +42,10 @@ class OlaTag extends BodyComponent {
                 <tr>
                     <td
                     style="background-color:${background_color}; border-radius:${tokens(
-            'radius-s'
-        )}; padding: 0 ${tokens(
-            'size-1'
-        )}; display: inline-flex; align-items: center;color-white-space: nowrap; vertical-align: middle; cursor: default; max-width: 100%; letter-spacing: 0; height: ${height};"
+                        'radius-s',
+                    )}; padding: 0 ${tokens(
+                        'size-1',
+                    )}; display: inline-flex; align-items: center;color-white-space: nowrap; vertical-align: middle; cursor: default; max-width: 100%; letter-spacing: 0; height: ${height};"
                     >
                         ${this
                             .renderMJML(`<ola-text font-weight="font-weight-bold" align="center" color=${color} variant=${font} >

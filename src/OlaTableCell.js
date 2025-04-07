@@ -34,12 +34,12 @@ class OlaTableCell extends BodyComponent {
             ${
                 header
                     ? `<th align="${this.getAttribute('align')}" style="padding: 15px; width: ${this.getAttribute(
-                          'width'
+                          'width',
                       )}">
                             ${this.renderChildren()}
                         </th>`
                     : `<td align="${this.getAttribute('align')}" style="padding: ${this.getAttribute(
-                          'padding'
+                          'padding',
                       )}; background-color: ${background_cell}; width: ${this.getAttribute('width')}">
                             ${this.renderChildren()}
                         </td>`
