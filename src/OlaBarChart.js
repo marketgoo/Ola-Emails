@@ -15,7 +15,6 @@ class OlaBarChart extends BodyComponent {
         'values': 'string',
         'colors': 'string',
         'height': 'string',
-        'title': 'string',
     };
 
     static defaultAttributes = {
@@ -23,7 +22,6 @@ class OlaBarChart extends BodyComponent {
         'values': '40,80,60,100,70',
         'colors': '#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF',
         'height': '80', // Altura por defecto para las barras
-        'title': 'Resumen de visitas semanales',
     };
 
     headStyle() {
@@ -53,10 +51,6 @@ class OlaBarChart extends BodyComponent {
                 color: ${tokens('color-neutral-700')};
                 text-align: center;
                 padding-top: 3px;
-            }
-            .ola_bar-chart-title {
-                margin-top: 4px;
-                margin-bottom: 0;
             }
         `;
     }
@@ -99,11 +93,6 @@ class OlaBarChart extends BodyComponent {
                         ${barsHTML}
                     </tr>
                 </table>
-                ${this.renderMJML(`
-                <ola-text variant="font-0-regular" color="color-neutral-700" align="center" padding-top="4px" padding-bottom="0" css-class="ola_bar-chart-title">
-                    ${title}
-                </ola-text>
-                `)}
             </div>
         `;
     }
