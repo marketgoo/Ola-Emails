@@ -16,10 +16,9 @@
         <!-- Primera columna - Score (con componente score) -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <ola-card-header
-              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/speedometer-gray.png"
-              text="Score"
-            ></ola-card-header>
+            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/speedometer-gray.png">
+              <ola-text variant="font-1-regular" color="color-neutral-700">Score</ola-text>
+            </ola-card-header>
 
             <ola-card-content>
               <ola-score size="100" value="80"></ola-score>
@@ -30,10 +29,9 @@
         <!-- Segunda columna - Site Audit (sin componente score) -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <ola-card-header
-              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/storefront-gray.png"
-              text="Site Audit"
-            ></ola-card-header>
+            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/storefront-gray.png">
+              <ola-text variant="font-1-regular" color="color-neutral-700">Site Audit</ola-text>
+            </ola-card-header>
 
             <ola-card-content>
               <ola-text
@@ -55,10 +53,9 @@
         <!-- Tercera columna - Content (sin componente score) -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <ola-card-header
-              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/clipboard-text-gray.png"
-              text="Content"
-            ></ola-card-header>
+            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/clipboard-text-gray.png">
+              <ola-text variant="font-1-regular" color="color-neutral-700">Content</ola-text>
+            </ola-card-header>
 
             <ola-card-content>
               <mj-section padding="0">
@@ -93,10 +90,9 @@
         <!-- Primera columna ancha - Traffic -->
         <mj-column width="66.66%" padding="10px">
           <ola-card>
-            <ola-card-header
-              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png"
-              text="Traffic"
-            ></ola-card-header>
+            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png">
+              <ola-text variant="font-1-regular" color="color-neutral-700">Traffic</ola-text>
+            </ola-card-header>
 
             <ola-card-content>
               <!-- Implementación con componente OlaBarChart estándar -->
@@ -114,10 +110,9 @@
         <!-- Segunda columna - Traffic -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <ola-card-header
-              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png"
-              text="Traffic"
-            ></ola-card-header>
+            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png">
+              <ola-text variant="font-1-regular" color="color-neutral-700">Traffic</ola-text>
+            </ola-card-header>
 
             <ola-card-content>
               <ola-text variant="font-4-medium" align="center">34 s</ola-text>
@@ -137,10 +132,9 @@
         <!-- Primera columna - Keywords -->
         <mj-column width="50%" padding="10px">
           <ola-card>
-            <ola-card-header
-              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/lego-gray.png"
-              text="Keywords"
-            ></ola-card-header>
+            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/lego-gray.png">
+              <ola-text variant="font-1-regular" color="color-neutral-700">Keywords</ola-text>
+            </ola-card-header>
 
             <ola-card-content>
               <ola-long-tag
@@ -171,10 +165,9 @@
         <!-- Segunda columna - Backlinks -->
         <mj-column width="50%" padding="10px">
           <ola-card>
-            <ola-card-header
-              src="https://apps.marketgoo.com/themes/mktgoo/img/icons/plugs-gray.png"
-              text="Backlinks"
-            ></ola-card-header>
+            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/plugs-gray.png">
+              <ola-text variant="font-1-regular" color="color-neutral-700">Backlinks</ola-text>
+            </ola-card-header>
 
             <ola-card-content>
               <ola-long-tag

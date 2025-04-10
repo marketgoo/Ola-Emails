@@ -5,14 +5,14 @@ const tokens = require("./tokens");
 registerDependencies({
   "ola-card": ["ola-card-header"],
   "mj-wrapper": ["ola-card-header"],
+  "ola-card-header": ["ola-text"],
 });
 
 class OlaCardHeader extends BodyComponent {
-  static endingTag = false;
+  static endingTag = true;
 
   static allowedAttributes = {
-    src: "string",
-    text: "string",
+    imgSrc: "string",
     "icon-width": "string",
     color: "string",
   };
@@ -53,10 +53,10 @@ class OlaCardHeader extends BodyComponent {
           <mj-table css-class="ola_card-header" padding="0" width="100%">
             <tr>
               <td class="ola_card-header-icon" style="width: ${this.getAttribute("icon-width")};">
-                <img width="${this.getAttribute("icon-width")}" src="${this.getAttribute("src")}" style="display: block;" />
+                <img width="${this.getAttribute("icon-width")}" src="${this.getAttribute("imgSrc")}" style="display: block;" />
               </td>
               <td class="ola_card-header-text">
-                <ola-text variant="font-1-regular" color="${this.getAttribute("color")}">${this.getAttribute("text")}</ola-text>
+                ${this.getContent()}
               </td>
             </tr>
           </mj-table>
