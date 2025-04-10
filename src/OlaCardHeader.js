@@ -1,6 +1,5 @@
 const { registerDependencies } = require("mjml-validator");
 const { BodyComponent } = require("mjml-core");
-const tokens = require("./tokens");
 
 registerDependencies({
   "ola-card": ["ola-card-header"],
@@ -33,6 +32,7 @@ class OlaCardHeader extends BodyComponent {
         display: table-cell;
         vertical-align: middle;
         padding-right: 4px;
+        width: 32px;
       }
       
       .ola_card-header-text {
@@ -47,6 +47,9 @@ class OlaCardHeader extends BodyComponent {
   }
 
   render() {
+    const content = this.getContent();
+    const processedContent = this.renderMJML(`<mj-column>${content}</mj-column>`);
+    
     return this.renderMJML(`
       <mj-section padding="16px">
         <mj-column>
@@ -56,7 +59,7 @@ class OlaCardHeader extends BodyComponent {
                 <img width="${this.getAttribute("icon-width")}" src="${this.getAttribute("imgSrc")}" style="display: block;" />
               </td>
               <td class="ola_card-header-text">
-                ${this.getContent()}
+                ${processedContent}
               </td>
             </tr>
           </mj-table>
