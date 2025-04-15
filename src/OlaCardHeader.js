@@ -1,28 +1,28 @@
-const { registerDependencies } = require("mjml-validator");
-const { BodyComponent } = require("mjml-core");
+const { registerDependencies } = require('mjml-validator');
+const { BodyComponent } = require('mjml-core');
 
 registerDependencies({
-  "ola-card": ["ola-card-header"],
-  "mj-wrapper": ["ola-card-header"],
-  "ola-card-header": ["ola-text"],
+    'ola-card': ['ola-card-header'],
+    'mj-wrapper': ['ola-card-header'],
+    'ola-card-header': ['ola-text'],
 });
 
 class OlaCardHeader extends BodyComponent {
-  static endingTag = true;
+    static endingTag = true;
 
-  static allowedAttributes = {
-    imgSrc: "string",
-    "icon-width": "string",
-    color: "string",
-  };
+    static allowedAttributes = {
+        imgSrc: 'string',
+        'icon-width': 'string',
+        color: 'string',
+    };
 
-  static defaultAttributes = {
-    "icon-width": "24px",
-    color: "color-neutral-700",
-  };
+    static defaultAttributes = {
+        'icon-width': '24px',
+        color: 'color-neutral-700',
+    };
 
-  headStyle() {
-    return `
+    headStyle() {
+        return `
       .ola_card-header {
         display: table;
         width: 100%;
@@ -44,19 +44,19 @@ class OlaCardHeader extends BodyComponent {
         width: 100%;
       }
     `;
-  }
+    }
 
-  render() {
-    const content = this.getContent();
-    const processedContent = this.renderMJML(`<mj-column>${content}</mj-column>`);
-    
-    return this.renderMJML(`
+    render() {
+        const content = this.getContent();
+        const processedContent = this.renderMJML(`<mj-column>${content}</mj-column>`);
+
+        return this.renderMJML(`
       <mj-section padding="16px">
         <mj-column>
           <mj-table css-class="ola_card-header" padding="0" width="100%">
             <tr>
-              <td class="ola_card-header-icon" style="width: ${this.getAttribute("icon-width")};">
-                <img width="${this.getAttribute("icon-width")}" src="${this.getAttribute("imgSrc")}" style="display: block;" />
+              <td class="ola_card-header-icon" style="width: ${this.getAttribute('icon-width')};">
+                <img width="${this.getAttribute('icon-width')}" src="${this.getAttribute('imgSrc')}" style="display: block;" />
               </td>
               <td class="ola_card-header-text">
                 ${processedContent}
@@ -66,7 +66,7 @@ class OlaCardHeader extends BodyComponent {
         </mj-column>
       </mj-section>
     `);
-  }
+    }
 }
 
 module.exports = OlaCardHeader;

@@ -24,6 +24,10 @@ const styles = {
         color: tokens('button', 'secondary', 'color') || tokens('color-primary-500'),
         border: `solid 1px ${tokens('button', 'secondary', 'border') || tokens('color-primary-500')}`,
     },
+    pro: {
+        'background-color': tokens('button', 'pro', 'background') || tokens('color-pro-500'),
+        color: tokens('button', 'pro', 'color') || tokens('color-white'),
+    },
     link: {
         'background-color': tokens('button', 'primary', 'background') || 'transparent',
         color: tokens('button', 'primary', 'color') || tokens('color-primary-500'),
@@ -35,7 +39,7 @@ const styles = {
 
 class OlaButton extends BodyComponent {
     static allowedAttributes = {
-        variant: 'enum(primary,secondary,link)',
+        variant: 'enum(primary,secondary,link, pro)',
         href: 'string',
         align: 'enum(left,center,right)',
     };

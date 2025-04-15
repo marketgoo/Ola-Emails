@@ -11,13 +11,18 @@
     />
 
     <ola-panel>
+      <ola-button variant="pro">Upgrade</ola-button>
       <!-- Primera fila - 3 columnas iguales -->
       <mj-section padding="0 20px">
         <!-- Primera columna - Score (con componente score) -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/speedometer-gray.png">
-              <ola-text variant="font-1-regular" color="color-neutral-700">Score</ola-text>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/speedometer-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Score</ola-text
+              >
             </ola-card-header>
 
             <ola-card-content>
@@ -29,8 +34,12 @@
         <!-- Segunda columna - Site Audit (sin componente score) -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/storefront-gray.png">
-              <ola-text variant="font-1-regular" color="color-neutral-700">Site Audit</ola-text>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/storefront-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Site Audit</ola-text
+              >
             </ola-card-header>
 
             <ola-card-content>
@@ -53,8 +62,12 @@
         <!-- Tercera columna - Content (sin componente score) -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/clipboard-text-gray.png">
-              <ola-text variant="font-1-regular" color="color-neutral-700">Content</ola-text>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/clipboard-text-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Content</ola-text
+              >
             </ola-card-header>
 
             <ola-card-content>
@@ -90,8 +103,12 @@
         <!-- Primera columna ancha - Traffic -->
         <mj-column width="66.66%" padding="10px">
           <ola-card>
-            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png">
-              <ola-text variant="font-1-regular" color="color-neutral-700">Traffic</ola-text>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Traffic</ola-text
+              >
             </ola-card-header>
 
             <ola-card-content>
@@ -110,8 +127,12 @@
         <!-- Segunda columna - Traffic -->
         <mj-column width="33.33%" padding="10px">
           <ola-card>
-            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png">
-              <ola-text variant="font-1-regular" color="color-neutral-700">Traffic</ola-text>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Traffic</ola-text
+              >
             </ola-card-header>
 
             <ola-card-content>
@@ -132,8 +153,12 @@
         <!-- Primera columna - Keywords -->
         <mj-column width="50%" padding="10px">
           <ola-card>
-            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/lego-gray.png">
-              <ola-text variant="font-1-regular" color="color-neutral-700">Keywords</ola-text>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/lego-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Keywords</ola-text
+              >
             </ola-card-header>
 
             <ola-card-content>
@@ -165,8 +190,12 @@
         <!-- Segunda columna - Backlinks -->
         <mj-column width="50%" padding="10px">
           <ola-card>
-            <ola-card-header imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/plugs-gray.png">
-              <ola-text variant="font-1-regular" color="color-neutral-700">Backlinks</ola-text>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/plugs-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Backlinks</ola-text
+              >
             </ola-card-header>
 
             <ola-card-content>

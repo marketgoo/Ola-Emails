@@ -1,22 +1,16 @@
-const { registerDependencies } = require("mjml-validator");
-const { BodyComponent } = require("mjml-core");
+const { registerDependencies } = require('mjml-validator');
+const { BodyComponent } = require('mjml-core');
 
 registerDependencies({
-  "mj-column": ["ola-card"],
-  "ola-card": [
-    "mj-section",
-    "ola-card-header",
-    "ola-card-content",
-    "ola-text",
-    "ola-score",
-  ],
+    'mj-column': ['ola-card'],
+    'ola-card': ['mj-section', 'ola-card-header', 'ola-card-content', 'ola-text', 'ola-score'],
 });
 
 class OlaCard extends BodyComponent {
-  static endingTag = true;
+    static endingTag = true;
 
-  headStyle() {
-    return `
+    headStyle() {
+        return `
         .card {
             border: 1px solid #DDDDDD;
             border-radius: 8px;
@@ -24,10 +18,10 @@ class OlaCard extends BodyComponent {
             height: 176px;
         }
         `;
-  }
+    }
 
-  render() {
-    return this.renderMJML(`
+    render() {
+        return this.renderMJML(`
             <mj-wrapper
                 css-class="card"
                 padding="0"
@@ -35,7 +29,7 @@ class OlaCard extends BodyComponent {
                 ${this.getContent()}
             </mj-wrapper>
         `);
-  }
+    }
 }
 
 module.exports = OlaCard;

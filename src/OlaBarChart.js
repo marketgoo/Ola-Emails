@@ -11,17 +11,17 @@ class OlaBarChart extends BodyComponent {
     static endingTag = true;
 
     static allowedAttributes = {
-        'labels': 'string',
-        'values': 'string',
-        'colors': 'string',
-        'height': 'string',
+        labels: 'string',
+        values: 'string',
+        colors: 'string',
+        height: 'string',
     };
 
     static defaultAttributes = {
-        'labels': 'Lun,Mar,Mié,Jue,Vie',
-        'values': '40,80,60,100,70',
-        'colors': '#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF',
-        'height': '80', // Altura por defecto para las barras
+        labels: 'Lun,Mar,Mié,Jue,Vie',
+        values: '40,80,60,100,70',
+        colors: '#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF',
+        height: '80', // Altura por defecto para las barras
     };
 
     headStyle() {
@@ -73,11 +73,11 @@ class OlaBarChart extends BodyComponent {
         // Reservamos ~30px para etiquetas (16px) y título (14px)
         const availableHeight = Math.min(parseInt(this.getAttribute('height')), 80);
         const title = this.getAttribute('title');
-        
+
         // Calcular el valor máximo para escalar las barras
         const maxValue = Math.max(...values);
         const columnWidth = 100 / labels.length;
-        
+
         // Generar las barras del gráfico
         let barsHTML = '';
         for (let i = 0; i < labels.length; i++) {

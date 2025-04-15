@@ -70,13 +70,17 @@ class OlaScore extends BodyComponent {
             <tbody>
                 <tr>
                     <td style="width:${size}px;height:${size}px;">
-                        ${hasTitle ? this.renderMJML(
-                            `<ola-text variant="font-0-regular" color="color-neutral-700" font-weight="font-weight-bold" align="center"><p>${this.getAttribute(
-                                'title',
-                            )}</p></ola-text>`,
-                        ) : ''}
+                        ${
+                            hasTitle
+                                ? this.renderMJML(
+                                      `<ola-text variant="font-0-regular" color="color-neutral-700" font-weight="font-weight-bold" align="center"><p>${this.getAttribute(
+                                          'title',
+                                      )}</p></ola-text>`,
+                                  )
+                                : ''
+                        }
                         ${this.renderMJML(
-                            `<ola-text variant="${fontVariant}" align="center"><p style="line-height:${size/3}px">${value}<sup class="${percentageClass}"> %</sup></p></ola-text>`,
+                            `<ola-text variant="${fontVariant}" align="center"><p style="line-height:${size / 3}px">${value}<sup class="${percentageClass}"> %</sup></p></ola-text>`,
                         )}
                         ${hasLevel ? this.renderMJML(`<ola-tag variant="${level}"><p>${this.getAttribute('level')}</p></ola-tag>`) : ''}
                     </td>
