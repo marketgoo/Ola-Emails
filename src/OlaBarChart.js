@@ -6,7 +6,7 @@ registerDependencies({
     "ola-card": ["ola-bar-chart"],
     "ola-card-content": ["ola-bar-chart"],
     "mj-column": ["ola-bar-chart"],
-    "ola-bar-chart": ["ola-text"],
+    "ola-bar-chart": ["ola-text", "ola-tag"],
 });
 
 class OlaBarChart extends BodyComponent {
@@ -24,7 +24,7 @@ class OlaBarChart extends BodyComponent {
         labels: "Lun,Mar,Mié,Jue,Vie",
         values: "40,80,60,100,70",
         colors: "#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF",
-        height: "80", // Altura por defecto para las barras
+        height: "60", // Reducimos la altura por defecto
     };
 
     headStyle() {
@@ -50,7 +50,11 @@ class OlaBarChart extends BodyComponent {
             }
             .ola_bar-chart-label {
                 text-align: center;
-                padding-top: 3px;
+                padding-top: 2px;
+            }
+            .ola_bar-chart-tag {
+                text-align: center;
+                padding-top: 2px;
             }
         `;
     }
@@ -62,11 +66,20 @@ class OlaBarChart extends BodyComponent {
             </ola-text>
         `);
 
+        const tagText = this.renderMJML(`
+            <ola-tag variant="color-positive-500" size="small">
+                ${value}
+            </ola-tag>
+        `);
+
         return `
             <td class="ola_bar-chart-column" style="width: ${width}%;" valign="bottom">
                 <div style="background-color: ${color}; height: ${barHeight}px; width: 100%;" class="ola_bar-chart-bar"></div>
                 <div class="ola_bar-chart-label">
                     ${labelText}
+                </div>
+                <div class="ola_bar-chart-tag">
+                    ${tagText}
                 </div>
             </td>
         `;
@@ -76,10 +89,10 @@ class OlaBarChart extends BodyComponent {
         const labels = this.getAttribute("labels").split(",");
         const values = this.getAttribute("values").split(",").map(Number);
         const colors = this.getAttribute("colors").split(",");
-        // Calculamos la altura disponible para las barras considerando el espacio para etiquetas y título
+        // Reducimos la altura disponible para las barras
         // La altura total disponible es 116px (OlaCardContent height)
-        // Reservamos ~30px para etiquetas (16px) y título (14px)
-        const availableHeight = Math.min(parseInt(this.getAttribute("height")), 80);
+        // Reservamos ~56px para etiquetas (16px), tag (16px) y espaciado (24px)
+        const availableHeight = Math.min(parseInt(this.getAttribute("height")), 50);
         const title = this.getAttribute("title");
 
         // Calcular el valor máximo para escalar las barras
