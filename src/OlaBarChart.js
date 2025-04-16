@@ -17,14 +17,13 @@ class OlaBarChart extends BodyComponent {
         values: "string",
         colors: "string",
         height: "string",
-        title: "string",
     };
 
     static defaultAttributes = {
         labels: "Lun,Mar,Mié,Jue,Vie",
         values: "40,80,60,100,70",
         colors: "#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF",
-        height: "60", // Reducimos la altura por defecto
+        height: "60",
     };
 
     headStyle() {
@@ -59,6 +58,30 @@ class OlaBarChart extends BodyComponent {
         `;
     }
 
+    calculateVariation(current, previous) {
+        if (previous === 0) return 0;
+        return ((current - previous) / previous) * 100;
+    }
+
+    getVariationColor(variation) {
+        if (variation > 0) return "color-positive-500";
+        if (variation < 0) return "color-negative-500";
+        return "color-warning-500";
+    }
+
+    formatVariation(variation) {
+        const sign = variation > 0 ? "+" : "";
+        return `${sign}${Math.round(variation)}%`;
+    }
+
+    formatValue(value) {
+        const formatter = new Intl.NumberFormat('en-US', {
+            notation: 'compact',
+            maximumFractionDigits: 1
+        });
+        return formatter.format(value);
+    }
+
     renderBar(label, value, barHeight, color, width) {
         const labelText = this.renderMJML(`
             <ola-text variant="font-0-regular" color="color-neutral-700" align="center">
@@ -66,11 +89,18 @@ class OlaBarChart extends BodyComponent {
             </ola-text>
         `);
 
-        const tagText = this.renderMJML(`
-            <ola-tag variant="color-positive-500" size="small">
-                ${value}
-            </ola-tag>
-        `);
+        let valueText = '';
+        if (value > 0) {
+            const formattedValue = this.formatValue(value);
+            valueText = this.renderMJML(`
+                <ola-text variant="font-0-regular" color="color-neutral-700" align="center">
+                    ${formattedValue}
+                </ola-text>
+            `);
+        } else {
+            // Mantenemos el espacio con un div vacío de la misma altura
+            valueText = '<div style="height: 24px;"></div>';
+        }
 
         return `
             <td class="ola_bar-chart-column" style="width: ${width}%;" valign="bottom">
@@ -79,7 +109,7 @@ class OlaBarChart extends BodyComponent {
                     ${labelText}
                 </div>
                 <div class="ola_bar-chart-tag">
-                    ${tagText}
+                    ${valueText}
                 </div>
             </td>
         `;
@@ -89,11 +119,7 @@ class OlaBarChart extends BodyComponent {
         const labels = this.getAttribute("labels").split(",");
         const values = this.getAttribute("values").split(",").map(Number);
         const colors = this.getAttribute("colors").split(",");
-        // Reducimos la altura disponible para las barras
-        // La altura total disponible es 116px (OlaCardContent height)
-        // Reservamos ~56px para etiquetas (16px), tag (16px) y espaciado (24px)
         const availableHeight = Math.min(parseInt(this.getAttribute("height")), 50);
-        const title = this.getAttribute("title");
 
         // Calcular el valor máximo para escalar las barras
         const maxValue = Math.max(...values);
