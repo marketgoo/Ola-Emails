@@ -9,13 +9,19 @@ registerDependencies({
 class OlaCard extends BodyComponent {
     static endingTag = true;
 
-    headStyle() {
+    headStyle(breakpoint) {
         return `
         .card {
             border: 1px solid #DDDDDD;
             border-radius: 8px;
             background-color: #FFFFFF;
             height: 176px;
+            width: 100%;
+        }
+        @media only screen and (max-width:${breakpoint}) {
+            .card {
+                width: 100% !important;
+            }
         }
         `;
     }
@@ -25,6 +31,7 @@ class OlaCard extends BodyComponent {
             <mj-wrapper
                 css-class="card"
                 padding="0"
+                full-width="full-width"
             >
                 ${this.getContent()}
             </mj-wrapper>

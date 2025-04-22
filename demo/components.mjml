@@ -71,27 +71,17 @@
             </ola-card-header>
 
             <ola-card-content>
-              <mj-section padding="0">
-                <mj-column>
-                  <ola-text
-                    variant="font-4-medium"
-                    color="color-negative-500"
-                    align="right"
-                    >19</ola-text
-                  >
-                </mj-column>
-                <mj-column vertical-align="bottom">
-                  <ola-text variant="font-0-regular" color="color-neutral-700"
-                    >/28</ola-text
-                  >
-                </mj-column>
-              </mj-section>
-
+              <ola-text
+                variant="font-4-medium"
+                color="color-negative-500"
+                align="center"
+                >19</ola-text
+              >
               <ola-text
                 variant="font-0-regular"
                 color="color-neutral-700"
                 align="center"
-                >Pending vs Optimized Pages</ola-text
+                >Pending Pages</ola-text
               >
             </ola-card-content>
           </ola-card>
