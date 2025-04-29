@@ -22,7 +22,17 @@ class OlaText extends BodyComponent {
     };
 
     render() {
-        const style = tokens(this.getAttribute('variant'));
+        const variant = this.getAttribute('variant');
+        let style = tokens(variant);
+
+        // Aseguramos que style tenga todas las propiedades necesarias
+        style = {
+            'font-family': style?.['font-family'] || tokens('font-family-1'),
+            'font-size': style?.['font-size'] || '16px',
+            'line-height': style?.['line-height'] || '24px',
+            'letter-spacing': style?.['letter-spacing'] || '0',
+            'font-weight': style?.['font-weight'] || tokens('font-weight-regular')
+        };
 
         if (this.getAttribute('font-weight')) {
             style['font-weight'] =
@@ -33,15 +43,15 @@ class OlaText extends BodyComponent {
 
         return this.renderMJML(`
             <mj-text
-        ${this.htmlAttributes({
-            ...style,
-            height: this.getAttribute('height'),
-            align: this.getAttribute('align'),
-            color: tokens(this.getAttribute('color')),
-            'vertical-align': this.getAttribute('vertical-align'),
-        })}
-      >
-        ${this.getContent()}
+                ${this.htmlAttributes({
+                    ...style,
+                    height: this.getAttribute('height'),
+                    align: this.getAttribute('align'),
+                    color: tokens(this.getAttribute('color')),
+                    'vertical-align': this.getAttribute('vertical-align'),
+                })}
+            >
+                ${this.getContent()}
             </mj-text>
         `);
     }
