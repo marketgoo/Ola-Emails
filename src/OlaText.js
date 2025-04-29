@@ -27,11 +27,11 @@ class OlaText extends BodyComponent {
 
         // Aseguramos que style tenga todas las propiedades necesarias
         style = {
-            'font-family': style?.['font-family'] || tokens('font-family-1'),
-            'font-size': style?.['font-size'] || '16px',
-            'line-height': style?.['line-height'] || '24px',
-            'letter-spacing': style?.['letter-spacing'] || '0',
-            'font-weight': style?.['font-weight'] || tokens('font-weight-regular')
+            'font-family': (style && style['font-family']) || tokens('font-family-1'),
+            'font-size': (style && style['font-size']) || '16px',
+            'line-height': (style && style['line-height']) || '24px',
+            'letter-spacing': (style && style['letter-spacing']) || '0',
+            'font-weight': (style && style['font-weight']) || tokens('font-weight-regular')
         };
 
         if (this.getAttribute('font-weight')) {
