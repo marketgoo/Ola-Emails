@@ -23,16 +23,36 @@ class OlaText extends BodyComponent {
 
     render() {
         const variant = this.getAttribute('variant');
-        let style = tokens(variant);
+        let style = {};
 
-        // Aseguramos que style tenga todas las propiedades necesarias
-        style = {
-            'font-family': (style && style['font-family']) || tokens('font-family-1'),
-            'font-size': (style && style['font-size']) || '16px',
-            'line-height': (style && style['line-height']) || '24px',
-            'letter-spacing': (style && style['letter-spacing']) || '0',
-            'font-weight': (style && style['font-weight']) || tokens('font-weight-regular')
-        };
+        // Aplicar valores hardcodeados para las variantes 0 y 1
+        if (variant === 'font-0-regular') {
+            style = {
+                'font-family': 'Inter, -apple-system, system-ui, sans-serif',
+                'font-weight': '400',
+                'font-size': '14px',
+                'line-height': '20px',
+                'letter-spacing': '0'
+            };
+        } else if (variant === 'font-1-regular') {
+            style = {
+                'font-family': 'Inter, -apple-system, system-ui, sans-serif',
+                'font-weight': '400',
+                'font-size': '16px',
+                'line-height': '24px',
+                'letter-spacing': '0'
+            };
+        } else {
+            // Para otras variantes, mantener el comportamiento original
+            style = tokens(variant);
+            style = {
+                'font-family': (style && style['font-family']) || tokens('font-family-1'),
+                'font-size': (style && style['font-size']) || '16px',
+                'line-height': (style && style['line-height']) || '24px',
+                'letter-spacing': (style && style['letter-spacing']) || '0',
+                'font-weight': (style && style['font-weight']) || tokens('font-weight-regular')
+            };
+        }
 
         if (this.getAttribute('font-weight')) {
             style['font-weight'] =

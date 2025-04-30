@@ -24,7 +24,15 @@ class OlaLongTag extends BodyComponent {
 
     render() {
         return this.renderMJML(`
-      <ola-text variant="font-0-regular" color="color-neutral-900" padding="0">
+      <mj-text
+        font-family="Inter, -apple-system, system-ui, sans-serif"
+        font-weight="400"
+        font-size="14px"
+        line-height="20px"
+        letter-spacing="0"
+        color="#1C1F22"
+        padding="0"
+      >
         <div style="
           background-color: ${tokens(this.getAttribute('background-color'))};
           border-radius: ${this.getAttribute('border-radius')};
@@ -42,7 +50,7 @@ class OlaLongTag extends BodyComponent {
             </tr>
           </table>
         </div>
-      </ola-text>
+      </mj-text>
     `);
     }
 }

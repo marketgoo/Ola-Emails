@@ -84,18 +84,34 @@ class OlaBarChart extends BodyComponent {
 
     renderBar(label, value, barHeight, color, width) {
         const labelText = this.renderMJML(`
-            <ola-text variant="font-0-regular" color="color-neutral-700" align="center">
+            <mj-text
+                font-family="Inter, -apple-system, system-ui, sans-serif"
+                font-weight="400"
+                font-size="14px"
+                line-height="20px"
+                letter-spacing="0"
+                color="#535C65"
+                align="center"
+            >
                 ${label}
-            </ola-text>
+            </mj-text>
         `);
 
         let valueText = '';
         if (value > 0) {
             const formattedValue = this.formatValue(value);
             valueText = this.renderMJML(`
-                <ola-text variant="font-0-regular" color="color-neutral-700" align="center">
+                <mj-text
+                    font-family="Inter, -apple-system, system-ui, sans-serif"
+                    font-weight="400"
+                    font-size="14px"
+                    line-height="20px"
+                    letter-spacing="0"
+                    color="#535C65"
+                    align="center"
+                >
                     ${formattedValue}
-                </ola-text>
+                </mj-text>
             `);
         } else {
             // Mantenemos el espacio con un div vacío de la misma altura
