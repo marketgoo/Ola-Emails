@@ -49,7 +49,13 @@ function render(code) {
             collapseWhitespace: true,
             minifyCSS: true,
             removeEmptyAttributes: true,
-            removeRedundantAttributes: true
+            removeRedundantAttributes: true,
+            removeComments: true,
+            removeAttributeQuotes: true,
+            removeOptionalTags: true,
+            removeEmptyElements: true,
+            collapseBooleanAttributes: true,
+            processConditionalComments: true
         }
     });
 
