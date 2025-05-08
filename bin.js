@@ -45,18 +45,9 @@ function render(code) {
     const mjml2html = require('mjml');
     const result = mjml2html(tokens.replace(code), {
         validationLevel: argv.validation,
-        minifyOptions: {
-            collapseWhitespace: true,
-            minifyCSS: true,
-            removeEmptyAttributes: true,
-            removeRedundantAttributes: true,
-            removeComments: true,
-            removeAttributeQuotes: true,
-            removeOptionalTags: true,
-            removeEmptyElements: true,
-            collapseBooleanAttributes: true,
-            processConditionalComments: true
-        }
+        minify: true,
+        beautify: false,
+        keepComments: false
     });
 
     if (argv.showErrors && result.errors.length) {
