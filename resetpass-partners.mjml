@@ -1,0 +1,31 @@
+<mjml>
+  <mj-head>
+    <ola-head></ola-head>
+  </mj-head>
+
+  <mj-body>
+    <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png"/>
+
+    <ola-panel>
+      <ola-panel-title>Hi, {{ name }}</ola-panel-title>
+
+      <ola-panel-text>
+          <p>You have requested a change of password for your <strong>marketgoo partner network</strong> account. This password reset is only valid for the next 24 hours.</p>
+      </ola-panel-text>
+
+      <ola-panel-section>
+        <ola-button variant="primary">Reset the password</ola-button>
+      </ola-panel-section>
+
+      <ola-panel-section>
+        <ola-text variant="font-0-regular" color="color-neutral-700">
+            <p>For security, this request was received from a iPhoneX device using Safari. If you did not request a password reset, please accept our apologies and disregard this e-mail or contact us at <a href="mailto:support@marketgoo.com">support@marketgoo.com</a> if you have questions.</p>
+        </ola-text>
+      </ola-panel-section>
+
+      <ola-panel-signature title="Thanks," subtitle="The marketgoo team" />
+    </ola-panel>
+
+    <mj-include path="./partials/footer-default.mjml" />
+  </mj-body>
+</mjml>
