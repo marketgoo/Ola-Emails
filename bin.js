@@ -7,9 +7,8 @@ const argv = require('yargs-parser')(process.argv.slice(2), {
         theme: null,
         validation: 'soft',
         file: null,
-        minify: true,
     },
-    boolean: ['show-errors', 'minify'],
+    boolean: ['show-errors'],
 });
 
 try {
@@ -43,10 +42,8 @@ try {
 
 function render(code) {
     const mjml2html = require('mjml');
-    const minify = require('html-minifier').minify;
-    
     const result = mjml2html(tokens.replace(code), {
-        validationLevel: argv.validation
+        validationLevel: argv.validation,
     });
 
     if (argv.showErrors && result.errors.length) {
@@ -54,19 +51,7 @@ function render(code) {
         console.log(result.errors);
         process.exit(1);
     } else {
-        const minifiedHtml = minify(result.html, {
-            collapseWhitespace: true,
-            minifyCSS: true,
-            removeComments: true,
-            removeEmptyAttributes: true,
-            removeRedundantAttributes: true,
-            removeAttributeQuotes: true,
-            removeOptionalTags: true,
-            removeEmptyElements: true,
-            collapseBooleanAttributes: true,
-            processConditionalComments: true
-        });
-        console.log(minifiedHtml);
+        console.log(result.html);
     }
 }
 
