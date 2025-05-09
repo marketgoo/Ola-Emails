@@ -43,11 +43,10 @@ try {
 
 function render(code) {
     const mjml2html = require('mjml');
+    const minify = require('html-minifier').minify;
+    
     const result = mjml2html(tokens.replace(code), {
-        validationLevel: argv.validation,
-        minify: true,
-        beautify: false,
-        keepComments: false
+        validationLevel: argv.validation
     });
 
     if (argv.showErrors && result.errors.length) {
@@ -55,7 +54,19 @@ function render(code) {
         console.log(result.errors);
         process.exit(1);
     } else {
-        console.log(result.html);
+        const minifiedHtml = minify(result.html, {
+            collapseWhitespace: true,
+            minifyCSS: true,
+            removeComments: true,
+            removeEmptyAttributes: true,
+            removeRedundantAttributes: true,
+            removeAttributeQuotes: true,
+            removeOptionalTags: true,
+            removeEmptyElements: true,
+            collapseBooleanAttributes: true,
+            processConditionalComments: true
+        });
+        console.log(minifiedHtml);
     }
 }
 
