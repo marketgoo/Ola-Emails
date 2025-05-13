@@ -40,7 +40,7 @@ class OlaBarChart extends BodyComponent {
                 border-collapse: collapse;
             }
             .ola_bar-chart-column {
-                padding: 0 1px;
+                padding: 0 8px;
                 vertical-align: bottom;
             }
             .ola_bar-chart-bar {
