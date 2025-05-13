@@ -135,7 +135,7 @@ class OlaBarChart extends BodyComponent {
         const labels = this.getAttribute("labels").split(",");
         const values = this.getAttribute("values").split(",").map(Number);
         const colors = this.getAttribute("colors").split(",");
-        const availableHeight = Math.min(parseInt(this.getAttribute("height")), 50);
+        const availableHeight = Math.min(parseInt(this.getAttribute("height")), 100);
 
         // Calcular el valor máximo para escalar las barras
         const maxValue = Math.max(...values);
