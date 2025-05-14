@@ -117,8 +117,7 @@
               <!-- Implementación con componente OlaBarChart estándar -->
               <ola-bar-chart
                 labels="Lun,Mar,Mié,Jue,Vie"
-                values="150000,73239,15550,170,252472"
-                colors="#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF"
+                values="15550,73239,15550,170,73239"
                 height="120"
                 title="Resumen de visitas semanales"
               ></ola-bar-chart>

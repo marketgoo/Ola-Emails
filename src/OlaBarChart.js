@@ -15,14 +15,12 @@ class OlaBarChart extends BodyComponent {
     static allowedAttributes = {
         labels: "string",
         values: "string",
-        colors: "string",
         height: "string",
     };
 
     static defaultAttributes = {
         labels: "Lun,Mar,Mié,Jue,Vie",
         values: "40,80,60,100,70",
-        colors: "#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF",
         height: "60",
     };
 
@@ -82,15 +80,15 @@ class OlaBarChart extends BodyComponent {
         return formatter.format(value);
     }
 
-    renderBar(label, value, barHeight, color, width) {
+    renderBar(label, value, barHeight, color, width, isMaxValue = false) {
         const labelText = this.renderMJML(`
             <mj-text
                 font-family="Inter, -apple-system, system-ui, sans-serif"
-                font-weight="400"
+                font-weight="600"
                 font-size="14px"
                 line-height="20px"
                 letter-spacing="0"
-                color="#535C65"
+                color="${isMaxValue ? tokens('color-positive-500') : tokens('color-neutral-700')}"
                 align="center"
             >
                 ${label}
@@ -107,7 +105,7 @@ class OlaBarChart extends BodyComponent {
                     font-size="14px"
                     line-height="20px"
                     letter-spacing="0"
-                    color="#535C65"
+                    color="${isMaxValue ? tokens('color-positive-500') : tokens('color-neutral-700')}"
                     align="center"
                 >
                     ${formattedValue}
@@ -134,7 +132,6 @@ class OlaBarChart extends BodyComponent {
     render() {
         const labels = this.getAttribute("labels").split(",");
         const values = this.getAttribute("values").split(",").map(Number);
-        const colors = this.getAttribute("colors").split(",");
         const availableHeight = Math.min(parseInt(this.getAttribute("height")), 100);
 
         // Calcular el valor máximo para escalar las barras
@@ -145,8 +142,9 @@ class OlaBarChart extends BodyComponent {
         let barsHTML = "";
         for (let i = 0; i < labels.length; i++) {
             const barHeight = Math.round((values[i] / maxValue) * availableHeight);
-            const color = colors[i % colors.length];
-            barsHTML += this.renderBar(labels[i], values[i], barHeight, color, columnWidth);
+            const color = values[i] === maxValue ? tokens('color-primary-500') : tokens('color-primary-200');
+            const isMaxValue = values[i] === maxValue;
+            barsHTML += this.renderBar(labels[i], values[i], barHeight, color, columnWidth, isMaxValue);
         }
 
         return `
