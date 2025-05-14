@@ -1,0 +1,139 @@
+<mjml>
+  <mj-head>
+    <ola-head></ola-head>
+    <mj-title>{{ name }}, you can now access our SEO tool</mj-title>
+    <mj-preview>Let’s get more potential clients to your site!</mj-preview>
+  </mj-head>
+
+  <mj-body>
+    <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png" />
+
+    <ola-panel>
+
+
+      <ola-panel-title>Hi, {{ name }}</ola-panel-title>
+
+      <ola-panel-text>
+        <p>Thank you for signing up to <strong>{product}</strong> with your website, <strong>{domain}.</strong></p>
+        <p>As part of your subscription, you can also use our SEO tool. We make SEO optimization easy by taking care of all the heavy lifting for you.</p>
+      </ola-panel-text>
+
+      <ola-divider></ola-divider>
+
+      <ola-panel-text variant="font-3-regular" align="center">
+        What happens next?
+      </ola-panel-text>
+
+      <ola-panel-section>
+        <ola-counter number="1" title="Check your website is live">
+          <ola-text variant="font-0-regular" color="color-neutral-700">
+            <ul>
+              <li><strong>Already live?</strong> Great! Head straight to step 2.</li>
+              <li><strong>Not live yet?</strong> Activate your site as soon as you can so we can calculate your SEO score.</li>
+            </ul>
+          </ola-text>
+        </ola-counter>
+
+        <ola-counter number="2" title="We’ll calculate your SEO score">
+          <ola-text variant="font-0-regular" color="color-neutral-700">
+            <p>Once your site is live, we’ll scan it and award an SEO optimization score. We’ll send you an email to let you know as soon as this is ready.</p>
+          </ola-text>
+        </ola-counter>
+
+        <ola-counter number="3" title="We’ll prepare your SEO improvement plan">
+          <ola-text variant="font-0-regular" color="color-neutral-700">
+            <p>Get an easy-to-implement plan broken down into small, simple tasks so you can start improving your SEO score one step at a time.</p>
+          </ola-text>
+        </ola-counter>
+
+        <ola-issue line-top="true" size="small" icon="./img/task-error.png">Esto es una task</ola-issue>
+        <ola-issue line-top="true" size="small" icon="./img/task-error.png">Esto es una task</ola-issue>
+        <ola-issue line-top="true" size="small" icon="./img/task-error.png">Esto es una task</ola-issue>
+        <ola-issue line-top="true" icon="./img/task-error.png">Esto es una task</ola-issue>
+      </ola-panel-section>
+
+      <ola-wrapper padding="10px">
+        <mj-section background-color="$color-neutral-100" padding="50px 40px">
+          <ola-text variant="font-5-medium" align="left">
+            Tasks to start with
+          </ola-text>
+          <ola-text align="left">
+            Tasks to start with
+          </ola-text>
+        </mj-section>
+
+        <mj-section background-color="$color-neutral-100" padding="0 20px">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white">
+            <ola-wrapper padding="8px">
+              <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-text color="color-primary-500" variant="font-3-regular">➔</ola-text>
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white">
+            <ola-wrapper padding="8px">
+              <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-text color="color-primary-500" variant="font-3-regular">➔</ola-text>
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+        </mj-section>
+
+        <mj-section background-color="$color-neutral-100" padding="0 20px">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white">
+            <ola-wrapper padding="8px">
+              <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-text color="color-primary-500" variant="font-3-regular">➔</ola-text>
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white">
+            <ola-wrapper padding="8px">
+              <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
+              <ola-button variant="link" href="#">
+                Show me more
+                <ola-text color="color-primary-500" variant="font-3-regular">➔</ola-text>
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+        </mj-section>
+
+        <mj-section background-color="$color-neutral-100" padding="0 20px 20px">
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="$color-white">
+            <ola-wrapper padding="8px">
+              <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
+              <ola-button variant="link" href="#">
+                Show me more
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+
+          <mj-column padding="5px" inner-border-radius="16px" inner-background-color="color-white">
+            <ola-wrapper padding="8px">
+              <ola-text height="160px" align="center">Include a sitemap in XML format</ola-text>
+              <ola-button variant="link" href="#">
+                Show me more
+              </ola-button>
+            </ola-wrapper>
+          </mj-column>
+        </mj-section>
+      </ola-wrapper>
+
+      <ola-panel-text>
+        <p>Stay tuned for your SEO score and improvement plan – you’ll be welcoming more visitors to your site in no time!</p>
+      </ola-panel-text>
+
+      <ola-panel-signature title="All the best," subtitle="The marketgoo team" />
+    </ola-panel>
+
+    <mj-include path="./partials/footer-default.mjml" />
+  </mj-body>
+</mjml>

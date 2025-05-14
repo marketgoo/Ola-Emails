@@ -1,0 +1,27 @@
+<mjml>
+  <mj-head>
+    <ola-head></ola-head>
+  </mj-head>
+
+  <mj-body>
+    <ola-header logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png"/>
+
+    <ola-panel>
+      <ola-panel-title>Hi, {{ name }}</ola-panel-title>
+
+      <ola-panel-text>
+        <p>Thank you so much for giving marketgoo a try. We’re sorry to see you go 😞</p>
+        <p>Would you mind letting us know why? It’ll be a big help for the team, and hopefuly it’s something we can address for you in the future update of marketgoo.</p>
+        <p>Feel free to reply to this email and let us know. We would appreciate it a lot!</p>
+      </ola-panel-text>
+
+      <ola-panel-section>
+        <ola-button variant="primary">Leave feedback</ola-button>
+      </ola-panel-section>>
+
+      <ola-panel-signature src="https://marketgoo.github.io/Ola-Emails/img/person.jpg" title="Big thanks!" subtitle="David Roch and the marketgoo team" />
+    </ola-panel>
+
+    <mj-include path="./partials/footer-default.mjml" />
+  </mj-body>
+</mjml>

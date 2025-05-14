@@ -1,0 +1,39 @@
+<mjml>
+  <mj-head>
+    <ola-head></ola-head>
+  </mj-head>
+
+  <mj-body>
+    <ola-hero>
+      <ola-header variant="dark" logo="https://marketgoo.github.io/Ola-Emails/img/logo-white.png"/>
+      <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/img/promo.png" />
+      <ola-hero-title>Welcome to marketgoo, Jennifer</ola-hero-title>
+    </ola-hero>
+
+    <ola-panel>
+      <ola-panel-text>
+        <p>We know you want better rankings and more traffic for {{ url }}.</p>
+        <p>The good news is, you have access to <strong>marketgoo PRO</strong>, the easy, do-it-yourself SEO tool which guides you in improving your site in order to grow your business online.</p>
+        <p>It’ll quickly scan your site, identify errors and give you instructions on how to fix them - but in order to do that your site needs to be configured.</p>
+        <p>So what do you need to do? Just log in and tell us a few things about your business’s website. It’ll take less than 1 minute.</p>
+      </ola-panel-text>
+
+      <ola-panel-section>
+        <ola-text variant="font-5-medium">Custom font</ola-text>
+        <ola-button variant="primary">Configure {{ url }}</ola-button>
+
+        <ola-text variant="font-0-regular" color="color-neutral-700" align="center" padding-top="8px">
+          <p>(It’ll take less than 1 minute)</p>
+        </ola-text>
+      </ola-panel-section>
+
+      <ola-panel-text variant="font-0-regular" color="color-neutral-700">
+          <p>If you have any question, feel free <a href="#">to email our customer success team,</a> we're lightning quick at replying.</p>
+      </ola-panel-text>
+
+      <ola-panel-signature src="https://marketgoo.github.io/Ola-Emails/img/person.jpg" title="Big thanks!" subtitle="David Roch and the marketgoo team" />
+    </ola-panel>
+
+    <mj-include path="./partials/footer-default.mjml" />
+  </mj-body>
+</mjml>

@@ -1,0 +1,232 @@
+<mjml>
+  <mj-head>
+    <ola-head></ola-head>
+    <mj-title>{{ name }}, you can now access our SEO tool</mj-title>
+    <mj-preview>Let's get more potential clients to your site!</mj-preview>
+  </mj-head>
+
+  <mj-body>
+    <ola-header
+      logo="https://marketgoo.github.io/Ola-Emails/img/logo-brand.png"
+    />
+
+    <ola-panel>
+      <ola-button variant="pro">Upgrade</ola-button>
+      <mj-section>
+        <mj-column background-color="white" padding="24px" border-radius="8px">
+              <ola-bar-chart
+                labels="Lun,Mar,Mié,Jue,Vie"
+                values="150000,73239,15550,170,252472"
+                colors="#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF,#4C9AFF"
+                height="120"
+                title="Resumen de visitas semanales"
+              ></ola-bar-chart>
+        </mj-column>
+      </mj-section>
+
+      <!-- Primera fila - 3 columnas iguales -->
+      <mj-section padding="0 20px">
+        <!-- Primera columna - Score (con componente score) -->
+        <mj-column width="33.33%" padding="10px">
+          <ola-card>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/speedometer-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Score</ola-text
+              >
+            </ola-card-header>
+
+            <ola-card-content>
+              <ola-score size="100" value="80"></ola-score>
+            </ola-card-content>
+          </ola-card>
+        </mj-column>
+
+        <!-- Segunda columna - Site Audit (sin componente score) -->
+        <mj-column width="33.33%" padding="10px">
+          <ola-card>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/storefront-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Site Audit</ola-text
+              >
+            </ola-card-header>
+
+            <ola-card-content>
+              <ola-text
+                variant="font-4-medium"
+                color="color-warning-500"
+                align="center"
+                >3</ola-text
+              >
+              <ola-text
+                variant="font-0-regular"
+                color="color-neutral-700"
+                align="center"
+                >Pending tasks</ola-text
+              >
+            </ola-card-content>
+          </ola-card>
+        </mj-column>
+
+        <!-- Tercera columna - Content (sin componente score) -->
+        <mj-column width="33.33%" padding="10px">
+          <ola-card>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/clipboard-text-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Content</ola-text
+              >
+            </ola-card-header>
+
+            <ola-card-content>
+              <ola-text
+                variant="font-4-medium"
+                color="color-negative-500"
+                align="center"
+                >19</ola-text
+              >
+              <ola-text
+                variant="font-0-regular"
+                color="color-neutral-700"
+                align="center"
+                >Pending Pages</ola-text
+              >
+            </ola-card-content>
+          </ola-card>
+        </mj-column>
+      </mj-section>
+
+      <!-- Segunda fila - 1 columna ancha (66%) y 1 columna normal (33%) -->
+      <mj-section padding="0 20px">
+        <!-- Primera columna ancha - Traffic -->
+        <mj-column width="66.66%" padding="10px">
+          <ola-card>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Traffic</ola-text
+              >
+            </ola-card-header>
+
+            <ola-card-content>
+              <!-- Implementación con componente OlaBarChart estándar -->
+              <ola-bar-chart
+                labels="Lun,Mar,Mié,Jue,Vie"
+                values="15550,73239,15550,170,73239"
+                height="120"
+                title="Resumen de visitas semanales"
+              ></ola-bar-chart>
+            </ola-card-content>
+          </ola-card>
+        </mj-column>
+
+        <!-- Segunda columna - Traffic -->
+        <mj-column width="33.33%" padding="10px">
+          <ola-card>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/graph-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Traffic</ola-text
+              >
+            </ola-card-header>
+
+            <ola-card-content>
+              <ola-text variant="font-4-medium" align="center">34 s</ola-text>
+              <ola-text
+                variant="font-0-regular"
+                color="color-neutral-700"
+                align="center"
+                >Average visit duration</ola-text
+              >
+            </ola-card-content>
+          </ola-card>
+        </mj-column>
+      </mj-section>
+
+      <!-- Tercera fila - 2 columnas iguales (50% cada una) -->
+      <mj-section padding="0 20px">
+        <!-- Primera columna - Keywords -->
+        <mj-column width="50%" padding="10px">
+          <ola-card>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/lego-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Keywords</ola-text
+              >
+            </ola-card-header>
+
+            <ola-card-content>
+              <ola-long-tag
+                background-color="color-positive-300"
+                text="Between 1 to 10"
+                value="2"
+              ></ola-long-tag>
+              <ola-long-tag
+                background-color="color-positive-100"
+                text="Between 11 to 30"
+                value="999"
+              ></ola-long-tag>
+              <ola-long-tag
+                text="Between 31 to 99"
+                value="4"
+                border-color="color-neutral-100"
+              ></ola-long-tag>
+              <ola-text
+                variant="font-0-regular"
+                color="color-neutral-700"
+                align="center"
+                >Keywords distribution</ola-text
+              >
+            </ola-card-content>
+          </ola-card>
+        </mj-column>
+
+        <!-- Segunda columna - Backlinks -->
+        <mj-column width="50%" padding="10px">
+          <ola-card>
+            <ola-card-header
+              imgSrc="https://apps.marketgoo.com/themes/mktgoo/img/icons/plugs-gray.png"
+            >
+              <ola-text variant="font-1-regular" color="color-neutral-700"
+                >Backlinks</ola-text
+              >
+            </ola-card-header>
+
+            <ola-card-content>
+              <ola-long-tag
+                border-color="color-accent-600"
+                text="1"
+                value="exampleweb1.com"
+              ></ola-long-tag>
+              <ola-long-tag
+                border-color="color-accent-300"
+                text="2"
+                value="exampleweb2.com"
+              ></ola-long-tag>
+              <ola-long-tag
+                text="3"
+                value="exampleweb3.com"
+                border-color="color-accent-100"
+              ></ola-long-tag>
+              <ola-text
+                variant="font-0-regular"
+                color="color-neutral-700"
+                align="center"
+                >Top backlinks</ola-text
+              >
+            </ola-card-content>
+          </ola-card>
+        </mj-column>
+      </mj-section>
+    </ola-panel>
+
+    <mj-include path="./partials/footer-default.mjml" />
+  </mj-body>
+</mjml>

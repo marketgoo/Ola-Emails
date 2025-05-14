@@ -1,0 +1,49 @@
+<mjml>
+  <mj-head>
+    <ola-head></ola-head>
+  </mj-head>
+
+  <mj-body>
+    <ola-hero>
+      <ola-header variant="dark" logo="https://marketgoo.github.io/Ola-Emails/img/logo-white.png"/>
+      <ola-hero-img src="https://marketgoo.github.io/Ola-Emails/img/promo.png" />
+      <ola-hero-title>Welcome to marketgoo, Jennifer</ola-hero-title>
+    </ola-hero>
+
+    <ola-panel close-to="top">
+      <ola-panel-text>
+          <p>You’re officially set up and ready to start earning, so go ahead and log in to your account!</p>
+      </ola-panel-text>
+
+      <ola-panel-section>
+        <ola-button variant="primary">Login</ola-button>
+      </ola-panel-section>
+
+      <ola-panel-text>
+        <p>We’d like to quickly share some useful links (so save this e-mail):</p>
+        <ul>
+          <li><strong><a href="#">How to promote marketgoo</a></strong></li>
+          <li><strong><a href="#">Logos, banners and screenshots</a></strong></li>
+          <li><strong><a href="#">How payment works</a></strong></li>
+        </ul>
+      </ola-panel-text>
+
+      <ola-panel-section background-color="color-neutral-200">
+        <ola-text variant="font-2-regular" font-weight="font-weight-bold">Your referral link</ola-text>
+        <ola-text variant="font-1-regular">
+          <p>Your unique link to share with your audience is:</p>
+          <p><a href="#"><strong>marketgoo.com/free-seo-report {{partner_token}}</strong></a></p>
+          <p>You can find it within the <em>Referral Links</em> section of your account, and create more unique links should you want to track different campaigns.</p>
+        </ola-text>
+      </ola-panel-section>
+
+      <ola-panel-text variant="font-0-regular" color="color-neutral-700">
+          <p>If you did not sign up to marketgoo, please contact us at <a href="mailto:support@marketgoo.com">support@marketgoo.com</a>.</p>
+      </ola-panel-text>
+
+      <ola-panel-signature src="https://marketgoo.github.io/Ola-Emails/img/person.jpg" title="Welcome aboard!" subtitle="David Roch and the marketgoo team" />
+    </ola-panel>
+
+    <mj-include path="./partials/footer-default.mjml" />
+  </mj-body>
+</mjml>
